@@ -86,9 +86,9 @@
           <!-- Works -->
           <WorkCard />
           <!-- 其他資源 -->
-          <div class="grid overflow-hidden grid-cols-1 gap-2.5 cursor-default lg:grid-cols-2 text-stone-900 dark:text-white h-fit dark:bg-transparent dark:border dark:border-white sm:gap-4">
+          <div class="grid overflow-hidden grid-cols-1 gap-2.5 cursor-default lg:grid-cols-2 text-stone-900 dark:text-white h-fit sm:gap-4">
             <!-- Plugin 區塊 -->
-            <div class="flex flex-col p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3x">
+            <div class="flex flex-col p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3x dark:border dark:border-white">
               <div class="flex justify-between mb-4 lg:mb-10 xs:mb-6">
                 <p class="tracking-[.25em] text-xs xs:text-base xl:text-lg font-bold ">
                   {{ $t('work.core.item1') }}
@@ -103,7 +103,7 @@
             </div>
 
             <!-- Blog 區塊 -->
-            <div class="p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl">
+            <div class="p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
               <p class="tracking-[.25em] lg:mb-10 mb-4 xs:mb-6 text-xs xs:text-base xl:text-lg font-bold ">
                 {{ $t('work.core.item1') }}
               </p>
@@ -113,7 +113,7 @@
                   v-for="(date, index) in ['2024.06.12', '2024.06.12', '2024.06.12', '2024.06.12']"
                   :key="date"
                   :to="`/blog/post/${index + 1}`"
-                  class="inline-flex gap-6 w-full leading-normal text-left transition-colors duration-300 ease-in-out dark:text-white focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white text-stone-400"
+                  class="inline-flex gap-6 w-full leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white text-stone-400"
                 >
                   <time class="whitespace-nowrap">
                     {{ `${date}` }}
