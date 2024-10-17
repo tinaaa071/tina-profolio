@@ -88,7 +88,7 @@
           <!-- 其他資源 -->
           <div class="grid overflow-hidden grid-cols-1 gap-2.5 cursor-default lg:grid-cols-2 text-stone-900 dark:text-white h-fit dark:bg-transparent dark:border dark:border-white sm:gap-4">
             <!-- Plugin 區塊 -->
-            <div class="p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3x">
+            <div class="flex flex-col p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3x">
               <div class="flex justify-between mb-4 lg:mb-10 xs:mb-6">
                 <p class="tracking-[.25em] text-xs xs:text-base xl:text-lg font-bold ">
                   {{ $t('work.core.item1') }}
@@ -97,10 +97,8 @@
                   Shape Mask
                 </p>
               </div>
-              <RouterLink to="/">
-                <div class="overflow-hidden rounded-2xl sm:rounded-3xl">
-                  <img src="../assets/plugin-banner.png" alt="" class="transition-all duration-300 hover:scale-105">
-                </div>
+              <RouterLink to="/" class="overflow-hidden h-full rounded-2xl sm:rounded-3xl">
+                <img src="../assets/plugin-banner.png" alt="" class="object-cover h-full transition-all duration-300 hover:scale-105">
               </RouterLink>
             </div>
 
@@ -109,25 +107,21 @@
               <p class="tracking-[.25em] lg:mb-10 mb-4 xs:mb-6 text-xs xs:text-base xl:text-lg font-bold ">
                 {{ $t('work.core.item1') }}
               </p>
-              <div class="space-y-3 text-lg font-extrabold lg:space-y-5 xs:text-2xl sm:text-3xl lg:sm:text-4xl text-stone-400 dark:text-stone-400">
+              <div class="space-y-3 text-sm font-extrabold lg:space-y-5 xs:text-2xl text-stone-400 dark:text-stone-400">
                 <!-- Project Buttons -->
-                 <RouterLink to="">
-                  
-                 </RouterLink>
-                <button
-                  v-for="tab in [1, 2, 3, 4]"
-                  :key="tab"
-                  type="button"
-                  class="inline-flex w-full leading-normal text-left transition-colors duration-300 ease-in-out"
-                  :class="{
-                    'text-stone-900 dark:text-white': activeTab === tab,
-                    'focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white': activeTab !== tab
-                  }"
-                  @click="selectTab(tab)"
+                <RouterLink
+                  v-for="(date, index) in ['2024.06.12', '2024.06.12', '2024.06.12', '2024.06.12']"
+                  :key="date"
+                  :to="`/blog/post/${index + 1}`"
+                  class="inline-flex gap-6 w-full leading-normal text-left transition-colors duration-300 ease-in-out dark:text-white focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white text-stone-400"
                 >
-                  <p class="whitespace-nowrap">{{ `0${tab} -` }}&nbsp;</p>
-                  {{ $t(`project${tab}.core.title`) }}
-                </button>
+                  <time class="whitespace-nowrap">
+                    {{ `${date}` }}
+                  </time>
+                  <p class="w-full text-wrap overflow-wrap break-word line-clamp-2">
+                    {{ $t('post1.item1') }}
+                  </p>
+                </RouterLink>
               </div>
             </div>
           </div>
