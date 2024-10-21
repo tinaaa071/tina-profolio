@@ -93,11 +93,11 @@
                 <p class="tracking-[.25em] text-xs xs:text-base xl:text-lg font-bold ">
                   {{ $t('work.core.item1') }}
                 </p>
-                <p class="text-lg font-extrabold xs:text-2xl sm:text-3xl lg:sm:text-4xl">
+                <p class="text-lg font-extrabold xs:text-2xl sm:text-3xl lg:text-4xl">
                   Shape Mask
                 </p>
               </div>
-              <RouterLink to="/" class="overflow-hidden h-full rounded-2xl sm:rounded-3xl">
+              <RouterLink to="/" class="overflow-hidden rounded-2xl lg:h-full sm:rounded-3xl aspect-video">
                 <img src="../assets/plugin-banner.png" alt="" class="object-cover h-full transition-all duration-300 hover:scale-105">
               </RouterLink>
             </div>
