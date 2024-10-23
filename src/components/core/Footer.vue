@@ -10,13 +10,14 @@
             </RouterLink>
         </li>
     </ul>
-     <p class="text-sm font-normal text-white dark:text-stone-900">
-        Copyright © 2024 Tina Chen
-     </p>
+    <p class="text-sm font-normal text-white cursor-default dark:text-stone-900">
+      Copyright © {{ currentYear }} Tina Chen
+    </p>
   </div>
 </template>
 
 <script>
+import { computed } from 'vue';
 import Fa6BrandsLinkedin from '~icons/fa6-brands/linkedin';
 import Fa6BrandsDribbble from '~icons/fa6-brands/dribbble';
 import Fa6SolidEnvelope from '~icons/fa6-solid/envelope';
@@ -32,9 +33,12 @@ export default {
       { to: '/', icon: 'fa6-brands-linkedin' },
       { to: '/posts', icon: 'fa6-brands-dribbble' },
       { to: '/setting', icon: 'fa6-solid-envelope' },
-    ]
+    ];
 
-    return { menuItems }
+    // 計算屬性以獲取當前年份
+    const currentYear = computed(() => new Date().getFullYear());
+
+    return { menuItems, currentYear };
   }
 }
 </script>
