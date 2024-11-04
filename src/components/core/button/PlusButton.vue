@@ -1,6 +1,5 @@
 <template>
   <button
-    @click="toggleIcon"
     :class="{
       'bg-B2/80 dark:bg-stone-600': !isPlus,
       'bg-B3 dark:bg-stone-700': isPlus,
@@ -9,14 +8,14 @@
     }"
   >
     <div
-      class="relative inline-flex items-center justify-center w-6 h-6"
+      class="inline-flex relative justify-center items-center w-6 h-6"
     >
       <div
-        class="absolute w-4 h-0.5 transition-transform duration-300 ease-in-out bg-stone-400 dark:bg-white rounded-full"
+        class="absolute w-4 h-0.5 rounded-full transition-transform duration-300 ease-in-out bg-stone-400 dark:bg-white"
         :class="{ 'rotate-90': isPlus }"
       ></div>
       <div
-        class="absolute w-4 h-0.5 transition-transform duration-300 ease-in-out bg-stone-400  dark:bg-white rounded-full"
+        class="absolute w-4 h-0.5 rounded-full transition-transform duration-300 ease-in-out bg-stone-400 dark:bg-white"
         :class="{ 'rotate-0': isPlus }"
       ></div>
     </div>
