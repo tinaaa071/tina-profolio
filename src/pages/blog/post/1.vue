@@ -2,12 +2,12 @@
   <div class="text-sm font-light bg-white cursor-default sm:pb-10 dark:bg-stone-900 text-stone-900 dark:text-white xs:text-base">
     <Layout :showProgress="true">
       <template #content>
-        <div class="flex flex-col gap-6 mb-2 xs:px-10 md:px-24 lg:px-48 xl:px-72">
+        <div class="flex flex-col gap-6 mb-2 xs:px-8 md:px-24 lg:px-44 xl:px-52">
           <Brief
           :post="{
           banner: 'https://media.istockphoto.com/id/692835304/photo/spiekeroog-in-germany.webp?a=1&s=612x612&w=0&k=20&c=RFKphgYjiUW9T-ewpx2b0VL2gqRvFZ8bTHJwr2Gl5u0=',
           credit: $t('project1.core.title'),
-          category: $t('blog.item1'),
+          category: $t('blog.item3'),
           date: '2024-09-10',
           title: $t('project1.core.title'),
           desc: $t('project1.core.title'),
@@ -58,7 +58,7 @@ export default {
           id: 1,
           link: '/',
           title: "Post 1",
-          category: this.$t('blog.item1'),
+          category: this.$t('blog.item3'),
           image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           date: "2024．09．02",
         },

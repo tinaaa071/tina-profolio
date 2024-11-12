@@ -3,7 +3,7 @@
     <Navbar />
     <ProgressBar />
     <BackToTop class="z-20" />
-    <div class="min-h-screen pt-24 pb-6 mx-auto sm:pt-28 md:pt-32">
+    <div class="pt-24 pb-6 mx-auto min-h-screen sm:pt-28 md:pt-32">
       <Tabs
       :currentCategory="currentCategory"
       :categories="[
@@ -47,7 +47,7 @@ export default {
         {
           id: 1,
           title: "Post 1",
-          category: this.$t('blog.item1'),
+          category: this.$t('blog.item3'),
           image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           date: "2024．09．02",
         },
@@ -128,6 +128,18 @@ export default {
     filterByCategory(category) {
       this.currentCategory = category;
       this.currentPage = 1; // Reset to the first page when changing category
+    },
+  },
+  watch: {
+    '$route.query.category': {
+      immediate: true,
+      handler(newCategory) {
+        if (newCategory) {
+          this.currentCategory = newCategory;
+        } else {
+          this.currentCategory = this.$t('blog.item1');
+        }
+      },
     },
   },
 };

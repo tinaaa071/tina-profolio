@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-6 ">
+    <div class="flex flex-col gap-6">
       <!-- Banner -->
       <div>
         <CardTilt>
@@ -19,9 +19,9 @@
       <div>
         <!-- Category + Date -->
         <div class="flex gap-4 items-center mb-8 font-medium">
-          <p class="text-B1">
-            {{ post.category }}
-          </p>
+          <RouterLink :to="{ path: '../blog', query: { category: post.category }}" class="text-B1">
+          {{ post.category }}
+        </RouterLink>
           <span class="w-0.5 h-6 bg-stone-200 dark:bg-stone-500"></span>
           <p class="text-stone-400 dark:text-stone-500">
             {{ post.date }}
@@ -62,6 +62,10 @@
   <script>
   export default {
     props: {
+      linkTo: {
+        type: String,
+        required: true,
+      },  
       post: {
         type: Object,
         required: true,
