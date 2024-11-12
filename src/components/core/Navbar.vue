@@ -14,14 +14,14 @@
         'transition-colors ease-in-out duration-500'  // Add transition classes here
     ]"
     >
-      <div class="relative flex flex-row items-center justify-between w-full px-4 py-2.5 md:py-3.5 xl:text-stone-900 sm:flex-row dark:xl:text-white">
+      <div class="flex relative flex-row justify-between items-center px-4 py-2.5 w-full md:py-3.5 xl:text-stone-900 sm:flex-row dark:xl:text-white">
         <!-- Logo -->
-        <div class="flex items-center justify-between w-full">
+        <div class="flex justify-between items-center w-full">
           <div class="inline-flex items-center space-x-3.5 group">
             
             <RouterLink to="/" class="">
               <!-- Your SVG Logo -->
-              <div :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="flex items-center gap-3 group">
+              <div :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="flex gap-3 items-center group">
                 <div class="flex items-center transition-colors duration-300 md:block group-hover:text-stone-400">
                   <svg 
                   class="h-9 sm:h-11" 
@@ -40,14 +40,14 @@
         </div>
 
         <!-- Web Menu -->
-        <div class="flex items-center justify-center gap-10">
+        <div class="flex gap-10 justify-center items-center">
           <div class="hidden lg:block">
-            <div class="sm:flex sm:flex-row sm:justify-between whitespace-nowrap">
-              <ul class="flex flex-col items-center gap-2 text-sm font-semibold sm:flex-row">
+            <div class="whitespace-nowrap sm:flex sm:flex-row sm:justify-between">
+              <ul class="flex flex-col gap-2 items-center text-sm font-semibold sm:flex-row">
                 <!-- Menu -->
                 <li v-for="item in menuItems" :key="item.to">
                   <RouterLink :to="item.to" 
-                    class="flex items-center px-4 py-2.5 transition-colors duration-200 sm:px-5 whitespace-nowrap"
+                    class="flex items-center px-4 py-2.5 whitespace-nowrap transition-colors duration-200 sm:px-5"
                     :class="isActive(item.to) ? 'text-stone-900 dark:text-white' : 'text-stone-400 hover:text-stone-900 dark:hover:text-white'">
                     {{ $t(item.text) }}
                   </RouterLink>
@@ -76,14 +76,14 @@
       </div>
       <!-- Mobile Menu -->
       <div class="lg:hidden">
-        <div v-if="showMenu" class="fixed inset-0 bg-black/20 -z-10 xl:hidden backdrop-blur-lg" @click="toggleMenu"></div>
-        <div v-if="showMenu" class="z-20 flex flex-col justify-between p-2.5 md:p-5 whitespace-nowrap">
+        <div v-if="showMenu" class="fixed inset-0 backdrop-blur-lg bg-black/20 -z-10 xl:hidden" @click="toggleMenu"></div>
+        <div v-if="showMenu" class="flex z-20 flex-col justify-between p-2.5 whitespace-nowrap md:p-5">
           <ul class="flex flex-col gap-2 text-sm font-semibold">
             <!-- Menu -->
             <li v-for="item in menuItems" :key="item.to">
               <RouterLink :to="item.to" 
-                class="flex items-center px-2 py-2.5 transition-colors duration-200 whitespace-nowrap"
-                :class="isActive(item.to) ? 'text-white dark:text-stone-900' : 'text-stone-500 hover:text-white'">
+                class="flex items-center px-2 py-2.5 whitespace-nowrap transition-colors duration-200"
+                :class="isActive(item.to) ? 'text-white dark:text-stone-900' : 'text-stone-500 hover:text-white dark:hover:text-stone-900'">
                 {{ $t(item.text) }}
               </RouterLink>
             </li>

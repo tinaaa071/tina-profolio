@@ -1,22 +1,24 @@
 <template>
-    <div class="flex flex-col gap-6 px-6 py-8 xs:px-16 md:px-32 lg:px-56 xl:px-80 xl:py-16 bg-B3 md:py-10 dark:bg-stone-800 dark:border-t dark:border-white/20" 
+    <div class="px-6 py-8 bg-B3 dark:bg-stone-800 dark:border-t dark:border-white/20 sm:px-10 md:py-10" 
     v-if="showMore"
     >
-      <div class="flex gap-4 items-center xs:gap-4">
-        <p class="dark:text-white">
-          {{ $t('work.core.item1') }}
-        </p>
-        <hr class="w-full border-stone-900 dark:border-white">
-      </div>
-      <div class="grid grid-cols-2 gap-4 xs:grid-cols-4">
-        <PostCard 
-          v-for="post in sortedAndLimitedPosts" 
-          :key="post.id" 
-          :post="post" 
-          :showTag="true"
-          :linkTo="post.link"
-          aspectRatio="aspect-[4/5] group-hover:-translate-y-1 transition-transform duration-200"
-        />
+      <div class="flex flex-col gap-6 mx-auto max-w-3xl">
+        <div class="flex gap-4 items-center xs:gap-4">
+          <p class="dark:text-white">
+            {{ $t('work.core.item1') }}
+          </p>
+          <hr class="w-full border-stone-900 dark:border-white">
+        </div>
+        <div class="grid grid-cols-2 gap-4 xs:grid-cols-4">
+          <PostCard 
+            v-for="post in sortedAndLimitedPosts" 
+            :key="post.id" 
+            :post="post" 
+            :showTag="true"
+            :linkTo="post.link"
+            aspectRatio="aspect-[4/5] group-hover:-translate-y-1 transition-transform duration-200"
+          />
+        </div>
       </div>
     </div>
   </template>

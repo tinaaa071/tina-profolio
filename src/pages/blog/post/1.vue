@@ -2,12 +2,12 @@
   <div class="text-sm font-light bg-white cursor-default sm:pb-10 dark:bg-stone-900 text-stone-900 dark:text-white xs:text-base">
     <Layout :showProgress="true">
       <template #content>
-        <div class="flex flex-col gap-6 mb-2 xs:px-8 md:px-24 lg:px-44 xl:px-52">
+        <div class="flex flex-col gap-6 mx-auto max-w-3xl md:py-10">
           <Brief
           :post="{
           banner: 'https://media.istockphoto.com/id/692835304/photo/spiekeroog-in-germany.webp?a=1&s=612x612&w=0&k=20&c=RFKphgYjiUW9T-ewpx2b0VL2gqRvFZ8bTHJwr2Gl5u0=',
           credit: $t('project1.core.title'),
-          category: $t('blog.item3'),
+          category: $t('blog.item2'),
           date: '2024-09-10',
           title: $t('project1.core.title'),
           desc: $t('project1.core.title'),
@@ -20,13 +20,13 @@
         :showCredit="true"
         :showMenu="true"
         >
-        <template #brief>
-          <p>
-            This is a brief description that can be customized.
-            This is a brief description that can be customized.
-            This is a brief description that can be customized.
-          </p>
-        </template>
+          <template #brief>
+            <p>
+              This is a brief description that can be customized.
+              This is a brief description that can be customized.
+              This is a brief description that can be customized.
+            </p>
+          </template>
         </Brief>
         <Content>
           <H1 
