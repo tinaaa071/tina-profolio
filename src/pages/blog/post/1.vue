@@ -2,7 +2,7 @@
   <div class="text-sm font-light bg-white cursor-default sm:pb-10 dark:bg-stone-900 text-stone-900 dark:text-white xs:text-base">
     <Layout :showProgress="true">
       <template #content>
-        <div class="flex flex-col gap-6 mb-2">
+        <div class="flex flex-col gap-6 mb-2 xs:px-10 md:px-24 lg:px-48 xl:px-72">
           <Brief
           :post="{
           banner: 'https://media.istockphoto.com/id/692835304/photo/spiekeroog-in-germany.webp?a=1&s=612x612&w=0&k=20&c=RFKphgYjiUW9T-ewpx2b0VL2gqRvFZ8bTHJwr2Gl5u0=',

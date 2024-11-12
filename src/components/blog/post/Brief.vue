@@ -1,10 +1,10 @@
 <template>
-    <div class="flex flex-col gap-6 xs:px-10 md:px-24 lg:px-48 xl:px-72">
+    <div class="flex flex-col gap-6 ">
       <!-- Banner -->
       <div>
         <CardTilt>
           <img 
-            class="object-cover object-center w-full mb-2 rounded-2xl sm:rounded-3xl aspect-video"
+            class="object-cover object-center mb-2 w-full rounded-2xl sm:rounded-3xl aspect-video"
             :src="post.banner" 
             alt=""
           >
@@ -18,7 +18,7 @@
       <!-- Info -->
       <div>
         <!-- Category + Date -->
-        <div class="flex items-center gap-4 mb-8 font-medium">
+        <div class="flex gap-4 items-center mb-8 font-medium">
           <p class="text-B1">
             {{ post.category }}
           </p>

@@ -1,10 +1,16 @@
 <template>
     <RouterLink :to="linkTo" >
+      <!-- img -->
       <div class="group">
-        <div class="relative w-full overflow-hidden rounded-lg aspect-video dark:border dark:border-white/20">
+        <div
+        :class="[
+          'overflow-hidden relative w-full rounded-lg dark:border dark:border-white/20',
+          aspectRatioClass,
+        ]"
+      >
         <div 
         v-if="showTag"
-        class="absolute bottom-4 right-4 z-10 px-1.5 py-1 rounded  bg-stone-50  text-stone-600 whitespace-nowrap text-xs font-normal',">
+        class="absolute right-4 bottom-4 z-10 px-1.5 py-1 text-xs font-normal whitespace-nowrap rounded bg-stone-50 text-stone-600',">
           {{ post.category }}
         </div>
         <img 
@@ -46,6 +52,15 @@
       showDate: {
         type: Boolean,
         required: true,
+      },
+      aspectRatio: {
+      type: String,
+      default: "aspect-video", // 預設值為 'aspect-video'
+      },
+    },
+    computed: {
+      aspectRatioClass() {
+        return this.aspectRatio;
       },
     },
   };
