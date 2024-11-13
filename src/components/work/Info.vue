@@ -2,22 +2,22 @@
     <div class="cursor-default">
       <!-- title -->
       <div class="relative z-10 mb-4 sm:mb-6">
-        <h1 class="text-2xl font-semibold text-center text-white dark:text-stone-900 lg:text-5xl sm:text-4xl ">
+        <h1 class="text-2xl font-semibold text-center text-white dark:text-stone-900 lg:text-5xl sm:text-4xl">
           {{ title }}
         </h1>
         <!-- tools -->
         <IconGroup 
           :iconsVisible="iconsVisible" 
-          class="absolute bottom-0 text-right right-5" 
+          class="absolute bottom-0 right-5 text-right" 
         />
       </div>
       <!-- Info -->
-      <div class="flex flex-col w-full gap-6 px-6 py-8 lg:gap-10 bg-B4 dark:bg-stone-800 text-stone-800 sm:gap-8 xl:px-28 md:p-10 xl:py-14 dark:text-white dark:border-white/20 dark:border-b">
+      <div class="flex flex-col gap-6 px-6 py-8 w-full lg:gap-10 bg-B4 dark:bg-stone-800 text-stone-800 sm:gap-8 xl:px-28 md:p-10 xl:py-14 dark:text-white dark:border-white/20 dark:border-b">
         <!-- Tag + BTN -->
-        <div class="flex items-center justify-between">
+        <div class="flex justify-between items-center">
           <!-- Tag -->
           <div class="flex gap-2 sm:gap-3">
-            <Tag :tag="tag" class="bg-white " />
+            <Tag :tag="tag" class="bg-white" />
           </div>
           <!-- BTN -->
           <MagneticButton 
@@ -32,7 +32,7 @@
           {{ title }}
         </h2>
         <!-- Info Sections -->
-        <div class="grid grid-cols-1 gap-4 sm:gap-6 xs:grid-cols-2 lg:grid-cols-4 ">
+        <div class="grid grid-cols-1 gap-4 sm:gap-6 xs:grid-cols-2 lg:grid-cols-4">
           <div>
             <p class="mb-2">{{ $t('work.info.item1') }}</p>
             <p class="font-light">{{ info1 }}</p>

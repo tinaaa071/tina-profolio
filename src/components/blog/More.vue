@@ -16,7 +16,7 @@
             :post="post" 
             :showTag="true"
             :linkTo="post.link"
-            aspectRatio="aspect-[4/5] group-hover:-translate-y-1 transition-transform duration-200"
+            aspectRatio="aspect-[4/5] group-hover:-translate-y-1 transition-transform duration-200 rounded-3xl"
           />
         </div>
       </div>

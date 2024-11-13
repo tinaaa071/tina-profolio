@@ -4,7 +4,7 @@
       <div class="group">
         <div
         :class="[
-          'overflow-hidden relative w-full rounded-lg dark:border dark:border-white/20',
+          'overflow-hidden relative w-full dark:border dark:border-white/20',
           aspectRatioClass,
         ]"
       >
@@ -55,7 +55,7 @@
       },
       aspectRatio: {
       type: String,
-      default: "aspect-video", // 預設值為 'aspect-video'
+      default: "aspect-video rounded-lg ", // 預設值為 'aspect-video'
       },
     },
     computed: {

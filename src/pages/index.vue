@@ -88,7 +88,7 @@
           <!-- 其他資源 -->
           <div class="grid overflow-hidden grid-cols-1 gap-2.5 cursor-default lg:grid-cols-2 text-stone-900 dark:text-white h-fit sm:gap-4">
             <!-- Plugin 區塊 -->
-            <div class="flex flex-col p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3x dark:border dark:border-white">
+            <div class="flex flex-col p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
               <div class="flex justify-between mb-4 lg:mb-10 xs:mb-6">
                 <p class="tracking-[.25em] text-xs xs:text-base xl:text-lg font-bold ">
                   {{ $t('work.core.item1') }}
@@ -97,19 +97,29 @@
                   Shape Mask
                 </p>
               </div>
-              <RouterLink to="/" class="overflow-hidden rounded-2xl lg:h-full sm:rounded-3xl aspect-video">
-                <img src="../assets/plugin-banner.png" alt="" class="object-cover h-full transition-all duration-300 hover:scale-105">
+              <RouterLink to="/" class="overflow-hidden relative w-full h-full bg-white rounded-2xl border border-white/20 sm:rounded-3xl">
+                <img src="../assets/plugin-banner.png" alt="" class="object-cover inset-0 w-full h-full transition-all duration-300 lg:absolute hover:scale-105">
               </RouterLink>
             </div>
 
             <!-- Blog 區塊 -->
             <div class="p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
-              <p class="tracking-[.25em] lg:mb-10 mb-4 xs:mb-6 text-xs xs:text-base xl:text-lg font-bold ">
-                {{ $t('work.core.item1') }}
-              </p>
+              <div class="flex justify-between items-start mb-4 lg:mb-10 xs:mb-6">
+                <p class="tracking-[.25em]  text-xs xs:text-base xl:text-lg font-bold ">
+                  {{ $t('work.core.item1') }}
+                </p>
+                <WaveButton 
+                linkTo="/blog/blog"
+                :text="$t('work.core.item2')"
+                :borderClass="'border-stone-900 dark:border-white'"
+                :textClass="'text-black dark:text-white'"
+                :hoverTextClass="'dark:group-hover:text-stone-900 group-hover:text-white'"
+                :bgClass="'bg-stone-900 dark:bg-white'"
+                />
+              </div>
               <div class="space-y-3 text-sm font-extrabold lg:space-y-5 xs:text-2xl text-stone-400 dark:text-stone-400">
-                <!-- Project Buttons -->
-                <RouterLink
+                <!-- Project Card -->
+                <!-- <RouterLink
                   v-for="(date, index) in ['2024.06.12', '2024.06.12', '2024.06.12', '2024.06.12']"
                   :key="date"
                   :to="`/blog/post/${index + 1}`"
@@ -121,7 +131,17 @@
                   <p class="w-full text-wrap overflow-wrap break-word line-clamp-2">
                     {{ $t('post1.item1') }}
                   </p>
-                </RouterLink>
+                </RouterLink> -->
+                <div class="grid grid-cols-2 gap-4 xs:grid-cols-4 lg:grid-cols-3 h-fit">
+                  <PostCard 
+                    v-for="post in displayedPosts" 
+                    :key="post.id" 
+                    :post="post" 
+                    :showTag="true"
+                    :linkTo="post.link"
+                    aspectRatio="aspect-[4/5] group-hover:-translate-y-1 transition-transform duration-200 rounded-3xl"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -137,13 +157,70 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 
 export default {
-  setup(props) {
-      const isModalOpen = ref(false)
-      
-      return { isModalOpen }
+  setup() {
+    const isModalOpen = ref(false);
+    const windowWidth = ref(window.innerWidth);
+
+    const handleResize = () => {
+      windowWidth.value = window.innerWidth;
+    };
+
+    onMounted(() => {
+      window.addEventListener('resize', handleResize);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener('resize', handleResize);
+    });
+
+    return { isModalOpen, windowWidth };
+  },
+  data() {
+    return {
+      posts: [
+        {
+          id: 1,
+          link: '/',
+          title: "Post 1",
+          category: this.$t('blog.item3'),
+          image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          date: "2024．09．02",
+        },
+        {
+          id: 2,
+          link: '/about',
+          title: "Post 2",
+          category: this.$t('blog.item2'),
+          image: "https://images.unsplash.com/photo-1628768534895-ff9185e7edbc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          date: new Date().toLocaleDateString(),
+        },
+        {
+          id: 3,
+          link: '/post/1',
+          title: "Post 3",
+          category: this.$t('blog.item3'),
+          image: "https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          date: new Date().toLocaleDateString(),
+        },
+        {
+          id: 4,
+          link: '/post/1',
+          title: "Post 4",
+          category: this.$t('blog.item4'),
+          image: "https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          date: new Date().toLocaleDateString(),
+        }
+      ],
+    };
+  },
+  computed: {
+    displayedPosts() {
+      // lg 尺寸顯示三筆資料，其餘尺寸顯示四筆資料
+      return this.windowWidth >= 1024 ? this.posts.slice(0, 3) : this.posts.slice(0, 4);
     }
+  }
 };
 </script>

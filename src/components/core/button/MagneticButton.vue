@@ -1,7 +1,7 @@
 <template>
   <RouterLink :to="linkTo">
     <div
-      class="relative flex items-center w-full overflow-hidden sm:py-2.5 sm:px-8 h-fit"
+      class="flex overflow-hidden relative items-center w-full sm:py-2.5 sm:px-8 h-fit"
       @mousemove="onMouseMove"
       @mouseleave="onMouseLeave"
     >
@@ -39,7 +39,7 @@ export default {
     },
     icon: {
       type: [Object, Function],
-      required: true,
+      required: false,
     },
     text: {
       type: String,
