@@ -1,7 +1,7 @@
 <template>
   <button
     @click="toggleDarkMode"
-    class="p-2 transition-all duration-300 ease-in-out rounded-full text-stone-900 bg-B3 dark:bg-stone-900 dark:text-stone-100 hover:bg-stone-300 dark:hover:bg-stone-700"
+    class="p-2 rounded-full transition-all duration-300 ease-in-out text-stone-900 bg-B3 dark:bg-stone-900 dark:text-stone-100 hover:bg-stone-300 dark:hover:bg-stone-700"
   >
     <WiNightClear v-if="!isDarkMode" class="text-2xl" />
     <WiDaySunny v-else class="text-2xl" />

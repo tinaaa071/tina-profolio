@@ -23,6 +23,7 @@
               <!-- Your SVG Logo -->
               <div :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="flex gap-3 items-center group">
                 <div class="flex items-center transition-colors duration-300 md:block group-hover:text-stone-400">
+                  <!-- <LottieAnimation :animationData="lottieAnimationData" height="50px" width="50px" /> -->
                   <svg 
                   class="h-9 sm:h-11" 
                   xmlns="http://www.w3.org/2000/svg"  fill="currentColor" 
@@ -114,6 +115,7 @@
 import { computed, ref, onMounted, onBeforeUnmount } from "vue";
 import { useRoute } from 'vue-router';
 import MingcuteEarth3Fill from '~icons/mingcute/earth-3-fill';
+// import logoDark from '@/assets/logo-b.json';
 
 export default {
   components: {
@@ -130,6 +132,7 @@ export default {
     const isVisible = ref(true);
     const lastScrollY = ref(window.scrollY);
     const toggleMenu = () => showMenu.value = !showMenu.value;
+    // const lottieAnimationData = logoDark;
 
     // Update main menu items based on your pages structure
     const menuItems = [

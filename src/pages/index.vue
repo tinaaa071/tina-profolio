@@ -93,7 +93,7 @@
                 <p class="tracking-[.25em] text-xs xs:text-base xl:text-lg font-bold ">
                   {{ $t('work.core.item1') }}
                 </p>
-                <p class="text-lg font-extrabold xs:text-2xl sm:text-3xl lg:text-4xl">
+                <p class="text-lg font-extrabold xs:text-2xl sm:text-3xl">
                   Shape Mask
                 </p>
               </div>
