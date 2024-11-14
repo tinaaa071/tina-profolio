@@ -23,6 +23,7 @@
         <WaveButton 
         :linkTo="linkTo" 
         :text="$t('work.core.item2')"
+        class="transform origin-left scale-75 sm:scale-100"
         />
       </div>
       <div class="w-full h-full bg-center bg-cover"

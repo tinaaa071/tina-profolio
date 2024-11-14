@@ -108,6 +108,9 @@
                 <p class="tracking-[.25em]  text-xs xs:text-base xl:text-lg font-bold ">
                   {{ $t('work.core.item1') }}
                 </p>
+                <div class="flex justify-end">
+                  
+                </div>
                 <WaveButton 
                 linkTo="/blog/blog"
                 :text="$t('work.core.item2')"
@@ -115,6 +118,7 @@
                 :textClass="'text-black dark:text-white'"
                 :hoverTextClass="'dark:group-hover:text-stone-900 group-hover:text-white'"
                 :bgClass="'bg-stone-900 dark:bg-white'"
+                class="transform origin-top-right scale-75 sm:scale-100"
                 />
               </div>
               <div class="space-y-3 text-sm font-extrabold lg:space-y-5 xs:text-2xl text-stone-400 dark:text-stone-400">
