@@ -6,14 +6,22 @@
     tabindex="0"
     class="cursor-pointer group"
   >
-    <div class="relative w-full overflow-hidden rounded-lg aspect-video dark:border dark:border-white/20">
-      <div class="absolute bottom-4 right-4 z-10 px-1.5 py-1 rounded bg-stone-50 text-stone-600 whitespace-nowrap text-xs font-normal">
+    <div class="overflow-hidden relative w-full rounded-lg aspect-video dark:border dark:border-white/20">
+      <div class="absolute right-4 bottom-4 z-10 px-1.5 py-1 text-xs font-normal whitespace-nowrap rounded bg-stone-50 text-stone-600">
         {{ modal.category }}
       </div>
       <img 
+        v-if="modal.image"
         :src="modal.image" 
         :alt="modal.title" 
         class="object-cover object-center w-full h-full transition-all duration-300 ease-in-out group-hover:scale-110"
+      />
+      <Lottie 
+      v-if="modal.lottiePath"
+      :path="modal.lottiePath" 
+      class="object-cover object-center w-full h-full transition-all duration-300 ease-in-out group-hover:scale-110"
+      heightClass="h-full" 
+      widthClass="w-full"
       />
     </div>
     

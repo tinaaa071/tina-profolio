@@ -23,7 +23,11 @@
               <!-- Your SVG Logo -->
               <div :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="flex gap-3 items-center group">
                 <div class="flex items-center transition-colors duration-300 md:block group-hover:text-stone-400">
-                  <!-- <LottieAnimation :animationData="lottieAnimationData" height="50px" width="50px" /> -->
+                  <!-- <Lottie 
+                    path="https://lottie.host/3ea80e9c-705e-44c7-9c5e-a8e8018951bc/26n6zjfUFF.json" 
+                    
+                  /> -->
+                  <!-- <LottieAnimation :src="lottieAnimationData" height="50px" width="50px" /> -->
                   <svg 
                   class="h-9 sm:h-11" 
                   xmlns="http://www.w3.org/2000/svg"  fill="currentColor" 
@@ -115,7 +119,7 @@
 import { computed, ref, onMounted, onBeforeUnmount } from "vue";
 import { useRoute } from 'vue-router';
 import MingcuteEarth3Fill from '~icons/mingcute/earth-3-fill';
-// import logoDark from '@/assets/logo-b.json';
+// import logoDark from '@/assets/logo-w.json';
 
 export default {
   components: {
