@@ -85,7 +85,7 @@
             id: 3,
             title: "Post 1",
             category: this.$t('other.item3'),
-            image: "https://images.unsplash.com/photo-1725628736546-6b334a2002d7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            image: "./src/assets/plugin-banner.png",
           },
         {
             id: 4,
