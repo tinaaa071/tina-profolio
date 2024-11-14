@@ -3,7 +3,7 @@
     <Navbar />
     <ProgressBar />
     <BackToTop class="z-20" />
-    <div class="min-h-screen pt-24 pb-6 mx-auto sm:pt-28 md:pt-32">
+    <div class="pt-24 pb-6 mx-auto min-h-screen sm:pt-28 md:pt-32">
       <Tabs
         :currentCategory="currentCategory"
         :categories="[
@@ -45,7 +45,7 @@ export default {
         {
           id: 1,
           title: this.$t('project1.core.title'),
-          category: this.$t('tag.item1'),
+          category: [this.$t('tag.item2'), this.$t('tag.item4')],
           image: 'https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           date: '2024．09．02',
           link: '/work/project1',
@@ -93,7 +93,9 @@ export default {
       if (this.currentCategory === this.$t('tag.item1')) {
         return this.posts;
       }
-      return this.posts.filter((post) => post.category === this.currentCategory);
+      return this.posts.filter((post) => 
+        post.category.includes(this.currentCategory) // 檢查是否包含當前類別
+      );
     },
     paginatedPosts() {
       const start = (this.currentPage - 1) * this.itemsPerPage;
