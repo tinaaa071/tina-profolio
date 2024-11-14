@@ -78,7 +78,8 @@
             id: 2,
             title: "Post 1",
             category: this.$t('other.item2'),
-            image: "https://images.unsplash.com/photo-1725489892948-9ace0d73f9ad?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            // image: "https://images.unsplash.com/photo-1725489892948-9ace0d73f9ad?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            lottiePath: "https://lottie.host/3ea80e9c-705e-44c7-9c5e-a8e8018951bc/26n6zjfUFF.json"
           },
         {
             id: 3,
