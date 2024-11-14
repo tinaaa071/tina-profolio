@@ -1,5 +1,5 @@
 <template>
-    <nav class="sticky top-0 left-0 hidden xl:block">
+    <nav class="hidden sticky top-0 left-0 xl:block">
       <div class="absolute pt-5 ml-6 text-xs w-fit md:ml-10 xl:ml-20">
         <ul class="p-0 list-none">
         <li
@@ -10,6 +10,7 @@
           <a
             :href="'#' + section.id"
             class="no-underline transition-colors hover:text-stone-400"
+            @click.prevent="smoothScroll(section.id)"
           >
           {{ $t(section.name) }}
           </a>
@@ -46,6 +47,13 @@
         });
         activeSection.value = currentSection;
       };
+
+      const smoothScroll = (id) => {  // 新增的平滑滾動函數
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
   
       // Throttle the scroll event handler
       const throttledOnScroll = throttle(onScroll, 100);
@@ -61,6 +69,7 @@
   
       return {
         activeSection,
+        smoothScroll
       };
     },
   };
