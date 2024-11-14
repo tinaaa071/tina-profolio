@@ -4,7 +4,7 @@
       <div class="group">
         <div
         :class="[
-          'overflow-hidden relative w-full dark:border dark:border-white/20',
+          'overflow-hidden relative w-full border dark:border-white/20 border-stone-200',
           aspectRatioClass,
         ]"
       >

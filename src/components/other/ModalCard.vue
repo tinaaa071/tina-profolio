@@ -6,7 +6,7 @@
     tabindex="0"
     class="cursor-pointer group"
   >
-    <div class="overflow-hidden relative w-full rounded-lg aspect-video dark:border dark:border-white/20">
+    <div class="overflow-hidden relative w-full rounded-lg border aspect-video dark:border-white/20 border-stone-200">
       <div class="absolute right-4 bottom-4 z-10 px-1.5 py-1 text-xs font-normal whitespace-nowrap rounded bg-stone-50 text-stone-600">
         {{ modal.category }}
       </div>
