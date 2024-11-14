@@ -29,7 +29,6 @@
       },
     },
     mounted() {
-      // 初始化 Lottie 動畫，但預設顯示在最後一幀
       this.animation = lottie.loadAnimation({
         container: this.$refs.lottieContainer,
         renderer: 'svg',
@@ -37,9 +36,6 @@
         autoplay: true, 
         path: this.path,
       });
-  
-      // 跳轉到動畫的最後一幀
-      this.animation.goToAndStop(this.animation.totalFrames - 1, true);
     },
     beforeDestroy() {
       // 在組件銷毀時銷毀動畫
@@ -47,22 +43,7 @@
         this.animation.destroy();
       }
     },
-    methods: {
-      // 當鼠標懸停時播放動畫
-      playAnimation() {
-        if (this.animation) {
-          this.animation.play();
-        }
-      },
-      // 當鼠標移開時停止動畫並回到最後一幀
-      stopAnimation() {
-        if (this.animation) {
-          this.animation.stop();
-          // 當停止動畫後，回到最後一幀
-          this.animation.goToAndStop(this.animation.totalFrames - 1, true);
-        }
-      },
-    },
+    
   };
   </script>
   
