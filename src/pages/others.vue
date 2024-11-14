@@ -85,7 +85,7 @@
             id: 3,
             title: "Post 1",
             category: this.$t('other.item3'),
-            image: "../public/plugin-banner.png",
+            image: "/plugin-banner.png",
           },
         {
             id: 4,
