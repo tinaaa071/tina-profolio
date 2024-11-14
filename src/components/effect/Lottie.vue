@@ -2,8 +2,7 @@
     <div 
       ref="lottieContainer" 
       :class="['lottie-container', heightClass, widthClass]" 
-      @mouseover="playAnimation" 
-      @mouseleave="stopAnimation"
+      
     ></div>
   </template>
   
