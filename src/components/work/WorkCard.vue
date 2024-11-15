@@ -1,11 +1,11 @@
 <template>
-  <div class="grid grid-cols-1 overflow-hidden cursor-default lg:grid-cols-2 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent dark:border dark:border-white rounded-2xl">
+  <div class="grid overflow-hidden grid-cols-1 rounded-2xl cursor-default lg:grid-cols-2 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent dark:border dark:border-white">
     <!-- Left Section -->
     <div class="p-5 bg-white sm:p-8 dark:bg-transparent">
       <p class="tracking-[.25em] lg:mb-10 mb-4 xs:mb-6 text-xs xs:text-base xl:text-lg font-bold ">
         {{ $t('work.core.item1') }}
       </p>
-      <div class="space-y-3 text-lg font-extrabold lg:space-y-5 xs:text-2xl sm:text-3xl lg:sm:text-4xl text-stone-400 dark:text-stone-400">
+      <div class="space-y-3 text-lg font-extrabold lg:space-y-5 xs:text-2xl sm:text-3xl text-stone-400 dark:text-stone-400">
         <!-- Project Buttons -->
         <button
           v-for="tab in [1, 2, 3, 4]"

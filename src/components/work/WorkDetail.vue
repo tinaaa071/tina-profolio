@@ -6,7 +6,7 @@
             <p class="text-xs font-medium xs:text-base xl:text-lg tracking-[.25em]">
             {{ year }}
             </p>
-            <p class="text-lg font-bold xs:text-2xl sm:text-3xl lg:sm:text-4xl">
+            <p class="text-lg font-bold xs:text-2xl sm:text-3xl">
               {{ title }}
             </p>
             <p class="hidden text-xl font-light md:block">

@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col items-center justify-between gap-6 px-6 py-8 sm:py-10 sm:flex-row sm:px-10 xl:px-28 bg-stone-900 dark:bg-B3">
+  <div class="flex flex-col gap-6 justify-between items-center px-6 py-8 sm:py-10 sm:flex-row sm:px-10 xl:px-28 bg-stone-900 dark:bg-B3">
     <!-- Icon Group -->
     <ul class="flex">
         <li v-for="item in menuItems" :key="item.to">
             <RouterLink :to="item.to" 
-            class="flex items-center p-3.5 text-sm text-white rounded-full sm:text-xl sm:p-5 bg-stone-800 hover:bg-stone-700 transition-colors ease-in-out duration-300"
+            class="flex items-center p-3.5 text-sm text-white rounded-full transition-colors duration-300 ease-in-out sm:text-xl sm:p-5 bg-stone-800 hover:bg-stone-700"
             >
                 <component :is="item.icon" />
             </RouterLink>
