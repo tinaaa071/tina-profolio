@@ -1,15 +1,16 @@
+<!-- Overview -->
 <template>
     <Section class="flex flex-col gap-4 px-6 text-center md:gap-8">
       <!-- Title -->
       <p class="text-2xl font-bold md:text-3xl">
         {{ $t('work.title.item2') }}
       </p>
-      <!-- Brief -->
-      <div class="grid gap-3 text-left sm:gap-4 sm:grid-cols-2">
+      <!-- Grid -->
+      <div class="grid gap-3 text-left sm:grid-cols-2">
         <div
           v-for="(brief, index) in briefs"
           :key="index"
-          class="p-4 text-justify border rounded-lg sm:p-6 border-stone-200"
+          class="p-4 text-justify rounded-lg border sm:p-6 border-stone-200"
         >
           <p class="mb-2 font-semibold">
             {{ `${(index + 1).toString().padStart(2, '0')} ` }}&ensp;|&ensp;

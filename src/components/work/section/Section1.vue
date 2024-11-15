@@ -1,4 +1,4 @@
-<!-- componentB.vue -->
+<!-- Info -->
 <template>
     <Section class="px-6">
       <div class="grid gap-6 xl:grid-cols-10 xl:gap-10 xs:grid-cols-8">

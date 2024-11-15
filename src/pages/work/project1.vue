@@ -13,11 +13,11 @@
         <!-- Info -->
         <Info 
         :title="$t('project1.core.title')"
-        :info1="$t('work.core.item3')"
-        :info2="$t('work.core.item3')"
-        :info3="$t('work.core.item3')"
-        :info4="$t('work.core.item3')"
-        :tag="[$t('project1.infoContent.item2'), $t('project1.infoContent.item3'), $t('project1.infoContent.item4')]" 
+        :info1="'2023.10 - 2024.10'"
+        :info2="$t('project1.info.item3')"
+        :info3="'UX 研究、設計系統、UI & Prototype 設計'"
+        :info4="$t('project1.info.item1')"
+        :tag="[$t('project1.info.item2'), $t('project1.info.item3'), $t('project1.info.item4')]" 
         :iconsVisible="[true, false, true, true, false]"
         :linkTo="'/'"
         :icon="icon" 
@@ -29,12 +29,12 @@
           <!-- Section1 -->
           <Section1
           id="section1"
-          :info1="$t('project1.infoContent.item1')"
-          :info2="[$t('project1.infoContent.item2'), $t('project1.infoContent.item3'), $t('project1.infoContent.item4')]"
-          :info3="[$t('project1.infoContent.item2'), $t('project1.infoContent.item3'), $t('project1.infoContent.item4')]"
+          :info1="$t('project1.info.item1')"
+          :info2="[$t('project1.info.item2'), $t('project1.info.item3'), $t('project1.info.item4')]"
+          :info3="[$t('project1.info.item2'), $t('project1.info.item3'), $t('project1.info.item4')]"
           :info4="[
-            { avatarSrc: 'https://images.unsplash.com/photo-1724942462164-7c30f103d91c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: 'Designer', name: 'John Doe' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: 'Developer', name: 'Jane Smith' }
+            { avatarSrc: 'https://images.unsplash.com/photo-1724942462164-7c30f103d91c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project1.info.item3'), name: 'John Doe' },
+            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project1.info.item5'), name: 'Jane Smith' }
           ]"
           :content="$t('work.core.item5')"
           bannerSrc="https://images.unsplash.com/photo-1723904187003-807a2f7c8311?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

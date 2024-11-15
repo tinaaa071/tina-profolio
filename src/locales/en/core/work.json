@@ -16,13 +16,9 @@
         "item1": "Duration",
         "item2": "My Role",
         "item3": "Responsibility",
-        "item4": "Company"
-    },
-    "infoCard":{
-        "item1": "Service Client",
-        "item2": "Demand Services",
-        "item3": "Role",
-        "item4": "Team"
+        "item4": "Service Client",
+        "item5": "Demand Services",
+        "item6": "Team"
     },
     "briefCard":{
         "item1": "Objective",

@@ -32,7 +32,7 @@
           {{ title }}
         </h2>
         <!-- Info Sections -->
-        <div class="grid grid-cols-1 gap-4 sm:gap-6 xs:grid-cols-2 lg:grid-cols-4">
+        <div class="grid grid-cols-1 gap-4 sm:gap-8 xs:grid-cols-2 lg:grid-cols-4">
           <div>
             <p class="mb-2">{{ $t('work.info.item1') }}</p>
             <p class="font-light">{{ info1 }}</p>

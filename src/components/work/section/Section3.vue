@@ -1,3 +1,4 @@
+<!-- Other Section -->
 <template>
   <Section 
   class="grid grid-cols-1 gap-6 md:grid-cols-10"
