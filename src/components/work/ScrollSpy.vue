@@ -1,6 +1,6 @@
 <template>
-  <nav class="hidden sticky top-0 left-0 xl:block">
-    <div class="absolute pt-5 ml-6 text-xs w-fit md:ml-10 xl:ml-20">
+  <nav class="hidden sticky top-0 left-0 z-50 xl:block">
+    <div class="absolute pt-5 ml-6 text-xs w-fit">
       <ul class="p-0 list-none">
         <li
           v-for="section in sections"

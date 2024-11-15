@@ -1,22 +1,22 @@
 <template>
     <Section
-      class="flex flex-col items-center w-full py-8 text-center xl:py-20 md:py-10 "
+      class="flex flex-col items-center py-8 w-full text-center md:py-16"
     >
       <!-- Title -->
-      <p class="mb-6 font-semibold md:text-xl text-stone-500 md:mb-12 dark:text-white">
+      <p class="mb-6 font-semibold md:text-lg text-stone-500 md:mb-8 dark:text-white">
         {{ $t('work.title.item2') }}
       </p>
       <!-- Project -->
       <p
         :class="[
-          'mb-6 text-xl sm:text-2xl font-semibold md:text-4xl lg:text-5xl md:mb-12 transition-colors duration-300 ease-in-out',
+          'mb-6 text-2xl sm:text-4xl font-semibold transition-colors duration-300 ease-in-out',
           isHovered ? 'text-stone-300 dark:text-stone-500 blur-sm' : 'text-stone-500 dark:text-stone-300'
         ]"
       >
         {{ title }}
       </p>
       <!-- Project -->
-      <div class="relative flex justify-center w-full h-44 sm:h-72 xl:h-96">
+      <div class="flex relative justify-center w-full h-44 sm:h-72 xl:h-96">
         <CursorDot />
         <!-- Img -->
         <RouterLink
@@ -28,7 +28,7 @@
           <img
             src="https://images.unsplash.com/photo-1688297969982-2d46e66ba2f2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
-            class=" aspect-video rounded-2xl md:rounded-3xl"
+            class="rounded-2xl aspect-video md:rounded-3xl"
           />
         </RouterLink>
         <!-- Mask -->
