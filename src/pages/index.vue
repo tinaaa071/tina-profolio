@@ -84,70 +84,76 @@
         <!-- Works 區塊 -->
         <div class="flex flex-col gap-2.5 cursor-default sm:gap-4">
           <!-- Works -->
-          <WorkCard />
+          <SlideIn direction="bottom">
+            <WorkCard />
+          </SlideIn>
           <!-- 其他資源 -->
           <div class="grid overflow-hidden grid-cols-1 gap-2.5 cursor-default lg:grid-cols-2 text-stone-900 dark:text-white h-fit sm:gap-4">
             <!-- Plugin 區塊 -->
-            <div class="flex flex-col p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
-              <div class="flex justify-between mb-4 lg:mb-10 xs:mb-6">
-                <p class="tracking-[.25em] text-xs xs:text-base xl:text-lg font-bold ">
-                  {{ $t('work.core.item1') }}
-                </p>
-                <p class="text-lg font-extrabold xs:text-2xl sm:text-3xl">
-                  Shape Mask
-                </p>
+            <SlideIn direction="left">
+              <div class="flex flex-col p-5 h-full bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
+                <div class="flex justify-between mb-4 lg:mb-10 xs:mb-6">
+                  <p class="tracking-[.25em] text-xs xs:text-base xl:text-lg font-bold ">
+                    {{ $t('work.core.item1') }}
+                  </p>
+                  <p class="text-lg font-extrabold xs:text-2xl sm:text-3xl">
+                    Shape Mask
+                  </p>
+                </div>
+                <RouterLink to="/" class="overflow-hidden relative w-full h-full bg-white rounded-2xl border border-white/20 sm:rounded-3xl">
+                  <img src="/plugin-banner.png" alt="" class="object-cover inset-0 w-full h-full transition-all duration-300 lg:absolute hover:scale-105">
+                </RouterLink>
               </div>
-              <RouterLink to="/" class="overflow-hidden relative w-full h-full bg-white rounded-2xl border border-white/20 sm:rounded-3xl">
-                <img src="/plugin-banner.png" alt="" class="object-cover inset-0 w-full h-full transition-all duration-300 lg:absolute hover:scale-105">
-              </RouterLink>
-            </div>
+            </SlideIn> 
 
             <!-- Blog 區塊 -->
-            <div class="p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
-              <div class="flex justify-between items-start mb-4 lg:mb-10 xs:mb-6">
-                <p class="tracking-[.25em]  text-xs xs:text-base xl:text-lg font-bold ">
-                  {{ $t('work.core.item1') }}
-                </p>
-                <div class="flex justify-end">
-                  
-                </div>
-                <WaveButton 
-                linkTo="/blog/blog"
-                :text="$t('work.core.item2')"
-                :borderClass="'border-stone-900 dark:border-white'"
-                :textClass="'text-black dark:text-white'"
-                :hoverTextClass="'dark:group-hover:text-stone-900 group-hover:text-white'"
-                :bgClass="'bg-stone-900 dark:bg-white'"
-                class="transform origin-top-right scale-75 sm:scale-100"
-                />
-              </div>
-              <div class="space-y-3 text-sm font-extrabold lg:space-y-5 xs:text-2xl text-stone-400 dark:text-stone-400">
-                <!-- Project Card -->
-                <!-- <RouterLink
-                  v-for="(date, index) in ['2024.06.12', '2024.06.12', '2024.06.12', '2024.06.12']"
-                  :key="date"
-                  :to="`/blog/post/${index + 1}`"
-                  class="inline-flex gap-6 w-full leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white text-stone-400"
-                >
-                  <time class="whitespace-nowrap">
-                    {{ `${date}` }}
-                  </time>
-                  <p class="w-full text-wrap overflow-wrap break-word line-clamp-2">
-                    {{ $t('post1.item1') }}
+            <SlideIn direction="right">
+              <div class="p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
+                <div class="flex justify-between items-start mb-4 lg:mb-10 xs:mb-6">
+                  <p class="tracking-[.25em]  text-xs xs:text-base xl:text-lg font-bold ">
+                    {{ $t('work.core.item1') }}
                   </p>
-                </RouterLink> -->
-                <div class="grid grid-cols-2 gap-4 xs:grid-cols-4 lg:grid-cols-3 h-fit">
-                  <PostCard 
-                    v-for="post in displayedPosts" 
-                    :key="post.id" 
-                    :post="post" 
-                    :showTag="true"
-                    :linkTo="post.link"
-                    aspectRatio="aspect-[4/5] group-hover:-translate-y-1 transition-transform duration-200 sm:rounded-3xl rounded-2xl"
+                  <div class="flex justify-end">
+                    
+                  </div>
+                  <WaveButton 
+                  linkTo="/blog/blog"
+                  :text="$t('work.core.item2')"
+                  :borderClass="'border-stone-900 dark:border-white'"
+                  :textClass="'text-black dark:text-white'"
+                  :hoverTextClass="'dark:group-hover:text-stone-900 group-hover:text-white'"
+                  :bgClass="'bg-stone-900 dark:bg-white'"
+                  class="transform origin-top-right scale-75 sm:scale-100"
                   />
                 </div>
+                <div class="space-y-3 text-sm font-extrabold lg:space-y-5 xs:text-2xl text-stone-400 dark:text-stone-400">
+                  <!-- Project Card -->
+                  <!-- <RouterLink
+                    v-for="(date, index) in ['2024.06.12', '2024.06.12', '2024.06.12', '2024.06.12']"
+                    :key="date"
+                    :to="`/blog/post/${index + 1}`"
+                    class="inline-flex gap-6 w-full leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white text-stone-400"
+                  >
+                    <time class="whitespace-nowrap">
+                      {{ `${date}` }}
+                    </time>
+                    <p class="w-full text-wrap overflow-wrap break-word line-clamp-2">
+                      {{ $t('post1.item1') }}
+                    </p>
+                  </RouterLink> -->
+                  <div class="grid grid-cols-2 gap-4 xs:grid-cols-4 lg:grid-cols-3 h-fit">
+                    <PostCard 
+                      v-for="post in displayedPosts" 
+                      :key="post.id" 
+                      :post="post" 
+                      :showTag="true"
+                      :linkTo="post.link"
+                      aspectRatio="aspect-[4/5] group-hover:-translate-y-1 transition-transform duration-200 sm:rounded-3xl rounded-2xl"
+                    />
+                  </div>
+                </div>
               </div>
-            </div>
+            </SlideIn>
           </div>
         </div>
       </div>
