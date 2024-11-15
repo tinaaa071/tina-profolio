@@ -15,7 +15,9 @@
           {{ $t('work.info.item5') }}
         </p>
         <ul class="font-light">
-          <li v-for="(service, index) in info2" :key="index">
+          <li v-for="(service, index) in info2" :key="index" 
+          class="relative pl-3 before:absolute before:left-0 before:top-1/2 before:transform before:-translate-y-1/2 before:h-0.5 before:w-1 before:bg-current"
+          >
             {{ service }}
           </li>
         </ul>
