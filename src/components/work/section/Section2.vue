@@ -10,7 +10,7 @@
         <div
           v-for="(brief, index) in briefs"
           :key="index"
-          class="p-4 text-justify rounded-2xl border sm:rounded-lg sm:p-6 border-stone-200"
+          class="p-4 text-justify rounded-2xl border transition-colors duration-75 sm:rounded-lg sm:p-6 border-stone-200 hover:bg-stone-50"
         >
           <p class="mb-2 font-semibold">
             {{ `${(index + 1).toString().padStart(2, '0')} ` }}&ensp;|&ensp;
