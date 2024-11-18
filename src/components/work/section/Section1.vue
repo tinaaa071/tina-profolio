@@ -1,7 +1,7 @@
 <!-- Info -->
 <template>
     <Section class="px-6">
-      <div class="grid gap-6 xl:grid-cols-10 xl:gap-10 xs:grid-cols-8">
+      <div class="grid gap-6 w-full xl:grid-cols-10 xl:gap-10 xs:grid-cols-8">
         <!-- Left -->
         <InfoCard
           class="xs:col-span-3"
@@ -26,7 +26,7 @@
             v-if="bgImg"
             :backgroundImage="bgImg"
             speed="0.08"
-            customClass="rounded-2xl xl:rounded-3xl aspect-video"
+            customClass="rounded-2xl xl:rounded-3xl aspect-video w-full"
           />
           
         </div>

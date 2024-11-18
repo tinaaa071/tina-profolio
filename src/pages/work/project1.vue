@@ -17,7 +17,7 @@
         :info2="$t('project1.info.item3')"
         :info3="'UX 研究、設計系統、UI & Prototype 設計'"
         :info4="$t('project1.info.item1')"
-        :tag="[$t('project1.info.item2'), $t('project1.info.item3'), $t('project1.info.item4')]" 
+        :tag="[$t('project1.info.item2'), $t('work.core.item3'), $t('project1.info.item4')]" 
         :iconsVisible="[true, false, true, true, false]"
         :linkTo="'/'"
         :icon="icon" 
