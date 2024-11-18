@@ -50,7 +50,13 @@
         "L6": "Native Speaker"
     },
     "tool":{
-        "T1": "Tools"
+        "T1": "Tools",
+        "S1": "UI/UX Design",
+        "S2": "Program Development",
+        "S3": "Design Tools",
+        "S4": "Project Management",
+        "I1": "TUniversity",
+        "I2": "TUniversity"
     },
     "work":{
         "T1": "Working Experience"

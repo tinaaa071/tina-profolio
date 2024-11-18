@@ -5,11 +5,11 @@
     <BackToTop class="z-20" />
     <!-- Profile 區塊 -->
      <div class="pt-40 pb-8 mx-auto md:pb-16 md:px-10 xl:px-28 md:pt-44">
-      <div class="w-10/12 mx-auto bg-white cursor-default dark:bg-stone-900 dark:text-white text-stone-800 ">
-            <div class="flex flex-col items-center w-full gap-6 md:gap-10 md:flex-row">
+      <div class="mx-auto w-10/12 bg-white cursor-default dark:bg-stone-900 dark:text-white text-stone-800">
+            <div class="flex flex-col gap-6 items-center w-full md:gap-10 md:flex-row">
               <!-- Img -->
               <div class="relative w-full h-64 xs:w-1/2 md:w-1/3 aspect-square">
-                <div class="absolute z-10 w-52 -top-12 -left-4">
+                <div class="absolute -left-4 -top-12 z-10 w-52">
                   <ChatBubble />
                 </div>
                 <CardTilt class="shadow bg-center bg-cover  w-full rounded-[64px] h-full bg-[url('https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]" />
@@ -30,11 +30,11 @@
     <!-- Value 區塊 -->
     <aboutSection 
     :title="$t('about.value.T1')"
-    class="bg-B4 dark:border-y dark:border-white/20 md:py-8"
+    class="bg-B4 dark:border-y dark:border-white/20"
     >
       <div class="flex flex-col">
       <!-- List Items -->
-      <div class="flex flex-col overflow-hidden divide-y sm:rounded-3xl rounded-2xl dark:border dark:border-white">
+      <div class="flex overflow-hidden flex-col rounded-2xl divide-y sm:rounded-3xl dark:border dark:border-white">
         <!-- List Items -->
         <div
           v-for="(item, index) in [
@@ -43,7 +43,7 @@
             { title: 'about.value.S3', content: 'about.value.V3' }
           ]"
           :key="index"
-          class="flex gap-6 p-6 text-xl font-semibold transition-colors duration-100 ease-in-out md:p-8 hover:bg-white dark:hover:bg-stone-800 "
+          class="flex gap-6 p-6 text-xl font-semibold transition-colors duration-100 ease-in-out md:p-8 hover:bg-white dark:hover:bg-stone-800"
         >
           <span>
             {{ index + 1 }}.
@@ -65,19 +65,17 @@
     <!-- Skills 區塊 -->
     <aboutSection
     :title="$t('about.skill.T1')"
-    class="md:py-8"
     >
       <div class="flex gap-2 sm:gap-3">
         <Tag
         :tag="[$t('about.skill.S1'), $t('about.skill.S2'), $t('about.skill.S3')]" 
-        class="bg-B1/20"
+        class="bg-B4"
         />
       </div>
     </aboutSection>
     <!-- Language 區塊 -->
     <aboutSection
     :title="$t('about.language.T1')"
-    class="md:py-8"
     >
     <div class="grid grid-cols-1 gap-4 xs:gap-6 xs:grid-cols-2">
         <!-- List Items -->
@@ -87,7 +85,7 @@
             { title: 'about.language.S2', content: 'about.language.L2' }
           ]"
           :key="index"
-          class="flex w-full gap-6 px-6 py-5 font-semibold border shadow sm:rounded-3xl rounded-2xl border-B4"
+          class="flex gap-6 px-6 py-5 w-full font-semibold rounded-2xl border shadow sm:rounded-3xl border-B4"
         >
           <div>
             <!-- Title -->
@@ -105,12 +103,11 @@
     <!-- Education 區塊 -->
     <aboutSection
     :title="$t('about.education.T1')"
-    class="md:py-8"
     >
     <div class="grid grid-cols-1 gap-4 xs:gap-6 xs:grid-cols-2">
         <!-- List Items -->
         <div
-          class="flex w-full gap-6 px-6 py-5 font-semibold border shadow sm:rounded-3xl rounded-2xl border-B4"
+          class="flex gap-6 px-6 py-5 w-full font-semibold rounded-2xl border shadow sm:rounded-3xl border-B4"
         >
           <div>
             <!-- Title -->
@@ -130,7 +127,6 @@
     <!-- Learning 區塊 -->
     <aboutSection
     :title="$t('about.certificate.T1')"
-    class="md:py-8"
     >
     <div class="grid grid-cols-1 gap-6 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
         <!-- List Items -->
@@ -149,16 +145,94 @@
       </div>
     </aboutSection>
     <!-- Tools 區塊 -->
-    <div class="py-8 mx-auto md:py-10 bg-B3 dark:bg-stone-800 xl:py-16">
+    <aboutSection
+    :title="$t('about.tool.T1')"
+    >
+      <div class="grid grid-cols-1 gap-6 xs:grid-cols-2">
+        <!-- 介面設計 -->
+        <div class="flex flex-col gap-3 xs: xs:gap-4 xs:flex-row">
+          <p class="font-semibold text-stone-400 max-w-28 text-wrap">
+            {{ $t('about.tool.S1') }}
+          </p>
+          <div class="flex flex-row gap-4 xs:gap-7">
+            <Icon
+                v-for="(image, index) in [
+                  { url: 'https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tooltip: 'Figma' },
+                  { url: 'https://images.unsplash.com/photo-1680169258027-3677d4c8e4f5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D', tooltip: 'Sketch' },
+                  { url: 'https://images.unsplash.com/photo-1680169276596-81eea2038a6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8', tooltip: '333' }
+                ]"
+                :key="index"
+                :imageUrl="image.url"
+                :tooltipText="image.tooltip"
+              />
+          </div>
+        </div>
+        <!-- 程式開發 -->
+        <div class="flex flex-col gap-3 xs: xs:gap-4 xs:flex-row">
+          <p class="font-semibold text-stone-400 max-w-28 text-wrap">
+            {{ $t('about.tool.S2') }}
+          </p>
+          <div class="flex flex-row gap-4 xs:gap-7">
+            <Icon
+                v-for="(image, index) in [
+                  { url: 'https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tooltip: 'Figma' },
+                  { url: 'https://images.unsplash.com/photo-1680169258027-3677d4c8e4f5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D', tooltip: 'Sketch' },
+                  { url: 'https://images.unsplash.com/photo-1680169276596-81eea2038a6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8', tooltip: '333' }
+                ]"
+                :key="index"
+                :imageUrl="image.url"
+                :tooltipText="image.tooltip"
+              />
+          </div>
+        </div>
+        <!-- 設計工具 -->
+        <div class="flex flex-col gap-3 xs: xs:gap-4 xs:flex-row">
+          <p class="font-semibold text-stone-400 max-w-28 text-wrap">
+            {{ $t('about.tool.S3') }}
+          </p>
+          <div class="flex flex-row gap-4 xs:gap-7">
+            <Icon
+                v-for="(image, index) in [
+                  { url: 'https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tooltip: 'Figma' },
+                  { url: 'https://images.unsplash.com/photo-1680169258027-3677d4c8e4f5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D', tooltip: 'Sketch' },
+                  { url: 'https://images.unsplash.com/photo-1680169276596-81eea2038a6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8', tooltip: '333' }
+                ]"
+                :key="index"
+                :imageUrl="image.url"
+                :tooltipText="image.tooltip"
+              />
+          </div>
+        </div>
+        <!-- 專案管理 -->
+        <div class="flex flex-col gap-3 xs: xs:gap-4 xs:flex-row">
+          <p class="font-semibold text-stone-400 max-w-28 text-wrap">
+            {{ $t('about.tool.S4') }}
+          </p>
+          <div class="flex flex-row gap-4 xs:gap-7">
+            <Icon
+                v-for="(image, index) in [
+                  { url: 'https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tooltip: 'Figma' },
+                  { url: 'https://images.unsplash.com/photo-1680169258027-3677d4c8e4f5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D', tooltip: 'Sketch' },
+                  { url: 'https://images.unsplash.com/photo-1680169276596-81eea2038a6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8', tooltip: '333' }
+                ]"
+                :key="index"
+                :imageUrl="image.url"
+                :tooltipText="image.tooltip"
+              />
+          </div>
+        </div>
+      </div>
+    </aboutSection>
+    <!-- <div class="py-8 mx-auto md:py-10 bg-B3 dark:bg-stone-800 xl:py-16">
       <p class="px-6 mb-8 text-xl font-semibold sm:px-10 xl:px-28">
         {{ $t('about.tool.T1') }}
       </p>
       <ToolMarquee />
-    </div>
+    </div> -->
     <!-- Work 區塊 -->
     <aboutSection
     :title="$t('about.work.T1')"
-    class="md:py-8 "
+    class="md:py-8"
     >
       <WorkAccordion
       v-for="(section, index) in sections"
