@@ -148,10 +148,10 @@
     <aboutSection
     :title="$t('about.tool.T1')"
     >
-      <div class="grid grid-cols-1 gap-6 xs:grid-cols-2">
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
         <!-- 介面設計 -->
-        <div class="flex flex-col gap-3 xs: xs:gap-4 xs:flex-row">
-          <p class="font-semibold text-stone-400 max-w-28 text-wrap">
+        <div class="flex flex-col gap-3 md:gap-4 md:flex-row">
+          <p class="font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S1') }}
           </p>
           <div class="flex flex-row gap-4 xs:gap-7">
@@ -168,8 +168,8 @@
           </div>
         </div>
         <!-- 程式開發 -->
-        <div class="flex flex-col gap-3 xs: xs:gap-4 xs:flex-row">
-          <p class="font-semibold text-stone-400 max-w-28 text-wrap">
+        <div class="flex flex-col gap-3 md:gap-4 md:flex-row">
+          <p class="font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S2') }}
           </p>
           <div class="flex flex-row gap-4 xs:gap-7">
@@ -186,8 +186,8 @@
           </div>
         </div>
         <!-- 設計工具 -->
-        <div class="flex flex-col gap-3 xs: xs:gap-4 xs:flex-row">
-          <p class="font-semibold text-stone-400 max-w-28 text-wrap">
+        <div class="flex flex-col gap-3 md:gap-4 md:flex-row">
+          <p class="font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S3') }}
           </p>
           <div class="flex flex-row gap-4 xs:gap-7">
@@ -204,8 +204,8 @@
           </div>
         </div>
         <!-- 專案管理 -->
-        <div class="flex flex-col gap-3 xs: xs:gap-4 xs:flex-row">
-          <p class="font-semibold text-stone-400 max-w-28 text-wrap">
+        <div class="flex flex-col gap-3 md:gap-4 md:flex-row">
+          <p class="font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S4') }}
           </p>
           <div class="flex flex-row gap-4 xs:gap-7">
