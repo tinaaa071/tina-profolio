@@ -1,11 +1,23 @@
 <!-- src/components/IconGroup.vue -->
 <template>
-    <div class="flex flex-col space-y-5 text-2xl text-white ">
+    <div class="flex flex-col items-center space-y-5 text-2xl text-white">
         <fa6-solid-envelope v-if="iconsVisible[0]" aria-hidden="true" />
         <fa6-solid-apple-whole v-if="iconsVisible[1]"  aria-hidden="true" />
-        <fa6-solid-apple-whole v-if="iconsVisible[2]"  aria-hidden="true" />
-        <fa6-solid-apple-whole v-if="iconsVisible[3]"  aria-hidden="true" />
-        <fa6-solid-apple-whole v-if="iconsVisible[4]"  aria-hidden="true" />
+        <Icon 
+        imageUrl="https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        tooltipText="image"
+        v-if="iconsVisible[2]"  aria-hidden="true" 
+        />
+        <Icon 
+        imageUrl="https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        tooltipText="image"
+        v-if="iconsVisible[3]"  aria-hidden="true" 
+        />
+        <Icon 
+        imageUrl="https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        tooltipText="image"
+        v-if="iconsVisible[4]"  aria-hidden="true" 
+        />
     </div>
   </template>
   
