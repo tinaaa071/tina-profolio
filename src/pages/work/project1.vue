@@ -79,22 +79,14 @@
             :title="$t('work.title.item4')"
           >
             <template #content>
-              <div>
-                <p class="mb-6 font-normal">
-                  {{ $t('project1.briefCard.item1') }}
-                </p>
-                <!-- <CardTilt>
-                  <img 
-                  src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
-                >
-                </CardTilt> -->
-                <Parallax
-                backgroundImage="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                speed="0.08"
-                customClass="rounded-2xl xl:rounded-3xl aspect-video"
-              />
-              </div>
+              <StackCard>
+                <template #card0>
+                  <p>This is custom content for Card 1.</p>
+                </template>
+                <template #card1>
+                  <p>This is custom content for Card 2.</p>
+                </template>
+              </StackCard>
             </template>
           </Section3>
           <Section3

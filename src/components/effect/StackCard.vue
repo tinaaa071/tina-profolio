@@ -1,18 +1,13 @@
 <template>
     <div id="smooth-wrapper">
       <div id="smooth-content">
-        <div class="mb-40">
-          <ul class="grid gap-[6vw] pb-[calc(4*2em)]">
-            <li 
-              v-for="(card, index) in cards" 
-              :key="index" 
-              class="flex justify-center items-center transition-all duration-500 ease-in-out" 
-              :class="[{ 'sticky': index === stickyIndex }, 'relative']" 
-              ref="cardItems"
-              :style="{ backgroundColor: cardColors[index] }"
-            >
-              <div class="w-full p-12 rounded-[3rem] shadow-xl text-center text-[#1c1c1c]">
-                <h3>Card {{ index + 1 }}</h3>
+        <div class="card-container">
+          <ul class="card-stack">
+            <li v-for="(card, index) in cards" :key="index" class="card-item" ref="cardItems" :class="{ 'sticky': index === stickyIndex }">
+              <div :class="['card-body', cardColor[index]]">
+                <!-- Slot for dynamic content inside card-body -->
+                <slot :name="'card' + index">
+                </slot>
               </div>
             </li>
           </ul>
@@ -28,8 +23,11 @@
   export default {
     data() {
       return {
-        cards: [1, 2, 3, 4], // Assuming you have 4 cards
-        cardColors: ['#F79E1B', '#FF5733', '#00BCD4', '#4CAF50'], // Example colors, you can modify as needed
+        cards: [1, 2], // Assuming you have 4 cards
+        cardColor: [
+        'bg-stone-500 dark:bg-white', // Tailwind color classes
+        'bg-B3 dark:bg-stone-500',
+      ],
         stickyIndex: -1, // Index of the currently sticky card, -1 for none
         spacer: 20,
         minScale: 0.8,
@@ -78,4 +76,32 @@
     },
   };
   </script>
+  
+  <style scoped>
+  :root {
+    --cardHeight: 200px;
+    --cardTopPadding: 2em;
+    --cardMargin: 6vw;
+  }
+  
+  .card-container {
+    @apply mb-12;
+  }
+  
+  .card-stack {
+    @apply list-none grid grid-cols-1 gap-[var(--cardMargin)] pb-[calc(var(--cards)*var(--cardTopPadding))] mb-[var(--cardMargin)];
+  }
+  
+  .card-item {
+    position: relative;
+  }
+  
+  .card-item.sticky {
+    transform: scale(1);
+  }
+  
+  .card-body {
+    @apply p-12 rounded-2xl xl:rounded-3xl flex justify-center items-center text-center text-stone-900 w-full;
+  }
+  </style>
   
