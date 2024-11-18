@@ -1,6 +1,6 @@
 <template>
   <RouterLink :to="linkTo" 
-  class="text-center px-4 py-2.5 border-2  rounded-full transition-colors ease-in-out duration-300 flex items-center justify-center"
+  class="flex justify-center items-center px-4 py-2.5 text-center rounded-full border-2 transition-colors duration-300 ease-in-out"
   >
     <!-- Left Icon -->
     <div v-if="showLeftIcon" class="mr-2">
@@ -26,11 +26,11 @@ export default {
         },
         showLeftIcon: {
             type: Boolean,
-            default: true,
+            default: false,
         },
         showRightIcon: {
             type: Boolean,
-            default: true,
+            default: false,
         },
         icon: {
             type: [Object, Function],

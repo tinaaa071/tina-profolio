@@ -10,7 +10,8 @@
         "item1": "Info",
         "item2": "Overview",
         "item3": "Background",
-        "item4": "Design System"
+        "item4": "Project Goal",
+        "item5": "Design System"
     },
     "info":{
         "item1": "Duration",

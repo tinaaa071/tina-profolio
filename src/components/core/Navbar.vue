@@ -61,7 +61,6 @@
                 <li>
                   <DefaultButton 
                    :to="'/'"
-                   :showLeftIcon="false"
                    :showRightIcon="true"
                    :icon="icon"
                    :text="$t('nav.item6')"
@@ -118,16 +117,16 @@
 <script>
 import { computed, ref, onMounted, onBeforeUnmount } from "vue";
 import { useRoute } from 'vue-router';
-import MingcuteEarth3Fill from '~icons/mingcute/earth-3-fill';
+import MingcuteArrowDownCircleFill from '~icons/mingcute/arrow-down-circle-fill';
 // import logoDark from '@/assets/logo-w.json';
 
 export default {
   components: {
-    MingcuteEarth3Fill,
+    MingcuteArrowDownCircleFill,
   },
   data() {
     return {
-      icon: MingcuteEarth3Fill, 
+      icon: MingcuteArrowDownCircleFill, 
     };
   },
   setup() {

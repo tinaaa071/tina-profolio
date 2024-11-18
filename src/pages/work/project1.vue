@@ -26,7 +26,7 @@
         <!-- Main Content -->
         <div>
           <ScrollSpy :sections="sections" />
-          <!-- Section1 -->
+          <!-- 專案資訊 -->
           <Section1
           id="section1"
           :info1="$t('project1.info.item1')"
@@ -39,7 +39,7 @@
           :content="$t('work.core.item5')"
           bgImg="https://images.unsplash.com/photo-1723904187003-807a2f7c8311?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
-          <!-- Section2 -->
+          <!-- 專案概覽 -->
           <Section2
             id="section2"
             :briefs="[
@@ -49,6 +49,7 @@
             { title: $t('work.briefCard.item4'), content: $t('project1.briefCard.item4') }
           ]"
           />
+          <!-- 專案背景 -->
           <Section3
             id="section3"
             :title="$t('work.title.item3')"
@@ -72,9 +73,33 @@
               </div>
             </template>
           </Section3>
+          <!-- 專案目標 -->
           <Section3
             id="section4"
             :title="$t('work.title.item4')"
+          >
+            <template #content>
+              <div>
+                <p class="mb-6 font-normal">
+                  {{ $t('project1.briefCard.item1') }}
+                </p>
+                <!-- <CardTilt>
+                  <img 
+                  src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                >
+                </CardTilt> -->
+                <Parallax
+                backgroundImage="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                speed="0.08"
+                customClass="rounded-2xl xl:rounded-3xl aspect-video"
+              />
+              </div>
+            </template>
+          </Section3>
+          <Section3
+            id="section5"
+            :title="$t('work.title.item5')"
           >
             <template #content>
               <div class="grid overflow-hidden grid-cols-1 rounded-2xl divide-y drop-shadow xl:rounded-3xl dark:border dark:border-white dark:divide-white divide-B2">
@@ -132,6 +157,7 @@
         { id: 'section2', name: 'work.title.item2' },
         { id: 'section3', name: 'work.title.item3' },
         { id: 'section4', name: 'work.title.item4' },
+        { id: 'section5', name: 'work.title.item5' },
       ],
     };
   },
