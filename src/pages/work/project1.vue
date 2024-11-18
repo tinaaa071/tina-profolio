@@ -37,7 +37,7 @@
             { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project1.info.item5'), name: 'Jane Smith' }
           ]"
           :content="$t('work.core.item5')"
-          bannerSrc="https://images.unsplash.com/photo-1723904187003-807a2f7c8311?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          bgImg="https://images.unsplash.com/photo-1723904187003-807a2f7c8311?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
           <!-- Section2 -->
           <Section2
@@ -58,12 +58,17 @@
                 <p class="mb-6 font-normal">
                   {{ $t('project1.briefCard.item1') }}
                 </p>
-                <CardTilt>
+                <!-- <CardTilt>
                   <img 
                   src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
                 >
-                </CardTilt>
+                </CardTilt> -->
+                <Parallax
+                backgroundImage="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                speed="0.08"
+                customClass="rounded-2xl xl:rounded-3xl aspect-video"
+              />
               </div>
             </template>
           </Section3>

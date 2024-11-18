@@ -257,6 +257,8 @@
         </Modal>
     </aboutSection>
   </div>
+  <!-- Footer -->
+  <Footer />
 </template>
 
 <script>

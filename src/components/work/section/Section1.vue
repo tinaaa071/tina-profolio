@@ -15,13 +15,19 @@
           <p class="mb-6 font-normal">
             {{ content }}
           </p>
-          <CardTilt>
+          <CardTilt v-if="bannerSrc">
             <img 
-            :src="bannerSrc"
-            alt="Avatar"
-            class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
-          >
+              :src="bannerSrc"
+              alt="Avatar"
+              class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+            >
           </CardTilt>
+          <Parallax
+            v-if="bgImg"
+            :backgroundImage="bgImg"
+            speed="0.08"
+            customClass="rounded-2xl xl:rounded-3xl aspect-video"
+          />
           
         </div>
       </div>
@@ -52,6 +58,10 @@
         required: true,
       },
       bannerSrc: {
+        type: String,
+        default: '',
+      },
+      bgImg: {
         type: String,
         default: '',
       },
