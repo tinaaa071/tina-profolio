@@ -43,10 +43,10 @@
           <Section2
             id="section2"
             :briefs="[
-            { title: $t('work.briefCard.item1'), content: $t('project1.briefCard.item1') },
-            { title: $t('work.briefCard.item2'), content: $t('project1.briefCard.item2') },
-            { title: $t('work.briefCard.item3'), content: $t('project1.briefCard.item3') },
-            { title: $t('work.briefCard.item4'), content: $t('project1.briefCard.item4') }
+            { title: $t('work.title.item2-1'), content: $t('project1.briefCard.item1') },
+            { title: $t('work.title.item2-2'), content: $t('project1.briefCard.item2') },
+            { title: $t('work.title.item2-3'), content: $t('project1.briefCard.item3') },
+            { title: $t('work.title.item2-4'), content: $t('project1.briefCard.item4') }
           ]"
           />
           <!-- 專案背景 -->
@@ -73,25 +73,58 @@
               </div>
             </template>
           </Section3>
+          <!-- 設計流程 -->
+          <section id="section4" >
+            <Parallax 
+            class="h-96"
+            backgroundImage="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </section>
           <!-- 專案目標 -->
           <Section3
-            id="section4"
-            :title="$t('work.title.item4')"
+            id="section5"
+            :title="$t('work.title.item5')"
           >
             <template #content>
               <StackCard>
                 <template #card0>
-                  <p>This is custom content for Card 1.</p>
+                  <div>
+                    <p class="mb-6 text-xl font-semibold text-white dark:text-stone-900">
+                      {{ $t('work.title.item5-1') }}
+                    </p>
+                    <p class="mb-3 font-semibold text-B1">
+                      {{ $t('work.title.item5-1') }}
+                    </p>
+                    <p class="text-sm font-normal text-B1">
+                      {{ $t('work.title.item5-1') }}
+                    </p>
+                  </div>
                 </template>
                 <template #card1>
-                  <p>This is custom content for Card 2.</p>
+                  <div class="mb-6">
+                    <p class="mb-6 text-xl font-semibold text-stone-900 dark:text-white">
+                      {{ $t('work.title.item5-1') }}
+                    </p>
+                    <p class="mb-3 font-semibold text-B1 dark:text-B1">
+                      {{ $t('work.title.item5-1') }}
+                    </p>
+                    <p class="text-sm font-normal text-B1 dark:text-B1">
+                      {{ $t('work.title.item5-1') }}
+                    </p>
+                  </div>
+                  <CardTilt>
+                    <img 
+                    src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                  >
+                  </CardTilt>
                 </template>
               </StackCard>
             </template>
           </Section3>
           <Section3
-            id="section5"
-            :title="$t('work.title.item5')"
+            id="section6"
+            :title="$t('work.title.item6')"
           >
             <template #content>
               <div class="grid overflow-hidden grid-cols-1 rounded-2xl divide-y drop-shadow xl:rounded-3xl dark:border dark:border-white dark:divide-white divide-B2">
@@ -150,6 +183,7 @@
         { id: 'section3', name: 'work.title.item3' },
         { id: 'section4', name: 'work.title.item4' },
         { id: 'section5', name: 'work.title.item5' },
+        { id: 'section6', name: 'work.title.item6' },
       ],
     };
   },

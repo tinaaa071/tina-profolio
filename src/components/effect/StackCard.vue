@@ -25,8 +25,8 @@
       return {
         cards: [1, 2], // Assuming you have 4 cards
         cardColor: [
-        'bg-stone-500 dark:bg-white', // Tailwind color classes
-        'bg-B3 dark:bg-stone-500',
+        'bg-stone-900 dark:bg-B3', // Tailwind color classes
+        'bg-B3 dark:bg-stone-700',
       ],
         stickyIndex: -1, // Index of the currently sticky card, -1 for none
         spacer: 20,
@@ -54,6 +54,7 @@
               trigger: card,
               start: 'top top',
               scrub: true,
+              markers: false,
             },
             ease: 'none',
             scale: scaleVal,
@@ -63,7 +64,7 @@
             trigger: card,
             start: `top-=${index * this.spacer} top`,
             endTrigger: '.card-container',
-            end: `bottom top+=${200 + cards.length * this.spacer}`,
+            end: `bottom top+=${500 + cards.length * this.spacer}`,
             pin: true,
             pinSpacing: false,
             invalidateOnRefresh: true,
@@ -84,10 +85,6 @@
     --cardMargin: 6vw;
   }
   
-  .card-container {
-    @apply mb-12;
-  }
-  
   .card-stack {
     @apply list-none grid grid-cols-1 gap-[var(--cardMargin)] pb-[calc(var(--cards)*var(--cardTopPadding))] mb-[var(--cardMargin)];
   }
@@ -101,7 +98,7 @@
   }
   
   .card-body {
-    @apply p-12 rounded-2xl xl:rounded-3xl flex justify-center items-center text-center text-stone-900 w-full;
+    @apply p-6 rounded-2xl xl:rounded-3xl w-full;
   }
   </style>
   
