@@ -89,10 +89,10 @@
               <StackCard>
                 <template #card0>
                   <div>
-                    <p class="mb-6 text-xl font-semibold text-white dark:text-stone-900">
+                    <p class="mb-3 font-semibold text-white sm:mb-6 sm:text-xl dark:text-stone-900">
                       {{ $t('work.title.item5-1') }}
                     </p>
-                    <p class="mb-3 font-semibold text-B1">
+                    <p class="mb-1 text-sm font-semibold sm:mb-3 text-B1 sm:text-base">
                       {{ $t('work.title.item5-1') }}
                     </p>
                     <p class="text-sm font-normal text-B1">
@@ -102,13 +102,13 @@
                 </template>
                 <template #card1>
                   <div class="mb-6">
-                    <p class="mb-6 text-xl font-semibold text-stone-900 dark:text-white">
+                    <p class="mb-3 font-semibold sm:mb-6 sm:text-xl text-stone-900 dark:text-white">
+                      {{ $t('work.title.item5-2') }}
+                    </p>
+                    <p class="mb-1 text-sm font-semibold sm:mb-3 sm:text-base text-B1 dark:text-stone-400">
                       {{ $t('work.title.item5-1') }}
                     </p>
-                    <p class="mb-3 font-semibold text-B1 dark:text-B1">
-                      {{ $t('work.title.item5-1') }}
-                    </p>
-                    <p class="text-sm font-normal text-B1 dark:text-B1">
+                    <p class="text-sm font-normal text-B1 dark:text-stone-400">
                       {{ $t('work.title.item5-1') }}
                     </p>
                   </div>
@@ -122,9 +122,19 @@
               </StackCard>
             </template>
           </Section3>
+          <!-- 前期研究 -->
           <Section3
             id="section6"
             :title="$t('work.title.item6')"
+          >
+            <template #content>
+              <SurveyCard />
+            </template>
+          </Section3>
+          <!-- 設計產出 -->
+          <Section3
+            id="section10"
+            :title="$t('work.title.item10')"
           >
             <template #content>
               <div class="grid overflow-hidden grid-cols-1 rounded-2xl divide-y drop-shadow xl:rounded-3xl dark:border dark:border-white dark:divide-white divide-B2">
@@ -154,6 +164,7 @@
             </template>  
           </Section3>
           <hr class="border-stone-300 dark:border-white/20">
+          <!-- 下一個專案 -->
           <SectionNext 
           :title="$t('project2.core.title')"
           :linkTo="'/'"
@@ -184,6 +195,7 @@
         { id: 'section4', name: 'work.title.item4' },
         { id: 'section5', name: 'work.title.item5' },
         { id: 'section6', name: 'work.title.item6' },
+        { id: 'section10', name: 'work.title.item10' },
       ],
     };
   },

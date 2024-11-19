@@ -98,7 +98,7 @@
   }
   
   .card-body {
-    @apply p-6 rounded-2xl xl:rounded-3xl w-full;
+    @apply p-4 sm:p-6 rounded-2xl xl:rounded-3xl w-full;
   }
   </style>
   
