@@ -34,19 +34,19 @@
         <!-- Info Sections -->
         <div class="grid grid-cols-1 gap-4 sm:gap-8 xs:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p class="mb-2">{{ $t('work.info.item1') }}</p>
+            <p class="mb-1 sm:mb-2">{{ $t('work.info.item1') }}</p>
             <p class="font-light">{{ info1 }}</p>
           </div>
           <div>
-            <p class="mb-2">{{ $t('work.info.item2') }}</p>
+            <p class="mb-1 sm:mb-2">{{ $t('work.info.item2') }}</p>
             <p class="font-light">{{ info2 }}</p>
           </div>
           <div>
-            <p class="mb-2">{{ $t('work.info.item3') }}</p>
+            <p class="mb-1 sm:mb-2">{{ $t('work.info.item3') }}</p>
             <p class="font-light">{{ info3 }}</p>
           </div>
           <div>
-            <p class="mb-2">{{ $t('work.info.item4') }}</p>
+            <p class="mb-1 sm:mb-2">{{ $t('work.info.item4') }}</p>
             <p class="font-light">{{ info4 }}</p>
           </div>
         </div>

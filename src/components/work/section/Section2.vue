@@ -2,11 +2,11 @@
 <template>
     <Section class="flex flex-col gap-4 px-6 text-center md:gap-8">
       <!-- Title -->
-      <p class="text-2xl font-bold md:text-3xl">
+      <p class="text-xl font-bold md:text-3xl">
         {{ $t('work.title.item2') }}
       </p>
       <!-- Grid -->
-      <div class="grid gap-3 text-left sm:grid-cols-2">
+      <div class="grid gap-2 text-left sm:gap-3 sm:grid-cols-2">
         <div
           v-for="(brief, index) in briefs"
           :key="index"

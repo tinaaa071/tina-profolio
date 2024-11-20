@@ -8,7 +8,7 @@
     <div
       ref="stickyTitle"
       :class="[
-        'sticky top-0 text-sm font-semibold md:top-5 md:col-span-2 text-B1 dark:text-white h-fit transition duration-300 z-10 text-center md:text-left ',
+        'sticky top-0 text-xl md:text-sm font-semibold md:top-5 md:col-span-2 text-stone-900 md:text-B1 dark:text-white h-fit transition duration-300 z-10 text-center md:text-left ',
         isSticky
           ? 'w-full flex justify-center from-stone-300/60 text-B1 dark:text-white text-center py-4 backdrop-blur bg-gradient-to-b '
           : '',

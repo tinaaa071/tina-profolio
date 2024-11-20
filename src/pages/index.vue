@@ -36,7 +36,7 @@
               <div class="absolute bottom-0 z-10">
                 <ArrowButton link-to="" @click="isModalOpen = true" />
               </div>
-              <div class="z-0 w-full h-full bg-center bg-cover rounded-3xl transition-transform duration-500 ease-in-out transform hover:scale-110"
+              <div class="z-0 w-full h-full bg-center bg-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
               style="background-image: url(https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
               </div>
             </div>
@@ -52,8 +52,8 @@
               >
               {{ $t('hero.item9') }}
               </p>
-              <div class="w-full h-full bg-center bg-cover rounded-3xl brightness-75 transition-transform duration-500 ease-in-out transform -z-10 hover:scale-110"
-              style="background-image: url(https://images.unsplash.com/photo-1724271366025-5bbfc5fbdb70?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+              <div class="w-full h-full bg-center bg-cover brightness-75 transition-transform duration-500 ease-in-out transform -z-10 hover:scale-110 bg-[url('https://images.unsplash.com/photo-1724271366025-5bbfc5fbdb70?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+              >
               </div>
             </div>
           </RouterLink>

@@ -43,7 +43,7 @@
             { title: 'about.value.S3', content: 'about.value.V3' }
           ]"
           :key="index"
-          class="flex gap-6 p-6 text-xl font-semibold transition-colors duration-100 ease-in-out md:p-8 hover:bg-white dark:hover:bg-stone-800"
+          class="flex gap-6 p-6 font-semibold transition-colors duration-100 ease-in-out md:p-8 hover:bg-white dark:hover:bg-stone-800"
         >
           <span>
             {{ index + 1 }}.
@@ -54,7 +54,7 @@
               {{ $t(item.title) }}
             </p>
             <!-- Content -->
-            <p class="text-base font-medium text-stone-700 dark:text-stone-300">
+            <p class="font-medium text-stone-700 dark:text-stone-300">
               {{ $t(item.content) }}
             </p>
           </div>
@@ -148,10 +148,10 @@
     <aboutSection
     :title="$t('about.tool.T1')"
     >
-      <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div class="grid grid-cols-1 gap-6 cursor-default md:grid-cols-2">
         <!-- 介面設計 -->
         <div class="flex flex-col gap-3 md:gap-4 md:flex-row">
-          <p class="font-semibold text-stone-400 md:max-w-28 text-wrap">
+          <p class="text-sm font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S1') }}
           </p>
           <div class="flex flex-row gap-4 xs:gap-7">
@@ -169,7 +169,7 @@
         </div>
         <!-- 程式開發 -->
         <div class="flex flex-col gap-3 md:gap-4 md:flex-row">
-          <p class="font-semibold text-stone-400 md:max-w-28 text-wrap">
+          <p class="text-sm font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S2') }}
           </p>
           <div class="flex flex-row gap-4 xs:gap-7">
@@ -187,7 +187,7 @@
         </div>
         <!-- 設計工具 -->
         <div class="flex flex-col gap-3 md:gap-4 md:flex-row">
-          <p class="font-semibold text-stone-400 md:max-w-28 text-wrap">
+          <p class="text-sm font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S3') }}
           </p>
           <div class="flex flex-row gap-4 xs:gap-7">
@@ -205,7 +205,7 @@
         </div>
         <!-- 專案管理 -->
         <div class="flex flex-col gap-3 md:gap-4 md:flex-row">
-          <p class="font-semibold text-stone-400 md:max-w-28 text-wrap">
+          <p class="text-sm font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S4') }}
           </p>
           <div class="flex flex-row gap-4 xs:gap-7">

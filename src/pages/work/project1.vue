@@ -86,13 +86,17 @@
             :title="$t('work.title.item5')"
           >
             <template #content>
-              <StackCard>
+              <StackCard
+                :cards="[1, 2]"
+                :cardColors="['bg-stone-900 dark:bg-B3', 'bg-B3 dark:bg-stone-700']"
+                :scrollEndOffset="500"
+              >
                 <template #card0>
                   <div>
-                    <p class="mb-3 font-semibold text-white sm:mb-6 sm:text-xl dark:text-stone-900">
+                    <p class="mb-2 font-semibold text-white md:mb-3 sm:mb-6 md:text-xl dark:text-stone-900">
                       {{ $t('work.title.item5-1') }}
                     </p>
-                    <p class="mb-1 text-sm font-semibold sm:mb-3 text-B1 sm:text-base">
+                    <p class="mb-1 text-sm font-semibold sm:mb-3 md:text-base text-B1 sm:text-base">
                       {{ $t('work.title.item5-1') }}
                     </p>
                     <p class="text-sm font-normal text-B1">
@@ -102,10 +106,10 @@
                 </template>
                 <template #card1>
                   <div class="mb-6">
-                    <p class="mb-3 font-semibold sm:mb-6 sm:text-xl text-stone-900 dark:text-white">
+                    <p class="mb-2 font-semibold md:mb-3 sm:mb-6 md:text-xl text-stone-900 dark:text-white">
                       {{ $t('work.title.item5-2') }}
                     </p>
-                    <p class="mb-1 text-sm font-semibold sm:mb-3 sm:text-base text-B1 dark:text-stone-400">
+                    <p class="mb-1 text-sm font-semibold sm:mb-3 md:text-base text-B1 dark:text-stone-400">
                       {{ $t('work.title.item5-1') }}
                     </p>
                     <p class="text-sm font-normal text-B1 dark:text-stone-400">
@@ -128,7 +132,32 @@
             :title="$t('work.title.item6')"
           >
             <template #content>
-              <SurveyCard />
+              <SurveyCard :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
+                <!-- Background Images -->
+                <template #backgrounds>
+                  <img src="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                  <img src="https://media.istockphoto.com/id/1043898904/photo/cobblestone-street-stockhom-sweden.webp?a=1&s=612x612&w=0&k=20&c=T51JUb6d8n9Vw56FPhM8SoC0YE5WhMiZL7O883d7mUc=" />
+                  <img src="https://images.unsplash.com/photo-1731141707768-76d857b0f82d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D" />
+                </template>
+
+                <!-- Tab Contents -->
+                <template #default="{ activeTab }">
+                  <div v-if="activeTab === 1">
+                    我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
+                  </div>
+                  <div v-if="activeTab === 2">
+                    <CardTilt>
+                      <img 
+                      src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                    >
+                    </CardTilt>
+                  </div>
+                  <div v-if="activeTab === 3">
+                    我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
+                  </div>
+                </template>
+              </SurveyCard>
             </template>
           </Section3>
           <!-- 設計產出 -->

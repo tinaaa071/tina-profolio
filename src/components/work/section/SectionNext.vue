@@ -1,6 +1,6 @@
 <template>
     <Section
-      class="flex flex-col items-center py-8 w-full text-center md:py-16"
+      class="flex flex-col items-center px-6 py-8 w-full text-center md:py-16"
     >
       <!-- Title -->
       <p class="mb-6 font-semibold md:text-lg text-stone-500 md:mb-8 dark:text-white">
@@ -9,7 +9,7 @@
       <!-- Project -->
       <p
         :class="[
-          'mb-6 text-2xl sm:text-4xl font-semibold transition-colors duration-300 ease-in-out',
+          'mb-6 text-xl sm:text-4xl font-semibold transition-colors duration-300 ease-in-out',
           isHovered ? 'text-stone-300 dark:text-stone-500 blur-sm' : 'text-stone-500 dark:text-stone-300'
         ]"
       >
@@ -33,7 +33,7 @@
         </RouterLink>
         <!-- Mask -->
         <div
-          class="absolute bottom-0 left-0 z-10 w-full h-20 bg-white border-t dark:bg-stone-900 border-B2/70 md:h-32"
+          class="absolute bottom-0 z-10 mx-auto w-11/12 h-20 bg-white border-t md:w-full dark:bg-stone-900 border-B2/70 md:h-32"
         ></div>
         <!-- Button -->
       <MagneticButton

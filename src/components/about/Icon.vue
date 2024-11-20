@@ -9,7 +9,7 @@
   
       <!-- Tooltip -->
       <div 
-        class="absolute bottom-0 left-1/2 px-2 py-1 text-xs text-white rounded-md opacity-0 transition duration-300 transform -translate-x-1/2 translate-y-full bg-stone-900 group-hover:opacity-100 dark:bg-white dark:text-stone-900"
+        class="absolute bottom-0 left-1/2 z-10 px-2 py-1 text-xs text-white rounded-md opacity-0 transition duration-300 transform -translate-x-1/2 translate-y-full bg-stone-900 group-hover:opacity-100 dark:bg-white dark:text-stone-900"
       >
         {{ tooltipText }}
       </div>
