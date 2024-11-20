@@ -158,6 +158,7 @@
                   </div>
                 </template>
               </SurveyCard>
+              <EnlargeImg class="mx-auto" imageUrl="https://images.unsplash.com/photo-1731141028854-ed2dc691a6a2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" />
             </template>
           </Section3>
           <!-- 設計產出 -->
