@@ -18,7 +18,9 @@ export default {
         'B1': '#A2866D',
         'B2': '#E0DCCA',
         'B3': '#EFECE5',
-        'B4': '#F8F7F2'
+        'B4': '#F8F7F2',
+        'B5': '#C8BBA9',
+        'B6': '#2C221E',
       },
       screens: {
         xs: '512px'

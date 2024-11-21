@@ -1,6 +1,6 @@
 <!-- Info -->
 <template>
-    <Section class="px-6">
+    <Section class="px-6 xl:px-56 md:p-10">
       <div class="grid gap-6 w-full xl:grid-cols-10 xl:gap-10 xs:grid-cols-8">
         <!-- Left -->
         <InfoCard

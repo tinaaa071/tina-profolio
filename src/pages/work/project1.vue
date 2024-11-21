@@ -54,7 +54,7 @@
             id="section3"
             :title="$t('work.title.item3')"
           >
-            <template #content>
+            <template #content-1>
               <div>
                 <p class="mb-6 font-normal">
                   {{ $t('project1.briefCard.item1') }}
@@ -85,7 +85,7 @@
             id="section5"
             :title="$t('work.title.item5')"
           >
-            <template #content>
+            <template #content-1>
               <StackCard
                 :cards="[1, 2]"
                 :cardColors="['bg-stone-900 dark:bg-B3', 'bg-B3 dark:bg-stone-700']"
@@ -131,8 +131,8 @@
             id="section6"
             :title="$t('work.title.item6')"
           >
-            <template #content>
-              <SurveyCard :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
+            <template #content-1>
+              <TabCard :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
                 <!-- Background Images -->
                 <template #backgrounds>
                   <img src="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
@@ -157,16 +157,16 @@
                     我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
                   </div>
                 </template>
-              </SurveyCard>
+              </TabCard>
               <EnlargeImg class="mx-auto" imageUrl="https://images.unsplash.com/photo-1731141028854-ed2dc691a6a2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" />
             </template>
           </Section3>
           <!-- 設計產出 -->
           <Section3
             id="section10"
-            :title="$t('work.title.item10')"
+            :title="$t('work.title.item11')"
           >
-            <template #content>
+            <template #content-1>
               <div class="grid overflow-hidden grid-cols-1 rounded-2xl divide-y drop-shadow xl:rounded-3xl dark:border dark:border-white dark:divide-white divide-B2">
                 <!-- Color -->
                 <Accordion
@@ -190,6 +190,41 @@
                   >
                   </CardTilt>
                 </Accordion>
+              </div>
+            </template>  
+            <template #content-2>
+              <div class="bg-B5">
+                <div class="">
+                  <TabCard 
+                  class="px-6 border-transparent xl:px-56 md:p-10"
+                  :customClass="[bg-transparent, p-0]"
+                  :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
+                    <!-- Tab Contents -->
+                    <template #default="{ activeTab }">
+                      <div v-if="activeTab === 1">
+                        我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
+                      </div>
+                      <div v-if="activeTab === 2" class="relative px-12">
+                        <CardTilt>
+                          <img 
+                          src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                          class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                        >
+                        </CardTilt>
+                        <div class="hidden absolute -left-44 top-2/3 xl:block">
+                          <HoverIconButton 
+                          class=""
+                          icon="💡"
+                          text="我們針對周遭人們 Work From Home 之後我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。"
+                          />
+                        </div>
+                      </div>
+                      <div v-if="activeTab === 3">
+                        我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
+                      </div>
+                    </template>
+                  </TabCard>
+                </div>
               </div>
             </template>  
           </Section3>
@@ -225,7 +260,7 @@
         { id: 'section4', name: 'work.title.item4' },
         { id: 'section5', name: 'work.title.item5' },
         { id: 'section6', name: 'work.title.item6' },
-        { id: 'section10', name: 'work.title.item10' },
+        { id: 'section10', name: 'work.title.item11' },
       ],
     };
   },

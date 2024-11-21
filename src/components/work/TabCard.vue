@@ -21,7 +21,10 @@
       </div>
   
       <!-- Bottom Section -->
-      <div class="p-3 text-sm rounded-xl backdrop-blur-sm sm:p-4 sm:rounded-2xl bg-white/60 dark:bg-stone-900/40 sm:text-base">
+      <div 
+      class="text-sm rounded-xl sm:rounded-2xl sm:text-base"
+      :class="customClass"
+      >
         <SkeletonLoader v-if="loading" size="full" />
         <TabTransition v-else>
           <slot :active-tab="activeTab" />
@@ -38,6 +41,10 @@
       buttons: {
         type: Array,
         required: true,
+      },
+      customClass: {
+        type: Array,
+        default: 'p-3 sm:p-4 backdrop-blur-sm bg-white/60 dark:bg-stone-900/40',
       },
     },
     setup(_, { slots }) {

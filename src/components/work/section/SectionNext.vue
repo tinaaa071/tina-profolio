@@ -1,6 +1,6 @@
 <template>
     <Section
-      class="flex flex-col items-center px-6 py-8 w-full text-center md:py-16"
+      class="flex flex-col items-center px-6 pt-8 pb-12 w-full text-center md:py-16"
     >
       <!-- Title -->
       <p class="mb-6 font-semibold md:text-lg text-stone-500 md:mb-8 dark:text-white">
