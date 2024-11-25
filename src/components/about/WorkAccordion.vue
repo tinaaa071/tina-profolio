@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden border shadow rounded-2xl sm:rounded-3xl border-B4">
+    <div class="overflow-hidden rounded-2xl border shadow sm:rounded-3xl border-B4">
       <!-- Title -->
       <button
         @click="toggle"
@@ -7,20 +7,20 @@
           'bg-B4 text-B1 dark:bg-stone-800 dark:border-b dark:border-white dark:text-white ': isOpen,
           'bg-stone-50 text-stone-600 dark:bg-transparent dark:text-stone-300 ': !isOpen
         }"
-        class="relative flex items-center w-full px-4 py-3 overflow-hidden text-left transition-colors duration-300 ease-in-out xs:justify-between sm:px-5 sm:py-4 hover:bg-B4"
+        class="flex overflow-hidden relative items-center px-4 py-3 w-full text-left transition-colors duration-300 ease-in-out xs:justify-between sm:px-5 sm:py-4 hover:bg-B4"
       >
-        <div class="flex items-center gap-4 font-medium ">
+        <div class="flex gap-4 items-center font-medium">
           <!-- Logo -->
           <img
             v-if="showLogo"
             :src="logoSrc"
             alt="logo"
-            class="object-cover w-16 h-16 border border-white rounded-2xl"
+            class="object-cover w-16 h-16 rounded-2xl border border-white"
           />
           <!-- Company -->
           <div class="flex flex-col gap-2 font-medium">
             <!-- Title -->
-            <p>
+            <p class="font-semibold">
                 {{ title }}
             </p>
             <!-- Info -->
@@ -34,12 +34,12 @@
           </div>
         </div>
         <PlusButton :isPlus="!isOpen" @toggle="toggle" 
-        class="absolute z-10 right-4 top-4 xs:static"
+        class="absolute top-4 right-4 z-10 xs:static"
         />
       </button>
       <!-- Content -->
       <TransitionFade>
-        <div v-show="isOpen" class="p-6 space-y-6 bg-white dark:bg-transparent ">
+        <div v-show="isOpen" class="p-6 space-y-6 bg-white dark:bg-transparent">
         <!-- Inner -->
         <div class="flex">
           <div v-for="(section, index) in sections" :key="index" class="grow">

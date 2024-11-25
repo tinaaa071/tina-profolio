@@ -7,9 +7,9 @@
         'bg-B4 text-B1 dark:bg-stone-800 dark:border-b dark:border-white dark:text-white': isOpen,
         'bg-stone-50 text-stone-600 dark:bg-transparent dark:text-stone-300 ': !isOpen
       }"
-      class="flex items-center justify-between w-full px-4 py-3 overflow-hidden text-left transition-colors duration-300 ease-in-out sm:px-5 sm:py-4 hover:bg-B4 "
+      class="flex overflow-hidden justify-between items-center px-4 py-3 w-full text-left transition-colors duration-300 ease-in-out sm:px-5 sm:py-4 hover:bg-B4"
     >
-      <div class="flex items-center gap-4 font-medium ">
+      <div class="flex gap-4 items-center font-medium">
         <img
           v-if="showAvatar"
           :src="avatarSrc"
@@ -17,7 +17,7 @@
           class="object-cover w-10 h-10 rounded-full"
         />
         <!-- Title -->
-        <p>
+        <p class="font-semibold">
           {{ title }}
         </p>
       </div>
@@ -25,7 +25,7 @@
     </button>
     <!-- Content -->
     <TransitionFade>
-      <div v-show="isOpen" class="p-6 bg-white dark:bg-transparent">
+      <div v-show="isOpen" class="p-6 font-normal bg-white dark:bg-transparent">
         <slot></slot>
       </div>
     </TransitionFade>

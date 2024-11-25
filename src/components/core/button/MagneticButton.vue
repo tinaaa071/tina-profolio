@@ -6,7 +6,7 @@
       @mouseleave="onMouseLeave"
     >
       <button
-        class="relative flex items-center justify-center text-sm font-bold px-4 py-2.5 overflow-hidden text-white dark:text-stone-900 rounded-full magnetic-button bg-stone-900 dark:bg-stone-100 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-white dark:before:bg-stone-900 w-full h-fit border-2 border-stone-900 dark:border-white sm:w-fit"
+        class="relative flex items-center justify-center text-sm font-bold px-4 py-2.5 overflow-hidden text-white dark:text-stone-900 rounded-full magnetic-button bg-stone-900 dark:bg-stone-100 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-white dark:before:bg-stone-900 w-full h-fit border-2 border-stone-900 dark:border-white sm:w-fit mr-2"
         :style="buttonStyle"
         :class="{ sway: isSwaying, 'hover-effect text-zinc-900 dark:text-white': isHovering }"
         @mouseenter="onMouseEnter"
@@ -17,7 +17,7 @@
         </div>
         <span 
         :class="showTextClass"
-        class="inline-block ml-2 transition-transform duration-200 ease-out" 
+        class="inline-block transition-transform duration-200 ease-out" 
         :style="textStyle"
         >
           {{ text }}

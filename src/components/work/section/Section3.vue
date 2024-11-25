@@ -26,7 +26,7 @@
       <slot name="content-2"></slot>
     </div>
     <!-- Content 3 -->
-    <div class="mt-6" v-if="$slots['content-3']" >
+    <div class="" v-if="$slots['content-3']" >
       <slot name="content-3"></slot>
     </div>
   </Section>

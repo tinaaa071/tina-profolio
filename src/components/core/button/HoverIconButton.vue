@@ -10,14 +10,14 @@
                 {{ icon }}
             </p>
             <p 
-            class="font-semibold text-white transition-all duration-300 ease-in-out"
+            class="font-semibold text-white transition-all duration-300 ease-in-out dark:text-stone-900"
             v-show="isHovered"
             >
                 {{ title }}
             </p>
         </div>
         <div
-            class="text-sm font-light text-justify text-white transition-all duration-300 ease-in-out dark:text-stone-900"
+            class="text-sm font-normal text-justify text-white transition-all duration-300 ease-in-out dark:text-stone-900"
             v-show="isHovered"
         >
             {{ text }}
