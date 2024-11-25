@@ -1,7 +1,7 @@
 <template>
     <div 
       :style="{ backgroundImage: `url(${backgrounds[activeTab - 1]})` }"
-      class="flex overflow-hidden flex-col p-6 bg-center bg-no-repeat bg-cover rounded-2xl border cursor-default dark:border-white border-B4 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent"
+      class="flex overflow-hidden flex-col p-4 bg-center bg-no-repeat bg-cover rounded-2xl border cursor-default sm:p-6 dark:border-white border-B4 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent"
     >
       <!-- Top Section -->
       <div class="flex gap-12 items-center p-3 mb-6 font-semibold bg-white rounded-lg xl:mb-10 sm:px-8 sm:rounded-xl dark:bg-stone-900">

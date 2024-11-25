@@ -1,7 +1,7 @@
 <template>
     <section
       :id="id"
-      class="flex justify-center py-8 bg-white cursor-default dark:bg-stone-900"
+      class="flex justify-center py-8 bg-white cursor-default xl:py-8 dark:bg-stone-900"
     >
       <slot></slot>
     </section>

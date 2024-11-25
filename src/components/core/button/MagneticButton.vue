@@ -6,13 +6,13 @@
       @mouseleave="onMouseLeave"
     >
       <button
-        class="relative flex items-center justify-center text-sm font-bold px-4 py-2.5 overflow-hidden text-white dark:text-stone-900 rounded-full magnetic-button bg-stone-900 dark:bg-stone-100 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-white dark:before:bg-stone-900 w-full h-fit border-2 border-stone-900 dark:border-white sm:w-fit mr-2"
+        class="relative flex items-center justify-center text-sm font-bold px-4 py-2.5 overflow-hidden text-white dark:text-stone-900 rounded-full magnetic-button bg-stone-900 dark:bg-stone-100 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-white dark:before:bg-stone-900 w-full h-fit border-2 border-stone-900 dark:border-white sm:w-fit "
         :style="buttonStyle"
         :class="{ sway: isSwaying, 'hover-effect text-zinc-900 dark:text-white': isHovering }"
         @mouseenter="onMouseEnter"
       >
         <!-- Icon slot controlled by props -->
-        <div v-if="showIcon" class="" :style="textStyle">
+        <div v-if="showIcon" class="mr-2" :style="textStyle">
           <component :is="icon" />
         </div>
         <span 

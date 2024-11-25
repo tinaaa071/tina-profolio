@@ -49,6 +49,8 @@
             { title: $t('work.title.item2-4'), content: $t('project1.briefCard.item4') }
           ]"
           />
+          <!-- 分隔 -->
+          <DotDivider />
           <!-- 專案背景 -->
           <Section3
             id="section3"
@@ -170,6 +172,7 @@
             id="section11"
             :title="$t('work.title.item11')"
           >
+            <!-- Design System -->
             <template #content-1>
               <div class="grid overflow-hidden grid-cols-1 rounded-2xl divide-y drop-shadow xl:rounded-3xl dark:border dark:border-white dark:divide-white divide-B2">
                 <!-- Color -->
@@ -196,10 +199,11 @@
                 </Accordion>
               </div>
             </template>  
+            <!-- Mockup -->
             <template #content-2>
               <div class="bg-B5 dark:bg-stone-700">
                 <TabCard 
-                  class="px-6 border-none xl:px-56 md:p-10"
+                  class="px-6 border-none xl:px-56 md:px-10 md:py-8"
                   :customClass="[bg-transparent, p-0]"
                   :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
                     <!-- Tab Contents -->
@@ -234,9 +238,10 @@
                 </TabCard>
               </div>
             </template>
+            <!-- Prototype -->
             <template #content-3>
               <div class="bg-B3 dark:bg-stone-500">
-                <div class="p-6 border-none xl:px-56 md:p-10">
+                <div class="p-6 border-none xl:px-56 md:px-10 md:py-8">
                   <CardTilt>
                     <img 
                     src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

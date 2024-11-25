@@ -44,7 +44,7 @@
         </div>
       </div>
       <!-- Divider -->
-      <IconoirMoreHoriz class="w-full text-xl text-center" />
+      <DotDivider />
       <!-- Menu -->
       <div 
       v-if="showMenu"
