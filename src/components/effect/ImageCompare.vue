@@ -2,7 +2,10 @@
     <div
       class="overflow-hidden relative mx-auto w-full rounded-2xl xl:rounded-3xl"
       :class="heightClass"
-      @mousemove="updateSliderPosition"
+      @mousemove="updateSliderPosition" 
+      @touchstart="startTouch" 
+      @touchmove="moveTouch" 
+      @touchend="endTouch" 
     >
       <!-- 圖片容器 -->
       <div class="overflow-hidden relative w-full h-full">
@@ -20,7 +23,7 @@
             Before
           </span>
         </div>
-  
+    
         <!-- After 圖片 -->
         <div
           class="absolute top-0 left-0 w-full h-full"
@@ -40,7 +43,7 @@
             After
           </span>
         </div>
-  
+    
         <!-- 滑動條 -->
         <div
           class="absolute top-0 left-0 h-full bg-transparent pointer-events-none"
@@ -49,9 +52,7 @@
           <div class="w-1 h-full bg-gray-800"></div>
           <!-- 圓形把手 -->
           <div
-            ref="sliderHandle"
-            class="absolute top-1/2 left-1/2 w-6 h-6 bg-white rounded-full border-2 border-gray-800 shadow transform -translate-x-1/2 -translate-y-1/2 cursor-pointer"
-            @mousedown="startDrag"
+            class="absolute top-1/2 left-1/2 w-6 h-6 bg-white rounded-full border-2 border-gray-800 shadow transform -translate-x-1/2 -translate-y-1/2"
           ></div>
         </div>
       </div>
@@ -83,52 +84,36 @@
     data() {
       return {
         sliderPosition: 50, // 初始滑動條位置 (百分比)
-        isDragging: false, // 是否正在拖曳
-        initialMouseX: 0, // 滑鼠初始 X 坐標
-        initialSliderPosition: 0, // 初始滑動條位置
+        isTouching: false, // 用來判斷是否在觸控模式
+        startTouchX: 0, // 觸控開始的 X 坐標
       };
     },
     methods: {
-      // 開始拖曳
-      startDrag(event) {
-        this.isDragging = true;
-        this.initialMouseX = event.clientX;
-        this.initialSliderPosition = this.sliderPosition;
-  
-        // 監聽鼠標移動和放開事件
-        document.addEventListener("mousemove", this.onDrag);
-        document.addEventListener("mouseup", this.stopDrag);
-        document.addEventListener("mouseleave", this.stopDrag);
-      },
-  
-      // 拖曳過程中更新滑動條位置
-      onDrag(event) {
-        if (!this.isDragging) return;
-  
-        const deltaX = event.clientX - this.initialMouseX;
-        const container = this.$el;
-        const rect = container.getBoundingClientRect();
-        const newPosition = this.initialSliderPosition + (deltaX / rect.width) * 100;
-        
-        this.sliderPosition = Math.min(Math.max(newPosition, 0), 100); // 限制範圍在 0 到 100
-      },
-  
-      // 停止拖曳
-      stopDrag() {
-        this.isDragging = false;
-        document.removeEventListener("mousemove", this.onDrag);
-        document.removeEventListener("mouseup", this.stopDrag);
-        document.removeEventListener("mouseleave", this.stopDrag);
-      },
-  
-      // 更新滑動條位置 (在非拖曳狀態下)
       updateSliderPosition(event) {
-        if (this.isDragging) return; // 當拖曳時，不處理滑動事件
-  
-        const container = event.currentTarget;
-        const rect = container.getBoundingClientRect();
-        const position = ((event.clientX - rect.left) / rect.width) * 100;
-        this.sliderPosition = Math.min(Math.max(position, 0), 100); // 限制範圍在 0 到 100
+        if (!this.isTouching) {
+          const container = event.currentTarget;
+          const rect = container.getBoundingClientRect();
+          const position = ((event.clientX - rect.left) / rect.width) * 100;
+          this.sliderPosition = Math.min(Math.max(position, 0), 100); // 限制範圍在 0 到 100
+        }
+      },
+      // 手機版觸控事件
+      startTouch(event) {
+        if (event.touches.length === 1) {
+          this.isTouching = true;
+          this.startTouchX = event.touches[0].clientX;
+        }
+      },
+      moveTouch(event) {
+        if (this.isTouching) {
+          const container = event.currentTarget;
+          const rect = container.getBoundingClientRect();
+          const position = ((event.touches[0].clientX - rect.left) / rect.width) * 100;
+          this.sliderPosition = Math.min(Math.max(position, 0), 100); // 限制範圍在 0 到 100
+        }
+      },
+      endTouch() {
+        this.isTouching = false;
       },
     },
   };
