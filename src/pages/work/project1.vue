@@ -193,10 +193,10 @@
               </div>
             </template>  
             <template #content-2>
-              <div class="bg-B5">
+              <div class="bg-B5 dark:bg-stone-700">
                 <div class="">
                   <TabCard 
-                  class="px-6 border-transparent xl:px-56 md:p-10"
+                  class="px-6 border-none xl:px-56 md:p-10"
                   :customClass="[bg-transparent, p-0]"
                   :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
                     <!-- Tab Contents -->
@@ -204,17 +204,18 @@
                       <div v-if="activeTab === 1">
                         我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
                       </div>
-                      <div v-if="activeTab === 2" class="relative px-12">
+                      <div v-if="activeTab === 2" class="relative px-6 xl:px-12">
                         <CardTilt>
                           <img 
                           src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                           class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
                         >
                         </CardTilt>
-                        <div class="hidden absolute -left-44 top-2/3 xl:block">
+                        <div class="hidden absolute -right-44 top-2/3 xl:block">
                           <HoverIconButton 
                           class=""
                           icon="💡"
+                          title="Work From Home"
                           text="我們針對周遭人們 Work From Home 之後我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。"
                           />
                         </div>

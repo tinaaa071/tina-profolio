@@ -12,10 +12,14 @@
         @mouseenter="onMouseEnter"
       >
         <!-- Icon slot controlled by props -->
-        <div v-if="showIcon" class="mr-2" :style="textStyle">
+        <div v-if="showIcon" class="" :style="textStyle">
           <component :is="icon" />
         </div>
-        <span class="inline-block transition-transform duration-200 ease-out" :style="textStyle">
+        <span 
+        :class="showTextClass"
+        class="inline-block ml-2 transition-transform duration-200 ease-out" 
+        :style="textStyle"
+        >
           {{ text }}
         </span>
       </button>
@@ -44,6 +48,10 @@ export default {
     text: {
       type: String,
       required: true,
+    },
+    showTextClass: { 
+      type: String, 
+      default: "hidden md:block" 
     },
   },
   data() {

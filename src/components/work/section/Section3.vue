@@ -1,7 +1,7 @@
 <!-- Other Section -->
 <template>
   <Section class="flex flex-col">
-    <div class="w-full xl:px-56 md:p-10" :class="isSticky ? 'px-0' : 'px-6'">
+    <div class="w-full xl:px-56 md:p-8" :class="isSticky ? 'px-0' : 'px-6'">
       <div class="grid grid-cols-1 gap-6 md:grid-cols-10" >
         <!-- Title -->
         <div
@@ -22,8 +22,12 @@
       </div>
     </div>
     <!-- Content 2 -->
-    <div class="relative" >
+    <div class="relative mt-6" v-if="$slots['content-2']" >
       <slot name="content-2"></slot>
+    </div>
+    <!-- Content 3 -->
+    <div class="mt-6" v-if="$slots['content-3']" >
+      <slot name="content-3"></slot>
     </div>
   </Section>
 </template>
