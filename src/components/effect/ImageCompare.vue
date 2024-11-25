@@ -18,7 +18,7 @@
           />
           <!-- Before 標籤 -->
           <span
-            class="absolute top-4 right-4 px-2 py-1 text-sm text-white rounded bg-stone-800"
+            class="absolute top-4 right-4 px-2 py-1 text-sm bg-white rounded dark:text-white text-stone-800 dark:bg-stone-800"
           >
             Before
           </span>
@@ -38,7 +38,7 @@
           />
           <!-- After 標籤 -->
           <span
-            class="absolute top-4 right-4 px-2 py-1 text-sm text-white rounded bg-stone-800"
+            class="absolute top-4 right-4 px-2 py-1 text-sm bg-white rounded dark:text-white text-stone-800 dark:bg-stone-800"
           >
             After
           </span>
@@ -49,10 +49,10 @@
           class="absolute top-0 left-0 h-full bg-transparent pointer-events-none"
           :style="{ left: sliderPosition + '%' }"
         >
-          <div class="w-1 h-full bg-gray-800"></div>
+          <div class="w-1 h-full bg-white dark:bg-stone-800"></div>
           <!-- 圓形把手 -->
           <div
-            class="absolute top-1/2 left-1/2 w-6 h-6 bg-white rounded-full border-2 border-gray-800 shadow transform -translate-x-1/2 -translate-y-1/2"
+            class="absolute top-1/2 left-1/2 w-5 h-5 bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 dark:bg-stone-800"
           ></div>
         </div>
       </div>
