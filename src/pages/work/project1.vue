@@ -204,7 +204,7 @@
                       <div v-if="activeTab === 1">
                         我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
                       </div>
-                      <div v-if="activeTab === 2" class="relative px-6 xl:px-12">
+                      <div v-if="activeTab === 2" class="relative xl:px-12">
                         <CardTilt>
                           <img 
                           src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

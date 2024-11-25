@@ -4,7 +4,7 @@
       class="flex overflow-hidden flex-col p-4 bg-center bg-no-repeat bg-cover rounded-2xl border cursor-default sm:p-6 dark:border-white border-B4 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent"
     >
       <!-- Top Section -->
-      <div class="flex gap-12 items-center p-3 mb-10 font-semibold bg-white rounded-xl sm:px-8 sm:rounded-2xl dark:bg-stone-900">
+      <div class="flex gap-12 items-center p-3 mb-6 font-semibold bg-white rounded-lg xl:mb-10 sm:px-8 sm:rounded-xl dark:bg-stone-900">
         <button
           v-for="(button, index) in buttons"
           :key="index"
@@ -22,7 +22,7 @@
   
       <!-- Bottom Section -->
       <div 
-      class="text-sm rounded-xl sm:rounded-2xl sm:text-base"
+      class="text-sm rounded-lg sm:rounded-xl sm:text-base"
       :class="customClass"
       >
         <SkeletonLoader v-if="loading" size="full" />

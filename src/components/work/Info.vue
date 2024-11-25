@@ -24,7 +24,7 @@
             :linkTo="linkTo" 
             :icon="icon" 
             :text="$t('work.core.item5')"
-            :showTextClass="'hidden md:inline-block'"
+            class="hidden xs:block"
             />
         </div>
         <!-- Title -->

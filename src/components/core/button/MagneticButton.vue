@@ -51,7 +51,7 @@ export default {
     },
     showTextClass: { 
       type: String, 
-      default: "hidden md:block" 
+      default: "block" 
     },
   },
   data() {
