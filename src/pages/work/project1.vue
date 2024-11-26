@@ -203,7 +203,7 @@
             <template #content-2>
               <div class="bg-B5 dark:bg-stone-700">
                 <TabCard 
-                  class="px-6 border-none xl:px-56 md:px-10 md:py-8"
+                  class="p-6 border-none xl:px-56 md:px-10 md:py-8"
                   :customClass="[bg-transparent, p-0]"
                   :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
                     <!-- Tab Contents -->
@@ -240,7 +240,7 @@
             </template>
             <!-- Prototype -->
             <template #content-3>
-              <div class="bg-B3 dark:bg-stone-500">
+              <div class="bg-B3 dark:bg-stone-600">
                 <div class="p-6 border-none xl:px-56 md:px-10 md:py-8">
                   <CardTilt>
                     <img 

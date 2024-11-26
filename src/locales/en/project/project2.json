@@ -1,7 +1,20 @@
 {
     "core":{
-        "title": "Chiayi City Resource Platform",
-        "desc": "Display Chiayi City Government resources and information"
+        "title": "Health Academy (Back-End)",
+        "desc": "Taiwan International Medical Education"
+    },
+    "info":{
+        "item1": "XX Company",
+        "item2": "Business Website",
+        "item3": "UI / UX Designer",
+        "item4": "Coding",
+        "item5": "Front-end Developer"
+    },
+    "briefCard":{
+        "item1": "The team wanted to redesign the existing search experience on Indeed for Japanese job seekers. Also, we wanted to refactor our infrastructure for the future scale.",
+        "item2": "Role & Deliverables",
+        "item3": "Challenges",
+        "item4": "Outcome & Impact"
     }
     
 }

@@ -1,6 +1,6 @@
 <!-- src/components/IconGroup.vue -->
 <template>
-    <div class="flex flex-col items-center space-y-4 text-2xl text-white sm:space-y-5">
+    <div class="flex flex-col justify-items-center items-center space-y-4 text-2xl text-white sm:space-y-5">
         <fa6-solid-envelope v-if="iconsVisible[0]" aria-hidden="true" />
         <fa6-solid-apple-whole v-if="iconsVisible[1]"  aria-hidden="true" />
         <Icon 

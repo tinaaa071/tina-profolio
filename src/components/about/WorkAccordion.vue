@@ -24,11 +24,11 @@
                 {{ title }}
             </p>
             <!-- Info -->
-            <p>
+            <p class="font-normal">
                 {{ info }}
             </p>
             <!-- Desc -->
-            <p>
+            <p class="text-sm font-semibold">
                 {{ desc }}
             </p>
           </div>

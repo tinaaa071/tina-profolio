@@ -8,7 +8,7 @@
         <!-- tools -->
         <IconGroup 
           :iconsVisible="iconsVisible" 
-          class="absolute bottom-0 right-5 text-right" 
+          class="hidden absolute bottom-0 right-5 xs:block" 
         />
       </div>
       <!-- Info -->

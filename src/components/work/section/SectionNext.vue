@@ -33,7 +33,7 @@
         </RouterLink>
         <!-- Mask -->
         <div
-          class="absolute bottom-0 z-10 mx-auto w-11/12 h-20 bg-white border-t md:w-full dark:bg-stone-900 border-B2/70 md:h-32"
+          class="absolute bottom-0 z-10 mx-auto w-9/12 h-20 bg-white border-t md:w-2/3 lg:w-1/2 dark:bg-stone-900 border-B2/70 md:h-32"
         ></div>
         <!-- Button -->
       <MagneticButton
