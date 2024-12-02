@@ -1,7 +1,7 @@
 <template>
     <div>
         <img 
-        class="object-cover object-center mb-2 w-full rounded-2xl sm:rounded-3xl aspect-video"
+        class="object-cover object-center mb-2 rounded-2xl border sm:rounded-3xl aspect-video border-stone-200 dark:border-stone-500"
         :src="imgSrc"
         >
         <p 

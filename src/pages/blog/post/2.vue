@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*Qjgp1iIbw1IY2ww1AxfbPg.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item2'),
-          date: '2024-09-10',
+          date: '2024．09．10',
           title: 'UI/UX 設計師如何培養美感？提升設計視野的實用指南',
           desc: '從平凡到驚豔，UI/UX 設計師的美感修煉之路！',
           menu: [
@@ -16,7 +16,8 @@
             { menu: '學習設計基礎理論' },
             { menu: '多接觸不同風格與文化' },
             { menu: '養成設計輸出習慣' },
-            { menu: '提升與非設計師的溝通能力' }
+            { menu: '提升與非設計師的溝通能力' },
+            { menu: '結語：設計美感是一種持續進化的能力' }
           ]
         }"
         :showCredit="true"

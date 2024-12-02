@@ -8,13 +8,14 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*ckOnmeIa3T-ASRMF1oGolg.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item2'),
-          date: '2024-09-10',
+          date: '2024．09．17',
           title: '如何為你的 UI 設計選擇完美的配色方案？',
           desc: '選對配色，讓你的設計從視覺中脫穎而出！',
           menu: [
             { menu: '為什麼 UI 配色如此重要？' },
             { menu: 'UI 配色的 4 大基本原則' },
-            { menu: '配色實踐：從工具到實例' }
+            { menu: '配色實踐：從工具到實例' },
+            { menu: '結語' }
           ]
         }"
         :showCredit="true"
@@ -45,52 +46,94 @@
               imgCredit="Credit: airbnb"
             />
           </div>
+          <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'2. 學習設計基礎理論'"
+            :title="'UI 配色的 4 大基本原則'"
             />
-            <p>
-              設計美感不僅來自直覺，更需要穩固的基礎理論。
-            </p>
-            <ListDisc :items="list2" />
+            <ListNum 
+            :items="list2"
+            customClass="space-y-4"
+            >
+              <template #slot-0>
+                <ListDisc :items="list3" />
+                <CreditImg 
+                  imgSrc="https://cdn-images-1.medium.com/max/1600/0*Nmlu2g59MzwTVMZW.png"
+                  class="mt-4"
+                />
+              </template>
+              <template #slot-1>
+                <ListDisc :items="list4" />
+                <CreditImg 
+                  imgSrc="https://cdn-images-1.medium.com/max/1600/0*3Z6Q6Zb6OK6EFD6q.png"
+                  imgCredit="Credit: marvelapp"
+                  class="mt-4"
+                />
+              </template>
+              <template #slot-2>
+                <ListDisc :items="list5" />
+                <CreditImg 
+                  imgSrc="https://cdn-images-1.medium.com/max/1600/0*7hXSv1-_lo-68dVO.png"
+                  imgCredit="Credit: Canva"
+                  class="mt-4"
+                />
+              </template>
+              <template #slot-3>
+                <CreditImg 
+                  imgSrc="https://cdn-images-1.medium.com/max/1600/0*FtW95kX1puUkAb3h.png"
+                  imgCredit="Credit: WebAIM Contrast Checker"
+                  class="mt-4"
+                />
+              </template>
+            </ListNum>
           </div>
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'3. 多接觸不同風格與文化'"
+            :title="'配色實踐：從工具到實例'"
             />
             <p>
-              設計靈感不該局限於單一文化或風格。多元的視角能讓你的設計更具包容性和深度。
+              實用的配色工具
             </p>
-            <ListDisc :items="list3" />
-            <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*J5durJaN_z2dhX6M"
+            <ListNum :items="list6" />
+            <Mention 
+              :link="'/blog/post/4'" 
+              :title="'5 個 UI 配色網站資源：提升設計質感的必備工具'" 
+              :content="'快速提升設計質感！必收藏的 5 個 UI 配色資源'" 
+              :image="'https://cdn-images-1.medium.com/max/1600/1*hx609LG91bVhVTfCBCf_bA.png'" 
             />
-          </div>
-          <div class="flex flex-col gap-4">
-            <H1 
-            :title="'4. 養成設計輸出習慣'"
-            />
-            <p>
-              培養美感的同時，也需要持續實踐。
-            </p>
-            <ListDisc :items="list4" />
-          </div>
-          <div class="flex flex-col gap-4">
-            <H1 
-            :title="'5. 提升與非設計師的溝通能力'"
-            />
-            <p>
-              美感的養成不僅來自個人努力，也需要與他人的互動。
-            </p>
-            <ListDisc :items="list5" />
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'結語：設計美感是一種持續進化的能力'"
+            :title="'實例分享'"
+            customClass="space-y-4"
+            />
+            <ListNum 
+            :items="list7"
+            >
+            <template #slot-0>
+              <ListDisc :items="list8" />
+              <CreditImg 
+                imgSrc="https://imockups.com/storage/product/3873/KAnjM5jdOQAHLJNbYjoA.png"
+                class="mt-4"
+              />
+            </template>
+            <template #slot-1>
+              <ListDisc :items="list8" />
+              <CreditImg 
+                imgSrc="https://cdn-images-1.medium.com/max/1600/0*vbUbrqBaHu1YYsg4.jpeg"
+                class="mt-4"
+              />
+            </template>
+          </ListNum>
+          </div>
+          <Dot />
+          <div class="flex flex-col gap-4">
+            <H1 
+            :title="'結語'"
             />
             <p>
-              UI/UX 設計師的美感養成需要時間與努力，但只要不斷觀察、學習、實踐，設計敏銳度將會日益提升。記住，美感並非追求表面的「漂亮」，而是透過設計達成功能性與情感連結的平衡。
+              選擇 UI 配色方案不僅是藝術，更是一門科學。好的配色能讓設計脫穎而出，提升產品的易用性與吸引力。無論是遵循色彩心理學，還是善用工具與對比度，最重要的是確保配色與使用者需求和品牌一致。
             </p>
           </div>
         </Content>
@@ -126,50 +169,92 @@ export default {
       ],
       list2: [
         {
-          title: "色彩學",
-          description: "學習色彩搭配的基礎原理，例如對比色、互補色、色調心理學。",
+          title: "了解色彩心理學",
+          description: "不同顏色有各自的象徵意義。例如：",
         },
         {
-          title: "排版設計",
-          description: "瞭解字體分類、字距與行距的處理，讓畫面更具一致性。",
+          title: "善用色彩對比",
+          description: "對比度可以幫助強調內容。例如：",
         },
         {
-          title: "構圖與比例",
-          description: "掌握黃金比例、三分法，為畫面建立平衡感。",
+          title: "採用色彩和諧原則",
+          description: "選用和諧的配色方案，避免顏色過多或過於衝突。常用的配色方案有：",
+        },
+        {
+          title: "考慮無障礙設計",
+          description: "確保配色對於視力受損的使用者也是友善的。可以使用工具檢測色彩的對比度，如 WebAIM Contrast Checker。",
         }
       ],
       list3: [
         {
-          title: "研究設計史",
-          description: "探索不同時期的設計風格，如包豪斯、極簡主義、後現代主義等。",
+          title: "藍色",
+          description: "冷靜、專業，適合科技產品或金融服務。",
         },
         {
-          title: "體驗異文化設計",
-          description: "了解日本禪風的極簡、北歐設計的功能性與美感等文化特色。",
+          title: "綠色",
+          description: "健康、自然，常見於環保或健康相關應用。",
+        },
+        {
+          title: "黃色",
+          description: "活力與注意，適合需要高注意力的設計元素。",
         }
       ],
       list4: [
         {
-          title: "臨摹設計作品",
           description: "選擇你喜歡的作品，重新創建一遍，並試著加入自己的創意。",
         },
         {
-          title: "設計挑戰",
-          description: "參與 100 天設計挑戰，將每日練習變成習慣。",
-        },
-        {
-          title: "社群回饋",
-          description: "將作品發佈到設計社群，聽取他人的建議與回饋。",
+          description: "在按鈕或警告訊息中，選用高對比色，讓使用者能快速識別。",
         }
       ],
       list5: [
         {
-          title: "設計交付",
-          description: "與工程師討論設計如何落地，從技術限制中找到創意解決方案。",
+          title: "單色系",
+          description: "使用同一色調的不同亮度和飽和度。",
         },
         {
-          title: "體驗測試",
-          description: "與用戶測試，了解視覺設計如何影響用戶體驗。",
+          title: "類似色系",
+          description: "選用色環上相鄰的顏色，營造柔和感。",
+        },
+        {
+          title: "互補色系",
+          description: "選用色環上相對的顏色，產生強烈的對比效果。",
+        }
+      ],
+      list6: [
+        {
+          title: "Coolors",
+          description: "生成和調整配色方案。",
+        },
+        {
+          title: "Adobe Color",
+          description: "探索和設計專業配色方案。",
+        },
+        {
+          title: "Material Design Color Tool",
+          description: "符合 Material Design 指南的配色工具。",
+        }
+      ],
+      list7: [
+        {
+          title: "案例 1：金融應用"
+        },
+        {
+          title: "案例 2：健身應用"
+        }
+      ],
+      list8: [
+        {
+          title: "主色",
+          description: "深藍色（象徵信任）",
+        },
+        {
+          title: "輔助色",
+          description: "灰色（穩定）",
+        },
+        {
+          title: "強調色",
+          description: "橙色（吸引注意力，用於按鈕或 CTA）",
         }
       ],
       posts: [

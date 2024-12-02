@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*LSgS3r0VigNdsXHxAx9kqg.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item2'),
-          date: '2024-09-10',
+          date: '2024．09．02',
           title: '介面設計原則：打造用戶友好體驗的基石',
           desc: '設計以用戶為中心，創造流暢且愉悅的數位體驗！',
           menu: [
@@ -17,7 +17,8 @@
             { menu: '最少的認知負荷' },
             { menu: '給予即時反饋' },
             { menu: '美感與實用性並重' },
-            { menu: '包容性與可及性' }
+            { menu: '包容性與可及性' },
+            { menu: '結語' }
           ]
         }"
         :showCredit="true"
@@ -52,7 +53,7 @@
             </p>
             <ListDisc :items="list2" />
             <CreditImg 
-              imgSrc="https://cdn.sanity.io/images/599r6htc/regionalized/80890916035c843b5e8882682b7e2baef4bdd8b2-720x361.png?q=75&fit=max&auto=format&dpr=2"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/1*g2ruZ1wlf2Gwec-TktYGyw.png"
               imgCredit="Credit: Figma"
             />
           </div>
@@ -65,7 +66,7 @@
             </p>
             <ListDisc :items="list3" />
             <CreditImg 
-              imgSrc="https://cdn.sanity.io/images/599r6htc/regionalized/de05a24e612dd5c146e499fe553e236de0b5de77-1080x541.png?q=75&fit=max&auto=format&dpr=2"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/1*Egpod5rXCN4nSIZ74CheOw.png"
               imgCredit="Credit: Figma"
             />
           </div>
@@ -87,7 +88,7 @@
             </p>
             <ListDisc :items="list5" />
             <CreditImg 
-              imgSrc="https://cdn.sanity.io/images/599r6htc/regionalized/23f973350d85b9f866b231b71a161b088d6c470f-721x361.png?q=75&fit=max&auto=format&dpr=2"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/1*0szhVQkcv40QHHOeB6VXAQ.png"
               imgCredit="Credit: Figma"
             />
           </div>
@@ -209,19 +210,19 @@ export default {
       posts: [
         {
           id: 1,
-          link: '/',
-          title: "Post 1",
-          category: this.$t('blog.item3'),
-          image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          date: "2024．09．02",
+          link: '/blog/post/2',
+          title: "UI/UX 設計師如何培養美感？提升設計視野的實用指南",
+          category: this.$t('blog.item2'),
+          image: "https://cdn-images-1.medium.com/max/1600/1*Qjgp1iIbw1IY2ww1AxfbPg.png",
+          date: "2024．09．10",
         },
         {
           id: 2,
-          link: '/about',
-          title: "Post 2",
+          link: '/blog/post/3',
+          title: "如何為你的 UI 設計選擇完美的配色方案？",
           category: this.$t('blog.item2'),
-          image: "https://images.unsplash.com/photo-1628768534895-ff9185e7edbc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          date: new Date().toLocaleDateString(),
+          image: "https://cdn-images-1.medium.com/max/1600/1*ckOnmeIa3T-ASRMF1oGolg.png",
+          date: "2024．09．17",
         },
         {
           id: 2,
