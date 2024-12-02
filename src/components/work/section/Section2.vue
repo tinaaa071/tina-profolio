@@ -1,8 +1,8 @@
 <!-- Overview -->
 <template>
-    <Section class="flex flex-col gap-4 px-6 text-center md:gap-8 xl:px-56 md:p-8">
+    <Section class="flex flex-col gap-6 px-6 text-center md:gap-8 xl:px-56 md:p-8">
       <!-- Title -->
-      <p class="text-xl font-bold md:text-3xl">
+      <p class="text-lg font-bold md:text-3xl">
         {{ $t('work.title.item2') }}
       </p>
       <!-- Grid -->

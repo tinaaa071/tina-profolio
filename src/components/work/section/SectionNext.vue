@@ -3,7 +3,7 @@
       class="flex flex-col items-center px-6 pt-8 pb-12 w-full text-center md:py-16"
     >
       <!-- Title -->
-      <p class="mb-6 font-semibold md:text-lg text-stone-500 md:mb-8 dark:text-white">
+      <p class="mb-6 text-sm font-semibold md:text-lg text-stone-500 md:mb-8 dark:text-white">
         {{ $t('work.title.item2') }}
       </p>
       <!-- Project -->
@@ -33,7 +33,7 @@
         </RouterLink>
         <!-- Mask -->
         <div
-          class="absolute bottom-0 z-10 mx-auto w-9/12 h-20 bg-white border-t md:w-2/3 lg:w-1/2 dark:bg-stone-900 border-B2/70 md:h-32"
+          class="absolute bottom-0 z-10 mx-auto w-full h-20 bg-white border-t xs:w-9/12 md:w-2/3 lg:w-1/2 dark:bg-stone-900 border-B2/70 md:h-32"
         ></div>
         <!-- Button -->
       <MagneticButton

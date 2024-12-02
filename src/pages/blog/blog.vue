@@ -46,24 +46,24 @@ export default {
       posts: [
         {
           id: 1,
-          title: "Post 1",
+          title: "介面設計原則：打造用戶友好體驗的基石",
           category: this.$t('blog.item2'),
-          image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          image: "https://cdn-images-1.medium.com/max/1600/1*LSgS3r0VigNdsXHxAx9kqg.png",
           date: "2024．09．02",
         },
         {
           id: 2,
-          title: "Post 2",
+          title: "UI/UX 設計師如何培養美感？提升設計視野的實用指南",
           category: this.$t('blog.item2'),
-          image: "https://images.unsplash.com/photo-1628768534895-ff9185e7edbc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          date: new Date().toLocaleDateString(),
+          image: "https://cdn-images-1.medium.com/max/1600/1*Qjgp1iIbw1IY2ww1AxfbPg.png",
+          date: "2024．09．10",
         },
         {
-          id: 2,
-          title: "Post 2",
-          category: this.$t('blog.item3'),
-          image: "https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          date: new Date().toLocaleDateString(),
+          id: 3,
+          title: "如何為你的 UI 設計選擇完美的配色方案？",
+          category: this.$t('blog.item2'),
+          image: "https://cdn-images-1.medium.com/max/1600/1*ckOnmeIa3T-ASRMF1oGolg.png",
+          date: "2024．09．17",
         },
         {
           id: 2,
@@ -108,12 +108,12 @@ export default {
   },
   computed: {
     filteredPosts() {
-      if (this.currentCategory === this.$t('blog.item1')) {
-        return this.posts;
-      }
-      return this.posts.filter(
-        (post) => post.category === this.currentCategory
-      );
+      let posts = this.currentCategory === this.$t('blog.item1')
+        ? this.posts
+        : this.posts.filter((post) => post.category === this.currentCategory);
+
+      // 排序 posts 依日期由新到舊
+      return posts.sort((a, b) => new Date(b.date.replace(/．/g, '-')) - new Date(a.date.replace(/．/g, '-')));
     },
     paginatedPosts() {
       const start = (this.currentPage - 1) * this.itemsPerPage;

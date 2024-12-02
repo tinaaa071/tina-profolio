@@ -11,7 +11,7 @@
         </CardTilt>
         <p 
           v-if="showCredit"
-          class="text-sm font-normal text-center text-stone-300 dark:text-stone-500">
+          class="text-sm text-center text-stone-300 dark:text-stone-500">
           {{ post.credit }}
         </p>
       </div>
@@ -30,27 +30,31 @@
           </p>
         </div>
         <!-- Title + Desc -->
-        <div class="mb-6">
+        <div class="mb-8">
           <h1 class="mb-4 text-3xl font-bold">
             {{ post.title }}
           </h1>
-          <p class="text-lg font-normal text-stone-500 dark:text-stone-400">
+          <p class="text-lg text-stone-500 dark:text-stone-400">
             {{ post.desc }}
           </p>
         </div>
         <!-- Brief -->
-        <div class="p-6 text-lg text-center rounded-lg xl:px-32 bg-B4 dark:bg-stone-700">
-          <slot name="brief"></slot>
+        <div class="relative">
+          <Fa6SolidQuoteLeft class="absolute -top-3 left-3 text-2xl text-B2 dark:text-stone-300" />
+          <Fa6SolidQuoteRight class="absolute right-3 -bottom-3 text-2xl text-B2 dark:text-stone-300" />
+          <div class="p-6 leading-loose text-center rounded-lg xl:px-32 bg-B4 dark:bg-stone-700">
+            <slot name="brief"></slot>
+          </div>
         </div>
       </div>
       <!-- Divider -->
-      <DotDivider />
+      <Dot />
       <!-- Menu -->
       <div 
       v-if="showMenu"
-      class="px-8 py-5 text-lg rounded-lg bg-B4 dark:bg-stone-700">
+      class="px-8 py-5 text-sm rounded-lg text-stone-500 bg-B4 dark:bg-stone-700 dark:text-stone-300">
         <p class="mb-2">
-          {{ $t('project1.core.title') }}
+          💡 大綱
         </p>
         <ul class="grid gap-2 list-decimal list-inside">
           <li v-for="(item, index) in post.menu" :key="index">
