@@ -14,8 +14,10 @@
         </span>
         <br>
       </template>
-      <span :class="!item.title ? '' : 'ml-5 block'">
-        {{ item.description }}
+      <span 
+      v-html="item.description"
+      :class="!item.title ? '' : 'ml-5 block'"
+      >
       </span>
     </li>
   </ul>

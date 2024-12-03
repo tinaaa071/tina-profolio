@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-6">
+  <div class="flex flex-col gap-6 mb-4">
     <!-- Banner -->
     <div>
       <CardTilt>

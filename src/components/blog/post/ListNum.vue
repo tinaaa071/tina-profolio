@@ -18,8 +18,10 @@
         <br>
       </template>
       <!-- 這裡確保無論換行與否，description 保持一致的縮排 -->
-      <span :class="!item.title ? '' : 'ml-5 block'">
-        {{ item.description }}
+      <span 
+      v-html="item.description"
+      :class="!item.title ? '' : 'ml-5 block'"
+      >
       </span>
       <div class="ml-5">
         <slot :name="'slot-' + index"></slot>

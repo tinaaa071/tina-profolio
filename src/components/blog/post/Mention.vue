@@ -1,14 +1,14 @@
 <template>
     <div>
-        <p class="mb-2">
+        <p v-if="showTitle" class="mb-2">
             📌 也可以參考下面這篇分享：
         </p>
         <RouterLink :to="link" class="flex gap-3 p-3 rounded-2xl border transition-colors sm:gap-6 border-stone-300 group hover:border-stone-400 dark:border-stone-400 dark:hover:border-white">
             <div class="py-2 w-full">
-                <p class="mb-3 font-semibold">
+                <p class="mb-2 font-semibold">
                     {{ title }}
                 </p>
-                <p class="text-sm">
+                <p class="text-sm line-clamp-2">
                     {{ content }}
                 </p>
             </div>
@@ -25,6 +25,10 @@
 
 <script setup>
 defineProps({
+  showTitle: {
+    type: Boolean,
+    required: true
+  },
   link: {
     type: String,
     required: true
