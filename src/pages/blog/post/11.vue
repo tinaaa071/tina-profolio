@@ -11,6 +11,7 @@
           date: '2024．11．03',
           title: 'LottieFiles：讓動畫設計與開發無縫接軌的革命性工具',
           desc: '從設計到程式，一鍵搞定，LottieFiles 為動畫賦能！',
+          brief: 'LottieFiles 作為一個專注於動畫的解決方案，為設計師與開發者之間搭建了一座高效的橋樑。',
           menu: [
             { menu: '什麼是 LottieFiles？' },
             { menu: 'LottieFiles 的核心功能' },
@@ -21,15 +22,10 @@
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              LottieFiles 作為一個專注於動畫的解決方案，為設計師與開發者之間搭建了一座高效的橋樑。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection" 
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'什麼是 LottieFiles？'"
             />
@@ -42,7 +38,7 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'LottieFiles 的核心功能'"
             />
@@ -53,14 +49,14 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'為什麼選擇 LottieFiles？'"
             />
             <ListDisc :items="list2" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'如何使用 LottieFiles？'"
             />
@@ -71,7 +67,7 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section5">
             <H1 
             :title="'結語'"
             />
@@ -184,8 +180,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

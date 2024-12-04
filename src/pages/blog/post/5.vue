@@ -11,6 +11,7 @@
           date: '2024．10．05',
           title: '《原子習慣》 - 微小習慣如何帶來巨大改變',
           desc: '微小習慣，改寫人生，每天 1% 的進步創造巨大改變！',
+          brief: '你是否曾為了改變某個壞習慣下定決心，卻在幾天後放棄？或者努力建立一個新習慣，卻無法持之以恆？這些困惑，我曾經深有同感，直到我讀了 James Clear 的《原子習慣》。這本書提出了一個簡單卻深刻的理念：改變不需要壯觀的開端，只需要從微不足道的小行動開始。',
           menu: [
             { menu: '核心觀點解析' },
             { menu: '個人反思與應用' },
@@ -21,15 +22,10 @@
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              你是否曾為了改變某個壞習慣下定決心，卻在幾天後放棄？或者努力建立一個新習慣，卻無法持之以恆？這些困惑，我曾經深有同感，直到我讀了 James Clear 的《原子習慣》。這本書提出了一個簡單卻深刻的理念：改變不需要壯觀的開端，只需要從微不足道的小行動開始。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection" 
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'核心觀點解析'"
             />
@@ -49,7 +45,7 @@
             <ListDisc :items="list1" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'個人反思與應用'"
             />
@@ -75,7 +71,7 @@
             </p>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'挑戰與學習'"
             />
@@ -86,14 +82,14 @@
             </p>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'心法總結'"
             />
             <ListNum :items="list3" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section5">
             <H1 
             :title="'結語：讓行動帶來改變'"
             />
@@ -206,8 +202,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

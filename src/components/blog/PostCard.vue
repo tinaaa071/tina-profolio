@@ -8,10 +8,27 @@
           aspectRatioClass,
         ]"
       >
-        <div 
-        v-if="showTag"
-        class="absolute right-4 bottom-4 z-10 px-1.5 py-1 text-xs font-normal whitespace-nowrap rounded bg-stone-50 text-stone-600',">
-          {{ post.category }}
+      <div
+          v-if="showTag"
+          class="flex absolute right-4 bottom-4 z-10 flex-wrap gap-2"
+        >
+          <!-- 判斷 category 是陣列還是單一值 -->
+          <template v-if="Array.isArray(post.category)">
+            <span
+              v-for="(category, index) in post.category"
+              :key="index"
+              class="px-1.5 py-1 text-xs font-normal whitespace-nowrap rounded bg-stone-50 text-stone-600"
+            >
+              {{ category }}
+            </span>
+          </template>
+          <template v-else>
+            <span
+              class="px-1.5 py-1 text-xs font-normal whitespace-nowrap rounded bg-stone-50 text-stone-600"
+            >
+              {{ post.category }}
+            </span>
+          </template>
         </div>
         <img 
         :src="post.image" 

@@ -11,6 +11,7 @@
           date: '2024．09．10',
           title: 'UI/UX 設計師如何培養美感？提升設計視野的實用指南',
           desc: '從平凡到驚豔，UI/UX 設計師的美感修煉之路！',
+          brief: '美感，是 UI/UX 設計師不可或缺的能力之一。<br>雖然美感的養成似乎是天生的，但實際上透過後天的學習和練習，同樣可以大幅提升設計敏感度，讓作品更具吸引力與功能性。',
           menu: [
             { menu: '觀察日常生活中的設計' },
             { menu: '學習設計基礎理論' },
@@ -22,17 +23,10 @@
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              美感，是 UI/UX 設計師不可或缺的能力之一。
-              <br>
-              雖然美感的養成似乎是天生的，但實際上透過後天的學習和練習，同樣可以大幅提升設計敏感度，讓作品更具吸引力與功能性。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection" 
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'1. 觀察日常生活中的設計'"
             />
@@ -45,7 +39,7 @@
               imgCredit="Credit: 松菸"
             />
           </div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'2. 學習設計基礎理論'"
             />
@@ -54,7 +48,7 @@
             </p>
             <ListDisc :items="list2" />
           </div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'3. 多接觸不同風格與文化'"
             />
@@ -66,7 +60,7 @@
               imgSrc="https://cdn-images-1.medium.com/max/1600/0*J5durJaN_z2dhX6M"
             />
           </div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'4. 養成設計輸出習慣'"
             />
@@ -75,7 +69,7 @@
             </p>
             <ListDisc :items="list4" />
           </div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section5">
             <H1 
             :title="'5. 提升與非設計師的溝通能力'"
             />
@@ -85,7 +79,7 @@
             <ListDisc :items="list5" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section6">
             <H1 
             :title="'結語：設計美感是一種持續進化的能力'"
             />
@@ -210,8 +204,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

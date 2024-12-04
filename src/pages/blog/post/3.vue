@@ -11,26 +11,21 @@
           date: '2024．09．17',
           title: '如何為你的 UI 設計選擇完美的配色方案？',
           desc: '選對配色，讓你的設計從視覺中脫穎而出！',
+          brief: '在 UI 設計中，配色方案是影響使用者體驗的關鍵因素之一。<br>一個好的配色方案不僅能提升美觀性，還能幫助使用者更直觀地理解產品資訊。',
           menu: [
             { menu: '為什麼 UI 配色如此重要？' },
             { menu: 'UI 配色的 4 大基本原則' },
             { menu: '配色實踐：從工具到實例' },
+            { menu: '實例分享' },
             { menu: '結語' }
           ]
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              在 UI 設計中，配色方案是影響使用者體驗的關鍵因素之一。
-              <br>
-              一個好的配色方案不僅能提升美觀性，還能幫助使用者更直觀地理解產品資訊。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection" 
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'為什麼 UI 配色如此重要？'"
             />
@@ -47,7 +42,7 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'UI 配色的 4 大基本原則'"
             />
@@ -87,7 +82,7 @@
               </template>
             </ListNum>
           </div>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'配色實踐：從工具到實例'"
             />
@@ -103,7 +98,7 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'實例分享'"
             customClass="space-y-4"
@@ -128,7 +123,7 @@
           </ListNum>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section5">
             <H1 
             :title="'結語'"
             />
@@ -237,10 +232,10 @@ export default {
       ],
       list7: [
         {
-          title: "案例 1：金融應用"
+          title: "案例一：金融應用"
         },
         {
-          title: "案例 2：健身應用"
+          title: "案例二：健身應用"
         }
       ],
       list8: [
@@ -299,8 +294,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

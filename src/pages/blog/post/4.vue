@@ -11,18 +11,14 @@
           date: '2024．09．24',
           title: '5 個 UI 配色網站資源：提升設計質感的必備工具',
           desc: '快速提升設計質感！必收藏的 5 個 UI 配色資源',
+          brief: '在設計網頁或移動應用程式的過程中，選擇合適的顏色組合不僅能增強視覺效果，還能提升用戶體驗。'
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              在設計網頁或移動應用程式的過程中，選擇合適的顏色組合不僅能增強視覺效果，還能提升用戶體驗。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection" 
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'Coolors'"
             :link="'https://coolors.co/'"
@@ -40,7 +36,7 @@
             </div>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'Color Hunt'"
             :link="'https://colorhunt.co/'"
@@ -58,7 +54,7 @@
             </div>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'Adobe Color'"
             :link="'https://color.adobe.com/zh/'"
@@ -76,7 +72,7 @@
             </div>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'Color Palette Ideas'"
             :link="'https://colorpalettes.net/'"
@@ -100,7 +96,7 @@
             </div>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section5">
             <H1 
             :title="'Material UI'"
             :link="'https://materialui.co/colors'"
@@ -245,8 +241,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

@@ -11,6 +11,7 @@
           date: '2024．10．16',
           title: '打造精美的 UI 設計：必備資源與工具',
           desc: '設計精美介面，必備資源讓創意無限延伸！',
+          brief: '一個好的 UI 不僅能吸引使用者，更能提升使用者體驗（UX）。作為設計師，掌握豐富的設計資源是創造成功作品的關鍵',
           menu: [
             { menu: 'UI 設計靈感來源' },
             { menu: '免費 Icon 資源' },
@@ -20,15 +21,10 @@
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              一個好的 UI 不僅能吸引使用者，更能提升使用者體驗（UX）。作為設計師，掌握豐富的設計資源是創造成功作品的關鍵。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection"
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'UI 設計靈感來源'"
             />
@@ -39,7 +35,7 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'免費 Icon 資源'"
             />
@@ -50,7 +46,7 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'免費圖庫網站'"
             />
@@ -61,7 +57,7 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'插畫與創意素材'"
             />
@@ -218,8 +214,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

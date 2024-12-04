@@ -11,6 +11,7 @@
           date: '2024．11．05',
           title: '《底層邏輯》 - 看清這個世界的底牌',
           desc: '破解世界運行密碼，構建自己的成功法則',
+          brief: '這本書的作者，將我們的思維結構拆解成一個個簡單且可操作的層次，幫助讀者深入理解自己的思維過程，以及如何更有邏輯地面對生活中的種種挑戰。',
           menu: [
             { menu: '書籍簡介' },
             { menu: '底層邏輯的定義' },
@@ -21,15 +22,10 @@
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              這本書的作者，將我們的思維結構拆解成一個個簡單且可操作的層次，幫助讀者深入理解自己的思維過程，以及如何更有邏輯地面對生活中的種種挑戰。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection" 
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'書籍簡介'"
             />
@@ -41,7 +37,7 @@
             </p>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'底層邏輯的定義'"
             />
@@ -51,7 +47,7 @@
             <ListNum :items="list1" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'啟發'"
             />
@@ -63,7 +59,7 @@
             </p>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'挑戰與反思'"
             />
@@ -75,7 +71,7 @@
             </p>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section5">
             <H1 
             :title="'結語'"
             />
@@ -160,8 +156,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

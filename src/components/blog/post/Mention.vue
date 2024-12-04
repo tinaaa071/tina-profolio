@@ -1,49 +1,67 @@
 <template>
-    <div>
-        <p v-if="showTitle" class="mb-2">
-            📌 也可以參考下面這篇分享：
-        </p>
-        <RouterLink :to="link" class="flex gap-3 p-3 rounded-2xl border transition-colors sm:gap-6 border-stone-300 group hover:border-stone-400 dark:border-stone-400 dark:hover:border-white">
-            <div class="py-2 w-full">
-                <p class="mb-2 font-semibold">
-                    {{ title }}
-                </p>
-                <p class="text-sm line-clamp-2">
-                    {{ content }}
-                </p>
-            </div>
-            <div class="overflow-hidden w-28 rounded-2xl border border-stone-200 aspect-square">
-                <img 
-                :src="image" 
-                alt="image"
-                class="object-cover object-center w-full h-full transition-transform group-hover:scale-125"
-            >
-            </div>
-        </RouterLink>
-    </div>
+  <div>
+      <p v-if="showNote" class="mb-2">
+          {{ note }}
+      </p>
+      <!-- 使用條件渲染來選擇 RouterLink 或 a -->
+      <component
+          :is="isExternal ? 'a' : 'RouterLink'"
+          :href="isExternal ? link : undefined"
+          :to="!isExternal ? link : undefined"
+          class="flex gap-3 p-2 rounded-2xl border transition-colors sm:p-3 sm:gap-6 border-stone-300 group hover:border-stone-400 dark:border-stone-400 dark:hover:border-white"
+          target="_blank"
+          rel="noopener noreferrer"
+      >
+          <div class="py-2 w-full">
+              <p class="mb-2 font-semibold">
+                  {{ title }}
+              </p>
+              <p class="text-sm line-clamp-2">
+                  {{ content }}
+              </p>
+          </div>
+          <div class="overflow-hidden w-28 rounded-2xl border border-stone-200 aspect-square">
+              <img 
+                  :src="image" 
+                  alt="image"
+                  class="object-cover object-center w-full h-full transition-transform group-hover:scale-125"
+              >
+          </div>
+      </component>
+  </div>
 </template>
 
 <script setup>
 defineProps({
-  showTitle: {
-    type: Boolean,
-    required: true
-  },
-  link: {
-    type: String,
-    required: true
-  },
-  title: {
-    type: String,
-    required: true
-  },
-  content: {
-    type: String,
-    required: true
-  },
-  image: {
-    type: String,
-    required: true
-  }
+showNote: {
+  type: Boolean,
+  required: true
+},
+link: {
+  type: String,
+  required: true
+},
+isExternal: {
+  type: Boolean,
+  required: false,
+  default: false
+},
+title: {
+  type: String,
+  required: true
+},
+note: {
+  type: String,
+  required: false,
+  default: '📌\u00A0\u00A0也可以參考下面這篇分享：'
+},
+content: {
+  type: String,
+  required: true
+},
+image: {
+  type: String,
+  required: true
+}
 })
 </script>

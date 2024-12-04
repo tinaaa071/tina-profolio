@@ -11,6 +11,7 @@
           date: '2024．09．02',
           title: '介面設計原則：打造用戶友好體驗的基石',
           desc: '設計以用戶為中心，創造流暢且愉悅的數位體驗！',
+          brief: '介面設計不僅僅是讓一個產品「看起來漂亮」，更是影響用戶體驗和產品成功的關鍵因素。',
           menu: [
             { menu: '清晰性優先' },
             { menu: '以用戶為中心' },
@@ -23,15 +24,10 @@
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              介面設計不僅僅是讓一個產品「看起來漂亮」，更是影響用戶體驗和產品成功的關鍵因素。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection" 
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'1. 清晰性優先'"
             />
@@ -44,7 +40,8 @@
               imgCredit="Credit: Figma"
             />
           </div>
-          <div class="flex flex-col gap-4">
+          <Dot />
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'2. 以用戶為中心'"
             />
@@ -57,7 +54,8 @@
               imgCredit="Credit: Figma"
             />
           </div>
-          <div class="flex flex-col gap-4">
+          <Dot />
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'3. 最少的認知負荷'"
             />
@@ -70,7 +68,8 @@
               imgCredit="Credit: Figma"
             />
           </div>
-          <div class="flex flex-col gap-4">
+          <Dot />
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'4. 給予即時反饋'"
             />
@@ -79,7 +78,8 @@
             </p>
             <ListDisc :items="list4" />
           </div>
-          <div class="flex flex-col gap-4">
+          <Dot />
+          <div class="flex flex-col gap-4" id="section5">
             <H1 
             :title="'5. 美感與實用性並重'"
             />
@@ -92,7 +92,8 @@
               imgCredit="Credit: Figma"
             />
           </div>
-          <div class="flex flex-col gap-4">
+          <Dot />
+          <div class="flex flex-col gap-4" id="section6">
             <H1 
             :title="'6. 包容性與可及性'"
             />
@@ -102,7 +103,7 @@
             <ListDisc :items="list6" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section7">
             <H1 
             :title="'結語'"
             />
@@ -249,8 +250,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

@@ -11,16 +11,11 @@
           date: '2024．11．02',
           title: '16 個日系插圖精選網站推薦',
           desc: '日系插圖精選，讓你的創作更出色！',
+          brief: '日系風格以其簡約、柔和與高辨識度的特色，深受設計師和創作者喜愛。今天將介紹 16 個精選的日系插圖素材網站，幫助你輕鬆找到理想素材。'
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              日系風格以其簡約、柔和與高辨識度的特色，深受設計師和創作者喜愛。今天將介紹 16 個精選的日系插圖素材網站，幫助你輕鬆找到理想素材。
-            </p>
-          </template>
-        </Brief>
+        />
         <Content>
           <div class="flex flex-col gap-4">
             <H1 
@@ -62,236 +57,275 @@
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'Skribbl'"
-            :link="'https://weareskribbl.com/'"
+            :title="'イラストセンター'"
+            :link="'https://illustcenter.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*T824gh-1U3hp5ixy.png"
-              imgCredit="Credit: Skribbl"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/1*l0sIWQ5T6UgusASQ0MtSmQ.png"
+              imgCredit="Credit: イラストセンター"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list3[0], list3[1], list3[2]]" />
+              <ListDisc :items="[list3[0], list3[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list3[3]]" />
+              <ListDisc :items="[list3[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'Reshot'"
-            :link="'https://www.reshot.com/'"
+            :title="'時短だ'"
+            :link="'https://jitanda.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*1qsEZeBp6oVLtfpf"
-              imgCredit="Credit: Reshot"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/1*2hGpfadlQVrtqh8P8NvKag.png"
+              imgCredit="Credit: 時短だ"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list4[0], list4[1], list4[2]]" />
+              <ListDisc :items="[list4[0], list4[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list4[3]]" />
+              <ListDisc :items="[list4[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'Open Doodle'"
-            :link="'https://www.opendoodles.com/'"
+            :title="'rakugakiicon'"
+            :link="'https://rakugakiicon.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*PQ5otlcE8VuIv_IR"
-              imgCredit="Credit: Open Doodle"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/1*XmKCmsge3LwoFh2tH2fBng.png"
+              imgCredit="Credit: rakugakiicon"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list5[0], list5[1], list5[2]]" />
+              <ListDisc :items="[list5[0], list5[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list5[3]]" />
+              <ListDisc :items="[list5[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'Open Peeps'"
-            :link="'https://www.openpeeps.com/'"
+            :title="'STAMPO'"
+            :link="'https://stampo.fun/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*0LfgPkCrGBJaChf2.jpg"
-              imgCredit="Credit: Open Peeps"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*Oe0y4-iUzSoOA7TD.jpg"
+              imgCredit="Credit: STAMPO"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list6[0], list6[1], list6[2]]" />
+              <ListDisc :items="[list6[0], list6[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list6[3]]" />
+              <ListDisc :items="[list6[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'blush'"
-            :link="'https://blush.design/'"
+            :title="'ソコス'"
+            :link="'https://soco-st.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*PHUbIc6mHYCGGJJ8.jpg"
-              imgCredit="Credit: blush"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*3QLUh4WrdWw-xNJp.png"
+              imgCredit="Credit: ソコス"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list7[0], list7[1], list7[2]]" />
+              <ListDisc :items="[list7[0], list7[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list7[3]]" />
+              <ListDisc :items="[list7[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'humaaans'"
-            :link="'https://www.humaaans.com/'"
+            :title="'Shigureni free illust'"
+            :link="'https://www.shigureni.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*AZqDZFBxuU5zdiZM"
-              imgCredit="Credit: humaaans"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*BSpqK7ZV9B8uJljP.png"
+              imgCredit="Credit: Shigureni free illust"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list8[0], list8[1], list8[2]]" />
+              <ListDisc :items="[list8[0], list8[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list8[3]]" />
+              <ListDisc :items="[list8[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'Control'"
-            :link="'https://control.rocks/'"
+            :title="'ベクターシェルフ (Vector Shelf)'"
+            :link="'https://vectorshelf.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*HuiU2JZvum07v3Z9.png"
-              imgCredit="Credit: Control"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*wX7C_eXeXjXJAaG3.jpg"
+              imgCredit="Credit: ベクターシェルフ (Vector Shelf)"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list9[0], list9[1], list9[2]]" />
+              <ListDisc :items="[list9[0], list9[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list9[3]]" />
+              <ListDisc :items="[list9[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'Cocomaterial'"
-            :link="'https://cocomaterial.com/'"
+            :title="'ダ鳥獣戯画'"
+            :link="'https://chojugiga.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*mT3ib89hGhMydpe0.jpg"
-              imgCredit="Credit: Cocomaterial"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*TCZpNPZBgqegE-up.png"
+              imgCredit="Credit: ダ鳥獣戯画"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list10[0], list10[1], list10[2]]" />
+              <ListDisc :items="[list10[0], list10[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list10[3]]" />
+              <ListDisc :items="[list10[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'Ouch'"
-            :link="'https://icons8.com/illustrations'"
+            :title="'Linustock'"
+            :link="'https://www.linustock.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*djpYT02DmoWuSYbH.jpeg"
-              imgCredit="Credit: Ouch"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*S3wtlMZr1O_XvgKk.jpg"
+              imgCredit="Credit: Linustock"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list11[0], list11[1], list11[2]]" />
+              <ListDisc :items="[list11[0], list11[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list11[3]]" />
+              <ListDisc :items="[list11[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'manypixels'"
-            :link="'https://www.manypixels.co/gallery'"
+            :title="'えんぴつ素材'"
+            :link="'https://enpitsu-sozai.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*a6ZiYNm9JI4cOU2A.jpeg"
-              imgCredit="Credit: manypixels"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*cs_53SjFGiplI9vy"
+              imgCredit="Credit: えんぴつ素材"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list12[0], list12[1], list12[2]]" />
+              <ListDisc :items="[list12[0], list12[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list12[3]]" />
+              <ListDisc :items="[list12[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'freeillustrations'"
-            :link="'https://freeillustrations.xyz/'"
+            :title="'Web-sozai'"
+            :link="'https://web-sozai.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*GepeZCS5NSjJKXSR.png"
-              imgCredit="Credit: freeillustrations"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/1*7bzyuPNENydZq_eF5t-B_A.png"
+              imgCredit="Credit: Web-sozai"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list13[0], list13[1], list13[2]]" />
+              <ListDisc :items="[list13[0], list13[1]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list13[3]]" />
+              <ListDisc :items="[list13[2]]" />
             </div>
           </div>
           <Dot />
           <div class="flex flex-col gap-4">
             <H1 
-            :title="'illlustrations'"
-            :link="'https://illlustrations.co/'"
+            :title="'ICOOON MONO'"
+            :link="'https://icooon-mono.com/'"
             />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/0*t5ppxYNTyAnbwWO8"
-              imgCredit="Credit: illlustrations"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*3wzD2DWjlAsz_u9U"
+              imgCredit="Credit: ICOOON MONO"
             />
             <div>
               <span>網站特色：</span>
-              <ListDisc :items="[list14[0], list14[1], list14[2]]" />
+              <ListDisc :items="[list14[0], list14[1], list14[2], list14[3]]" />
             </div>
             <div>
               <span>適合使用場景：</span>
-              <ListDisc :items="[list14[3]]" />
+              <ListDisc :items="[list14[4]]" />
+            </div>
+          </div>
+          <Dot />
+          <div class="flex flex-col gap-4">
+            <H1 
+            :title="'TOWN illust'"
+            :link="'https://town-illust.com/'"
+            />
+            <CreditImg 
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*iO3aFGU0ZbipkrHh.png"
+              imgCredit="Credit: TOWN illust"
+            />
+            <div>
+              <span>網站特色：</span>
+              <ListDisc :items="[list15[0], list15[1], list15[2], list15[3]]" />
+            </div>
+            <div>
+              <span>適合使用場景：</span>
+              <ListDisc :items="[list15[4]]" />
+            </div>
+          </div>
+          <Dot />
+          <div class="flex flex-col gap-4">
+            <H1 
+            :title="'DOTOWN'"
+            :link="'https://dotown.maeda-design-room.net/'"
+            />
+            <CreditImg 
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*x31dYLXqjteC2Q34"
+              imgCredit="Credit: DOTOWN"
+            />
+            <div>
+              <span>網站特色：</span>
+              <ListDisc :items="[list16[0], list16[1], list16[2], list16[3]]" />
+            </div>
+            <div>
+              <span>適合使用場景：</span>
+              <ListDisc :items="[list16[4]]" />
             </div>
           </div>
           <Mention 
-              :link="'/blog/post/4'" 
-              :title="'16 個日系插圖精選網站推薦'" 
-              :content="'快速提升設計質感！必收藏的 5 個 UI 配色資源'" 
-              :image="'https://cdn-images-1.medium.com/max/1600/1*hx609LG91bVhVTfCBCf_bA.png'" 
+              :showNote="true"
+              :link="'/blog/post/9'" 
+              :title="'14 個歐美插圖精選網站推薦'" 
+              :content="'精挑細選！設計師必備的 14 個歐美插圖網站推薦！'" 
+              :image="'https://cdn-images-1.medium.com/max/1600/1*e2YufV1qOiEC3uTYnhQl2Q.png'" 
             />
         </Content>
         </div>
@@ -340,13 +374,13 @@ export default {
       ],
       list3: [
         {
-          description: "手繪風格插圖，帶有俏皮感和親和力",
+          description: "提供各種專業插圖素材，分為多種主題",
         },
         {
-          description: "可免費下載，用於商業用途需授權",
+          description: "適用於商業用途，並提供範本與素材包",
         },
         {
-          description: "插圖具有高辨識度，能輕鬆提升品牌趣味性",
+          description: "行銷設計、專業報告、商業插圖",
         },
         {
           description: "內容行銷、社群貼文、教育資源",
@@ -354,156 +388,163 @@ export default {
       ],
       list4: [
         {
-          description: "提供免費的高質量插圖和圖像，涵蓋多種主題",
+          description: "提供多種免費插圖，設計簡約而富有趣味性",
         },
         {
-          description: "適合用於數位媒體和設計專案",
+          description: "主要以日常生活為題材，適合商業與個人用途",
         },
         {
-          description: "支援個人和商業用途，素材更新頻繁",
-        },
-        {
-          description: "網頁設計、PPT製作、品牌推廣",
+          description: "網站設計、商業宣傳資料、社交媒體圖像",
         }
       ],
       list5: [
         {
-          description: "免費的手繪風插圖庫，具有簡單但充滿趣味的風格",
+          description: "提供可愛的手繪風格插圖，素材風格活潑、親和力強",
         },
         {
-          description: "可調整插圖配色，適用於多種數字平台",
+          description: "免費下載並允許商業用途",
         },
         {
-          description: "開放授權，支援商業用途",
-        },
-        {
-          description: "社群內容創作、教育資料、品牌設計",
+          description: "社群平台封面設計、品牌插圖、輕鬆活潑的活動宣傳",
         }
       ],
       list6: [
         {
-          description: "專注於角色插圖，使用者可以自由組合臉部、身體和配件",
+          description: "特色是手繪風格的插圖，質感細膩",
         },
         {
-          description: "插圖手繪風，易於整合到各類設計中",
+          description: "提供免費下載，素材多元，且分為多種類型",
         },
         {
-          description: "免費且商業用途友好",
-        },
-        {
-          description: "人物介紹、社群圖像、品牌形象設計",
+          description: "插圖設計、教學材料、商品包裝設計",
         }
       ],
       list7: [
         {
-          description: "提供大量插圖組合工具，可即時編輯人物、背景、顏色",
+          description: "擁有各式手繪風格插圖，並且免費提供",
         },
         {
-          description: "與多位插畫師合作，涵蓋多種風格",
+          description: "允許用於商業用途，但需遵循使用規範",
         },
         {
-          description: "免費與付費選項，適合各種創意需求",
-        },
-        {
-          description: "社群貼文、教育內容、品牌視覺識別",
+          description: "學校資料、報告封面、產品設計",
         }
       ],
       list8: [
         {
-          description: "高度可定制化的人物插圖，支援調整姿勢、衣著和顏色",
+          description: "提供免費且高質量的日系插圖，具有精緻的風格",
         },
         {
-          description: "免費使用，特別適合描繪現代場景和人物故事",
+          description: "提供多樣的下載格式，方便設計師使用",
         },
         {
-          description: "插圖風格簡約，容易融入設計",
-        },
-        {
-          description: "教學簡報、品牌推廣、應用程式設計",
+          description: "線上媒體、產品推廣、社交媒體圖像",
         }
       ],
       list9: [
         {
-          description: "插圖風格獨特，適合科技、現代化場景設計",
+          description: "提供大量的向量插圖和圖形，主題涵蓋廣泛",
         },
         {
-          description: "提供多種圖形和插圖元素，適用於專業設計",
+          description: "高解析度，適合設計師用於印刷或數位設計",
         },
         {
-          description: "免費和付費素材選擇多樣",
-        },
-        {
-          description: "應用程式介面設計、科技品牌宣傳",
+          description: "專業設計工作、印刷設計、廣告設計",
         }
       ],
       list10: [
         {
-          description: "以柔和配色和清新風格為主，素材實用性高",
+          description: "以插畫的經典日式藝術風格為主題",
         },
         {
-          description: "提供多種主題插圖，適合數位和實體設計",
+          description: "插圖風格古雅，適合文化、教育用途",
         },
         {
-          description: "免費下載，支援商業用途",
-        },
-        {
-          description: "網站設計、行銷素材、手冊設計",
+          description: "文化推廣、教育資料、藝術展覽",
         }
       ],
       list11: [
         {
-          description: "提供專業設計的免費插圖，涵蓋多種風格與主題",
+          description: "以插圖為主，結合簡約風格和現代設計",
         },
         {
-          description: "插圖質量高，適合數位與實體設計",
+          description: "支援高解析度下載，並提供商業用途素材",
         },
         {
-          description: "免費用於商業項目，僅需簡單授權標註",
-        },
-        {
-          description: "網頁和應用程式介面、產品推廣、品牌設計",
+          description: "商業設計、網站與應用程式設計",
         }
       ],
       list12: [
         {
-          description: "提供現代簡約風的插圖，可即時下載並使用",
+          description: "以鉛筆風格插圖為特色，適合用於手繪感強烈的設計",
         },
         {
-          description: "適合品牌設計、數位媒體及印刷應用",
+          description: "提供多樣化素材，適合各類專案需求",
         },
         {
-          description: "免費版與付費版素材均支援商業用途",
-        },
-        {
-          description: "行銷專案、網站與應用設計、PPT插圖",
+          description: "手繪風格設計、手冊封面、社群設計",
         }
       ],
       list13: [
         {
-          description: "提供100%免費的矢量插圖，風格簡約而清新",
+          description: "提供大量免費插圖，風格簡約多樣",
         },
         {
-          description: "支援個人和商業用途，下載過程簡便",
+          description: "支援商業用途，並設有多個分類方便搜尋",
         },
         {
-          description: "插圖設計專業，適用於多種場景",
-        },
-        {
-          description: "網頁設計、簡報、行銷活動",
+          description: "網頁設計、品牌推廣、電子書封面",
         }
       ],
       list14: [
         {
-          description: "提供免費的高質量插圖，專注於現代簡約風格",
+          description: "提供大量的高質量免費插圖，專注於簡約和現代風格",
         },
         {
-          description: "插圖資源多樣，包括人物、物品、場景等多種元素",
+          description: "插圖種類豐富，包括圖標、背景、人物等各式素材",
         },
         {
-          description: "允許商業用途，下載過程簡便，無需註冊即可使用",
+          description: "支援多種格式下載，適用於數位設計、印刷以及網頁設計等用途",
         },
         {
-          description: "網站設計、社群貼文、行銷資料、數位產品展示",
+          description: "可免費下載並用於商業用途，但需遵守網站的授權條款",
+        },
+        {
+          description: "網站設計、應用程式介面設計、行銷資料、產品推廣素材",
+        }
+      ],
+      list15: [
+        {
+          description: "提供以「城鎮生活」為主題的插圖，風格清新自然",
+        },
+        {
+          description: "主題涵蓋日常生活、店鋪場景、交通工具等多元內容",
+        },
+        {
+          description: "免費下載並允許商業用途，需依據使用條款標註來源",
+        },
+        {
+          description: "插圖細膩而實用，適合描繪溫馨故事或展示社區氛圍的專案",
+        },
+        {
+          description: "地方社區宣傳、教育教材、品牌故事視覺設計",
+        }
+      ],
+      list16: [
+        {
+          description: "提供大量以點陣圖（像素藝術）為主的插圖素材",
+        },
+        {
+          description: "風格復古又可愛，涵蓋角色、物件、場景等多種主題",
+        },
+        {
+          description: "免費提供高質量下載，支援商業用途，但需標明出處並遵守網站使用條款",
+        },
+        {
+          description: "素材精緻，特別適合需要懷舊或遊戲風格的設計專案",
+        },
+        {
+          description: "遊戲設計、像素藝術相關專案、社群貼文、復古風品牌設計",
         }
       ],
       posts: [

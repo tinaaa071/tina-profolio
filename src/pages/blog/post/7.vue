@@ -11,6 +11,7 @@
           date: '2024．10．20',
           title: '從零開始成為 UI/UX 設計師：自學路徑指南',
           desc: '零基礎也能成設計高手，探索 UI/UX 的學習秘訣！',
+          brief: '隨著數位產品需求的增加，UI/UX 設計師成為了一個炙手可熱的職業。不過，對於那些沒有相關背景的人來說，如何自學成為一名合格的設計師是一個常見的問題。',
           menu: [
             { menu: '了解 UI/UX 設計的核心概念' },
             { menu: '學習設計工具' },
@@ -23,15 +24,10 @@
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              隨著數位產品需求的增加，UI/UX 設計師成為了一個炙手可熱的職業。不過，對於那些沒有相關背景的人來說，如何自學成為一名合格的設計師是一個常見的問題。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection" 
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'了解 UI/UX 設計的核心概念'"
             />
@@ -48,7 +44,7 @@
             <ListDisc :items="list2" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'學習設計工具'"
             />
@@ -62,7 +58,7 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'培養設計思維'"
             />
@@ -72,7 +68,7 @@
             <ListDisc :items="list4" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'建立作品集'"
             />
@@ -85,7 +81,7 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section5">
             <H1 
             :title="'理解網頁設計的基礎'"
             />
@@ -95,14 +91,14 @@
             <ListDisc :items="list6" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section6">
             <H1 
             :title="'持續學習與進步'"
             />
             <ListDisc :items="list7" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section7">
             <H1 
             :title="'結語'"
             />
@@ -247,8 +243,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

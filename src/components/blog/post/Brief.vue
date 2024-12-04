@@ -42,8 +42,9 @@
       <div class="relative">
         <Fa6SolidQuoteLeft class="absolute -top-3 left-3 text-2xl text-B2 dark:text-stone-300" />
         <Fa6SolidQuoteRight class="absolute right-3 -bottom-3 text-2xl text-B2 dark:text-stone-300" />
-        <div class="p-6 leading-loose text-center rounded-lg xl:px-32 bg-B4 dark:bg-stone-700">
-          <slot name="brief"></slot>
+        <div 
+        v-html="post.brief"
+        class="px-8 py-5 leading-loose text-center rounded-lg xl:px-32 bg-B4 dark:bg-stone-700">
         </div>
       </div>
     </div>
@@ -54,10 +55,14 @@
       v-if="showMenu && post.menu && post.menu.length > 0"
       class="px-8 py-5 text-sm rounded-lg text-stone-500 bg-B4 dark:bg-stone-700 dark:text-stone-300">
       <p class="mb-2">
-        💡 大綱
+        💡&nbsp;&nbsp;大綱
       </p>
       <ul class="grid gap-2 list-decimal list-inside">
-        <li v-for="(item, index) in post.menu" :key="index">
+        <li 
+          v-for="(item, index) in post.menu" 
+          :key="index"
+          @click="$emit('navigate', `section${index + 1}`)"
+          class="cursor-pointer dark:hover:text-stone-200 hover:text-stone-400">
           {{ item.menu }}
         </li>
       </ul>
@@ -83,7 +88,7 @@ export default {
     showMenu: {
       type: Boolean,
       default: true,
-    },
+    }
   },
 };
 </script>

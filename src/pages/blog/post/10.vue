@@ -11,6 +11,7 @@
           date: '2024．11．02',
           title: 'Lottie 動畫：打造更輕量、更高效的互動體驗',
           desc: '打造高效互動體驗，Lottie 是你的最佳選擇！',
+          brief: '在現今數位時代，動畫不僅是一種視覺效果，更是一種有效的溝通工具。無論是行動應用程式、網站，還是行銷活動，動畫都能提升用戶體驗。然而，傳統的動畫製作和導入方式常常伴隨著效能瓶頸與檔案過大的問題。這時候，Lottie 成為了解決方案。',
           menu: [
             { menu: '什麼是 Lottie？' },
             { menu: 'Lottie 的應用場景' },
@@ -21,15 +22,10 @@
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              在現今數位時代，動畫不僅是一種視覺效果，更是一種有效的溝通工具。無論是行動應用程式、網站，還是行銷活動，動畫都能提升用戶體驗。然而，傳統的動畫製作和導入方式常常伴隨著效能瓶頸與檔案過大的問題。這時候，Lottie 成為了解決方案。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection" 
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'什麼是 Lottie？'"
             />
@@ -45,14 +41,14 @@
             />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'Lottie 的應用場景'"
             />
             <ListNum :items="list2" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'如何開始製作 Lottie？'"
             />
@@ -63,7 +59,7 @@
               <template #slot-0>
                 <Mention 
                   class="mt-4"
-                  :showTitle="false"
+                  :showNote="false"
                   :link="'https://airbnb.io/lottie/#/supported-features'" 
                   :title="'Lottie Docs'" 
                   :content="'Lottie is a mobile library for Web, and iOS that parses Adobe After Effects animations exported as json with Bodymovin and renders them natively on mobile!'" 
@@ -76,7 +72,7 @@
             </ListNum>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'成功案例分享'"
             />
@@ -84,9 +80,12 @@
               Lottie 已被許多知名公司採用，例如：
             </p>
             <ListDisc :items="list5" />
+            <CreditImg 
+              imgSrc="https://drawer.design/wp-content/uploads/2020/03/brands-lottie-01.png"
+            />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section5">
             <H1 
             :title="'總結'"
             />
@@ -223,8 +222,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

@@ -2,9 +2,9 @@
   <div class="sm:pb-10 bg-B4 dark:bg-stone-900 text-stone-900">
     <Layout :showProgress="true">
     <template #content>
-      <div class="space-y-5 sm:space-y-8">
+      <div class="space-y-3 sm:space-y-4">
         <!-- Hero 區塊 -->
-        <div class="grid grid-cols-4 grid-flow-row-dense gap-2.5 cursor-default sm:gap-4">
+        <div class="grid grid-cols-4 grid-flow-row-dense gap-3 cursor-default sm:gap-4">
           <!-- 第一格 -->
           <div class="inline-flex flex-col col-span-4 gap-6 justify-between p-5 bg-white rounded-2xl xs:gap-10 sm:p-8 sm:col-span-2 sm:rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
             <div class="flex gap-6 items-center text-xl font-bold xs:text-2xl sm:text-3xl lg:text-4xl">
@@ -82,7 +82,7 @@
           </div>
         </div>
         <!-- Works 區塊 -->
-        <div class="flex flex-col gap-2.5 cursor-default sm:gap-4">
+        <div class="flex flex-col gap-3 cursor-default sm:gap-4">
           <!-- Works -->
           <SlideIn direction="bottom">
             <WorkCard />
@@ -100,7 +100,7 @@
                     Shape Mask
                   </p>
                 </div>
-                <RouterLink to="/" class="overflow-hidden relative w-full h-full bg-white rounded-2xl border border-white/20 sm:rounded-3xl">
+                <RouterLink to="/blog/post/18" class="overflow-hidden relative w-full h-full bg-white rounded-2xl border border-white/20 sm:rounded-3xl">
                   <img src="/plugin-banner.png" alt="" class="object-cover inset-0 w-full h-full transition-all duration-300 lg:absolute hover:scale-105">
                 </RouterLink>
               </div>

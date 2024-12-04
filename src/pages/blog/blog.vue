@@ -29,6 +29,7 @@
           <Paginator
             :totalItems="filteredPosts.length"
             :itemsPerPage="itemsPerPage"
+            :currentPage="currentPage"
             @page-changed="handlePageChange"
           />
           <!-- <p>Current Page: {{ currentPage }}</p> -->
@@ -137,6 +138,41 @@ export default {
           date: "2024．11．06",
         },
         {
+          id: 14,
+          title: "Bento Grid UI：設計靈感來自便當盒的介面設計風格",
+          category: this.$t('blog.item2'),
+          image: "https://cdn-images-1.medium.com/max/1600/1*XmqGmjWlFW0ZdY8xyTCGqA.png",
+          date: "2024．11．08",
+        },
+        {
+          id: 15,
+          title: "《設計心理學》 - 理解人類行為與設計的橋樑",
+          category: this.$t('blog.item5'),
+          image: "https://cdn-images-1.medium.com/max/1600/1*l9LTo-VAunwN9UZeeoca4Q.png",
+          date: "2024．11．12",
+        },
+        {
+          id: 16,
+          title: "UI/UX Designer 也要會寫程式嗎？",
+          category: this.$t('blog.item3'),
+          image: "https://cdn-images-1.medium.com/max/1600/1*OT0pTyXTOhQ2tuQzuqSwwg.png",
+          date: "2024．11．13",
+        },
+        {
+          id: 17,
+          title: "12 款必備 Figma Plugins 推薦，提升設計效率的秘密武器",
+          category: this.$t('blog.item4'),
+          image: "https://cdn-images-1.medium.com/max/1600/1*FXqQSo8i5KrmhKGlImNUbA.png",
+          date: "2024．11．15",
+        },
+        {
+          id: 18,
+          title: "身為 UI/UX 設計師開發的第一個 Figma Plugin - Shape Mask",
+          category: this.$t('blog.item3'),
+          image: "https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png",
+          date: "2024．11．16",
+        },
+        {
           id: 22,
           title: "Lottie 動畫：打造更輕量、更高效的互動體驗",
           category: this.$t('blog.item2'),
@@ -167,13 +203,27 @@ export default {
   methods: {
     handlePageChange(page) {
       this.currentPage = page;
+      this.updateRoute(); // 每次頁碼變化時，更新路由查詢參數
+    },
+    updateRoute() {
+      this.$router.push({
+        path: this.$route.path,
+        query: { ...this.$route.query, page: this.currentPage }, // 將 currentPage 放入查詢參數
+      });
     },
     filterByCategory(category) {
       this.currentCategory = category;
-      this.currentPage = 1; // Reset to the first page when changing category
+      this.currentPage = 1; // 更改分類時重設頁碼為 1
+      this.updateRoute(); // 更新路由
     },
   },
   watch: {
+    '$route.query.page': {
+      immediate: true,
+      handler(newPage) {
+        this.currentPage = newPage ? parseInt(newPage) : 1; // 如果查詢參數有 page，則使用該值，否則默認為 1
+      },
+    },
     '$route.query.category': {
       immediate: true,
       handler(newCategory) {

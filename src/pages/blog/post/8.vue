@@ -11,6 +11,7 @@
           date: '2024．10．28',
           title: '《Not Knowing》 - 擁抱未知，成就更廣闊的世界',
           desc: '未知並非恐懼，而是探索與成長的起點',
+          brief: '《Not Knowing: The Art of Turning Uncertainty into Possibility》這本書的兩位作者 Steven DSouza 和 Diana Renner 深刻剖析了「不確定性」這一看似負面的狀態，並提出了一種反直覺的觀點：接受並擁抱未知，不僅是面對現代複雜世界的關鍵能力，更是個人成長與創造力的催化劑。',
           menu: [
             { menu: '我們為什麼害怕不確定性？' },
             { menu: '不確定性是一種智慧的源泉' },
@@ -23,15 +24,10 @@
         }"
         :showCredit="true"
         :showMenu="true"
-        >
-          <template #brief>
-            <p>
-              《Not Knowing: The Art of Turning Uncertainty into Possibility》這本書的兩位作者 Steven D'Souza 和 Diana Renner 深刻剖析了「不確定性」這一看似負面的狀態，並提出了一種反直覺的觀點：接受並擁抱未知，不僅是面對現代複雜世界的關鍵能力，更是個人成長與創造力的催化劑。
-            </p>
-          </template>
-        </Brief>
+        @navigate="scrollToSection" 
+        />
         <Content>
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section1">
             <H1 
             :title="'我們為什麼害怕不確定性？'"
             />
@@ -40,7 +36,7 @@
             </p>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section2">
             <H1 
             :title="'不確定性是一種智慧的源泉'"
             />
@@ -61,7 +57,7 @@
             </p>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section3">
             <H1 
             :title="'從「解答者」到「提問者」的轉變'"
             />
@@ -83,7 +79,7 @@
             </p>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section4">
             <H1 
             :title="'混沌中的創造力'"
             />
@@ -107,7 +103,7 @@
             </Callout>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section5">
             <H1 
             :title="'接受不確定性的實踐方法'"
             />
@@ -117,7 +113,7 @@
             <ListDisc :items="list2" />
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section6">
             <H1 
             :title="'從恐懼未知到欣賞未知'"
             />
@@ -132,7 +128,7 @@
             </p>
           </div>
           <Dot />
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4" id="section7">
             <H1 
             :title="'結語：未知是可能性的起點'"
             />
@@ -241,8 +237,13 @@ export default {
       return this.posts;
     }
   },
-  created() {
-    // Fetch or set posts data here if needed
+  methods: {
+    scrollToSection(targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 };
 </script>

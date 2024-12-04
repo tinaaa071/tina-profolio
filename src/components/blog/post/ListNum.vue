@@ -4,7 +4,7 @@
       v-for="(item, index) in items" 
       :key="index"
     >
-      <template v-if="showTitle && item.title">
+      <template v-if="showNote && item.title">
         <span class="font-semibold">
           <template v-if="item.link">
             <a :href="item.link" target="_blank" rel="noopener noreferrer" class="underline">
@@ -37,7 +37,7 @@ defineProps({
     required: true,
     default: () => [],
   },
-  showTitle: {
+  showNote: {
     type: Boolean,
     default: true,
   },

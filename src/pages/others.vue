@@ -29,6 +29,7 @@
             <Paginator
               :totalItems="filteredPosts.length"
               :itemsPerPage="itemsPerPage"
+              :currentPage="currentPage"
               @page-changed="handlePageChange"
             />
           </div>
