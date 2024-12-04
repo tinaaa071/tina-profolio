@@ -36,7 +36,7 @@
             <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
               <Callout class="text-sm">
                 <p class="mb-2">
-                  📌&nbsp;&nbsp;目標
+                  🎯&nbsp;&nbsp;目標
                 </p>
                 <ul class="grid gap-2 list-decimal list-inside">
                   <li>減少重複性操作</li>
@@ -60,7 +60,7 @@
             />
             <Mention 
               showNote="true"
-              note="使用 Shape Mask："
+              note="📌&nbsp;&nbsp;使用 Shape Mask："
               :isExternal="true"
               :link="'https://www.figma.com/community/plugin/1420953914431407843/shape-mask'" 
               :title="'Shape Mask'" 
@@ -132,7 +132,6 @@
               imgSrc="https://cdn-images-1.medium.com/max/1600/1*pjP_lN4tlMlxfQ_YPLN0rw.png"
               imgCredit="使用 Plugin 製作出的 Banner"
             />
-            <Video videoSrc="https://www.youtube.com/embed/_6jO-zrU5Do?autoplay=1&mute=1&loop=1" />
           </div>
           <Dot />
           <div class="flex flex-col gap-4" id="section5">
@@ -142,6 +141,7 @@
             <p>
               這次開發 Shape Mask 的經歷讓我深刻體會到，設計師懂一點程式開發很有幫助。不僅能解決自己的工作痛點，還能幫助其他人提升效率。雖然開發的過程經歷了非常多的挫折、遇到了無數個 bug，但這次經驗也啟發我去探索更多跨界技能的可能性，並激勵我持續挑戰自我。
             </p>
+            <Video videoSrc="https://www.youtube.com/embed/_6jO-zrU5Do?autoplay=1&mute=1&loop=1" />
           </div>
           <Dot />
           <div class="flex flex-col gap-4" id="section6">
