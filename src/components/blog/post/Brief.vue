@@ -44,7 +44,7 @@
         <Fa6SolidQuoteRight class="absolute right-3 -bottom-3 text-2xl text-B2 dark:text-stone-300" />
         <div 
         v-html="post.brief"
-        class="px-8 py-5 leading-loose text-center rounded-lg xl:px-32 bg-B4 dark:bg-stone-700">
+        class="px-8 py-5 leading-loose text-center rounded-lg md:px-32 bg-B4 dark:bg-stone-700">
         </div>
       </div>
     </div>

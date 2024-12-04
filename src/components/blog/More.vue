@@ -3,9 +3,9 @@
     v-if="showMore"
     >
       <div class="flex flex-col gap-6 mx-auto max-w-3xl">
-        <div class="flex gap-4 items-center xs:gap-4">
-          <p class="dark:text-white">
-            {{ $t('work.core.item1') }}
+        <div class="flex gap-4 items-center">
+          <p class="whitespace-nowrap dark:text-white">
+            {{ $t('blog.item7') }}
           </p>
           <hr class="w-full border-stone-900 dark:border-white">
         </div>

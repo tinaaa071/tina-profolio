@@ -129,7 +129,7 @@
             />
             <ListDisc :items="list3" />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/1*pjP_lN4tlMlxfQ_YPLN0rw.png"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/1*oExwVbRp0DKqGuzkymLG4A.png"
               imgCredit="使用 Plugin 製作出的 Banner"
             />
           </div>
@@ -195,7 +195,7 @@ export default {
         },
         {
           title: "自定義遮罩形狀",
-          description: "用戶可以上傳自定義形狀作為遮罩，你可以親自設計特別的 svg 形狀，並應用於你的設計之中。",
+          description: "用戶可以上傳自定義形狀作為遮罩，你可以親自設計特別的 svg 形狀，並應用於設計之中。",
         }
       ],
       list2: [
