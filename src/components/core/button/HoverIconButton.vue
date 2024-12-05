@@ -5,12 +5,12 @@
         @mouseover="handleMouseOver"
         @mouseleave="handleMouseLeave"
         >
-        <div class="flex flex-shrink-0 gap-2">
+        <div class="flex flex-shrink-0 gap-2 items-center">
             <p>
                 {{ icon }}
             </p>
             <p 
-            class="font-semibold text-white transition-all duration-300 ease-in-out dark:text-stone-900"
+            class="text-sm font-semibold text-white transition-all duration-300 ease-in-out dark:text-stone-900"
             v-show="isHovered"
             >
                 {{ title }}

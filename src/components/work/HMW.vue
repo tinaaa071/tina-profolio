@@ -1,8 +1,8 @@
 <template>
-    <div class="relative mb-8 md:mb-12">
-        <Fa6SolidQuoteLeft class="absolute -top-6 left-6 text-5xl text-B2 dark:text-stone-300" />
-        <Fa6SolidQuoteRight class="absolute right-6 -bottom-6 text-5xl text-B2 dark:text-stone-300" />
-        <div class=" p-8 sm:p-12 xl:px-16 xl:py-12 space-y-4 sm:space-y-6 text-white rounded-[40px] xl:rounded-[56px] bg-stone-900 dark:bg-white dark:text-stone-900">
+    <div class="relative mt-2 mb-8 md:mb-12">
+        <Fa6SolidQuoteLeft class="absolute -top-5 left-6 text-3xl sm:text-4xl text-B2 dark:text-stone-300" />
+        <Fa6SolidQuoteRight class="absolute -bottom-5 right-6 text-3xl sm:text-4xl text-B2 dark:text-stone-300" />
+        <div class=" p-8 lg:p-12 space-y-4 sm:space-y-6 text-white rounded-[40px] lg:rounded-[56px] bg-stone-900 dark:bg-white dark:text-stone-900">
             <p class="text-center">
             {{ $t('work.title.item6') }}
             </p>

@@ -139,7 +139,7 @@ export default {
         },
         {
           id: 14,
-          title: "Bento Grid UI：設計靈感來自便當盒的介面設計風格",
+          title: "Bento Grid UI：靈感來自便當盒的介面設計風格",
           category: this.$t('blog.item2'),
           image: "https://cdn-images-1.medium.com/max/1600/1*XmqGmjWlFW0ZdY8xyTCGqA.png",
           date: "2024．11．08",

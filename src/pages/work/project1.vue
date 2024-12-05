@@ -13,7 +13,7 @@
         <!-- Info -->
         <Info 
         :title="$t('project1.core.title')"
-        :info1="'2023.10 - 2024.10'"
+        :info1="'2023.10 - 2024.11'"
         :info2="$t('project1.info.item3')"
         :info3="'UX 研究、設計系統、UI & Prototype 設計'"
         :info4="$t('project1.info.item1')"
@@ -91,7 +91,7 @@
               <StackCard
                 :cards="[1, 2]"
                 :cardColors="['bg-stone-900 dark:bg-B3', 'bg-B3 dark:bg-stone-700']"
-                :scrollEndOffset="500"
+                :scrollEndOffset="700"
               >
                 <template #card0>
                   <div>
@@ -211,14 +211,14 @@
                       <div v-if="activeTab === 1">
                         我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
                       </div>
-                      <div v-if="activeTab === 2" class="relative xl:px-12">
+                      <div v-if="activeTab === 2" class="relative xl:px-12 lg:px-48">
                         <CardTilt>
                           <img 
                           src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                          class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl aspect-video"
                         >
                         </CardTilt>
-                        <div class="hidden absolute -right-44 top-2/3 xl:block">
+                        <div class="hidden absolute top-2/3 xl:-right-44 lg:-right-6 lg:block">
                           <HoverIconButton 
                           class=""
                           icon="💡"
@@ -242,12 +242,14 @@
             <template #content-3>
               <div class="bg-B3 dark:bg-stone-600">
                 <div class="p-6 border-none xl:px-56 md:px-10 md:py-8">
-                  <CardTilt>
-                    <img 
-                    src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
-                  >
-                  </CardTilt>
+                  <div class="xl:px-12 lg:px-48">
+                    <CardTilt>
+                      <img 
+                      src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl aspect-video"
+                    >
+                    </CardTilt>
+                  </div>
                 </div>
               </div>
             </template>

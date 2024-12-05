@@ -1,5 +1,5 @@
 <template>
-  <div id="smooth-wrapper" class="mb-8">
+  <div id="smooth-wrapper">
     <div id="smooth-content">
       <div class="card-container">
         <ul class="card-stack">
