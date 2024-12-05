@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden relative w-full h-64 rounded-2xl xl:rounded-3xl">
+  <div class="overflow-hidden relative w-full h-96">
     <div
       ref="zoomElement"
       class="w-full h-full bg-center bg-cover"
@@ -32,7 +32,7 @@ onMounted(() => {
       scale: 1,
     },
     {
-      scale: 2, // Maximum zoom scale
+      scale: 1.5, // Maximum zoom scale
       scrollTrigger: {
         trigger: zoomElement.value,
         start: 'top 20%', // Start when the element enters the viewport

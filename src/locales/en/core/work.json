@@ -19,7 +19,8 @@
         "item5-1": "✦\u00A0\u00A0Problems",
         "item5-2": "✦\u00A0\u00A0Our Goal",
         "item6": "Preliminary Research",
-        "item6-1": "CSA",
+        "item6-0": "How Might We",
+        "item6-1": "SA",
         "item6-2": "TA",
         "item6-3": "CA",
         "item7": "User Research",
@@ -73,5 +74,10 @@
         "item5": "Components",
         "item6": "Illustrations",
         "item7": "Logo"
+    },
+    "persona":{
+        "item1": "Info",
+        "item2": "Target",
+        "item3": "Insight"
     }
 }

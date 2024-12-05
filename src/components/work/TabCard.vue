@@ -22,7 +22,7 @@
   
       <!-- Bottom Section -->
       <div 
-      class="text-sm font-normal rounded-lg sm:rounded-xl sm:text-base"
+      class="text-sm font-normal rounded-xl sm:text-base"
       :class="customClass"
       >
         <SkeletonLoader v-if="loading" size="full" />

@@ -119,26 +119,62 @@
           >
             <template #content-1>
               <StackCard
-                :cards="[1]"
-                :cardColors="['bg-B3 dark:bg-stone-700']"
+                :cards="[1, 2]"
+                :cardColors="['bg-stone-900 dark:bg-B3', 'bg-B3 dark:bg-stone-700']"
                 :scrollEndOffset="700"
               >
                 <template #card0>
-                  <div class="dark:text-white text-stone-900">
-                    <p class="mb-4 font-semibold md:mb-6 sm:mb-8 md:text-xl">
+                  <div class="text-white dark:text-stone-900">
+                    <p class="mb-2 font-semibold md:mb-3 sm:mb-6 md:text-xl">
+                      {{ $t('work.title.item5-1') }}
+                    </p>
+                    <ul class="leading-loose list-decimal list-inside">
+                      <li>
+                        <span class="">
+                          {{ $t('project1.problem.item1') }}
+                        </span>
+                      </li>
+                      <li>
+                        <span class="">
+                          {{ $t('project1.problem.item2') }}
+                        </span>
+                      </li>
+                      <li>
+                        <span class="">
+                          {{ $t('project1.problem.item3') }}
+                        </span>
+                      </li>
+                      <li>
+                        <span class="">
+                          {{ $t('project1.problem.item4') }}
+                        </span>
+                      </li>
+                      <li>
+                        <span class="">
+                          {{ $t('project1.problem.item5') }}
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </template>
+                <template #card1>
+                  <div class="mb-6">
+                    <p class="mb-2 font-semibold md:mb-3 sm:mb-6 md:text-xl text-stone-900 dark:text-white">
                       {{ $t('work.title.item5-2') }}
                     </p>
-                    <List 
-                    :items="[
-                        { title: $t('project1.problem.item1') },
-                        { title: $t('project1.problem.item2') },
-                        { title: $t('project1.problem.item3') },
-                        { title: $t('project1.problem.item4') },
-                        { title: $t('project1.problem.item5') },
-                        { title: $t('project1.problem.item6') }
-                      ]"
-                    />
+                    <p class="mb-1 text-sm font-semibold sm:mb-3 md:text-base text-B1 dark:text-stone-400">
+                      {{ $t('work.title.item5-1') }}
+                    </p>
+                    <p class="text-sm font-normal text-B1 dark:text-stone-400">
+                      {{ $t('work.title.item5-1') }}
+                    </p>
                   </div>
+                  <CardTilt>
+                    <img 
+                    src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                  >
+                  </CardTilt>
                 </template>
               </StackCard>
             </template>
@@ -149,96 +185,37 @@
             :title="$t('work.title.item6')"
           >
             <template #content-1>
-              <TabCard :buttons="['work.title.item6-1', 'work.title.item6-2']">
-                <!-- Background Images -->
-                <template #backgrounds>
-                  <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                </template>
-
-                <!-- Tab Contents -->
-                <template #default="{ activeTab }">
-                  <div v-if="activeTab === 1">
-                    <List 
-                    :items="[
-                        { title: $t('project1.sa.item1') },
-                        { title: $t('project1.sa.item2') },
-                        { title: $t('project1.sa.item3') },
-                        { title: $t('project1.sa.item4') },
-                        { title: $t('project1.sa.item5') },
-                      ]"
-                    />
-                  </div>
-                  <div v-if="activeTab === 2">
-                    <Ta
-                      :cards="[
-                        { avatarSrc: 'https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: $t('project1.ta.item1'), content: $t('project1.ta.item1-1') },
-                        { avatarSrc: 'https://images.unsplash.com/photo-1609188076864-c35269136b09?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: $t('project1.ta.item2'), content: $t('project1.ta.item2-1') }
-                      ]"
-                    />
-                    <!-- <Persona 
-                    avatarSrc="https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    :items="{
-                      u1: [$t('projectTag.item1'), $t('projectTag.item2')],
-                      u2: ['User 2 item 1', 'User 2 item 2', 'User 2 item 3'],
-                      u3: ['User 3 item 1']
-                    }"
-                    /> -->
-                  </div>
-                </template>
-              </TabCard>
-            </template>
-          </Section3>
-          <!-- 圖片 -->
-          <EnlargeImg class="mx-auto" imageUrl="https://images.unsplash.com/photo-1731141028854-ed2dc691a6a2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" />
-          <!-- 定義問題 -->
-          <Section3
-            id="section7"
-            :title="$t('work.title.item8')"
-          >
-            <template #content-1>
               <!-- How Might We? -->
-              <HMW>
-                <ul class="leading-loose list-disc list-inside">
-                  <li>
-                    <span class="">
-                      {{ $t('project1.research.item1') }}
-                    </span>
-                  </li>
-                  <li>
-                    <span class="">
-                      {{ $t('project1.research.item2') }}
-                    </span>
-                  </li>
-                </ul>
-              </HMW>
-              <TabCard :buttons="['work.title.item8-2', 'work.title.item8-3']">
+              <HMW 
+              text="我們如何協助居住在北北基桃且家中有學齡前孩童的家長，可以找到具有充足與透明的場地資訊及心得的親子活動，提升規劃效率？"
+              />
+              <TabCard :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
                 <!-- Background Images -->
                 <template #backgrounds>
-                  <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                  <img src="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                  <img src="https://media.istockphoto.com/id/1043898904/photo/cobblestone-street-stockhom-sweden.webp?a=1&s=612x612&w=0&k=20&c=T51JUb6d8n9Vw56FPhM8SoC0YE5WhMiZL7O883d7mUc=" />
+                  <img src="https://images.unsplash.com/photo-1731141707768-76d857b0f82d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D" />
                 </template>
 
                 <!-- Tab Contents -->
                 <template #default="{ activeTab }">
                   <div v-if="activeTab === 1">
-                    <List 
-                    :items="[
-                        { title: $t('project1.hypo.item1'), content: $t('project1.hypo.item1-1') },
-                        { title: $t('project1.hypo.item2'), content: $t('project1.hypo.item2-1') }
-                      ]"
-                    />
+                    我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
                   </div>
                   <div v-if="activeTab === 2">
-                    <List 
-                    :items="[
-                        { title: $t('project1.hypo.item1'), content: $t('project1.hypo.item1-1') },
-                        { title: $t('project1.hypo.item2'), content: $t('project1.hypo.item2-1') }
-                      ]"
-                    />
+                    <CardTilt>
+                      <img 
+                      src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                    >
+                    </CardTilt>
+                  </div>
+                  <div v-if="activeTab === 3">
+                    我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
                   </div>
                 </template>
               </TabCard>
+              <EnlargeImg class="mx-auto" imageUrl="https://images.unsplash.com/photo-1731141028854-ed2dc691a6a2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" />
             </template>
           </Section3>
           <!-- 設計產出 -->
@@ -442,7 +419,6 @@
         { id: 'section4', name: 'work.title.item4' },
         { id: 'section5', name: 'work.title.item5' },
         { id: 'section6', name: 'work.title.item6' },
-        { id: 'section7', name: 'work.title.item8' },
         { id: 'section11', name: 'work.title.item11' },
         { id: 'section12', name: 'work.title.item12' },
         { id: 'section13', name: 'work.title.item13' },

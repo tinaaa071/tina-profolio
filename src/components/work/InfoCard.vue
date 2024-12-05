@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 gap-4 p-6 rounded-2xl border sm:gap-6 bg-B4 md:rounded-3xl border-B2 dark:bg-transparent">
+    <div class="flex flex-col gap-4 p-6 rounded-2xl border sm:gap-6 bg-B4 md:rounded-3xl border-B2 dark:bg-transparent">
       <!-- Client -->
       <div>
         <p class="mb-1 font-semibold sm:mb-2">
