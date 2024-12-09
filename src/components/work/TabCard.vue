@@ -4,7 +4,11 @@
       class="flex overflow-hidden flex-col p-4 bg-center bg-no-repeat bg-cover rounded-2xl border cursor-default sm:p-6 dark:border-white border-B4 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent"
     >
       <!-- Top Section -->
-      <div class="flex gap-12 items-center p-3 mb-6 font-semibold bg-white rounded-lg xl:mb-10 sm:px-8 sm:rounded-xl dark:bg-stone-900">
+      <div 
+      class="flex gap-12 items-center p-3 mb-6 font-semibold bg-white rounded-lg xl:mb-10 sm:px-8 sm:rounded-xl dark:bg-stone-900 no-scrollbar"
+      :class="scrollableClass"
+      @wheel="handleHorizontalScroll"
+      >
         <button
           v-for="(button, index) in buttons"
           :key="index"
@@ -12,7 +16,8 @@
           class="inline-flex justify-center w-full leading-normal text-center transition-colors duration-300 ease-in-out sm:text-base"
           :class="{
             'text-stone-900 dark:text-white': activeTab === index + 1,
-            'text-stone-400 hover:text-stone-900 dark:text-stone-500 dark:hover:text-white': activeTab !== index + 1
+            'text-stone-400 hover:text-stone-900 dark:text-stone-500 dark:hover:text-white': activeTab !== index + 1,
+            
           }"
           @click="selectTab(index + 1)"
         >
@@ -46,6 +51,10 @@
         type: Array,
         default: 'p-3 sm:p-4 backdrop-blur-sm bg-white/60 dark:bg-stone-900/40',
       },
+      scrollableClass: {
+        type: String,
+        default: '',
+      }
     },
     setup(_, { slots }) {
       const loading = ref(true);
@@ -72,6 +81,23 @@
         backgrounds,
       };
     },
+    methods: {
+      handleHorizontalScroll(event) {
+        const container = event.currentTarget;
+        container.scrollLeft += event.deltaY;
+        event.preventDefault();
+      },
+    },
   };
   </script>
   
+  <style>
+  .no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* WebKit */
+  }
+  </style>

@@ -1,8 +1,11 @@
 <template>
     <ul class="space-y-4 leading-loose list-none list-inside">
-        <li v-for="(item, index) in items" :key="index">
+        <li v-for="(item, index) in items" :key="index" :class="customClass">
             <div class="flex gap-3 font-semibold">
-                <span class="w-8 h-8 text-center text-white rounded bg-B1 dark:bg-stone-200 dark:text-stone-900">
+                <span 
+                class="w-8 h-8 text-center text-white rounded bg-B1 dark:bg-stone-200 dark:text-stone-900"
+                :class="numClass"
+                >
                     {{ index + 1 }}
                 </span>
                 <span class="w-full">
@@ -23,6 +26,9 @@
             type: Array,
             required: true,
             default: () => [],
+        },
+        customClass: {
+            type: String
         },
     },
   };

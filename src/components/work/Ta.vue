@@ -4,7 +4,7 @@
       <div
         v-for="(card, index) in cards"
         :key="index"
-        class="flex flex-row gap-4 items-center p-4 w-full rounded-2xl border border-stone-800/20 dark:border-stone-200"
+        class="flex flex-row gap-4 p-4 w-full rounded-lg border border-white items-top"
       >
         <img
           :src="card.avatarSrc"

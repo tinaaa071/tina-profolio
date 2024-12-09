@@ -49,10 +49,6 @@
         "item5": "Allow participants to view the registration review results",
         "item6": "Allowing students to consult online with the course provider"
     },
-    "research": { 
-        "item1": "How to integrate the resources of medical institutions across Taiwan and provide multi-language support on the website for overseas medical personnel?", 
-        "item2": "How to build a course registration system that supports both individual and group registrations, and includes an approval function?" 
-    },
     "sa": { 
         "item1": "Understand the MOHW's review standards for medical course registrations", 
         "item2": "Collect and categorize courses from various medical training providers to establish a unified classification", 
@@ -66,12 +62,60 @@
         "item2": "Medical personnel in overseas medical institutions", 
         "item2-1": "Personnel employed in overseas medical institutions who have a need for further training."
     },
+    "research": {
+        "item1": "How to integrate the resources of medical institutions across Taiwan?",
+        "item2": "How to verify the qualifications of registered participants?",
+        "item3": "How to provide multilingual website functionality for overseas medical professionals?",
+        "item4": "How to establish a course registration system, including individual and group registrations?",
+        "item5": "How to make the course registration system work with a review function?",
+        "item6": "How to provide an online consultation feature?"
+    },
     "hypo": { 
-        "item1": "Students in overseas medical-related disciplines", 
-        "item1-1": "Learners in related fields interested in overseas medical education.", 
-        "item2": "Medical personnel in overseas medical institutions", 
-        "item2-1": "Personnel employed in overseas medical institutions who have a need for further training."
+        "item1": "Connect with existing APIs of medical institutions",
+        "item1-1": "Design connections with the APIs of medical institutions to provide contact information and resource features of healthcare facilities across the country.",
+        "item2": "Design a document upload and automatic verification system",
+        "item2-1": "Support trainees in uploading professional certificates and implement a real-name verification mechanism.",
+        "item3": "Establish a multilingual framework",
+        "item3-1": "Use a language switcher and support major international languages.",
+        "item4": "Create a dual registration mode with dynamic forms",
+        "item4-1": "Automatically adjust fields based on user selection (individual or group).",
+        "item5": "Develop a registration status tracking feature",
+        "item5-1": "Display registration progress (pending review, approved, rejected, etc.).",
+        "item6": "Design a real-time chat feature",
+        "item6-1": "Allow users to inquire with customer service representatives online."
+    },
+    "challenge": {
+        "item1": "Diversity and consistency of data sources",
+        "item1-1": "The data formats of medical institutions may differ, requiring consideration of structural inconsistencies during integration.",
+        "item2": "Diversity of credential verification",
+        "item2-1": "Standards for medical practitioner credentials vary across countries, making the verification process complex.",
+        "item3": "Design adaptability",
+        "item3-1": "Different languages may impact interface design (e.g., excessive text causing layout congestion).",
+        "item4": "Complexity of data handling",
+        "item4-1": "Group registrations involve managing data for multiple participants, making the structure more complex.",
+        "item5": "Time-consuming review process",
+        "item5-1": "A high proportion of manual reviews may prevent timely completion.",
+        "item6": "Availability of real-time services",
+        "item6-1": "During periods of high demand, there may be insufficient staff to handle consultations."
+    },
+    "principle": { 
+        "item1": "Clear and Intuitive Interface",
+        "item1-1": "Provide a clear navigation bar to help users quickly find the needed content. Offer explicit step-by-step guidance for the registration process, such as a progress bar display.",
+        "item2": "Target Audience Oriented",
+        "item2-1": "Categorize courses by professional fields (e.g., Nursing, Surgery, Internal Medicine) and indicate the specialization and suitable participants for each course.",
+        "item3": "Easy-to-Complete Registration Process",
+        "item3-1": "Break the form into steps to avoid lengthy filling processes.",
+        "item4": "Enhanced Trustworthiness",
+        "item4-1": "Choose a color scheme that conveys stability and a medical vibe (e.g., blue, white) while avoiding overly flashy designs."
+    },
+    "mockup": { 
+        "item1": "註冊頁",
+        "item2": "首頁",
+        "item3": "課程分類頁",
+        "item4": "課程內頁",
+        "item5": "課程報名頁",
+        "item6": "開課單位頁",
+        "item7": "報名課程進度"
     }
-
     
 }

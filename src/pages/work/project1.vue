@@ -200,17 +200,10 @@
               <!-- How Might We? -->
               <HMW>
                 <ul class="leading-loose list-disc list-inside">
-                  <li>
-                    <span class="">
-                      {{ $t('project1.research.item1') }}
-                    </span>
-                  </li>
-                  <li>
-                    <span class="">
-                      {{ $t('project1.research.item2') }}
-                    </span>
-                  </li>
-                </ul>
+                    <li v-for="(item, index) in [$t('project1.research.item1'), $t('project1.research.item2'), $t('project1.research.item3'), $t('project1.research.item4'), $t('project1.research.item5'), $t('project1.research.item6')]" :key="index">
+                      <span>{{ item }}</span>
+                    </li>
+                  </ul>
               </HMW>
               <TabCard :buttons="['work.title.item8-2', 'work.title.item8-3']">
                 <!-- Background Images -->
@@ -225,20 +218,85 @@
                     <List 
                     :items="[
                         { title: $t('project1.hypo.item1'), content: $t('project1.hypo.item1-1') },
-                        { title: $t('project1.hypo.item2'), content: $t('project1.hypo.item2-1') }
+                        { title: $t('project1.hypo.item2'), content: $t('project1.hypo.item2-1') },
+                        { title: $t('project1.hypo.item3'), content: $t('project1.hypo.item3-1') },
+                        { title: $t('project1.hypo.item4'), content: $t('project1.hypo.item4-1') },
+                        { title: $t('project1.hypo.item5'), content: $t('project1.hypo.item5-1') },
+                        { title: $t('project1.hypo.item6'), content: $t('project1.hypo.item6-1') }
                       ]"
                     />
                   </div>
                   <div v-if="activeTab === 2">
                     <List 
                     :items="[
-                        { title: $t('project1.hypo.item1'), content: $t('project1.hypo.item1-1') },
-                        { title: $t('project1.hypo.item2'), content: $t('project1.hypo.item2-1') }
+                        { title: $t('project1.challenge.item1'), content: $t('project1.challenge.item1-1') },
+                        { title: $t('project1.challenge.item2'), content: $t('project1.challenge.item2-1') },
+                        { title: $t('project1.challenge.item3'), content: $t('project1.challenge.item3-1') },
+                        { title: $t('project1.challenge.item4'), content: $t('project1.challenge.item4-1') },
+                        { title: $t('project1.challenge.item5'), content: $t('project1.challenge.item5-1') },
+                        { title: $t('project1.challenge.item6'), content: $t('project1.challenge.item6-1') }
                       ]"
                     />
                   </div>
                 </template>
               </TabCard>
+            </template>
+          </Section3>
+          <!-- 設計發想 -->
+          <Section3
+            id="section8"
+            :title="$t('work.title.item9')"
+          >
+            <template #content-1>
+              <TabCard :buttons="['work.title.item9-2', 'work.title.item9-3']">
+                <!-- Background Images -->
+                <template #backgrounds>
+                  <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                  <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                </template>
+
+                <!-- Tab Contents -->
+                <template #default="{ activeTab }">
+                  <div v-if="activeTab === 1">
+                    <CardTilt @click="isModalOpen = true" class="cursor-pointer">
+                      <img 
+                        src="https://i.pinimg.com/1200x/af/cd/8f/afcd8f8ea177d6927da3ed1a8416da09.jpg"
+                        alt="SiteMap"
+                        class="object-cover w-full rounded-2xl xl:rounded-3xl"
+                      >
+                    </CardTilt>
+                  </div>
+                  <div v-if="activeTab === 2">
+                    <List 
+                    :items="[
+                        { title: $t('project1.challenge.item1'), content: $t('project1.challenge.item1-1') },
+                        { title: $t('project1.challenge.item2'), content: $t('project1.challenge.item2-1') },
+                        { title: $t('project1.challenge.item3'), content: $t('project1.challenge.item3-1') },
+                        { title: $t('project1.challenge.item4'), content: $t('project1.challenge.item4-1') },
+                        { title: $t('project1.challenge.item5'), content: $t('project1.challenge.item5-1') },
+                        { title: $t('project1.challenge.item6'), content: $t('project1.challenge.item6-1') }
+                      ]"
+                    />
+                  </div>
+                </template>
+              </TabCard>
+            </template>
+          </Section3>
+          <!-- 設計原則 -->
+          <Section3
+            id="section9"
+            :title="$t('work.title.item10')"
+          >
+            <template #content-1>
+              <List 
+                customClass="px-6 py-5 bg-B3 rounded-2xl xl:rounded-3xl dark:bg-transparent dark:border dark:border-white"
+                :items="[
+                    { title: $t('project1.principle.item1'), content: $t('project1.principle.item1-1') },
+                    { title: $t('project1.principle.item2'), content: $t('project1.principle.item2-1') },
+                    { title: $t('project1.principle.item3'), content: $t('project1.principle.item3-1') },
+                    { title: $t('project1.principle.item4'), content: $t('project1.principle.item4-1') }
+                  ]"
+                />
             </template>
           </Section3>
           <!-- 設計產出 -->
@@ -279,11 +337,32 @@
                 <TabCard 
                   class="p-6 border-none xl:px-56 md:px-10 md:py-8"
                   :customClass="[bg-transparent, p-0]"
-                  :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
+                  :scrollableClass="'overflow-x-auto whitespace-nowrap'"
+                  :buttonClass="'w-1/2'"
+                  :buttons="['project1.mockup.item1', 'project1.mockup.item2', 'project1.mockup.item3', 'project1.mockup.item4', 'project1.mockup.item5', 'project1.mockup.item6', 'project1.mockup.item7', 'project1.mockup.item7']">
                     <!-- Tab Contents -->
                     <template #default="{ activeTab }">
-                      <div v-if="activeTab === 1">
-                        我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
+                      <div v-if="activeTab === 1" class="relative xl:px-12 lg:px-48">
+                        <img 
+                          src="https://i.pinimg.com/1200x/34/da/64/34da6401989b7f7dc27c2dee52f1e1a3.jpg"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                        >
+                        <div class="hidden absolute top-1/4 xl:-right-44 lg:-right-6 lg:block">
+                          <HoverIconButton 
+                          class=""
+                          icon="💡"
+                          title="Tab 切換"
+                          text="使用動態切換為不同表單，維持統一設計並減少額外開發，提供不同使用者註冊。"
+                          />
+                        </div>
+                        <div class="hidden absolute top-1/2 xl:-right-44 lg:-right-6 lg:block">
+                          <HoverIconButton 
+                          class=""
+                          icon="💡"
+                          title="即時驗證"
+                          text="使用動態切換為不同表單，維持統一設計並減少額外開發，提供不同使用者註冊。"
+                          />
+                        </div>
                       </div>
                       <div v-if="activeTab === 2" class="relative xl:px-12 lg:px-48">
                         <CardTilt>
@@ -423,14 +502,29 @@
         <Footer />
       </div>
     </div>
+
+    <Modal :show="isModalOpen" @close="isModalOpen = false">
+      <div class="w-full aspect-video rounded-3xl h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
+        <img
+          class="object-cover object-center w-full"
+          src="https://i.pinimg.com/1200x/af/cd/8f/afcd8f8ea177d6927da3ed1a8416da09.jpg"
+          alt="Modal Image"
+        />
+      </div>
+    </Modal>
   </template>
   
   <script>
+  import { ref } from 'vue';
   import MingcuteEarth3Fill from '~icons/mingcute/earth-3-fill';
   
   export default {
   components: {
     MingcuteEarth3Fill,
+  },
+  setup() {
+    const isModalOpen = ref(false);
+    return { isModalOpen };
   },
   data() {
     return {
@@ -443,6 +537,8 @@
         { id: 'section5', name: 'work.title.item5' },
         { id: 'section6', name: 'work.title.item6' },
         { id: 'section7', name: 'work.title.item8' },
+        { id: 'section8', name: 'work.title.item9' },
+        { id: 'section9', name: 'work.title.item10' },
         { id: 'section11', name: 'work.title.item11' },
         { id: 'section12', name: 'work.title.item12' },
         { id: 'section13', name: 'work.title.item13' },
@@ -452,6 +548,5 @@
   },
   
 }
-
-  </script>
+</script>
   
