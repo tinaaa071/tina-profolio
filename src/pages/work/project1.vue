@@ -366,7 +366,7 @@
                       </div>
                       <div v-if="activeTab === 2" class="relative xl:px-12 lg:px-48">
                         <img 
-                          src="https://i.pinimg.com/1200x/c5/19/e2/c519e25b5ee13fd7dedc825dd301a309.jpg"
+                          src="https://i.pinimg.com/1200x/4b/f8/26/4bf8267267c9d29c5e318b4def07e4ed.jpg"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                         >
                         <div class="hidden absolute top-2/3 xl:-right-44 lg:-right-6 lg:block">
