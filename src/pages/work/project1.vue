@@ -344,7 +344,7 @@
                     <template #default="{ activeTab }">
                       <div v-if="activeTab === 1" class="relative xl:px-12 lg:px-48">
                         <img 
-                          src="https://i.pinimg.com/1200x/34/da/64/34da6401989b7f7dc27c2dee52f1e1a3.jpg"
+                          src="https://i.pinimg.com/1200x/c5/19/e2/c519e25b5ee13fd7dedc825dd301a309.jpg"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                         >
                         <div class="hidden absolute top-1/4 xl:-right-44 lg:-right-6 lg:block">
@@ -352,7 +352,7 @@
                           class=""
                           icon="💡"
                           title="Tab 切換"
-                          text="使用動態切換為不同表單，維持統一設計並減少額外開發，提供不同使用者註冊。"
+                          text="使用動態切換為不同表單，提供不同使用者註冊，維持統一設計並減少額外開發。"
                           />
                         </div>
                         <div class="hidden absolute top-1/2 xl:-right-44 lg:-right-6 lg:block">
@@ -360,17 +360,15 @@
                           class=""
                           icon="💡"
                           title="即時驗證"
-                          text="使用動態切換為不同表單，維持統一設計並減少額外開發，提供不同使用者註冊。"
+                          text="串接 API 資料，可即時驗證，減少人工審核時間。"
                           />
                         </div>
                       </div>
                       <div v-if="activeTab === 2" class="relative xl:px-12 lg:px-48">
-                        <CardTilt>
-                          <img 
-                          src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl aspect-video"
+                        <img 
+                          src="https://i.pinimg.com/1200x/c5/19/e2/c519e25b5ee13fd7dedc825dd301a309.jpg"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                         >
-                        </CardTilt>
                         <div class="hidden absolute top-2/3 xl:-right-44 lg:-right-6 lg:block">
                           <HoverIconButton 
                           class=""
