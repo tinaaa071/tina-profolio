@@ -637,7 +637,7 @@
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://www.youtube.com/embed/_6jO-zrU5Do?autoplay=1&mute=1&loop=1"
-                        class="absolute top-1 sm:top-2 left-0 w-[76%] sm:w-[64%] xl:w-[77%] object-contain"
+                        class="absolute top-1 sm:top-2 left-0 w-[77%] sm:w-[64%] xl:w-[77%] object-contain"
                         videoClass="aspect-[8/5]"
                       />
                       
