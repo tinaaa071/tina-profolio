@@ -1,11 +1,11 @@
 <template>
-    <div 
-    :class="customClass">
+    <div class="relative">
       <iframe 
         :src="`${videoSrc}?autoplay=1`" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen
+        class="w-full"
         :class="videoClass"
         >
       </iframe>
@@ -18,13 +18,9 @@
       type: String,
       required: true
     },
-    customClass: {
-      type: Array,
-      default: 'overflow-hidden relative w-full '
-    },
     videoClass: {
       type: Array,
-      default: 'aspect-video w-full'
+      default: 'aspect-video'
     }
   })
   </script>
