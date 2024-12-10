@@ -263,7 +263,7 @@
                       <img 
                         src="https://i.imgur.com/E3rF3z9.png"
                         alt="SiteMap"
-                        class="object-cover w-full rounded-2xl xl:rounded-3xl"
+                        class="object-cover w-full rounded-xl"
                       >
                     </CardTilt>
                   </div>
