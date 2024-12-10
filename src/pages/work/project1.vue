@@ -340,7 +340,7 @@
                   :customClass="[bg-transparent, p-0]"
                   :scrollableClass="'overflow-x-auto whitespace-nowrap'"
                   :buttonClass="'w-1/2'"
-                  :buttons="['project1.mockup.tab.item1', 'project1.mockup.tab.item2', 'project1.mockup.tab.item3', 'project1.mockup.tab.item4', 'project1.mockup.tab.item5', 'project1.mockup.tab.item6', 'project1.mockup.tab.item7', 'project1.mockup.tab.item7', 'project1.mockup.tab.item8']">
+                  :buttons="['project1.mockup.tab.item1', 'project1.mockup.tab.item2', 'project1.mockup.tab.item3', 'project1.mockup.tab.item4', 'project1.mockup.tab.item5', 'project1.mockup.tab.item6', 'project1.mockup.tab.item7', 'project1.mockup.tab.item8', 'project1.mockup.tab.item9']">
                     <!-- Tab Contents -->
                     <template #default="{ activeTab }">
                       <div v-if="activeTab === 1" class="xl:px-12 lg:px-48">
@@ -371,7 +371,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/gJ53mCl.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl h-fit"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -489,16 +489,16 @@
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item11')"
-                            :text="$t('project1.mockup.info.item11-1')"
+                            :title="$t('project1.mockup.info.item13')"
+                            :text="$t('project1.mockup.info.item13-1')"
                             />
                           </div>
                           <div class="hidden absolute -left-56 top-[40%] lg:block">
                             <HoverIconButton 
                             customClass="right-0 origin-bottom-right rounded-br"
                             icon="💡"
-                            :title="$t('project1.mockup.info.item12')"
-                            :text="$t('project1.mockup.info.item12-1')"
+                            :title="$t('project1.mockup.info.item14')"
+                            :text="$t('project1.mockup.info.item14-1')"
                             />
                           </div>
                         </div>
@@ -507,20 +507,36 @@
                           src="https://i.imgur.com/58QRnM4.png"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
-                          <div class="hidden absolute top-[5%] xl:-right-44 lg:-right-6 lg:block">
+                          <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item11')"
-                            :text="$t('project1.mockup.info.item11-1')"
+                            :title="$t('project1.mockup.info.item15')"
+                            :text="$t('project1.mockup.info.item15-1')"
                             />
                           </div>
-                          <div class="hidden absolute top-[10%] xl:-left-44 lg:-left-6 lg:block">
+                        </div>
+                      </div>
+                      <div v-if="activeTab === 7" class="xl:px-12 lg:px-48">
+                        <div class="relative">
+                          <img 
+                          src="https://i.imgur.com/CMoGLpZ.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[10%] -right-56 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project1.mockup.info.item16')"
+                            :text="$t('project1.mockup.info.item16-1')"
+                            />
+                          </div>
+                          <div class="hidden absolute top-[20%] -left-56 lg:block">
                             <HoverIconButton 
                             customClass="right-0 origin-bottom-right rounded-br"
                             icon="💡"
-                            :title="$t('project1.mockup.info.item12')"
-                            :text="$t('project1.mockup.info.item12-1')"
+                            :title="$t('project1.mockup.info.item17')"
+                            :text="$t('project1.mockup.info.item17-1')"
                             />
                           </div>
                         </div>

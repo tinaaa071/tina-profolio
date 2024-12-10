@@ -1,6 +1,6 @@
 <template>
   <div :class="[
-      'fixed z-20 w-full px-6 pt-6 xl:px-28 md:px-10 transition-transform duration-300',
+      'fixed z-[60] w-full px-6 pt-6 xl:px-28 md:px-10 transition-transform duration-300',
       isVisible ? 'translate-y-0' : '-translate-y-full',
       showMenu ? 'h-full ' : 'h-fit',
     ]" >
