@@ -109,13 +109,44 @@
         "item4-1": "Choose a color scheme that conveys stability and a medical vibe (e.g., blue, white) while avoiding overly flashy designs."
     },
     "mockup": { 
-        "item1": "註冊頁",
-        "item2": "首頁",
-        "item3": "課程分類頁",
-        "item4": "課程內頁",
-        "item5": "課程報名頁",
-        "item6": "開課單位頁",
-        "item7": "報名課程進度"
+        "tab": {
+            "item1": "Registration",
+            "item2": "Home",
+            "item3": "Search",
+            "item4": "Course Categories",
+            "item5": "Course Detail",
+            "item6": "Course Enrollment",
+            "item7": "Training Institute",
+            "item8": "Apply Review Progress"
+        },
+        "info": {
+            "item1": "Tab Switch Component",
+            "item1-1": "Use dynamic switching to toggle between different forms, catering to different user registrations while maintaining a unified design and reducing additional development efforts.",
+            "item2": "Real-time Validation",
+            "item2-1": "Integrate API data to enable real-time validation, reducing manual review time.",
+            "item3": "Search Function",
+            "item3-1": "Place the search function in the Hero section of the homepage, allowing visitors to search for courses or providers instantly, enhancing convenience.",
+            "item4": "Latest News Section",
+            "item4-1": "Showcase the latest three news updates on the website.",
+            "item5": "Popular Course Categories",
+            "item5-1": "Categorize courses by type to help users quickly find suitable categories.",
+            "item6": "Student Reviews",
+            "item6-1": "Display the latest course reviews from students to provide visitors with feedback on the courses.",
+            "item7": "Introduction to Taiwan's Features",
+            "item7-1": "Since most visitors are international students, provide information about Taiwan (transportation, cuisine, attractions, etc.) to help them quickly understand the country.",
+            "item8": "Modal popup",
+            "item8-1": "With the use of popup design, users can check information at any time on the screen. We also provide popular tags and recommended courses for reference.",
+            "item9": "Collapse Button", 
+            "item9-1": "Click the Filter button on the left to collapse the filter, making it easier for users to browse.", 
+            "item10": "Course Card", 
+            "item10-1": "Courses are designed in card format, with key information displayed, allowing users to easily view required items in real time.",
+            "item11": "Fixed Card", 
+            "item11-1": "Fix the course information card on the right side, allowing users to click and register for the course anytime while browsing the information on the left.", 
+            "item12": "Segment Control", 
+            "item12-1": "Users can instantly switch between information for easy and quick content search."
+        }
+
+        
     }
     
 }

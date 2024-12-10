@@ -1,7 +1,8 @@
 <template>
-    <div class="w-[200px] relative">
+    <div class="w-[200px] relative z-50">
         <div
-        class="flex overflow-hidden absolute bottom-0 left-0 flex-col gap-3 p-3 px-3.5 text-left rounded-3xl rounded-bl shadow-lg transition-all duration-200 ease-in-out origin-bottom-left cursor-pointer bg-stone-800 dark:bg-B3 hover:p-3.5 w-fit"
+        class="flex overflow-hidden absolute bottom-0 flex-col gap-3 p-3 px-3.5 text-left rounded-3xl shadow-lg transition-all duration-200 ease-in-out cursor-pointer bg-stone-800 dark:bg-stone-300 hover:p-3.5 w-fit"
+        :class="customClass"
         @mouseover="handleMouseOver"
         @mouseleave="handleMouseLeave"
         >
@@ -17,7 +18,7 @@
             </p>
         </div>
         <div
-            class="text-sm font-normal text-justify text-white transition-all duration-300 ease-in-out dark:text-stone-900"
+            class="text-sm font-normal text-white transition-all duration-300 ease-in-out dark:text-stone-900"
             v-show="isHovered"
         >
             {{ text }}
@@ -45,6 +46,10 @@
       text: {
         type: String,
         required: true,
+      },
+      customClass: {
+        type: Array,
+        default: 'left-0 origin-bottom-left rounded-bl',
       },
     },
     methods: {
