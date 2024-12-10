@@ -6,7 +6,6 @@
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen
-        class="w-full"
         :class="videoClass"
         >
       </iframe>
@@ -25,7 +24,7 @@
     },
     videoClass: {
       type: Array,
-      default: 'aspect-video'
+      default: 'aspect-video w-full'
     }
   })
   </script>
