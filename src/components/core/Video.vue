@@ -1,11 +1,15 @@
 <template>
-    <div class="overflow-hidden relative w-full rounded-2xl border sm:rounded-3xl border-stone-200 dark:border-stone-500">
+    <div 
+    :class="customClass">
       <iframe 
         :src="`${videoSrc}?autoplay=1`" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen
-        class="w-full aspect-video"></iframe>
+        class="w-full"
+        :class="videoClass"
+        >
+      </iframe>
     </div>
   </template>
   
@@ -14,6 +18,14 @@
     videoSrc: {
       type: String,
       required: true
+    },
+    customClass: {
+      type: Array,
+      default: 'overflow-hidden relative w-full '
+    },
+    videoClass: {
+      type: Array,
+      default: 'aspect-video'
     }
   })
   </script>

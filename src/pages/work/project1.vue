@@ -541,6 +541,82 @@
                           </div>
                         </div>
                       </div>
+                      <div v-if="activeTab === 8" class="xl:px-12 lg:px-48">
+                        <div class="relative mb-8">
+                          <img 
+                          src="https://i.imgur.com/dwTOBeF.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[10%] -right-56 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project1.mockup.info.item18')"
+                            :text="$t('project1.mockup.info.item18-1')"
+                            />
+                          </div>
+                          <div class="hidden absolute top-[30%] -right-56 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project1.mockup.info.item19')"
+                            :text="$t('project1.mockup.info.item19-1')"
+                            />
+                          </div>
+                        </div>
+                        <div class="relative">
+                          <img 
+                          src="https://i.imgur.com/601998J.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[10%] -right-56 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project1.mockup.info.item20')"
+                            :text="$t('project1.mockup.info.item20-1')"
+                            />
+                          </div>
+                          <div class="hidden absolute -right-56 top-1/2 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project1.mockup.info.item21')"
+                            :text="$t('project1.mockup.info.item21-1')"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div v-if="activeTab === 9" class="xl:px-12 lg:px-48">
+                        <div class="relative mb-8">
+                          <img 
+                          src="https://i.imgur.com/N5gqmnY.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[30%] -right-56 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project1.mockup.info.item22')"
+                            :text="$t('project1.mockup.info.item22-1')"
+                            />
+                          </div>
+                        </div>
+                        <div class="relative">
+                          <img 
+                          src="https://i.imgur.com/2KNev1D.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute -right-56 top-1/2 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project1.mockup.info.item23')"
+                            :text="$t('project1.mockup.info.item23-1')"
+                            />
+                          </div>
+                        </div>
+                      </div>
                       <div v-if="activeTab === 12">
                         <ImageCompare
                           beforeImage="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -556,13 +632,23 @@
             <template #content-3>
               <div class="bg-B3 dark:bg-stone-600">
                 <div class="p-6 border-none xl:px-56 md:px-10 md:py-8">
-                  <div class="xl:px-12 lg:px-48">
-                    <CardTilt>
-                      <img 
-                      src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl aspect-video"
-                    >
-                    </CardTilt>
+                  <div class="pb-6 xs:pb-12 lg:pb-16">
+                    <div class="flex relative justify-center items-center w-full h-full">
+                      <!-- 影片B，寬度90%，保持比例縮放 -->
+                      <Video
+                        videoSrc="https://www.youtube.com/embed/_6jO-zrU5Do?autoplay=1&mute=1&loop=1"
+                        class="absolute top-1 sm:top-2 left-0 w-[76%] sm:w-[64%] xl:w-[77%] object-contain"
+                        videoClass="aspect-[8/5]"
+                      />
+                      
+                      <!-- 圖片A，寬度90%，保持比例縮放 -->
+                      <img
+                        ref="image"
+                        src="https://i.imgur.com/KVpYsAZ.png"
+                        alt="Image A"
+                        class="object-contain absolute top-0 left-1/2 transform -translate-x-1/2 sm:w-[80%] xl:w-[96%] w-[96%]"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
