@@ -79,5 +79,9 @@
         "item1": "Info",
         "item2": "Target",
         "item3": "Insight"
+    },
+    "next":{
+        "item1": "Next Project",
+        "item2": "Back To Home"
     }
 }

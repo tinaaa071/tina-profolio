@@ -55,11 +55,11 @@ export default {
         },
         {
           id: 2,
-          title: 'Post 2',
+          title: this.$t('project2.core.title'),
           category: this.$t('tag.item2'),
           image: 'https://images.unsplash.com/photo-1628768534895-ff9185e7edbc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
           date: new Date().toLocaleDateString(),
-          link: '/work/project1',
+          link: '/work/project2',
         },
         {
           id: 3, // Ensure unique ID

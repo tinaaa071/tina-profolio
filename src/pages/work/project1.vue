@@ -307,29 +307,30 @@
           >
             <!-- Design System -->
             <template #content-1>
-              <div class="grid overflow-hidden grid-cols-1 rounded-2xl divide-y drop-shadow xl:rounded-3xl dark:border dark:border-white dark:divide-white divide-B2">
-                <!-- Color -->
-                <Accordion
-                :title="$t('work.designSystem.item1')"
-                >
-                  <CardTilt>
+              <div class="font-normal">
+                <CardTilt>
+                  <a 
+                  target="_blank"
+                  href="https://main--6758f1bddc4388960f8ac32f.chromatic.com/">
                     <img 
-                    src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
-                  >
-                  </CardTilt>
-                </Accordion>
-                <!-- Typography -->
-                <Accordion
-                :title="$t('work.designSystem.item2')"
+                      src="https://i.imgur.com/6pMAdyR.png"
+                      alt="Banner"
+                      class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
+                    >
+                  </a>
+                </CardTilt>
+                <p 
+                v-html="$t('project1.system.item1')"
+                class="text-justify"
                 >
-                  <CardTilt>
-                    <img 
-                    src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
-                  >
-                  </CardTilt>
-                </Accordion>
+                </p>
+                <br>
+                <ListNum :items="[
+                  {title: $t('project1.system.item2'), description:  $t('project1.system.item2-1')},
+                  {title: $t('project1.system.item3'), description:  $t('project1.system.item3-1')},
+                  {title: $t('project1.system.item4'), description:  $t('project1.system.item4-1')},
+                  {title: $t('project1.system.item5'), description:  $t('project1.system.item5-1')}
+                  ]" />
               </div>
             </template>  
             <!-- Mockup -->
@@ -654,74 +655,6 @@
               </div>
             </template>
           </Section3>
-          <!-- 設計交付 -->
-          <Section3
-            id="section12"
-            :title="$t('work.title.item12')"
-          >
-            <template #content-1>
-              <TabCard :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
-                <!-- Background Images -->
-                <template #backgrounds>
-                  <img src="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://media.istockphoto.com/id/1043898904/photo/cobblestone-street-stockhom-sweden.webp?a=1&s=612x612&w=0&k=20&c=T51JUb6d8n9Vw56FPhM8SoC0YE5WhMiZL7O883d7mUc=" />
-                  <img src="https://images.unsplash.com/photo-1731141707768-76d857b0f82d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D" />
-                </template>
-
-                <!-- Tab Contents -->
-                <template #default="{ activeTab }">
-                  <div v-if="activeTab === 1">
-                    我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
-                  </div>
-                  <div v-if="activeTab === 2">
-                    <CardTilt>
-                      <img 
-                      src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
-                    >
-                    </CardTilt>
-                  </div>
-                  <div v-if="activeTab === 3">
-                    我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
-                  </div>
-                </template>
-              </TabCard>
-            </template>
-          </Section3>
-          <!-- 易用性測試 -->
-          <Section3
-            id="section13"
-            :title="$t('work.title.item13')"
-          >
-            <template #content-1>
-              <TabCard :buttons="['work.title.item6-1', 'work.title.item6-2', 'work.title.item6-3']">
-                <!-- Background Images -->
-                <template #backgrounds>
-                  <img src="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://media.istockphoto.com/id/1043898904/photo/cobblestone-street-stockhom-sweden.webp?a=1&s=612x612&w=0&k=20&c=T51JUb6d8n9Vw56FPhM8SoC0YE5WhMiZL7O883d7mUc=" />
-                  <img src="https://images.unsplash.com/photo-1731141707768-76d857b0f82d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D" />
-                </template>
-
-                <!-- Tab Contents -->
-                <template #default="{ activeTab }">
-                  <div v-if="activeTab === 1">
-                    我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
-                  </div>
-                  <div v-if="activeTab === 2">
-                    <CardTilt>
-                      <img 
-                      src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                      class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
-                    >
-                    </CardTilt>
-                  </div>
-                  <div v-if="activeTab === 3">
-                    我們針對周遭人們 Work From Home 之後，生活習慣與心態上的轉變去做潛在使用者的樣貌的發想。
-                  </div>
-                </template>
-              </TabCard>
-            </template>
-          </Section3>
           <!-- 反饋與學習 -->
           <Section3
             id="section14"
@@ -731,16 +664,26 @@
               <CardTilt>
                     <img 
                     src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                    class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
                   >
                 </CardTilt>
+                <List 
+                customClass="px-6 py-5 bg-B3 rounded-2xl xl:rounded-3xl dark:bg-transparent dark:border dark:border-white"
+                :items="[
+                    { title: $t('project1.feedback.item1'), content: $t('project1.feedback.item1-1') },
+                    { title: $t('project1.feedback.item2'), content: $t('project1.feedback.item2-1') },
+                    { title: $t('project1.feedback.item3'), content: $t('project1.feedback.item3-1') },
+                    { title: $t('project1.feedback.item4'), content: $t('project1.feedback.item4-1') },
+                    { title: $t('project1.feedback.item5'), content: $t('project1.feedback.item5-1') }
+                  ]"
+                />
             </template>
           </Section3>
           <hr class="border-stone-300 dark:border-white/10">
           <!-- 下一個專案 -->
           <SectionNext 
           :title="$t('project2.core.title')"
-          :linkTo="'/'"
+          :linkTo="'/work/project2'"
           :icon="icon" 
           :showIcon="false"
           :text="$t('work.core.item5')" 
@@ -787,8 +730,6 @@
         { id: 'section8', name: 'work.title.item9' },
         { id: 'section9', name: 'work.title.item10' },
         { id: 'section11', name: 'work.title.item11' },
-        { id: 'section12', name: 'work.title.item12' },
-        { id: 'section13', name: 'work.title.item13' },
         { id: 'section14', name: 'work.title.item14' },
       ],
     };

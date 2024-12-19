@@ -7,9 +7,9 @@
     <p
       ref="stickyTitle"
       :class="[
-        'sticky top-0 text-lg md:text-3xl font-semibold text-stone-900 md:text-B1 dark:text-white h-fit transition duration-300 z-10 md:static',
+        'sticky top-0 text-lg md:text-3xl font-semibold text-stone-900 md:text-stone-900 dark:text-white h-fit transition duration-300 z-10 md:static',
         {
-          'w-full flex justify-center from-stone-300/60 text-B1 dark:text-white text-center py-4 backdrop-blur bg-gradient-to-b':
+          'w-full flex justify-center from-stone-300/60 text-stone-900 dark:text-white text-center py-4 backdrop-blur bg-gradient-to-b':
             isSticky,
         },
       ]"

@@ -4,7 +4,7 @@
     >
       <!-- Title -->
       <p class="mb-6 text-sm font-semibold md:text-lg text-stone-500 md:mb-8 dark:text-white">
-        {{ $t('work.title.item2') }}
+        {{ $t('work.next.item1') }}
       </p>
       <!-- Project -->
       <p
@@ -20,7 +20,7 @@
         <CursorDot />
         <!-- Img -->
         <RouterLink
-          to="/"
+          :to="linkTo"
           class="w-[280px] sm:w-[420px] xl:w-[560px] absolute bottom-0 z-0 transition-all duration-300 ease-in-out transform -translate-x-1/2 left-1/2  md:hover:bottom-20 hover:bottom-6 xs:hover:bottom-8 sm:hover:bottom-12"
           @mouseover="isHovered = true"
           @mouseleave="isHovered = false"
@@ -37,10 +37,10 @@
         ></div>
         <!-- Button -->
       <MagneticButton
-        :linkTo="linkTo"
+        linkTo="/"
         :icon="icon"
         :showIcon="showIcon"
-        :text="$t('work.core.item5')"
+        :text="$t('work.next.item2')"
         class="absolute bottom-0 z-10"
       />
       </div>

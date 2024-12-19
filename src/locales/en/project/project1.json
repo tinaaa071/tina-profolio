@@ -108,6 +108,17 @@
         "item4": "Enhanced Trustworthiness",
         "item4-1": "Choose a color scheme that conveys stability and a medical vibe (e.g., blue, white) while avoiding overly flashy designs."
     },
+    "system": { 
+        "item1": "In this project, we adopted <strong>Storybook</strong> to build and manage the design system, enabling a consistent and efficient component development process. The design system includes commonly used UI components such as buttons, forms, cards, and navigation bars. It is organized modularly for reusability and scalability. Our design system has the following features:",
+        "item2": "Documented Components",
+        "item2-1": "With Storybook, we can write clear documentation for each component, including property descriptions, usage examples, and interactive demonstrations.",
+        "item3": "Consistent Design Guidelines",
+        "item3-1": "The design system provides unified style guides and design specifications, ensuring a consistent appearance for components across different pages and modules.",
+        "item4": "Visual Testing",
+        "item4-1": "Developers can preview the appearance and behavior of components in real-time and perform visual testing and design validation through plugins.",
+        "item5": "Cross-Team Collaboration",
+        "item5-1": "Designers and developers can use Storybook's visual interface to discuss components, improving communication efficiency between design and development."
+    },
     "mockup": { 
         "tab": {
             "item1": "Registration",
@@ -168,8 +179,18 @@
             "item23": "Real-time Chat", 
             "item23-1": "The chat window allows real-time communication with the course units and supports file uploads."
         }
-
-        
+    },
+    "feedback": { 
+        "item1": "Control of Project Timeline",
+        "item1-1": "The project timeline is extremely tight, and the structure is complex. Despite the lack of clear requirements from the client, we still needed to deliver results according to the planned schedule. To address this, I broke down the functionalities and allocated time for each function, prioritizing clear requirements. For unclear requirements, I constructed a rough framework and regularly discussed and adjusted it with the PM and client. This approach avoided the time waste of a complete replan and improved efficiency.",
+        "item2": "Solutions for Unclear Requirements",
+        "item2-1": "Facing the challenge of unclear goals from the client and the pressure of a tight timeline, I adopted a proactive research approach: collecting a large amount of information on mature market products based on the general direction provided by the client, referencing relevant structures for preliminary planning, and then discussing optimizations with the client. This not only helped the client clarify their goals but also effectively utilized development time.",
+        "item3": "Design of Innovative Features",
+        "item3-1": "The project involved several innovative features that are rare in the market, targeting a relatively niche audience with limited reference materials. To address this, I referred to similar market designs and adjusted them to reduce the learning curve for users. At the same time, I developed innovative solutions tailored to the specific context of the client to meet the project’s goals.",
+        "item4": "Design of Frontend and Backend Systems",
+        "item4-1": "In designing the frontend and backend systems, it was necessary to balance frontend usability with backend data access efficiency. I worked closely with the PM and engineering team, engaging in multiple discussions and adjustments to ultimately find a solution that balanced both aspects, ensuring the system design met requirements while maintaining efficiency.",
+        "item5": "Team Communication",
+        "item5-1": "The project involved multiple stakeholders, including internal developers, the client, government authorities, end-users, and external contractors. Each team had its unique needs and constraints. I consolidated input from all parties and, after multiple rounds of coordination, made design decisions that balanced the interests of all sides, ensuring the smooth progress of the project."
     }
     
 }

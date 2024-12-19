@@ -21,6 +21,7 @@
           </div>
           <!-- BTN -->
           <MagneticButton 
+            v-if="showBTN"
             :linkTo="linkTo" 
             :icon="icon" 
             :text="$t('work.core.item5')"
@@ -52,6 +53,7 @@
         </div>
         <!-- BTN -->
         <MagneticButton 
+            v-if="showBTN"
             :linkTo="linkTo" 
             :icon="icon" 
             :text="$t('work.core.item5')"
@@ -101,6 +103,10 @@
         required: true,
         },
       showIcon: {
+        type: Boolean,
+        default: true,
+       },
+      showBTN: {
         type: Boolean,
         default: true,
        },

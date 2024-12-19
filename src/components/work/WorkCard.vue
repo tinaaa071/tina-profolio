@@ -51,7 +51,7 @@
           :title="$t('project2.core.title')"
           :desc="$t('project2.core.desc')"
           :tag="[$t('project1.info.item2'), $t('work.core.item3'), $t('work.core.item4')]"
-          linkTo="/list_1"
+          linkTo="/work/project2"
           backgroundImage="https://images.unsplash.com/photo-1724271366205-62a20f7cb4e2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
         <!-- Project 3 -->
