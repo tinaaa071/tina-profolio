@@ -29,42 +29,42 @@
           <!-- 專案資訊 -->
           <Section1
           id="section1"
-          :info1="$t('project1.info.item1')"
-          :info2="[$t('project1.demand.item1'), $t('project1.demand.item2'), $t('project1.demand.item3'), $t('project1.demand.item4'), $t('project1.demand.item5'), $t('project1.demand.item6')]"
+          :info1="$t('project2.info.item1')"
+          :info2="[$t('project2.demand.item1'), $t('project2.demand.item2'), $t('project2.demand.item3'), $t('project2.demand.item4'), $t('project2.demand.item5'), $t('project2.demand.item6')]"
           :info4="[
-            { avatarSrc: 'https://images.unsplash.com/photo-1724942462164-7c30f103d91c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project1.team.item1'), name: 'Tina Chen' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project1.team.item4'), name: 'Freda Lin' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project1.team.item5'), name: 'Miwa Huang' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project1.team.item2'), name: 'William Chou' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project1.team.item3'), name: 'Jay Huang' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project1.team.item3'), name: 'David Huang' }
+            { avatarSrc: 'https://images.unsplash.com/photo-1724942462164-7c30f103d91c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item1'), name: 'Tina Chen' },
+            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item4'), name: 'Freda Lin' },
+            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item5'), name: 'Miwa Huang' },
+            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item2'), name: 'William Chou' },
+            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item3'), name: 'Jay Huang' },
+            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item3'), name: 'David Huang' }
           ]"
-          :content="$t('project1.brief.item1')"
+          :content="$t('project2.brief.item1')"
           bgImg="https://images.unsplash.com/photo-1723904187003-807a2f7c8311?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           >
             <ul class="leading-loose list-disc list-inside">
               <li>
                 <span class="font-semibold">
-                  {{ $t('project1.brief.item2') }}
+                  {{ $t('project2.brief.item2') }}
                 </span>
                 <span class="block ml-5 font-normal">
-                  {{ $t('project1.brief.item2-1') }}
+                  {{ $t('project2.brief.item2-1') }}
                 </span>
               </li>
               <li>
                 <span class="font-semibold">
-                  {{ $t('project1.brief.item3') }}
+                  {{ $t('project2.brief.item3') }}
                 </span>
                 <span class="block ml-5 font-normal">
-                  {{ $t('project1.brief.item3-1') }}
+                  {{ $t('project2.brief.item3-1') }}
                 </span>
               </li>
               <li>
                 <span class="font-semibold">
-                  {{ $t('project1.brief.item4') }}
+                  {{ $t('project2.brief.item4') }}
                 </span>
                 <span class="block ml-5 font-normal">
-                  {{ $t('project1.brief.item4-1') }}
+                  {{ $t('project2.brief.item4-1') }}
                 </span>
               </li>
             </ul>
@@ -73,10 +73,10 @@
           <Section2
             id="section2"
             :briefs="[
-            { title: $t('work.title.item2-1'), content: $t('project1.briefCard.item1') },
-            { title: $t('work.title.item2-2'), content: $t('project1.briefCard.item2') },
-            { title: $t('work.title.item2-3'), content: $t('project1.briefCard.item3') },
-            { title: $t('work.title.item2-4'), content: $t('project1.briefCard.item4') }
+            { title: $t('work.title.item2-1'), content: $t('project2.briefCard.item1') },
+            { title: $t('work.title.item2-2'), content: $t('project2.briefCard.item2') },
+            { title: $t('work.title.item2-3'), content: $t('project2.briefCard.item3') },
+            { title: $t('work.title.item2-4'), content: $t('project2.briefCard.item4') }
           ]"
           />
           <!-- 分隔 -->
@@ -89,7 +89,7 @@
             <template #content-1>
               <div>
                 <p class="mb-6 font-normal">
-                  {{ $t('project1.background.item1') }}
+                  {{ $t('project2.background.item1') }}
                 </p>
                 <!-- <CardTilt>
                   <img 
@@ -130,12 +130,9 @@
                     </p>
                     <List 
                     :items="[
-                        { title: $t('project1.problem.item1') },
-                        { title: $t('project1.problem.item2') },
-                        { title: $t('project1.problem.item3') },
-                        { title: $t('project1.problem.item4') },
-                        { title: $t('project1.problem.item5') },
-                        { title: $t('project1.problem.item6') }
+                        { title: $t('project2.problem.item1') },
+                        { title: $t('project2.problem.item2') },
+                        { title: $t('project2.problem.item3') }
                       ]"
                     />
                   </div>
@@ -161,19 +158,18 @@
                   <div v-if="activeTab === 1">
                     <List 
                     :items="[
-                        { title: $t('project1.sa.item1') },
-                        { title: $t('project1.sa.item2') },
-                        { title: $t('project1.sa.item3') },
-                        { title: $t('project1.sa.item4') },
-                        { title: $t('project1.sa.item5') },
+                        { title: $t('project2.sa.item1') },
+                        { title: $t('project2.sa.item2') },
+                        { title: $t('project2.sa.item3') },
+                        { title: $t('project2.sa.item4') }
                       ]"
                     />
                   </div>
                   <div v-if="activeTab === 2">
                     <Ta
                       :cards="[
-                        { avatarSrc: 'https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: $t('project1.ta.item1'), content: $t('project1.ta.item1-1') },
-                        { avatarSrc: 'https://images.unsplash.com/photo-1609188076864-c35269136b09?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: $t('project1.ta.item2'), content: $t('project1.ta.item2-1') }
+                        { avatarSrc: 'https://upload.wikimedia.org/wikipedia/commons/a/a3/ROC_Ministry_of_Health_and_Welfare_Seal.svg', title: $t('project2.ta.item1'), content: $t('project2.ta.item1-1') },
+                        { avatarSrc: 'https://www.ntuh.gov.tw/ckfinder_file/OPD/images/2023/building_.jpg', title: $t('project2.ta.item2'), content: $t('project2.ta.item2-1') }
                       ]"
                     />
                     <!-- <Persona 
@@ -200,7 +196,7 @@
               <!-- How Might We? -->
               <HMW>
                 <ul class="leading-loose list-disc list-inside">
-                    <li v-for="(item, index) in [$t('project1.research.item1'), $t('project1.research.item2'), $t('project1.research.item3'), $t('project1.research.item4'), $t('project1.research.item5'), $t('project1.research.item6')]" :key="index">
+                    <li v-for="(item, index) in [$t('project2.research.item1'), $t('project2.research.item2'), $t('project2.research.item3'), $t('project2.research.item4')]" :key="index">
                       <span>{{ item }}</span>
                     </li>
                   </ul>
@@ -217,24 +213,19 @@
                   <div v-if="activeTab === 1">
                     <List 
                     :items="[
-                        { title: $t('project1.hypo.item1'), content: $t('project1.hypo.item1-1') },
-                        { title: $t('project1.hypo.item2'), content: $t('project1.hypo.item2-1') },
-                        { title: $t('project1.hypo.item3'), content: $t('project1.hypo.item3-1') },
-                        { title: $t('project1.hypo.item4'), content: $t('project1.hypo.item4-1') },
-                        { title: $t('project1.hypo.item5'), content: $t('project1.hypo.item5-1') },
-                        { title: $t('project1.hypo.item6'), content: $t('project1.hypo.item6-1') }
+                        { title: $t('project2.hypo.item1'), content: $t('project2.hypo.item1-1') },
+                        { title: $t('project2.hypo.item2'), content: $t('project2.hypo.item2-1') },
+                        { title: $t('project2.hypo.item3'), content: $t('project2.hypo.item3-1') },
+                        { title: $t('project2.hypo.item4'), content: $t('project2.hypo.item4-1') },
+                        { title: $t('project2.hypo.item5'), content: $t('project2.hypo.item5-1') }
                       ]"
                     />
                   </div>
                   <div v-if="activeTab === 2">
                     <List 
                     :items="[
-                        { title: $t('project1.challenge.item1'), content: $t('project1.challenge.item1-1') },
-                        { title: $t('project1.challenge.item2'), content: $t('project1.challenge.item2-1') },
-                        { title: $t('project1.challenge.item3'), content: $t('project1.challenge.item3-1') },
-                        { title: $t('project1.challenge.item4'), content: $t('project1.challenge.item4-1') },
-                        { title: $t('project1.challenge.item5'), content: $t('project1.challenge.item5-1') },
-                        { title: $t('project1.challenge.item6'), content: $t('project1.challenge.item6-1') }
+                        { title: $t('project2.challenge.item1'), content: $t('project2.challenge.item1-1') },
+                        { title: $t('project2.challenge.item2'), content: $t('project2.challenge.item2-1') }
                       ]"
                     />
                   </div>
@@ -292,10 +283,11 @@
               <List 
                 customClass="px-6 py-5 bg-B3 rounded-2xl xl:rounded-3xl dark:bg-transparent dark:border dark:border-white"
                 :items="[
-                    { title: $t('project1.principle.item1'), content: $t('project1.principle.item1-1') },
-                    { title: $t('project1.principle.item2'), content: $t('project1.principle.item2-1') },
-                    { title: $t('project1.principle.item3'), content: $t('project1.principle.item3-1') },
-                    { title: $t('project1.principle.item4'), content: $t('project1.principle.item4-1') }
+                    { title: $t('project2.principle.item1'), content: $t('project2.principle.item1-1') },
+                    { title: $t('project2.principle.item2'), content: $t('project2.principle.item2-1') },
+                    { title: $t('project2.principle.item3'), content: $t('project2.principle.item3-1') },
+                    { title: $t('project2.principle.item4'), content: $t('project2.principle.item4-1') },
+                    { title: $t('project2.principle.item4'), content: $t('project2.principle.item4-1') }
                   ]"
                 />
             </template>
