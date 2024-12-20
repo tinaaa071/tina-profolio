@@ -119,23 +119,38 @@
           >
             <template #content-1>
               <StackCard
-                :cards="[1]"
-                :cardColors="['bg-B3 dark:bg-stone-700']"
-                :scrollEndOffset="700"
+                :cards="[1, 2]"
+                :cardColors="['bg-stone-900 dark:bg-B3', 'bg-B3 dark:bg-stone-700']"
+                :scrollEndOffset="480"
               >
                 <template #card0>
-                  <div class="dark:text-white text-stone-900">
+                  <div class="text-white dark:text-stone-900">
                     <p class="mb-4 font-semibold md:mb-6 sm:mb-8 md:text-xl">
                       {{ $t('work.title.item5-2') }}
                     </p>
-                    <List 
+                    <List  
+                    numClass="dark:bg-stone-700 dark:text-white bg-stone-500"
+                    :items="[
+                        { title: $t('project1.goal.item1') },
+                        { title: $t('project1.goal.item2') },
+                        { title: $t('project1.goal.item3') },
+                        { title: $t('project1.goal.item4') },
+                        { title: $t('project1.goal.item5') },
+                        { title: $t('project1.goal.item6') }
+                      ]"
+                    />
+                  </div>
+                </template>
+                <template #card1>
+                  <div class="dark:text-white text-stone-900">
+                    <p class="mb-4 font-semibold md:mb-6 sm:mb-8 md:text-xl">
+                      {{ $t('work.title.item5-1') }}
+                    </p>
+                    <List
                     :items="[
                         { title: $t('project1.problem.item1') },
                         { title: $t('project1.problem.item2') },
                         { title: $t('project1.problem.item3') },
-                        { title: $t('project1.problem.item4') },
-                        { title: $t('project1.problem.item5') },
-                        { title: $t('project1.problem.item6') }
                       ]"
                     />
                   </div>
@@ -655,6 +670,23 @@
               </div>
             </template>
           </Section3>
+          <!-- 設計交付 -->
+          <Section3
+            id="section12"
+            :title="$t('work.title.item12')"
+          >
+            <template #content-1>
+              <ImageCompare
+                beforeImage="https://i.imgur.com/dIkF1Ih.png"
+                afterImage="https://i.imgur.com/Y3iIZsT.png"
+                :height="'h-96'"
+                class="mb-8"
+                beforeText="EN"
+                afterText="ZH"
+              />
+            <p v-html="$t('project1.handoff.item1')" class="font-normal"></p>
+            </template>
+          </Section3>
           <!-- 反饋與學習 -->
           <Section3
             id="section14"
@@ -730,6 +762,7 @@
         { id: 'section8', name: 'work.title.item9' },
         { id: 'section9', name: 'work.title.item10' },
         { id: 'section11', name: 'work.title.item11' },
+        { id: 'section12', name: 'work.title.item12' },
         { id: 'section14', name: 'work.title.item14' },
       ],
     };

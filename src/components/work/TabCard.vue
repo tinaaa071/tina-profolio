@@ -5,7 +5,7 @@
     >
       <!-- Top Section -->
       <div 
-      class="flex gap-12 items-center p-3 mb-6 font-semibold bg-white rounded-lg xl:mb-10 sm:px-8 sm:rounded-xl dark:bg-stone-900 no-scrollbar"
+      class="flex gap-12 items-center p-2 mb-6 font-semibold bg-white rounded-lg sm:p-3 xl:mb-8 sm:px-8 sm:rounded-xl dark:bg-stone-900 no-scrollbar"
       :class="scrollableClass"
       @wheel="handleHorizontalScroll"
       >
@@ -13,7 +13,7 @@
           v-for="(button, index) in buttons"
           :key="index"
           type="button"
-          class="inline-flex justify-center w-full leading-normal text-center transition-colors duration-300 ease-in-out sm:text-base"
+          class="inline-flex justify-center w-full text-sm leading-normal text-center transition-colors duration-300 ease-in-out sm:text-base"
           :class="{
             'text-stone-900 dark:text-white': activeTab === index + 1,
             'text-stone-400 hover:text-stone-900 dark:text-stone-500 dark:hover:text-white': activeTab !== index + 1,

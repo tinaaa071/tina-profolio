@@ -41,13 +41,18 @@
     "background":{
         "item1": "Medical services worldwide are increasingly emphasizing international cooperation, especially in areas such as cross-border medical aid and healthcare infrastructure development. The professional competence of healthcare personnel has become a crucial foundation for advancing collaboration. The professional training provided by the platform will help enhance the overall quality of healthcare personnel globally."
     },
-    "problem": {
+    "goal": {
         "item1": "Integrate course resources from national medical institutions",
         "item2": "Provide multi-language switch for the website",
         "item3": "Categorize courses into clinical courses, non-clinical courses, demonstration courses, and other filters",
         "item4": "Provide individual and group registration functions for courses",
         "item5": "Allow participants to view the registration review results",
         "item6": "Allowing students to consult online with the course provider"
+    },
+    "problem": {
+        "item1": "The client was unable to provide clear requirements",
+        "item2": "The project architecture was extensive",
+        "item3": "The development timeline was tight"
     },
     "sa": { 
         "item1": "Understand the MOHW's review standards for medical course registrations", 
@@ -179,6 +184,9 @@
             "item23": "Real-time Chat", 
             "item23-1": "The chat window allows real-time communication with the course units and supports file uploads."
         }
+    },
+    "handoff": { 
+        "item1": "In <strong>Figma</strong>, I utilized the <strong>Variable</strong> feature to demonstrate multilingual switching, allowing the development team to clearly understand the variations in text length and interface layout across different languages. Additionally, I showcased RWD (Responsive Web Design) screens at various breakpoints and the visual effects on different devices, ensuring an optimal user experience across all screen sizes.<br><br>During the design review and handoff phase, I used <strong>Storybook</strong> as a platform for visual guidelines and component demonstrations, assisting the development team in referencing concrete design standards during implementation."
     },
     "feedback": { 
         "item1": "Control of Project Timeline",

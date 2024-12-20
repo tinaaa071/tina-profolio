@@ -20,7 +20,7 @@
           <span
             class="absolute top-4 right-4 px-2 py-1 text-sm bg-white rounded dark:text-white text-stone-800 dark:bg-stone-800"
           >
-            Before
+            {{ beforeText }}
           </span>
         </div>
     
@@ -40,7 +40,7 @@
           <span
             class="absolute top-4 right-4 px-2 py-1 text-sm bg-white rounded dark:text-white text-stone-800 dark:bg-stone-800"
           >
-            After
+            {{ afterText }}
           </span>
         </div>
     
@@ -62,6 +62,18 @@
   <script>
   export default {
     props: {
+      beforeText: {
+        type: String,
+        default: 'Before',
+      },
+      afterText: {
+        type: String,
+        default: 'After',
+      },
+      beforeImage: {
+        type: String,
+        required: true,
+      },
       beforeImage: {
         type: String,
         required: true,
