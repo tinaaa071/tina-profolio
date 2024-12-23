@@ -685,12 +685,12 @@
               <ImageCompare
                 beforeImage="https://i.imgur.com/R7fw8xo.png"
                 afterImage="https://i.imgur.com/OAbtsnS.png"
-                :height="'h-80'"
+                heightClass="md:h-80 h-72"
                 class="mb-8"
                 beforeText="EN"
                 afterText="ZH"
               />
-            <p v-html="$t('project1.handoff.item1')" class="font-normal"></p>
+            <p v-html="$t('project2.handoff.item1')" class="font-normal"></p>
             </template>
           </Section3>
           <!-- 反饋與學習 -->
@@ -708,11 +708,11 @@
                 <List 
                 customClass="px-6 py-5 bg-B3 rounded-2xl xl:rounded-3xl dark:bg-transparent dark:border dark:border-white"
                 :items="[
-                    { title: $t('project1.feedback.item1'), content: $t('project1.feedback.item1-1') },
-                    { title: $t('project1.feedback.item2'), content: $t('project1.feedback.item2-1') },
-                    { title: $t('project1.feedback.item3'), content: $t('project1.feedback.item3-1') },
-                    { title: $t('project1.feedback.item4'), content: $t('project1.feedback.item4-1') },
-                    { title: $t('project1.feedback.item5'), content: $t('project1.feedback.item5-1') }
+                    { title: $t('project2.feedback.item1'), content: $t('project2.feedback.item1-1') },
+                    { title: $t('project2.feedback.item2'), content: $t('project2.feedback.item2-1') },
+                    { title: $t('project2.feedback.item3'), content: $t('project2.feedback.item3-1') },
+                    { title: $t('project2.feedback.item4'), content: $t('project2.feedback.item4-1') },
+                    { title: $t('project2.feedback.item5'), content: $t('project2.feedback.item5-1') }
                   ]"
                 />
             </template>
@@ -720,8 +720,8 @@
           <hr class="border-stone-300 dark:border-white/10">
           <!-- 下一個專案 -->
           <SectionNext 
-          :title="$t('project2.core.title')"
-          :linkTo="'/work/project2'"
+          :title="$t('project1.core.title')"
+          :linkTo="'/work/project1'"
           :icon="icon" 
           :showIcon="false"
           :text="$t('work.core.item5')" 

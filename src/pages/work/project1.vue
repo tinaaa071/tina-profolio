@@ -679,7 +679,7 @@
               <ImageCompare
                 beforeImage="https://i.imgur.com/dIkF1Ih.png"
                 afterImage="https://i.imgur.com/Y3iIZsT.png"
-                :height="'h-96'"
+                heightClass="md:h-96 h-64"
                 class="mb-8"
                 beforeText="EN"
                 afterText="ZH"

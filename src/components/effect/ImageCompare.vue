@@ -82,15 +82,9 @@
         type: String,
         required: true,
       },
-      height: {
+      heightClass: {
         type: String,
         default: "h-64", // 預設高度
-      },
-    },
-    computed: {
-      // 將傳遞的高度類別綁定到 class 屬性
-      heightClass() {
-        return this.height;
       },
     },
     data() {
