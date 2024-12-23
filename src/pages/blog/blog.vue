@@ -167,10 +167,17 @@ export default {
         },
         {
           id: 18,
+          title: "使用 Storybook 構建你的設計系統",
+          category: this.$t('blog.item2'),
+          image: "https://cdn-images-1.medium.com/max/1600/1*GxGNHeVOgVS_SFqGdY3TfQ.png",
+          date: "2024．11．16",
+        },
+        {
+          id: 19,
           title: "身為 UI/UX 設計師開發的第一個 Figma Plugin - Shape Mask",
           category: this.$t('blog.item3'),
           image: "https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png",
-          date: "2024．11．16",
+          date: "2024．11．18",
         },
         // {
         //   id: 22,

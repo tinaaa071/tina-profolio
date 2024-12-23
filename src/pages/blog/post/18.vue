@@ -5,20 +5,21 @@
         <div class="flex flex-col gap-6 mx-auto max-w-3xl md:pb-10">
           <Brief
           :post="{
-          banner: 'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png',
+          banner: 'https://cdn-images-1.medium.com/max/1600/1*GxGNHeVOgVS_SFqGdY3TfQ.png',
           credit: 'Design by Tina Chen',
-          category: $t('blog.item3'),
+          category: $t('blog.item2'),
           date: '2024．09．17',
-          title: '身為 UI/UX 設計師開發的第一個 Figma Plugin - Shape Mask',
-          desc: '設計師為自己打造，Shape Mask 解決遮罩設計的每個細節困擾！',
-          brief: '身為一名設計師，我經常思考一個問題：我們是否能用更好的方法解決日常設計中的繁瑣工作？<br>這個念頭促使我從工具的使用者，轉變為工具的創造者，並開發出屬於自己的 Figma Plugin - Shape Mask。',
+          title: '使用 Storybook 構建你的設計系統',
+          desc: 'Storybook：讓你的設計系統輕鬆維護與共享',
+          brief: '在 UI/UX 設計工作中，構建一個準確而健固的設計系統，是確保用戶體驗的重要一環。',
           menu: [
-            { menu: '開發的契機' },
-            { menu: '主要功能' },
-            { menu: '開發過程' },
-            { menu: '實際應用' },
-            { menu: '開發心得' },
-            { menu: '額外分享：上架後的驚喜' },
+            { menu: '什麼是 Storybook？' },
+            { menu: 'Storybook 在設計系統中的角色' },
+            { menu: 'Storybook 的主要功能' },
+            { menu: '如何開始使用 Storybook 建立設計系統' },
+            { menu: 'Storybook 與設計工具的整合' },
+            { menu: '如何維護和擴展設計系統' },
+            { menu: '結語' }
           ]
         }"
         :showCredit="true"
@@ -28,139 +29,77 @@
         <Content>
           <div class="flex flex-col gap-4" id="section1">
             <H1 
-            :title="'開發的契機'"
+            :title="'什麼是 Storybook？'"
             />
             <p>
-              作為一名設計師，我經常需要快速建立視覺吸引力強的設計構圖。然而，在 Figma 中處理形狀遮罩（Shape Mask）時，現有功能要達到理想效果往往需要繁瑣的操作步驟。因此，我決定著手開發一款 Plugin，讓設計師能更直覺且高效地完成這類任務。
+              Storybook 是一個開源的 UI 開發環境，用於構建、開發和測試 UI 元件。它可以幫助團隊建立可重複使用的 UI 元件庫，並且能夠將這些元件以視覺化的方式呈現。對於 UI/UX 設計師來說，Storybook 不僅是展示元件的工具，更是協助設計系統維護的橋樑。
             </p>
-            <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-              <Callout class="text-sm">
-                <p class="mb-2">
-                  🎯&nbsp;&nbsp;目標
-                </p>
-                <ul class="grid gap-2 list-decimal list-inside">
-                  <li>減少重複性操作</li>
-                  <li>提供多種形狀遮罩物件</li>
-                  <li>幫助設計師專注於設計本身</li>
-                </ul>
-              </Callout>
-              <Callout class="text-sm">
-                <ul class="grid gap-2 list-none list-inside">
-                  <li>
-                    🕗&nbsp;&nbsp;開發時間：兩週
-                  </li>
-                  <li>
-                    🕗&nbsp;&nbsp;上架日期：2024．11．06
-                  </li>
-                </ul>
-              </Callout>
-            </div>
-            <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1200/1*M4zkxVmUiNAI9Ls97HYZuA.png"
-            />
-            <Mention 
-              showNote="true"
-              note="📌&nbsp;&nbsp;使用 Shape Mask："
-              :isExternal="true"
-              :link="'https://www.figma.com/community/plugin/1420953914431407843/shape-mask'" 
-              :title="'Shape Mask'" 
-              :content="'This plugin allows you to add unique mask effects and custom shape cropping to images.'" 
-              :image="'https://www.figma.com/community/icon?resource_id=1420953914431407843&resource_type=plugin'" 
-            />
           </div>
           <Dot />
           <div class="flex flex-col gap-4" id="section2">
             <H1 
-            :title="'主要功能'"
+            :title="'Storybook 在設計系統中的角色'"
             />
             <p>
-              Shape Mask 的功能設計以簡單高效為核心，以下是主要特色：
+              設計系統的核心是確保一致性，無論是在界面設計還是開發過程中。Storybook 為設計師提供了一個集中管理元件的場所，能夠將 UI 元件與樣式指南結合，並實現即時更新。這不僅有助於設計師在設計過程中確認元件的視覺一致性，也能確保開發團隊使用的元件符合設計要求。
             </p>
-            <ListNum 
-            :items="list1"
-            customClass="space-y-4"
-            >
-              <template #slot-1>
-                <div class="grid grid-cols-2 gap-2 mt-4">
-                  <CreditImg 
-                    imgSrc="https://cdn-images-1.medium.com/max/1200/1*VuXsdRDiJ7OednjghC5L3g.png"
-                    imgCredit="預設遮罩效果"
-                    aspectRatio="aspect-square"
-                  />
-                  <CreditImg 
-                    imgSrc="https://cdn-images-1.medium.com/max/1200/1*w0qyHLmJawCxxVMUPX5Mug.png"
-                    imgCredit="反轉遮罩效果"
-                    aspectRatio="aspect-square"
-                  />
-                </div>
-              </template>
-              <template #slot-3>
-                <CreditImg 
-                  imgSrc="https://cdn-images-1.medium.com/max/1600/1*-yvhugQmAydr9NDv-VJytg.png"
-                  imgCredit="自行上傳 svg 檔案套用"
-                  class="mt-4"
-                />
-              </template>
-            </ListNum>
+            <CreditImg 
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*pSGF7fivZ6I3RHsM.png"
+              imgCredit="Credit: Storybook"
+              aspectRatio="aspect-auto"
+            />
           </div>
-          <Dot />
           <div class="flex flex-col gap-4" id="section3">
             <H1 
-            :title="'開發過程'"
+            :title="'Storybook 的主要功能'"
             />
+            <ListDisc :items="list1" />
             <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/1*3T0Z4_ye69FPswar550qww.png"
-              imgCredit="Credit: Unsplash"
-            />
-            <p>
-              開發這款 Plugin 是一次充滿挑戰但又有趣的旅程。以下是過程中遇到的一些難題以及我的解決方式：
-            </p>
-            <ListDisc :items="list2" />
-            <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/1*cEMMsGq-FPVra1eDADHV8Q.png"
-              imgCredit="我在 Figma 設計了 Plugin 呈現的 UI"
+              imgSrc="https://cdn-images-1.medium.com/max/1600/0*ZCQGHOKQfhrvWWDM.jpg"
+              imgCredit="Credit: Storybook"
+              aspectRatio="aspect-auto"
             />
           </div>
           <Dot />
           <div class="flex flex-col gap-4" id="section4">
             <H1 
-            :title="'實際應用'"
+            :title="'如何開始使用 Storybook 建立設計系統'"
             customClass="space-y-4"
             />
-            <ListDisc :items="list3" />
-            <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/1*oExwVbRp0DKqGuzkymLG4A.png"
-              imgCredit="使用 Plugin 製作出的 Banner"
+            <p>
+              建立設計系統的第一步是將常用的 UI 元件收集並在 Storybook 中構建一個元件庫。以下是簡單的步驟：
+            </p>
+            <ListNum 
+            :items="list2"
             />
           </div>
           <Dot />
           <div class="flex flex-col gap-4" id="section5">
             <H1 
-            :title="'開發心得'"
+            :title="'Storybook 與設計工具的整合'"
+            customClass="space-y-4"
             />
             <p>
-              這次開發 Shape Mask 的經歷讓我深刻體會到，設計師懂一點程式開發很有幫助。不僅能解決自己的工作痛點，還能幫助其他人提升效率。雖然開發的過程經歷了非常多的挫折、遇到了無數個 bug，但這次經驗也啟發我去探索更多跨界技能的可能性，並激勵我持續挑戰自我。
+              雖然 Storybook 是為開發人員設計的工具，但它與設計工具（如 Figma 或 Sketch）也能夠很好地配合工作。設計師可以在 Figma 中設計 UI 元件，然後將這些設計轉化為 Storybook 元件，確保設計與開發之間的一致性。這樣的工作流程能大大提高設計和開發之間的協作效率，避免設計偏差和錯誤。
             </p>
-            <Video videoSrc="https://www.youtube.com/embed/_6jO-zrU5Do?autoplay=1&mute=1&loop=1" />
           </div>
           <Dot />
           <div class="flex flex-col gap-4" id="section6">
             <H1 
-            :title="'📢 額外分享：上架後的驚喜'"
+            :title="'如何維護和擴展設計系統'"
+            customClass="space-y-4"
             />
             <p>
-              上架 Shape Mask 幾天後，我收到來自 Adobe Express 團隊的聯絡，表示對這款 Plugin 的功能很感興趣，並希望能將它上架到 Adobe 平台中，讓更多設計師受益。
+              隨著產品的發展，設計系統會不斷擴展和調整。在 Storybook 中維護設計系統相對簡單，因為它的元件庫結構清晰，容易擴展。每當新增或修改元件時，設計師只需更新 Storybook 中的相應故事，並確保所有團隊成員都能及時查看和使用最新的元件。
             </p>
-            <CreditImg 
-              imgSrc="https://cdn-images-1.medium.com/max/1600/1*tz3SqnucYu1ZbSZr0Z4znA.png"
-              imgCredit="來自 Adobe 的信件"
+          </div>
+          <Dot />
+          <div class="flex flex-col gap-4" id="section7">
+            <H1 
+            :title="'結語'"
             />
             <p>
-              這是我未曾預料的發展，也讓我更加相信跨平台合作的潛力。這次機會不僅讓我學到如何適配 Adobe 的環境與需求，也激勵我去思考更多元化的發展方向，例如：
-            </p>
-            <ListDisc :items="list4" />
-            <p>
-              這一合作的可能性為 Shape Mask 開啟了全新的篇章，或許我們也能期待未來在 Adobe Express 看到這款 Plugin。
+              使用 Storybook 建立設計系統，對於 UI/UX 設計師來說，不僅能夠提升設計與開發的協作效率，還能確保產品的一致性和高品質。無論是構建元件、維護設計系統，還是與團隊協作，Storybook 都能提供強大的支持。透過 Storybook，我們可以創建一個可持續發展的設計系統，並在整個開發過程中保持一致的使用體驗。
             </p>
           </div>
         </Content>
@@ -182,57 +121,38 @@ export default {
     return {
       list1: [
         {
-          title: "快速套用形狀遮罩",
-          description: "使用者可以一鍵套用遮罩，支援多種形狀選項（圓形、三角形、自定義形狀等）。",
+          title: "視覺化元件庫",
+          description: "Storybook 提供了一個瀏覽元件的界面，讓設計師可以直接檢視每個元件的狀態和樣式，快速檢查設計的準確性。",
         },
         {
-          title: "反轉遮罩效果",
-          description: "除了基本的遮罩功能，Shape Mask 還支持反轉遮罩效果，擴展了設計的靈活性。",
+          title: "元件的獨立開發與測試",
+          description: "開發人員可以在 Storybook 中單獨開發和測試元件，而不需要依賴完整的應用程式運行環境。",
         },
         {
-          title: "提供簡單直觀的操作界面",
-          description: "以各種形狀風格做為分類篩選，用戶可以快速找到適合的形狀並套用，點擊切換按鈕馬上反轉遮罩效果。",
+          title: "自訂擴展",
+          description: "Storybook 支援許多插件，設計師可以利用這些插件來增加設計檢視功能，例如視覺測試工具、色彩檢查、可訪問性測試等。",
         },
         {
-          title: "自定義遮罩形狀",
-          description: "用戶可以上傳自定義形狀作為遮罩，你可以親自設計特別的 svg 形狀，並應用於設計之中。",
+          title: "團隊協作",
+          description: "Storybook 提供了與開發人員的高效協作方式，設計師和開發人員可以在同一平台上查看、測試和修改元件，避免了傳統設計工具和開發工具之間的隔閡。",
         }
       ],
       list2: [
         {
-          title: "技術學習曲線",
-          description: "儘管我是設計師，對 JavaScript 和 Figma API 不熟悉。為此，我花時間學習相關知識並研究 Figma 的技術文件。Figma 的文件中提到建議使用 Typescript 來開發，因為我從來沒有使用過此語言，對我來說完全是個陌生領域，為此我也去研究了相關文件資料。",
+          title: "安裝 Storybook",
+          description: "使用 npm 或 yarn 安裝 Storybook，並進行必要的設定。",
         },
         {
-          title: "資源不足",
-          description: "網路上對於開發 Figma Plugin 的資源並不多，尤其鮮少有中文開發者的資源，所以我大部分是尋求外文網站的資源。",
+          title: "創建元件",
+          description: "在你的應用程式中創建可重複使用的 UI 元件（例如按鈕、表單、卡片等），並將它們引入 Storybook 中。",
         },
         {
-          title: "性能優化",
-          description: "插件在處理大量圖層時，初版的執行效率較低，並且屢次失敗達不到我期望的效果，經過幾次測試和調整後，我優化了算法，減少了處理時間。",
+          title: "編寫故事",
+          description: "為每個元件創建 stories，這些故事將展示不同狀態下的元件，例如預設狀態、點擊狀態、禁用狀態等。",
         },
         {
-          title: "用戶體驗",
-          description: "如何設計 Plugin 的界面，讓功能不僅強大而且易用，是一個重要課題。尤其身為一名 UI/UX 設計師，介面的呈現更是我需要花心思的部分。我決定以簡單直觀的介面來呈現，強調功能的效果，讓使用者較容易上手。",
-        }
-      ],
-      list3: [
-        {
-          description: "在 UI 設計中，輕鬆處理用於裝飾的創意遮罩設計。",
-        },
-        {
-          description: "減少操作時間，讓團隊能更專注於設計的創意部分。",
-        },
-        {
-          description: "讓單調的設計增添不同的視覺效果。",
-        }
-      ],
-      list4: [
-        {
-          description: "調整功能以支援多平台用戶。",
-        },
-        {
-          description: "與其他開發者合作，汲取更豐富的回饋與建議。",
+          title: "共享與協作",
+          description: "一旦設置完成，你可以與開發團隊共享 Storybook，讓大家可以即時查看、測試和使用這些元件。",
         }
       ],
       posts: [
