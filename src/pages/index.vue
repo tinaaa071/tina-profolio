@@ -94,7 +94,7 @@
               <div class="flex flex-col p-5 h-full bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
                 <div class="flex justify-between mb-4 lg:mb-10 xs:mb-6">
                   <p class="tracking-[.25em] text-xs xs:text-base xl:text-lg font-bold ">
-                    {{ $t('work.core.item1') }}
+                    {{ $t('work.core.item3') }}
                   </p>
                   <p class="text-lg font-extrabold xs:text-2xl sm:text-3xl">
                     Shape Mask
@@ -111,14 +111,14 @@
               <div class="p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
                 <div class="flex justify-between items-start mb-4 lg:mb-10 xs:mb-6">
                   <p class="tracking-[.25em]  text-xs xs:text-base xl:text-lg font-bold ">
-                    {{ $t('work.core.item1') }}
+                    {{ $t('work.core.item4') }}
                   </p>
                   <div class="flex justify-end">
                     
                   </div>
                   <WaveButton 
                   linkTo="/blog/blog"
-                  :text="$t('work.core.item2')"
+                  :text="$t('work.core.item5')"
                   :borderClass="'border-stone-900 dark:border-white'"
                   :textClass="'text-black dark:text-white'"
                   :hoverTextClass="'dark:group-hover:text-stone-900 group-hover:text-white'"
@@ -126,7 +126,7 @@
                   class="transform origin-top-right scale-75 sm:scale-100"
                   />
                 </div>
-                <div class="space-y-3 text-sm font-extrabold lg:space-y-5 xs:text-2xl text-stone-400 dark:text-stone-400">
+                <div class="space-y-3 text-sm font-extrabold lg:space-y-5 xs:text-2xl">
                   <!-- Project Card -->
                   <!-- <RouterLink
                     v-for="(date, index) in ['2024.06.12', '2024.06.12', '2024.06.12', '2024.06.12']"
