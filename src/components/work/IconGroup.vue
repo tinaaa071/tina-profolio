@@ -1,22 +1,51 @@
 <!-- src/components/IconGroup.vue -->
 <template>
     <div class="flex flex-col justify-items-center items-center space-y-4 text-2xl text-white sm:space-y-5">
-        <fa6-solid-envelope v-if="iconsVisible[0]" aria-hidden="true" />
-        <fa6-solid-apple-whole v-if="iconsVisible[1]"  aria-hidden="true" />
+        <!-- <fa6-solid-envelope v-if="iconsVisible[0]" aria-hidden="true" /> -->
         <Icon 
-        imageUrl="https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        tooltipText="image"
+        imageUrl="https://i.imgur.com/7pnxjJF.png"
+        tooltipText="Figma"
+        v-if="iconsVisible[0]"  aria-hidden="true" 
+        />
+        <Icon 
+        imageUrl="https://i.imgur.com/zIeXvD3.png"
+        tooltipText="Vue"
+        v-if="iconsVisible[1]"  aria-hidden="true" 
+        />
+        <Icon 
+        imageUrl="https://i.imgur.com/28m1SmQ.png"
+        tooltipText="Vite"
         v-if="iconsVisible[2]"  aria-hidden="true" 
         />
         <Icon 
-        imageUrl="https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        tooltipText="image"
+        imageUrl="https://i.imgur.com/szgrbI5.png"
+        tooltipText="Git"
         v-if="iconsVisible[3]"  aria-hidden="true" 
         />
         <Icon 
-        imageUrl="https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        tooltipText="image"
+        imageUrl="https://i.imgur.com/HAqgRy7.png"
+        tooltipText="Tailwind"
         v-if="iconsVisible[4]"  aria-hidden="true" 
+        />
+        <Icon 
+        imageUrl="https://i.imgur.com/kAMkFzO.png"
+        tooltipText="Notion"
+        v-if="iconsVisible[5]"  aria-hidden="true" 
+        />
+        <Icon 
+        imageUrl="https://i.imgur.com/meFkjAw.png"
+        tooltipText="ClickUp"
+        v-if="iconsVisible[6]"  aria-hidden="true" 
+        />
+        <Icon 
+        imageUrl="https://i.imgur.com/9DsxTqY.png"
+        tooltipText="Trello"
+        v-if="iconsVisible[7]"  aria-hidden="true" 
+        />
+        <Icon 
+        imageUrl="https://i.imgur.com/kpRhY1W.png"
+        tooltipText="Miro"
+        v-if="iconsVisible[8]"  aria-hidden="true" 
         />
     </div>
   </template>
@@ -27,8 +56,8 @@
     props: {
       iconsVisible: {
         type: Array,
-        default: () => [false, false, false, false, false], // Default to all hidden
-        validator: (value) => value.length === 5 && value.every((item) => typeof item === 'boolean'),
+        default: () => [false, false, false, false, false, false, false, false, false], // Default to all hidden
+        validator: (value) => value.length === 8 && value.every((item) => typeof item === 'boolean'),
       },
     },
   };

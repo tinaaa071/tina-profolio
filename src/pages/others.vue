@@ -11,6 +11,7 @@
             $t('other.item2'),
             $t('other.item3'),
             $t('other.item4'),
+            $t('other.item5'),
           ]"
           @category-changed="filterByCategory"
         />
@@ -90,9 +91,22 @@
           },
         {
             id: 4,
-            title: "Post 1",
+            title: "Cat Typing",
             category: this.$t('other.item4'),
-            image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            // image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            lottiePath: "https://lottie.host/9ff43bd5-4052-4f5d-a3df-563e5fb89681/QWbSsou0iJ.json"
+          },
+        {
+            id: 5,
+            title: "Magnet",
+            category: this.$t('other.item4'),
+            lottiePath: "https://lottie.host/c74a5323-70cd-49bb-bf4f-330c0f16018a/NZyeJAfs6d.json"
+          },
+        {
+            id: 6,
+            title: "Watch This",
+            category: this.$t('other.item4'),
+            lottiePath: "https://lottie.host/8b4dae31-4a4a-4996-bd37-c3a86ae7006a/pTng0tWY0t.json"
           },
         ],
         currentPage: 1,

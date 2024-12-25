@@ -18,7 +18,7 @@
         :info3="$t('project1.info.item3')"
         :info4="$t('project1.info.item1')"
         :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3')]" 
-        :iconsVisible="[true, false, true, true, false]"
+        :iconsVisible="[true, false, false, true, true, true, true, false, false]"
         :linkTo="'/'"
         :icon="icon" 
         

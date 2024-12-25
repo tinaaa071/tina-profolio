@@ -154,12 +154,11 @@
           <p class="text-sm font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S1') }}
           </p>
-          <div class="flex flex-row gap-4 xs:gap-7">
+          <div class="flex flex-row flex-wrap gap-4 xs:gap-x-6 xs:gap-y-3">
             <Icon
                 v-for="(image, index) in [
-                  { url: 'https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tooltip: 'Figma' },
-                  { url: 'https://images.unsplash.com/photo-1680169258027-3677d4c8e4f5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D', tooltip: 'Sketch' },
-                  { url: 'https://images.unsplash.com/photo-1680169276596-81eea2038a6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8', tooltip: '333' }
+                  { url: 'https://i.imgur.com/7pnxjJF.png', tooltip: 'Figma' },
+                  { url: 'https://i.imgur.com/2YcIFwQ.png', tooltip: 'Sketch' }
                 ]"
                 :key="index"
                 :imageUrl="image.url"
@@ -172,12 +171,17 @@
           <p class="text-sm font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S2') }}
           </p>
-          <div class="flex flex-row gap-4 xs:gap-7">
+          <div class="flex flex-row flex-wrap gap-4 xs:gap-x-6 xs:gap-y-3">
             <Icon
                 v-for="(image, index) in [
-                  { url: 'https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tooltip: 'Figma' },
-                  { url: 'https://images.unsplash.com/photo-1680169258027-3677d4c8e4f5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D', tooltip: 'Sketch' },
-                  { url: 'https://images.unsplash.com/photo-1680169276596-81eea2038a6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8', tooltip: '333' }
+                  { url: 'https://i.imgur.com/zIeXvD3.png', tooltip: 'Vue' },
+                  { url: 'https://i.imgur.com/28m1SmQ.png', tooltip: 'Vite' },
+                  { url: 'https://i.imgur.com/szgrbI5.png', tooltip: 'Git' },
+                  { url: 'https://i.imgur.com/HAqgRy7.png', tooltip: 'Tailwind' },
+                  { url: 'https://i.imgur.com/FWRKUGC.png', tooltip: 'Bootstrap' },
+                  { url: 'https://i.imgur.com/oCdyvHY.png', tooltip: 'Sass' },
+                  { url: 'https://i.imgur.com/2vbL70p.png', tooltip: 'Wordpress' },
+                  { url: 'https://i.imgur.com/D4xOlui.png', tooltip: 'Webflow' },
                 ]"
                 :key="index"
                 :imageUrl="image.url"
@@ -190,12 +194,14 @@
           <p class="text-sm font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S3') }}
           </p>
-          <div class="flex flex-row gap-4 xs:gap-7">
+          <div class="flex flex-row flex-wrap gap-4 xs:gap-x-6 xs:gap-y-3">
             <Icon
                 v-for="(image, index) in [
-                  { url: 'https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tooltip: 'Figma' },
-                  { url: 'https://images.unsplash.com/photo-1680169258027-3677d4c8e4f5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D', tooltip: 'Sketch' },
-                  { url: 'https://images.unsplash.com/photo-1680169276596-81eea2038a6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8', tooltip: '333' }
+                  { url: 'https://i.imgur.com/anAgplx.png', tooltip: 'PS' },
+                  { url: 'https://i.imgur.com/4nfRaVx.png', tooltip: 'AI' },
+                  { url: 'https://i.imgur.com/NYeHQWZ.png', tooltip: 'Spline' },
+                  { url: 'https://i.imgur.com/s2K4MBG.png', tooltip: 'Blender' },
+                  { url: 'https://i.imgur.com/nQ5gGur.png', tooltip: 'Lottie' },
                 ]"
                 :key="index"
                 :imageUrl="image.url"
@@ -208,12 +214,13 @@
           <p class="text-sm font-semibold text-stone-400 md:max-w-28 text-wrap">
             {{ $t('about.tool.S4') }}
           </p>
-          <div class="flex flex-row gap-4 xs:gap-7">
+          <div class="flex flex-row flex-wrap gap-4 xs:gap-x-6 xs:gap-y-3">
             <Icon
                 v-for="(image, index) in [
-                  { url: 'https://images.unsplash.com/photo-1725714834412-7d7154ac4e4e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tooltip: 'Figma' },
-                  { url: 'https://images.unsplash.com/photo-1680169258027-3677d4c8e4f5?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D', tooltip: 'Sketch' },
-                  { url: 'https://images.unsplash.com/photo-1680169276596-81eea2038a6e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIyfHx8ZW58MHx8fHx8', tooltip: '333' }
+                  { url: 'https://i.imgur.com/kAMkFzO.png', tooltip: 'Notion' },
+                  { url: 'https://i.imgur.com/meFkjAw.png', tooltip: 'ClickUp' },
+                  { url: 'https://i.imgur.com/9DsxTqY.png', tooltip: 'Trello' },
+                  { url: 'https://i.imgur.com/kpRhY1W.png', tooltip: 'Miro' },
                 ]"
                 :key="index"
                 :imageUrl="image.url"
@@ -232,8 +239,24 @@
     <!-- Work 區塊 -->
     <aboutSection
     :title="$t('about.work.T1')"
-    class="md:py-8"
+    class="space-y-4 md:py-8 xs:space-y-6"
     >
+      <!-- Work 1 -->
+      <WorkAccordion
+      v-for="(section, index) in sections"
+      :key="index"
+      :title="section.title"
+      :info="section.info"
+      :desc="section.desc"
+      :showLogo="section.showLogo"
+      :logoSrc="section.logoSrc"
+      :sections="section.sections"
+      :showAtt="true"
+      :items="section.items"
+      :showModalBtn="section.showModalBtn"
+      :showLinkBtn="section.showLinkBtn"
+      />
+      <!-- Work 2 -->
       <WorkAccordion
       v-for="(section, index) in sections"
       :key="index"
