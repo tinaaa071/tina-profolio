@@ -117,8 +117,10 @@
             <!-- Content -->
             <p class="text-sm font-medium text-stone-500 dark:text-stone-300">
               {{ $t('about.education.L1') }}
-              <br />
-              {{ $t('about.education.L2') }}
+              <br>
+              <span class="text-xs">
+                {{ $t('about.education.L2') }}
+              </span>
             </p>
           </div>
         </div>
@@ -132,9 +134,9 @@
         <!-- List Items -->
         <LearnCard
         v-for="(card, index) in [
-        { title: $t('about.certificate.S1'), info: $t('about.certificate.L1'), cardSrc: 'https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-        { title: $t('about.certificate.S2'), info: $t('about.certificate.L2'), cardSrc: 'https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-        { title: $t('about.certificate.S3'), info: $t('about.certificate.L3'), cardSrc: 'https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' }
+        { title: $t('about.certificate.S1'), info: $t('about.certificate.L1'), cardSrc: 'https://tina-chen.netlify.app/Images/CareFit/certification1.jpg' },
+        { title: $t('about.certificate.S2'), info: $t('about.certificate.L2'), cardSrc: 'https://tina-chen.netlify.app/Images/CareFit/certification2.png' },
+        { title: $t('about.certificate.S3'), info: $t('about.certificate.L3'), cardSrc: 'https://tina-chen.netlify.app/Images/CareFit/competition.png' }
         // Add more cards as needed
       ]"
       :key="index"
@@ -309,33 +311,34 @@ export default {
     return {
       section1: [
         {
-          title: 'Section 1',
-          info: 'Info for section 1',
-          desc: 'Description for section 1',
+          title: this.$t('about.work.exp1.title'),
+          info: this.$t('about.work.exp1.info'),
+          time: '2023.04 - Now',
+          desc: this.$t('about.work.exp1.desc'),
           showLogo: true,
-          logoSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          logoSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8zXG2okHKCKRAsdO5TDkYTHX-MP_Gn4Wdw&s',
           sections: [
             {
-              listTitle: 'List Title 1',
-              listItems: ['Item 1.1', 'Item 1.2', 'Item 1.3'],
+              listTitle: this.$t('about.work.exp1.L1.title'),
+              listItems: [this.$t('about.work.exp1.L1.1'), this.$t('about.work.exp1.L1.2'), this.$t('about.work.exp1.L1.3'), this.$t('about.work.exp1.L1.4'), this.$t('about.work.exp1.L1.5'), this.$t('about.work.exp1.L1.6'), this.$t('about.work.exp1.L1.7'), this.$t('about.work.exp1.L1.8')],
             },
             {
-              listTitle: 'List Title 2',
-              listItems: ['Item 2.1', 'Item 2.2'],
+              listTitle: this.$t('about.work.exp1.L2.title'),
+              listItems: [this.$t('about.work.exp1.L2.1'), this.$t('about.work.exp1.L2.2'), this.$t('about.work.exp1.L2.3'), this.$t('about.work.exp1.L2.4'), this.$t('about.work.exp1.L2.5'), this.$t('about.work.exp1.L2.6')],
             }
           ],
           items: [
             { 
               id: 1, 
-              imgSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-              linkTo: 'https://tailwindcss.com/docs/transition-duration',
-              showModalBtn: true,
+              imgSrc: 'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png',
+              // linkTo: 'https://tailwindcss.com/docs/transition-duration',
+              showModalBtn: false,
               showLinkBtn: false
             },
             { 
               id: 2, 
-              imgSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
-              linkTo: 'https://tailwindcss.com/docs/transition-duration',
+              imgSrc: 'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png', 
+              linkTo: 'https://www.figma.com/community/plugin/1420953914431407843/shape-mask',
               showModalBtn: false,
               showLinkBtn: true
             }
@@ -347,35 +350,36 @@ export default {
       ],
       section2: [
         {
-          title: 'Section 1',
-          info: 'Info for section 1',
-          desc: 'Description for section 1',
+          title: this.$t('about.work.exp2.title'),
+          info: this.$t('about.work.exp2.info'),
+          time: '2021.06 - 2022.02',
+          desc: this.$t('about.work.exp2.desc'),
           showLogo: true,
-          logoSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          logoSrc: 'https://tina-chen.netlify.app/Images/CareFit/company1.jpeg',
           sections: [
             {
-              listTitle: 'List Title 1',
-              listItems: ['Item 1.1', 'Item 1.2', 'Item 1.3'],
+              listTitle: this.$t('about.work.exp2.L1.title'),
+              listItems: [this.$t('about.work.exp2.L1.1'), this.$t('about.work.exp2.L1.2'), this.$t('about.work.exp2.L1.3'), this.$t('about.work.exp2.L1.4'), this.$t('about.work.exp2.L1.5'), this.$t('about.work.exp2.L1.6'), this.$t('about.work.exp2.L1.7'), this.$t('about.work.exp2.L1.8')],
             },
             {
-              listTitle: 'List Title 2',
-              listItems: ['Item 2.1', 'Item 2.2'],
+              listTitle: this.$t('about.work.exp2.L2.title'),
+              listItems: [this.$t('about.work.exp2.L2.1'), this.$t('about.work.exp2.L2.2'), this.$t('about.work.exp2.L2.3'), this.$t('about.work.exp2.L2.4'), this.$t('about.work.exp2.L2.5'), this.$t('about.work.exp2.L2.6')],
             }
           ],
           items: [
             { 
               id: 1, 
-              imgSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-              linkTo: 'https://tailwindcss.com/docs/transition-duration',
-              showModalBtn: true,
+              imgSrc: 'https://tina-chen.netlify.app/Images/CareFit/attachment1.png',
+              // linkTo: 'https://tailwindcss.com/docs/transition-duration',
+              showModalBtn: false,
               showLinkBtn: false
             },
             { 
               id: 2, 
-              imgSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
-              linkTo: 'https://tailwindcss.com/docs/transition-duration',
+              imgSrc: 'https://tina-chen.netlify.app/Images/CareFit/attachment2.png', 
+              // linkTo: 'https://tailwindcss.com/docs/transition-duration',
               showModalBtn: false,
-              showLinkBtn: true
+              showLinkBtn: false
             }
           ],
           showModalBtn: false,
@@ -390,7 +394,7 @@ export default {
           time: '2021.02 - 2021.06',
           desc: this.$t('about.work.exp3.desc'),
           showLogo: true,
-          logoSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          logoSrc: 'https://tina-chen.netlify.app/Images/CareFit/company2.jpeg',
           sections: [
             {
               listTitle: this.$t('about.work.exp3.L1.title'),

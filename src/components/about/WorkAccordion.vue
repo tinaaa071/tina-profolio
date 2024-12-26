@@ -9,13 +9,13 @@
         }"
         class="flex overflow-hidden relative items-center px-4 py-3 w-full text-left transition-colors duration-300 ease-in-out xs:justify-between sm:px-5 sm:py-4 hover:bg-B4"
       >
-        <div class="flex gap-4 items-center font-medium">
+        <div class="flex gap-4 items-center w-full font-medium">
           <!-- Logo -->
           <img
             v-if="showLogo"
             :src="logoSrc"
             alt="logo"
-            class="object-cover w-16 h-16 rounded-2xl border border-white"
+            class="object-cover w-16 h-16 rounded-2xl border dark:border-white border-B3"
           />
           <!-- Company -->
           <div class="flex flex-col gap-2 font-medium">
