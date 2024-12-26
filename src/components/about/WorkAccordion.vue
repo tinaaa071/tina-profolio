@@ -25,10 +25,10 @@
             </p>
             <!-- Info -->
             <p class="font-normal">
-                {{ info }}
+                {{ info }} <span class="px-1">|</span> {{ time }}
             </p>
             <!-- Desc -->
-            <p class="text-sm font-semibold">
+            <p class="text-sm font-normal">
                 {{ desc }}
             </p>
           </div>
@@ -94,6 +94,10 @@
       required: true,
     },
     info: {
+      type: String,
+      required: true,
+    },
+    time: {
       type: String,
       required: true,
     },

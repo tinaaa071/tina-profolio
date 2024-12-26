@@ -243,10 +243,11 @@
     >
       <!-- Work 1 -->
       <WorkAccordion
-      v-for="(section, index) in sections"
+      v-for="(section, index) in section1"
       :key="index"
       :title="section.title"
       :info="section.info"
+      :time="section.time"
       :desc="section.desc"
       :showLogo="section.showLogo"
       :logoSrc="section.logoSrc"
@@ -258,15 +259,32 @@
       />
       <!-- Work 2 -->
       <WorkAccordion
-      v-for="(section, index) in sections"
+      v-for="(section, index) in section2"
       :key="index"
       :title="section.title"
       :info="section.info"
+      :time="section.time"
       :desc="section.desc"
       :showLogo="section.showLogo"
       :logoSrc="section.logoSrc"
       :sections="section.sections"
       :showAtt="true"
+      :items="section.items"
+      :showModalBtn="section.showModalBtn"
+      :showLinkBtn="section.showLinkBtn"
+      />
+      <!-- Work 3 -->
+      <WorkAccordion
+      v-for="(section, index) in section3"
+      :key="index"
+      :title="section.title"
+      :info="section.info"
+      :time="section.time"
+      :desc="section.desc"
+      :showLogo="section.showLogo"
+      :logoSrc="section.logoSrc"
+      :sections="section.sections"
+      :showAtt="false"
       :items="section.items"
       :showModalBtn="section.showModalBtn"
       :showLinkBtn="section.showLinkBtn"
@@ -289,7 +307,7 @@ import { ref } from 'vue';
 export default {
   data() {
     return {
-      sections: [
+      section1: [
         {
           title: 'Section 1',
           info: 'Info for section 1',
@@ -304,6 +322,83 @@ export default {
             {
               listTitle: 'List Title 2',
               listItems: ['Item 2.1', 'Item 2.2'],
+            }
+          ],
+          items: [
+            { 
+              id: 1, 
+              imgSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              linkTo: 'https://tailwindcss.com/docs/transition-duration',
+              showModalBtn: true,
+              showLinkBtn: false
+            },
+            { 
+              id: 2, 
+              imgSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
+              linkTo: 'https://tailwindcss.com/docs/transition-duration',
+              showModalBtn: false,
+              showLinkBtn: true
+            }
+          ],
+          showModalBtn: false,
+          showLinkBtn: true
+        },
+        // Add more section objects as needed
+      ],
+      section2: [
+        {
+          title: 'Section 1',
+          info: 'Info for section 1',
+          desc: 'Description for section 1',
+          showLogo: true,
+          logoSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          sections: [
+            {
+              listTitle: 'List Title 1',
+              listItems: ['Item 1.1', 'Item 1.2', 'Item 1.3'],
+            },
+            {
+              listTitle: 'List Title 2',
+              listItems: ['Item 2.1', 'Item 2.2'],
+            }
+          ],
+          items: [
+            { 
+              id: 1, 
+              imgSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              linkTo: 'https://tailwindcss.com/docs/transition-duration',
+              showModalBtn: true,
+              showLinkBtn: false
+            },
+            { 
+              id: 2, 
+              imgSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
+              linkTo: 'https://tailwindcss.com/docs/transition-duration',
+              showModalBtn: false,
+              showLinkBtn: true
+            }
+          ],
+          showModalBtn: false,
+          showLinkBtn: true
+        },
+        // Add more section objects as needed
+      ],
+      section3: [
+        {
+          title: this.$t('about.work.exp3.title'),
+          info: this.$t('about.work.exp3.info'),
+          time: '2021.02 - 2021.06',
+          desc: this.$t('about.work.exp3.desc'),
+          showLogo: true,
+          logoSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          sections: [
+            {
+              listTitle: this.$t('about.work.exp3.L1.title'),
+              listItems: [this.$t('about.work.exp3.L1.1'), this.$t('about.work.exp3.L1.2'), this.$t('about.work.exp3.L1.3'), this.$t('about.work.exp3.L1.4'), this.$t('about.work.exp3.L1.5'), this.$t('about.work.exp3.L1.6'), this.$t('about.work.exp3.L1.7')],
+            },
+            {
+              listTitle: this.$t('about.work.exp3.L2.title'),
+              listItems: [this.$t('about.work.exp3.L2.1'), this.$t('about.work.exp3.L2.2'), this.$t('about.work.exp3.L2.3'), this.$t('about.work.exp3.L2.4'), this.$t('about.work.exp3.L2.5'), this.$t('about.work.exp3.L2.6')],
             }
           ],
           items: [
