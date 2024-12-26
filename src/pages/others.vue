@@ -108,6 +108,18 @@
             category: this.$t('other.item4'),
             lottiePath: "https://lottie.host/8b4dae31-4a4a-4996-bd37-c3a86ae7006a/pTng0tWY0t.json"
           },
+        {
+            id: 7,
+            title: "Shape",
+            category: this.$t('other.item4'),
+            lottiePath: "https://lottie.host/919405a9-98e0-467c-8e62-196bc1f84c11/7o6pesu7Q4.json"
+          },
+        {
+            id: 8,
+            title: "Square",
+            category: this.$t('other.item4'),
+            lottiePath: "https://lottie.host/136b3517-5777-475f-a328-01cc7737d2b5/fgd0wFcaRp.json"
+          },
         ],
         currentPage: 1,
         itemsPerPage: 12,
