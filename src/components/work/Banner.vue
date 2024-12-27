@@ -10,18 +10,10 @@
   <script>
   export default {
     props: {
-      title: {
-        type: String,
-        required: true,
-      },
       bannerSrc: {
         type: String,
         default: '',
-      },
-      iconsVisible: {
-      type: Array,
-      default: () => [false, false, false, false, false],
-    },
+      }
     },
   };
   </script>

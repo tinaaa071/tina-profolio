@@ -45,7 +45,7 @@
             <img
               :src="member.avatarSrc"
               alt="Avatar"
-              class="object-cover mr-4 w-10 h-10 rounded-full"
+              class="object-cover mr-4 w-10 h-10 rounded-full border border-B2 dark:border-white"
             />
             <!-- Member Info -->
             <div>

@@ -5,8 +5,7 @@
       <BackToTop class="z-20" />
       <!-- Banner -->
       <Banner 
-        title="123"
-        bannerSrc="https://images.unsplash.com/photo-1688297969982-2d46e66ba2f2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        bannerSrc="https://i.imgur.com/xZ10FFb.png"
       />
       <!-- Content -->
       <div class="absolute left-0 sm:top-[480px] top-[400px] w-full leading-relaxed">
@@ -32,15 +31,15 @@
           :info1="$t('project2.info.item1')"
           :info2="[$t('project2.demand.item1'), $t('project2.demand.item2'), $t('project2.demand.item3'), $t('project2.demand.item4'), $t('project2.demand.item5'), $t('project2.demand.item6')]"
           :info4="[
-            { avatarSrc: 'https://images.unsplash.com/photo-1724942462164-7c30f103d91c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item1'), name: 'Tina Chen' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item4'), name: 'Freda Lin' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item5'), name: 'Miwa Huang' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item2'), name: 'William Chou' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item3'), name: 'Jay Huang' },
-            { avatarSrc: 'https://images.unsplash.com/photo-1724748860101-589aa7ee8b29?q=80&w=2748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', job: $t('project2.team.item3'), name: 'David Huang' }
+            { avatarSrc: 'https://i.imgur.com/93zadWo.png', job: $t('project1.team.item1'), name: 'Tina Chen' },
+            { avatarSrc: 'https://i.imgur.com/lL2Vk89.png', job: $t('project1.team.item4'), name: 'Freda Lin' },
+            { avatarSrc: 'https://i.imgur.com/ZJwqurr.png', job: $t('project1.team.item5'), name: 'Miwa Huang' },
+            { avatarSrc: 'https://i.imgur.com/fBGnJUp.png', job: $t('project1.team.item2'), name: 'William Chou' },
+            { avatarSrc: 'https://i.imgur.com/eS6haTX.png', job: $t('project1.team.item3'), name: 'Jay Huang' },
+            { avatarSrc: 'https://i.imgur.com/vEcl0rw.png', job: $t('project1.team.item3'), name: 'David Huang' }
           ]"
           :content="$t('project2.brief.item1')"
-          bgImg="https://images.unsplash.com/photo-1723904187003-807a2f7c8311?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          bannerSrc="https://i.imgur.com/67mU1lV.png"
           >
             <ul class="leading-loose list-disc list-inside">
               <li>
@@ -91,27 +90,20 @@
                 <p class="mb-6 font-normal">
                   {{ $t('project2.background.item1') }}
                 </p>
-                <!-- <CardTilt>
-                  <img 
-                  src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
-                >
-                </CardTilt> -->
-                <Parallax
-                backgroundImage="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                speed="0.08"
-                customClass="rounded-2xl xl:rounded-3xl aspect-video"
-              />
+                  <CreditImg 
+                    imgSrc="https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    imgCredit="Credit: Unsplash"
+                  />
               </div>
             </template>
           </Section3>
           <!-- 設計流程 -->
-          <section id="section4" >
+          <!-- <section id="section4" >
             <Parallax 
             class="h-96"
-            backgroundImage="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            backgroundImage="https://images.unsplash.com/photo-1575654402689-8f45b1ee6179?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
-          </section>
+          </section> -->
           <!-- 專案目標 -->
           <Section3
             id="section5"
@@ -201,7 +193,7 @@
             </template>
           </Section3>
           <!-- 圖片 -->
-          <EnlargeImg class="mx-auto" imageUrl="https://images.unsplash.com/photo-1731141028854-ed2dc691a6a2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fHw%3D" />
+          <EnlargeImg class="mx-auto" imageUrl="https://images.unsplash.com/photo-1575654402689-8f45b1ee6179?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
           <!-- 定義問題 -->
           <Section3
             id="section7"
@@ -308,6 +300,11 @@
                 />
             </template>
           </Section3>
+          <!-- Banner -->
+          <Parallax 
+            class="xl:h-[500px] h-80"
+            backgroundImage="https://i.imgur.com/sVna7EJ.png"
+            />
           <!-- 設計產出 -->
           <Section3
             id="section11"
@@ -701,7 +698,7 @@
             <template #content-1>
               <CardTilt>
                     <img 
-                    src="https://images.unsplash.com/photo-1723904186120-aa63a2f7e63e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://i.imgur.com/xZ10FFb.png"
                     class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
                   >
                 </CardTilt>
@@ -725,6 +722,7 @@
           :icon="icon" 
           :showIcon="false"
           :text="$t('work.core.item5')" 
+          :imgSrc="'https://i.imgur.com/8cDMtnX.png'"
           />
         </div>
         <Footer />
@@ -761,7 +759,7 @@
         { id: 'section1', name: 'work.title.item1' },
         { id: 'section2', name: 'work.title.item2' },
         { id: 'section3', name: 'work.title.item3' },
-        { id: 'section4', name: 'work.title.item4' },
+        // { id: 'section4', name: 'work.title.item4' },
         { id: 'section5', name: 'work.title.item5' },
         { id: 'section6', name: 'work.title.item6' },
         { id: 'section7', name: 'work.title.item8' },

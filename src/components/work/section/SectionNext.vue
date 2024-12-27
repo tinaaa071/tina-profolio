@@ -26,7 +26,7 @@
           @mouseleave="isHovered = false"
         >
           <img
-            src="https://images.unsplash.com/photo-1688297969982-2d46e66ba2f2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            :src="imgSrc"
             alt=""
             class="rounded-2xl aspect-video md:rounded-3xl"
           />
@@ -51,6 +51,10 @@
   export default {
     props: {
       title: {
+        type: String,
+        required: true,
+      },
+      imgSrc: {
         type: String,
         required: true,
       },

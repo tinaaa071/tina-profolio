@@ -5,7 +5,7 @@
       <p class="tracking-[.25em] lg:mb-10 mb-4 xs:mb-6 text-xs xs:text-base xl:text-lg font-bold ">
         {{ $t('work.core.item1') }}
       </p>
-      <div class="space-y-3 text-lg font-extrabold lg:space-y-5 xs:text-2xl sm:text-3xl text-stone-400 dark:text-stone-400">
+      <div class="space-y-3 text-lg font-extrabold lg:space-y-5 xs:text-2xl text-stone-400 dark:text-stone-400">
         <!-- Project Buttons -->
         <button
           v-for="tab in [1, 2, 3, 4]"
@@ -39,7 +39,7 @@
           :desc="$t('project1.core.desc')"
           :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3')]"
           linkTo="/work/project1"
-          backgroundImage="https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          backgroundImage="https://i.imgur.com/8cDMtnX.png"
         />
         <!-- Project 2 -->
         <WorkDetail
@@ -52,7 +52,7 @@
           :desc="$t('project2.core.desc')"
           :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3')]"
           linkTo="/work/project2"
-          backgroundImage="https://images.unsplash.com/photo-1724271366205-62a20f7cb4e2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          backgroundImage="https://i.imgur.com/CrxmhKx.png"
         />
         <!-- Project 3 -->
         <WorkDetail
@@ -60,11 +60,11 @@
           :key="3"
           :activeTab="activeTab"
           @selectTab="selectTab"
-          year="1111"
+          year="2024"
           :title="$t('project3.core.title')"
           :desc="$t('project3.core.desc')"
-          :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3')]"
-          linkTo="/list_1"
+          :tag="[$t('projectTag.item1'), $t('projectTag.item3'), $t('projectTag.item6')]"
+          linkTo="/work/project3"
           backgroundImage="https://images.unsplash.com/photo-1723904186792-2db5de01a347?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
         <!-- Project 4 -->
@@ -73,11 +73,11 @@
           :key="4"
           :activeTab="activeTab"
           @selectTab="selectTab"
-          year="1111"
+          year="2024"
           :title="$t('project4.core.title')"
           :desc="$t('project4.core.desc')"
           :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3')]"
-          linkTo="/list_1"
+          linkTo="/work/project4"
           backgroundImage="https://images.unsplash.com/photo-1688297969982-2d46e66ba2f2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         />
       </TabTransition>
