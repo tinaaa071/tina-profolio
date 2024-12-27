@@ -42,31 +42,29 @@
             </div>
           </div>
           <!-- 第三格 -->
-          <RouterLink to="/" class="hidden overflow-hidden row-span-2 rounded-2xl sm:rounded-3xl lg:block">
+          <a href="https://www.linkedin.com/in/chen-tina/" target="_blank" class="hidden overflow-hidden row-span-2 rounded-2xl sm:rounded-3xl lg:block">
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10">
                 <ArrowButton link-to="/" />
               </div>
               <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
-              style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;"
-              >
-              {{ $t('hero.item9') }}
+                style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;">
+                {{ $t('hero.item9') }}
               </p>
-              <div class="w-full h-full bg-center bg-cover brightness-75 transition-transform duration-500 ease-in-out transform -z-10 hover:scale-110 bg-[url('https://images.unsplash.com/photo-1724271366025-5bbfc5fbdb70?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
-              >
+              <div class="w-full h-full bg-center bg-cover brightness-75 transition-transform duration-500 ease-in-out transform -z-10 hover:scale-110 bg-[url('https://images.unsplash.com/photo-1724271366025-5bbfc5fbdb70?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
               </div>
             </div>
-          </RouterLink>
+          </a>
           <!-- 第四格 -->
           <div class="col-span-4 lg:col-span-1 sm:col-span-2">
             <CodeTyping />
           </div>
           <!-- 第五格 -->
-          <RouterLink to="/" class="hidden lg:block">
+          <a href="https://www.linkedin.com/in/chen-tina/" target="_blank" class="hidden lg:block">
             <div class="inline-flex justify-center items-center w-full h-full bg-blue-200 rounded-2xl transition-colors duration-200 ease-in-out aspect-square sm:rounded-3xl hover:bg-blue-200/75 group">
-              <entypo-social-linkedin class="text-6xl text-white transition-all duration-200 ease-in-out dark:text-stone-900 group-hover:text-7xl" />
+              <entypo-social-linkedin class="text-6xl text-white transition-all duration-200 ease-in-out dark:text-stone-900 group-hover:text-7xl"></entypo-social-linkedin>
             </div>
-          </RouterLink>
+          </a>
           <!-- 第六格 -->
           <div class="col-span-2 p-5 bg-white rounded-2xl md:p-8 sm:rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white lg:col-span-1">
             <p class="mb-4 text-xs font-bold sm:text-sm md:text-lg">

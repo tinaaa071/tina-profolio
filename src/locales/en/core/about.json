@@ -1,32 +1,37 @@
 {
-    "info":{
+    "info": {
         "item1": "Hello! Nice to meet you. 👋🏻",
-        "item2": "View Project",
-        "item3": "UI/UX",
-        "item4": "Coding",
-        "item5": "View Site"
+        "item2": "Hello, I'm Tina.",
+        "item3": "I am a UI/UX designer with 3 years of industry experience and a background in Business Administration. This combination allows me to focus on integrating user experience with business value in my designs. I believe design is not just about aesthetics but also a way to solve problems, enhancing product usability and creating more value for businesses.<br><br>My background enables me to approach design from the perspective of market needs and user behavior, crafting digital products that balance functionality and appeal. Additionally, I excel at coordinating with various stakeholders in projects to ensure aligned goals and outcomes that meet market demands.<br><br>In my free time, I enjoy visiting coffee shops and attending exhibitions. These hobbies sharpen my observational skills and attention to detail, qualities that I incorporate into my design work to better meet user needs and create delightful experiences."
     },
-    "value":{
+    "value": {
         "T1": "My Values",
-        "S1": "Empathize others",
-        "S2": "Keep learning & sharing",
-        "S3": "Create values",
-        "V1": "Coding",
-        "V2": "View Site",
-        "V3": "View Site"
+        "V1": "Collaboration & Communication",
+        "V1-1": "As a UI/UX designer, I believe empathy and considering others' perspectives help us better understand how to collaborate with different types of people. I maintain an open mindset to communicate and exchange ideas with team members, allowing us to progress continuously together.",
+        "V2": "Continuous Learning & Problem-Solving",
+        "V2-1": "As a designer, I am passionate about learning, constantly refining my professional skills, and acquiring new knowledge to meet ever-changing design demands. When facing challenges, I focus on deep understanding and providing innovative solutions.",
+        "V3": "Efficiency & Value Creation",
+        "V3-1": "I believe that good work efficiency enhances effectiveness and drives the progress of the entire workflow. I strive to excel professionally and improve efficiency in my work, contributing to the overall value creation of the team."
     },
     "skill":{
         "T1": "I specialize in",
-        "S1": "Interaction Design",
-        "S2": "Visual Design",
-        "S3": "User Research"
+        "S1": "User Research",
+        "S2": "UI Design",
+        "S3": "Information Architecture",
+        "S4": "User Flows",
+        "S5": "Design Systems",
+        "S6": "Interaction Design",
+        "S7": "Frontend Development (Vue)",
+        "S8": "Product Strategy",
+        "S9": "Team Communication",
+        "S10": "Project Management"
     },
     "language":{
         "T1": "I speak",
         "S1": "🇹🇼\u00A0\u00A0Chinese (Mandarin)",
         "S2": "🇺🇸\u00A0\u00A0English",
         "L1": "Native Speaker",
-        "L2": "Full Working Proficiency"
+        "L2": "TOEIC Golden Certificate"
     },
     "education": {
         "T1": "Education",

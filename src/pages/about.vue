@@ -17,10 +17,9 @@
               <!-- Content -->
                <div class="w-full md:w-2/3">
                 <p class="mb-4 text-xl font-semibold md:mb-6 md:text-2xl">
-                  {{ $t('project1.core.title') }}
+                  {{ $t('about.info.item2') }}
                 </p>
-                <p class="font-medium text-justify">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, eaque vero expedita quam explicabo beatae porro, saepe accusamus non minus, quaerat repellat voluptates! Exercitationem quod non commodi enim corporis quibusdam doloribus obcaecati, ducimus aut facere, cupiditate optio libero! Rerum quo consequuntur aperiam earum sunt sequi excepturi tempore aspernatur itaque ab.
+                <p v-html="$t('about.info.item3')" class="font-normal text-justify">
                 </p>
                </div>
             </div>
@@ -38,9 +37,9 @@
         <!-- List Items -->
         <div
           v-for="(item, index) in [
-            { title: 'about.value.S1', content: 'about.value.V1' },
-            { title: 'about.value.S2', content: 'about.value.V2' },
-            { title: 'about.value.S3', content: 'about.value.V3' }
+            { title: 'about.value.V1', content: 'about.value.V1-1' },
+            { title: 'about.value.V2', content: 'about.value.V2-1' },
+            { title: 'about.value.V3', content: 'about.value.V3-1' }
           ]"
           :key="index"
           class="flex gap-6 p-6 font-semibold transition-colors duration-100 ease-in-out md:p-8 hover:bg-white dark:hover:bg-stone-800"
@@ -66,9 +65,9 @@
     <aboutSection
     :title="$t('about.skill.T1')"
     >
-      <div class="flex gap-2 sm:gap-3">
+      <div class="flex flex-wrap gap-2 sm:gap-3">
         <Tag
-        :tag="[$t('about.skill.S1'), $t('about.skill.S2'), $t('about.skill.S3')]" 
+        :tag="[$t('about.skill.S1'), $t('about.skill.S2'), $t('about.skill.S3'), $t('about.skill.S4'), $t('about.skill.S5'), $t('about.skill.S6'), $t('about.skill.S7'), $t('about.skill.S8'), $t('about.skill.S9'), $t('about.skill.S10')]" 
         class="bg-B4"
         />
       </div>
@@ -118,7 +117,7 @@
             <p class="text-sm font-medium text-stone-500 dark:text-stone-300">
               {{ $t('about.education.L1') }}
               <br>
-              <span class="text-xs">
+              <span class="text-xs text-stone-400 dark:text-stone-400">
                 {{ $t('about.education.L2') }}
               </span>
             </p>

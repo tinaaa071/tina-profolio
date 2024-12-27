@@ -10,22 +10,21 @@ import 'prismjs/components/prism-javascript';
 export default {
   data() {
     return {
-      fullText: `const [model, modifiers] = defineModel({
-    set(value) {
-      if (modifiers.capitalize) {
-        return value.charAt(0).toUpperCase() + value.slice(1)
-      }
-      return value
-    }
-  })
-  const [model, modifiers] = defineModel({
-    set(value) {
-      if (modifiers.capitalize) {
-        return value.charAt(0).toUpperCase() + value.slice(1)
-      }
-      return value
-    }
-  })`,
+      fullText: `<template>
+  <div id="app">
+    <h1>{{ message }}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      message: 'Hello, nice to meet you!'
+    };
+  }
+};
+<script>`,
       displayedText: '',
       currentIndex: 0,
       fontSize: '16px',
