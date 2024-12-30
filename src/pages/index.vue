@@ -37,7 +37,7 @@
                 <ArrowButton link-to="" @click="isModalOpen = true" />
               </div>
               <div class="z-0 w-full h-full bg-center bg-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
-              style="background-image: url(https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+              style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0WpWFIhwLZ1nOesprFQIx8mPXQ3TvYDmsM1ECSK5JMqiDDGzcHEwX-N2k6_t2POdb_Dw&usqp=CAU)">
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 <template>
     <div 
-    class="relative inline-block overflow-hidden align-bottom h-7"
+    class="inline-block overflow-hidden relative h-7 align-bottom"
     
     >
         <span 
@@ -18,10 +18,10 @@
     data() {
       return {
         texts: [
-          'AAA',
-          'BBB',
-          'CCC',
-          'DDD',
+          'Tina Chen',
+          'UI/UX Designer',
+          'Product Designer',
+          'Researcher',
         ]
       }
     }
