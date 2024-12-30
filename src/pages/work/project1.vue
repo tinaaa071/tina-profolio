@@ -20,7 +20,7 @@
         :iconsVisible="[true, false, false, true, true, true, true, false, false]"
         :linkTo="'/'"
         :icon="icon" 
-        
+        :showBTN="false"
         />
         <!-- Main Content -->
         <div>
@@ -315,7 +315,7 @@
           <!-- Banner -->
           <Parallax 
             class="xl:h-[500px] h-80"
-            backgroundImage="https://i.imgur.com/sVna7EJ.png"
+            backgroundImage="https://i.imgur.com/2CZvWYx.png"
             />
           <!-- 設計產出 -->
           <Section3
