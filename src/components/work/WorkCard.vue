@@ -63,9 +63,9 @@
           year="2024"
           :title="$t('project3.core.title')"
           :desc="$t('project3.core.desc')"
-          :tag="[$t('projectTag.item1'), $t('projectTag.item3'), $t('projectTag.item6')]"
+          :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3'), $t('projectTag.item6')]"
           linkTo="/work/project3"
-          backgroundImage="https://images.unsplash.com/photo-1723904186792-2db5de01a347?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          backgroundImage="https://i.imgur.com/VyAFrb6.png"
         />
         <!-- Project 4 -->
         <WorkDetail

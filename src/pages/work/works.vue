@@ -66,8 +66,8 @@ export default {
           id: 3, // Ensure unique ID
           title: this.$t('project3.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item6')],
-          image: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-          date: new Date().toLocaleDateString(),
+          image: 'https://i.imgur.com/VyAFrb6.png',
+          date: '2024．06．30',
           link: '/work/project3',
         },
         {
