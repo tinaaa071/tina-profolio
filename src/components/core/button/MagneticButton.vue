@@ -1,32 +1,33 @@
 <template>
-  <RouterLink :to="linkTo">
-    <div
-      class="flex overflow-hidden relative items-center w-full sm:py-2.5 sm:px-8 h-fit"
-      @mousemove="onMouseMove"
-      @mouseleave="onMouseLeave"
+  <component
+    :is="linkType === 'router-link' ? 'RouterLink' : 'a'"
+    :to="linkType === 'router-link' ? linkTo : undefined"
+    :href="linkType === 'a' ? linkTo : undefined"
+    :target="linkType === 'a' ? target : undefined"
+    class="flex overflow-hidden relative items-center sm:py-2.5 sm:px-8 h-fit"
+    @mousemove="onMouseMove"
+    @mouseleave="onMouseLeave"
+  >
+    <button
+      class="relative flex items-center justify-center text-sm font-bold px-4 py-2.5 overflow-hidden text-white dark:text-stone-900 rounded-full magnetic-button bg-stone-900 dark:bg-stone-100 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-white dark:before:bg-stone-900 w-full h-fit border-2 border-stone-900 dark:border-white sm:w-fit"
+      :style="buttonStyle"
+      :class="{ sway: isSwaying, 'hover-effect text-zinc-900 dark:text-white': isHovering }"
+      @mouseenter="onMouseEnter"
     >
-      <button
-        class="relative flex items-center justify-center text-sm font-bold px-4 py-2.5 overflow-hidden text-white dark:text-stone-900 rounded-full magnetic-button bg-stone-900 dark:bg-stone-100 before:absolute before:bottom-0 before:left-[50%] before:w-[200%] before:h-[200%] before:bg-white dark:before:bg-stone-900 w-full h-fit border-2 border-stone-900 dark:border-white sm:w-fit "
-        :style="buttonStyle"
-        :class="{ sway: isSwaying, 'hover-effect text-zinc-900 dark:text-white': isHovering }"
-        @mouseenter="onMouseEnter"
-      >
-        <!-- Icon slot controlled by props -->
-        <div v-if="showIcon" class="mr-2" :style="textStyle">
-          <component :is="icon" />
-        </div>
-        <span 
+      <!-- Icon slot controlled by props -->
+      <div v-if="showIcon" class="mr-2" :style="textStyle">
+        <component :is="icon" />
+      </div>
+      <span
         :class="showTextClass"
-        class="inline-block transition-transform duration-200 ease-out" 
+        class="inline-block transition-transform duration-200 ease-out"
         :style="textStyle"
-        >
-          {{ text }}
-        </span>
-      </button>
-    </div>
-  </RouterLink>
+      >
+        {{ text }}
+      </span>
+    </button>
+  </component>
 </template>
-
 
 <script>
 import { markRaw } from 'vue';
@@ -36,6 +37,15 @@ export default {
     linkTo: {
       type: String,
       required: true,
+    },
+    linkType: {
+      type: String,
+      default: 'router-link', // 支援 'router-link' 或 'a'
+      validator: (value) => ['router-link', 'a'].includes(value),
+    },
+    target: {
+      type: String,
+      default: '_blank', // 預設為當前頁面 (_self)，可設為 _blank 來另開分頁
     },
     showIcon: {
       type: Boolean,
@@ -49,9 +59,9 @@ export default {
       type: String,
       required: true,
     },
-    showTextClass: { 
-      type: String, 
-      default: "block" 
+    showTextClass: {
+      type: String,
+      default: 'block',
     },
   },
   data() {
@@ -61,7 +71,7 @@ export default {
       textOffset: { x: 0, y: 0 },
       isSwaying: false,
       isHovering: false,
-      rawIcon: markRaw(this.icon), // Ensure icon is marked raw here
+      rawIcon: markRaw(this.icon),
     };
   },
   computed: {
@@ -122,7 +132,6 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 .magnetic-button {
   transition: color 0.4s ease-out;

@@ -36,13 +36,17 @@
           class="absolute bottom-0 z-10 mx-auto w-full h-20 bg-white border-t xs:w-9/12 md:w-2/3 lg:w-1/2 dark:bg-stone-900 border-B2/70 md:h-32"
         ></div>
         <!-- Button -->
-      <MagneticButton
-        linkTo="/"
-        :icon="icon"
-        :showIcon="showIcon"
-        :text="$t('work.next.item2')"
-        class="absolute bottom-0 z-10"
-      />
+         <div class="absolute bottom-0 z-10">
+          <MagneticButton
+            :linkTo="'/'"
+            :linkType="'router-link'"
+            :icon="icon"
+            :showIcon="showIcon"
+            :text="$t('work.next.item2')"
+            class="absolute bottom-0 z-10"
+          />
+         </div>
+      
       </div>
     </Section>
   </template>

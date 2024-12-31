@@ -37,7 +37,7 @@
                 <ArrowButton link-to="" @click="isModalOpen = true" />
               </div>
               <div class="z-0 w-full h-full bg-center bg-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
-              style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0WpWFIhwLZ1nOesprFQIx8mPXQ3TvYDmsM1ECSK5JMqiDDGzcHEwX-N2k6_t2POdb_Dw&usqp=CAU)">
+              style="background-image: url(https://i.imgur.com/otwjHqG.png)">
               </div>
             </div>
           </div>
@@ -45,13 +45,13 @@
           <a href="https://www.linkedin.com/in/chen-tina/" target="_blank" class="hidden overflow-hidden row-span-2 rounded-2xl sm:rounded-3xl lg:block">
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10">
-                <ArrowButton link-to="/" />
+                <ArrowButton link-to="https://www.linkedin.com/in/chen-tina/" />
               </div>
               <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
                 style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;">
                 {{ $t('hero.item9') }}
               </p>
-              <div class="w-full h-full bg-center bg-cover brightness-75 transition-transform duration-500 ease-in-out transform -z-10 hover:scale-110 bg-[url('https://images.unsplash.com/photo-1724271366025-5bbfc5fbdb70?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+              <div class="w-full h-full bg-center bg-cover brightness-75 transition-transform duration-500 ease-in-out transform -z-10 hover:scale-110 bg-[url('https://images.unsplash.com/photo-1524591431555-cc7876d14adf?q=80&w=2914&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
               </div>
             </div>
           </a>

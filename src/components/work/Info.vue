@@ -23,6 +23,7 @@
           <MagneticButton 
             v-if="showBTN"
             :linkTo="linkTo" 
+            :linkType="linkType" 
             :icon="icon" 
             :text="$t('work.core.item5')"
             class="hidden xs:block"
@@ -40,7 +41,11 @@
           </div>
           <div>
             <p class="mb-1 font-semibold sm:mb-2">{{ $t('work.info.item2') }}</p>
-            <p class="font-normal">{{ info2 }}</p>
+            <ul class="font-normal list-none list-inside">
+              <li v-for="(info2, index) in info2" :key="index" >
+                {{ info2 }}
+              </li>
+            </ul>
           </div>
           <div>
             <p class="mb-1 font-semibold sm:mb-2">{{ $t('work.info.item3') }}</p>
@@ -55,6 +60,7 @@
         <MagneticButton 
             v-if="showBTN"
             :linkTo="linkTo" 
+            :linkType="linkType"
             :icon="icon" 
             :text="$t('work.core.item5')"
             class="xs:hidden"
@@ -75,7 +81,7 @@
         required: true,
       },
       info2: {
-        type: String,
+        type: [String, Array],
         required: true,
       },
       info3: {
@@ -98,6 +104,11 @@
         type: String,
         required: true,
       },
+      linkType: {
+      type: String,
+      default: 'router-link', // 支援 'router-link' 或 'a'
+      validator: (value) => ['router-link', 'a'].includes(value),
+    },
       icon: {
         type: [Object, Function],
         required: true,

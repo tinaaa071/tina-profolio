@@ -72,11 +72,11 @@ export default {
         },
         {
           id: 4, // Ensure unique ID
-          title: 'Post 4',
-          category: this.$t('tag.item4'),
+          title: this.$t('project4.core.title'),
+          category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item6'), this.$t('tag.item7')],
           image: 'https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-          date: new Date().toLocaleDateString(),
-          link: '/work/project1',
+          date: '2024．11．20',
+          link: '/work/project4',
         },
         // {
         //   id: 5, // Ensure unique ID

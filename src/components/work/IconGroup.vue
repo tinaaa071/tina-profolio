@@ -47,6 +47,11 @@
         tooltipText="Miro"
         v-if="iconsVisible[8]"  aria-hidden="true" 
         />
+        <Icon 
+        imageUrl="https://i.imgur.com/rzYhM4Q.png"
+        tooltipText="Firebase"
+        v-if="iconsVisible[9]"  aria-hidden="true" 
+        />
     </div>
   </template>
   
@@ -56,7 +61,7 @@
     props: {
       iconsVisible: {
         type: Array,
-        default: () => [false, false, false, false, false, false, false, false, false], // Default to all hidden
+        default: () => [false, false, false, false, false, false, false, false, false, false], // Default to all hidden
         validator: (value) => value.length === 8 && value.every((item) => typeof item === 'boolean'),
       },
     },

@@ -1,8 +1,12 @@
 <template>
-  <RouterLink :to="linkTo">
-    <div class="relative inline-block m-2 text-lg font-bold text-center bg-white border border-white rounded-full bg-opacity-20 hover sm:w-14 sm:h-14 w-10 h-10 backdrop-blur-md arrow sm:leading-[56px] leading-10 rotate-45" :data-hover="hoverIcon">
-    </div>
-  </RouterLink>
+  <a 
+    :href="linkTo" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    class="relative inline-block m-2 text-lg font-bold text-center bg-white border border-white rounded-full bg-opacity-20 hover sm:w-14 sm:h-14 w-10 h-10 backdrop-blur-md arrow sm:leading-[56px] leading-10 rotate-45" 
+    :data-hover="hoverIcon"
+  >
+  </a>
 </template>
   
 <script>

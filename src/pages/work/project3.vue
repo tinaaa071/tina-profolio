@@ -13,7 +13,7 @@
         <Info 
         :title="$t('project3.core.title')"
         :info1="'2024.06 - 2024.12'"
-        :info2="$t('project3.info.item2')"
+        :info2="[$t('project3.team.item1')]" 
         :info3="$t('project3.info.item3')"
         :info4="$t('project3.info.item1')"
         :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3'), $t('projectTag.item6')]" 
