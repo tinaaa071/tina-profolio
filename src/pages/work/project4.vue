@@ -36,7 +36,7 @@
             { avatarSrc: 'https://i.imgur.com/93zadWo.png', job: $t('project4.team.item2'), name: 'Tina Chen' }
           ]"
           :content="$t('project4.brief.item1')"
-          bannerSrc="https://i.imgur.com/Q7pj9zq.png"
+          bannerSrc="https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           >
             <ul class="leading-loose list-disc list-inside">
               <li>
@@ -93,7 +93,7 @@
             <template #content-1>
               <div>
                 <p class="mb-6 font-normal">
-                  {{ $t('project1.background.item1') }}
+                  {{ $t('project4.background.item1') }}
                 </p>
                 <!-- <CardTilt>
                   <img 
@@ -102,9 +102,9 @@
                 >
                 </CardTilt> -->
                 <Parallax
-                backgroundImage="https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                backgroundImage="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 speed="0.08"
-                customClass="rounded-2xl xl:rounded-3xl aspect-video"
+                customClass="rounded-2xl xl:rounded-3xl aspect-video sm:bg-contain bg-cover"
               />
               </div>
             </template>
@@ -135,12 +135,10 @@
                     <List  
                     numClass="dark:bg-stone-700 dark:text-white bg-stone-500"
                     :items="[
-                        { title: $t('project1.goal.item1') },
-                        { title: $t('project1.goal.item2') },
-                        { title: $t('project1.goal.item3') },
-                        { title: $t('project1.goal.item4') },
-                        { title: $t('project1.goal.item5') },
-                        { title: $t('project1.goal.item6') }
+                        { title: $t('project4.goal.item1') },
+                        { title: $t('project4.goal.item2') },
+                        { title: $t('project4.goal.item3') },
+                        { title: $t('project4.goal.item4') }
                       ]"
                     />
                   </div>
@@ -152,9 +150,8 @@
                     </p>
                     <List
                     :items="[
-                        { title: $t('project1.problem.item1') },
-                        { title: $t('project1.problem.item2') },
-                        { title: $t('project1.problem.item3') },
+                        { title: $t('project4.problem.item1') },
+                        { title: $t('project4.problem.item2') }
                       ]"
                     />
                   </div>
@@ -165,66 +162,30 @@
           <!-- 前期研究 -->
           <Section3
             id="section6"
-            :title="$t('work.title.item6')"
+            :title="$t('work.title.item15')"
           >
             <template #content-1>
-              <TabCard :buttons="['work.title.item6-1', 'work.title.item6-2']">
-                <!-- Background Images -->
-                <template #backgrounds>
-                  <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                </template>
-
-                <!-- Tab Contents -->
-                <template #default="{ activeTab }">
-                  <div v-if="activeTab === 1">
-                    <List 
-                    :items="[
-                        { title: $t('project1.sa.item1') },
-                        { title: $t('project1.sa.item2') },
-                        { title: $t('project1.sa.item3') },
-                        { title: $t('project1.sa.item4') },
-                        { title: $t('project1.sa.item5') },
-                      ]"
-                    />
-                  </div>
-                  <div v-if="activeTab === 2">
-                    <Ta
-                      :cards="[
-                        { avatarSrc: 'https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: $t('project1.ta.item1'), content: $t('project1.ta.item1-1') },
-                        { avatarSrc: 'https://images.unsplash.com/photo-1609188076864-c35269136b09?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', title: $t('project1.ta.item2'), content: $t('project1.ta.item2-1') }
-                      ]"
-                    />
-                    <!-- <Persona 
-                    avatarSrc="https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=2904&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    :items="{
-                      u1: [$t('projectTag.item1'), $t('projectTag.item2')],
-                      u2: ['User 2 item 1', 'User 2 item 2', 'User 2 item 3'],
-                      u3: ['User 3 item 1']
-                    }"
-                    /> -->
-                  </div>
-                </template>
-              </TabCard>
+              <CardTilt>
+                <Persona 
+                  avatarSrc="https://images.unsplash.com/photo-1543269865-f576bdee5d1d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  :items="{
+                    u1: [$t('project4.persona.info.item1'), $t('project4.persona.info.item2'), $t('project4.persona.info.item3')],
+                    u2: [$t('project4.persona.difficult.item1')],
+                    u3: [$t('project4.persona.insight.item1'), $t('project4.persona.insight.item2')],
+                  }"
+                  />
+              </CardTilt>
             </template>
           </Section3>
           <!-- 圖片 -->
-          <EnlargeImg class="mx-auto" imageUrl="https://images.unsplash.com/photo-1575654402689-8f45b1ee6179?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <!-- 定義問題 -->
+          <EnlargeImg class="mx-auto" imageUrl="https://images.unsplash.com/photo-1453614512568-c4024d13c247?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+          <!-- 執行過程 -->
           <Section3
             id="section7"
-            :title="$t('work.title.item8')"
+            :title="$t('work.title.item16')"
           >
             <template #content-1>
-              <!-- How Might We? -->
-              <HMW>
-                <ul class="leading-loose list-disc list-inside">
-                    <li v-for="(item, index) in [$t('project1.research.item1'), $t('project1.research.item2'), $t('project1.research.item3'), $t('project1.research.item4'), $t('project1.research.item5'), $t('project1.research.item6')]" :key="index">
-                      <span>{{ item }}</span>
-                    </li>
-                  </ul>
-              </HMW>
-              <TabCard :buttons="['work.title.item8-2', 'work.title.item8-3']">
+              <TabCard :buttons="['project4.process.item1', 'project4.process.item2']">
                 <!-- Background Images -->
                 <template #backgrounds>
                   <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
@@ -234,28 +195,26 @@
                 <!-- Tab Contents -->
                 <template #default="{ activeTab }">
                   <div v-if="activeTab === 1">
-                    <List 
-                    :items="[
-                        { title: $t('project1.hypo.item1'), content: $t('project1.hypo.item1-1') },
-                        { title: $t('project1.hypo.item2'), content: $t('project1.hypo.item2-1') },
-                        { title: $t('project1.hypo.item3'), content: $t('project1.hypo.item3-1') },
-                        { title: $t('project1.hypo.item4'), content: $t('project1.hypo.item4-1') },
-                        { title: $t('project1.hypo.item5'), content: $t('project1.hypo.item5-1') },
-                        { title: $t('project1.hypo.item6'), content: $t('project1.hypo.item6-1') }
-                      ]"
-                    />
+                    <div>
+                      <p v-html="$t('project4.process.item1-1')" class="mb-8 font-normal"></p>
+                      <CardTilt>
+                        <img 
+                        src="https://i.imgur.com/yxlAvMM.png"
+                        class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                        >
+                      </CardTilt>
+                    </div>
                   </div>
                   <div v-if="activeTab === 2">
-                    <List 
-                    :items="[
-                        { title: $t('project1.challenge.item1'), content: $t('project1.challenge.item1-1') },
-                        { title: $t('project1.challenge.item2'), content: $t('project1.challenge.item2-1') },
-                        { title: $t('project1.challenge.item3'), content: $t('project1.challenge.item3-1') },
-                        { title: $t('project1.challenge.item4'), content: $t('project1.challenge.item4-1') },
-                        { title: $t('project1.challenge.item5'), content: $t('project1.challenge.item5-1') },
-                        { title: $t('project1.challenge.item6'), content: $t('project1.challenge.item6-1') }
-                      ]"
-                    />
+                    <div>
+                      <p v-html="$t('project4.process.item2-1')" class="mb-8 font-normal"></p>
+                      <CardTilt>
+                        <img 
+                        src="https://i.imgur.com/E2y3X5X.png"
+                        class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                        >
+                      </CardTilt>
+                    </div>
                   </div>
                 </template>
               </TabCard>
@@ -765,10 +724,9 @@
         { id: 'section1', name: 'work.title.item1' },
         { id: 'section2', name: 'work.title.item2' },
         { id: 'section3', name: 'work.title.item3' },
-        // { id: 'section4', name: 'work.title.item4' },
         { id: 'section5', name: 'work.title.item5' },
-        { id: 'section6', name: 'work.title.item6' },
-        { id: 'section7', name: 'work.title.item8' },
+        { id: 'section6', name: 'work.title.item15' },
+        { id: 'section7', name: 'work.title.item16' },
         { id: 'section8', name: 'work.title.item9' },
         { id: 'section9', name: 'work.title.item10' },
         { id: 'section11', name: 'work.title.item11' },

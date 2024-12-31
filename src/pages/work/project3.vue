@@ -88,12 +88,11 @@
                 <p class="mb-6 font-normal">
                   {{ $t('project3.background.item1') }}
                 </p>
-                <CardTilt>
-                  <img 
-                  src="https://images.unsplash.com/photo-1648792940059-3b782a7b8b20?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
-                >
-                </CardTilt>
+                <Parallax
+                backgroundImage="https://images.unsplash.com/photo-1648792940059-3b782a7b8b20?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                speed="0.08"
+                customClass="rounded-2xl xl:rounded-3xl aspect-video sm:bg-contain bg-cover"
+              />
               </div>
             </template>
           </Section3>

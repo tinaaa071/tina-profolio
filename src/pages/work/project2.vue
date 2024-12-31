@@ -90,10 +90,15 @@
                 <p class="mb-6 font-normal">
                   {{ $t('project2.background.item1') }}
                 </p>
-                  <CreditImg 
+                  <!-- <CreditImg 
                     imgSrc="https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     imgCredit="Credit: Unsplash"
-                  />
+                  /> -->
+                  <Parallax
+                backgroundImage="https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                speed="0.08"
+                customClass="rounded-2xl xl:rounded-3xl aspect-video sm:bg-contain bg-cover"
+              />
               </div>
             </template>
           </Section3>

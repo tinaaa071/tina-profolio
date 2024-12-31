@@ -38,59 +38,41 @@
     "briefCard": {
         "item1": "Focusing on practicing front-end functionality implementation, the project involves connecting to a database and simulating common e-commerce platform requirements such as shopping cart, product favorites, and login/registration functions. Through project development, it enhances front-end technical skills and strengthens the integration of UI design and functionality.",
         "item2": "In this project, I served as both a UI/UX designer and a front-end engineer. I completed the integration of café data across Taiwan, allowing users to search for cafés nationwide, and developed the membership system and shopping cart features.",
-        "item3": "While practicing front-end functionality, I practiced integrating APIs for the first time. Connecting APIs made data interaction more complex, and I had to ensure that the product data in the shopping cart could be updated in real-time and accurately reflected on the front end.",
+        "item3": "When practicing front-end functionality, I practiced integrating APIs for the first time. I spent more time understanding it. Integrating APIs made data interaction more complex, and I also had to ensure that the product data in the shopping cart could be updated in real time and correctly reflected on the front end.",
         "item4": "After the project was completed, I successfully developed a functional front-end application, which also enhanced my understanding of front-end technologies, adding technical value to future product development."
     },
     "background":{
-        "item1": "Medical services worldwide are increasingly emphasizing international cooperation, especially in areas such as cross-border medical aid and healthcare infrastructure development. The professional competence of healthcare personnel has become a crucial foundation for advancing collaboration. The professional training provided by the platform will help enhance the overall quality of healthcare personnel globally."
+        "item1": "I usually enjoy going to cafes on my days off, but finding a cafe that meets my needs often takes a lot of time. I have to open Google Maps and check each one, or look at reviews to find out if the cafe has outlets, Wi-Fi, or if there are enough seats. Based on this need, I decided to make it the goal of my project. I integrated a third-party API database to create a website focused on cafe information across Taiwan. To further practice my frontend skills, I also added e-commerce and membership system features."
     },
-    "goal": {
-        "item1": "Integrate course resources from national medical institutions",
-        "item2": "Provide multi-language switch for the website",
-        "item3": "Categorize courses into clinical courses, non-clinical courses, demonstration courses, and other filters",
-        "item4": "Provide individual and group registration functions for courses",
-        "item5": "Allow participants to view the registration review results",
-        "item6": "Allowing students to consult online with the course provider"
+    "goal": { 
+        "item1": "Provide coffee shop information across Taiwan", 
+        "item2": "Provide user registration/login functionality", 
+        "item3": "Create a shopping system", 
+        "item4": "Provide product bookmarking functionality" 
     },
     "problem": {
-        "item1": "The client was unable to provide clear requirements",
-        "item2": "The project architecture was extensive",
-        "item3": "The development timeline was tight"
+        "item1": "Not familiar with connecting to the database system",
+        "item2": "Some data in the database is inconsistent or missing"
     },
-    "sa": { 
-        "item1": "Understand the MOHW's review standards for medical course registrations", 
-        "item2": "Collect and categorize courses from various medical training providers to establish a unified classification", 
-        "item3": "Understand the operational habits of medical personnel through interviews and surveys", 
-        "item4": "Understand the needs of course providers regarding course information presentation", 
-        "item5": "Refer to the operational models of existing course registration systems" 
+    "persona": { 
+        "info": {
+            "item1": "Coffee shop enthusiast",
+            "item2": "Likes to stay in coffee shops on weekends",
+            "item3": "Works on a computer for long hours in coffee shops"
+        },
+        "difficult": {
+            "item1": "Spends a lot of time searching for the right coffee shop"
+        },
+        "insight": {
+            "item1": "Provide categorized coffee shop information",
+            "item2": "Display key relevant details"
+        }
     },
-    "ta": { 
-        "item1": "Students in overseas medical-related disciplines", 
-        "item1-1": "Learners in related fields interested in overseas medical education.", 
-        "item2": "Medical personnel in overseas medical institutions", 
-        "item2-1": "Personnel employed in overseas medical institutions who have a need for further training."
-    },
-    "research": {
-        "item1": "How to integrate the resources of medical institutions across Taiwan?",
-        "item2": "How to verify the qualifications of registered participants?",
-        "item3": "How to provide multilingual website functionality for overseas medical professionals?",
-        "item4": "How to establish a course registration system, including individual and group registrations?",
-        "item5": "How to make the course registration system work with a review function?",
-        "item6": "How to provide an online consultation feature?"
-    },
-    "hypo": { 
-        "item1": "Connect with existing APIs of medical institutions",
-        "item1-1": "Design connections with the APIs of medical institutions to provide contact information and resource features of healthcare facilities across the country.",
-        "item2": "Design a document upload and automatic verification system",
-        "item2-1": "Support trainees in uploading professional certificates and implement a real-name verification mechanism.",
-        "item3": "Establish a multilingual framework",
-        "item3-1": "Use a language switcher and support major international languages.",
-        "item4": "Create a dual registration mode with dynamic forms",
-        "item4-1": "Automatically adjust fields based on user selection (individual or group).",
-        "item5": "Develop a registration status tracking feature",
-        "item5-1": "Display registration progress (pending review, approved, rejected, etc.).",
-        "item6": "Design a real-time chat feature",
-        "item6-1": "Allow users to inquire with customer service representatives online."
+    "process": {
+        "item1": "Open-source API Data",
+        "item1-1": "I utilized an open-source café data API, connected the API to the frontend, and set up a list to display data such as name, address, and ratings.",
+        "item2": "E-commerce Database",
+        "item2-1": "I used <strong>Firebase</strong> to create account management and a product database."
     },
     "challenge": {
         "item1": "Diversity and consistency of data sources",

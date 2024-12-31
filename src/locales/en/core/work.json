@@ -50,7 +50,9 @@
         "item13-1": "Test Situation",
         "item13-2": "Feedback",
         "item13-3": "Adjust Design",
-        "item14": "What I Learn"
+        "item14": "What I Learn",
+        "item15": "Preliminary Preparation", 
+        "item16": "Execution Process"
     },
     "info":{
         "item1": "Duration",
