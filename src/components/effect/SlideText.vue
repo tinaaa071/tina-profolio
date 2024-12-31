@@ -18,10 +18,10 @@
     data() {
       return {
         texts: [
-          'Tina Chen',
+          'Researcher',
           'UI/UX Designer',
           'Product Designer',
-          'Researcher',
+          'Tina Chen',
         ]
       }
     }

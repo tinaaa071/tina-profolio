@@ -24,20 +24,22 @@
         "item4": "Project Manager",
         "item5": "System Analysis"
     },
-    "brief":{
-        "item1": "The MOHW has commissioned the Joint Commission of Taiwan to establish the Overseas Medical Personnel Training Platform. This platform is designed to provide a comprehensive overview of Taiwan's medical and health training courses and achievements for foreign medical professionals. It also offers more complete training information and application services through the platform.",
-       "item2": "Integrating Existing Resources and Achievements",
-        "item2-1": "The platform will consolidate various medical and healthcare training programs offered by Taiwan for overseas healthcare personnel. These programs cover a wide range of topics, including clinical skills, professional techniques, and healthcare management.",
-        "item3": "Providing Information and Application Services",
-        "item3-1": "The platform will offer comprehensive course search, application guidance, and trainee management features. This will enable overseas healthcare professionals to quickly identify suitable training programs and apply for participation with ease.",
-        "item4": "Enhancing International Medical Collaboration",
-        "item4-1": "Taiwan aims to establish closer collaborations with other countries, facilitating the exchange of knowledge and technology while further enhancing its global reputation in healthcare."
+    "brief": {
+        "item1": "This is a personal project designed as a practice platform for integrating databases and implementing various interactive features. The goal of this project is to simulate key functionalities in real product development, including shopping carts, product favorites, login and registration systems, allowing me to gain a comprehensive understanding of the connection between design and backend technologies.<br><br>During the project, I focused not only on designing the visual interface and user flow but also learned how to use databases for data management, enabling the storage and retrieval of user and product information.",
+        "item2": "Login and Registration System",
+        "item2-1": "Supports user account creation, login authentication, and data storage while ensuring system security and user data privacy.",
+        "item3": "Database Integration and Management",
+        "item3-1": "I used Firebase as the database, achieving seamless integration between the backend database and the frontend interface to support dynamic updates and synchronization of user information, product lists, and more.",
+        "item4": "Shopping Cart Implementation",
+        "item4-1": "Provides a complete shopping experience, including adding products to the cart, adjusting quantities, and removing items, ensuring a smooth and intuitive user experience.",
+        "item5": "Product Favorites Feature",
+        "item5-1": "Designed a favorites list that allows users to mark their preferred products for easy viewing and management at any time."
     },
-    "briefCard":{
-        "item1": "Summarize various medical and healthcare training courses offered in our country, provide online registration for overseas medical personnel, and facilitate the qualification application review process through our Ministry of Health and Welfare.",
-        "item2": "In this project, I worked closely with the PM, SA, and four engineers. I was responsible for the entire UX and UI design process and deliverables, from defining the problem to delivering the final visual design to the engineers.",
-        "item3": "This project has a large and complex structure, encompassing features such as a backend system, multilingual switching, and online chat. Additionally, the course registration and review functionalities have more restrictions compared to other industries.",
-        "item4": "We complete each goal in stages to ensure the overall website and its features operate smoothly, and we improve various functions based on feedback from healthcare institution users."
+    "briefCard": {
+        "item1": "Focusing on practicing front-end functionality implementation, the project involves connecting to a database and simulating common e-commerce platform requirements such as shopping cart, product favorites, and login/registration functions. Through project development, it enhances front-end technical skills and strengthens the integration of UI design and functionality.",
+        "item2": "In this project, I served as both a UI/UX designer and a front-end engineer. I completed the integration of café data across Taiwan, allowing users to search for cafés nationwide, and developed the membership system and shopping cart features.",
+        "item3": "While practicing front-end functionality, I practiced integrating APIs for the first time. Connecting APIs made data interaction more complex, and I had to ensure that the product data in the shopping cart could be updated in real-time and accurately reflected on the front end.",
+        "item4": "After the project was completed, I successfully developed a functional front-end application, which also enhanced my understanding of front-end technologies, adding technical value to future product development."
     },
     "background":{
         "item1": "Medical services worldwide are increasingly emphasizing international cooperation, especially in areas such as cross-border medical aid and healthcare infrastructure development. The professional competence of healthcare personnel has become a crucial foundation for advancing collaboration. The professional training provided by the platform will help enhance the overall quality of healthcare personnel globally."

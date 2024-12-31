@@ -32,35 +32,43 @@
           :info1="$t('project4.info.item1')"
           :info2="[$t('project4.demand.item1'), $t('project4.demand.item2'), $t('project4.demand.item3'), $t('project4.demand.item4'), $t('project4.demand.item5'), $t('project4.demand.item6'), $t('project4.demand.item7')]"
           :info4="[
-            { avatarSrc: 'https://i.imgur.com/93zadWo.png', job: $t('project1.team.item1'), name: 'Tina Chen' },
-            { avatarSrc: 'https://i.imgur.com/93zadWo.png', job: $t('project1.team.item2'), name: 'Tina Chen' }
+            { avatarSrc: 'https://i.imgur.com/93zadWo.png', job: $t('project4.team.item1'), name: 'Tina Chen' },
+            { avatarSrc: 'https://i.imgur.com/93zadWo.png', job: $t('project4.team.item2'), name: 'Tina Chen' }
           ]"
-          :content="$t('project1.brief.item1')"
+          :content="$t('project4.brief.item1')"
           bannerSrc="https://i.imgur.com/Q7pj9zq.png"
           >
             <ul class="leading-loose list-disc list-inside">
               <li>
                 <span class="font-semibold">
-                  {{ $t('project1.brief.item2') }}
+                  {{ $t('project4.brief.item2') }}
                 </span>
                 <span class="block ml-5 font-normal">
-                  {{ $t('project1.brief.item2-1') }}
+                  {{ $t('project4.brief.item2-1') }}
                 </span>
               </li>
               <li>
                 <span class="font-semibold">
-                  {{ $t('project1.brief.item3') }}
+                  {{ $t('project4.brief.item3') }}
                 </span>
                 <span class="block ml-5 font-normal">
-                  {{ $t('project1.brief.item3-1') }}
+                  {{ $t('project4.brief.item3-1') }}
                 </span>
               </li>
               <li>
                 <span class="font-semibold">
-                  {{ $t('project1.brief.item4') }}
+                  {{ $t('project4.brief.item4') }}
                 </span>
                 <span class="block ml-5 font-normal">
-                  {{ $t('project1.brief.item4-1') }}
+                  {{ $t('project4.brief.item4-1') }}
+                </span>
+              </li>
+              <li>
+                <span class="font-semibold">
+                  {{ $t('project4.brief.item5') }}
+                </span>
+                <span class="block ml-5 font-normal">
+                  {{ $t('project4.brief.item5-1') }}
                 </span>
               </li>
             </ul>
@@ -69,10 +77,10 @@
           <Section2
             id="section2"
             :briefs="[
-            { title: $t('work.title.item2-1'), content: $t('project1.briefCard.item1') },
-            { title: $t('work.title.item2-2'), content: $t('project1.briefCard.item2') },
-            { title: $t('work.title.item2-3'), content: $t('project1.briefCard.item3') },
-            { title: $t('work.title.item2-4'), content: $t('project1.briefCard.item4') }
+            { title: $t('work.title.item2-1'), content: $t('project4.briefCard.item1') },
+            { title: $t('work.title.item2-2'), content: $t('project4.briefCard.item2') },
+            { title: $t('work.title.item2-3'), content: $t('project4.briefCard.item3') },
+            { title: $t('work.title.item2-4'), content: $t('project4.briefCard.item4') }
           ]"
           />
           <!-- 分隔 -->

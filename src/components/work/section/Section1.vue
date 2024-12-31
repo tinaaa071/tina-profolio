@@ -4,7 +4,7 @@
       <div class="grid gap-6 w-full xl:grid-cols-10 xl:gap-10 xs:grid-cols-8">
         <!-- Left -->
         <InfoCard
-          class="xs:col-span-3"
+          class="xs:col-span-3 h-fit"
           :info1="info1"
           :info2="info2"
           :info3="info3"
