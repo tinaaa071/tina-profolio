@@ -1,5 +1,6 @@
 <template>
   <a 
+    v-if="!disabled" 
     :href="linkTo" 
     target="_blank" 
     rel="noopener noreferrer"
@@ -7,6 +8,13 @@
     :data-hover="hoverIcon"
   >
   </a>
+  <button 
+    v-else 
+    class="relative inline-block m-2 text-lg font-bold text-center bg-white border border-white rounded-full bg-opacity-20 hover sm:w-14 sm:h-14 w-10 h-10 backdrop-blur-md arrow sm:leading-[56px] leading-10 rotate-45 cursor-not-allowed" 
+    :data-hover="hoverIcon"
+    disabled
+  >
+  </button>
 </template>
   
 <script>
@@ -15,6 +23,10 @@ export default {
     linkTo: {
       type: String,
       required: true,
+    },
+    disabled: {
+      type: Boolean,
+      default: false,
     },
   },
   data() {

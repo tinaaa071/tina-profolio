@@ -34,7 +34,7 @@
           >
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10">
-                <ArrowButton link-to="" @click="isModalOpen = true" />
+                <ArrowButton @click="isModalOpen = true" :disabled="isLinkDisabled" />
               </div>
               <div class="z-0 w-full h-full bg-center bg-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
               style="background-image: url(https://i.imgur.com/otwjHqG.png)">
