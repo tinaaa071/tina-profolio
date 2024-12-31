@@ -12,7 +12,7 @@
                 {{ item.title }}
                 </span>
             </div>
-            <span class="block ml-10">
+            <span class="block ml-8 sm:ml-10">
                 {{ item.content }}
             </span>
         </li>
