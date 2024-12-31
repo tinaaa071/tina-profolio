@@ -5,7 +5,7 @@
       <BackToTop class="z-20" />
       <!-- Banner -->
       <Banner 
-        bannerSrc="https://i.imgur.com/U8VNbFs.jpeg"
+        bannerSrc="https://i.imgur.com/xcDKo8B.jpeg"
       />
       <!-- Content -->
       <div class="absolute left-0 sm:top-[480px] top-[400px] w-full leading-relaxed">
@@ -36,7 +36,7 @@
             { avatarSrc: 'https://i.imgur.com/93zadWo.png', job: $t('project4.team.item2'), name: 'Tina Chen' }
           ]"
           :content="$t('project4.brief.item1')"
-          bannerSrc="https://images.unsplash.com/photo-1508424757105-b6d5ad9329d0?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          bannerSrc="https://i.imgur.com/6ViXoml.png"
           >
             <ul class="leading-loose list-disc list-inside">
               <li>
@@ -200,9 +200,21 @@
                       <CardTilt>
                         <img 
                         src="https://i.imgur.com/yxlAvMM.png"
-                        class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                        class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
                         >
                       </CardTilt>
+                      <div
+                      class="flex flex-col gap-2 p-2 text-orange-500 rounded-2xl border border-orange-500 transition-colors sm:p-3 group bg-orange-300/20 hover:bg-orange-300/30"
+                      >
+                        <p class="flex gap-2 items-center font-semibold">
+                          <Fa6SolidCircleExclamation />
+                          {{ $t('work.title.item8-3') }}
+                        </p>
+                        <p 
+                        v-html="$t('project4.process.item1-2')"
+                        class="text-sm line-clamp-2">
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div v-if="activeTab === 2">
@@ -226,39 +238,13 @@
             :title="$t('work.title.item9')"
           >
             <template #content-1>
-              <TabCard :buttons="['work.title.item9-2', 'work.title.item9-3']">
-                <!-- Background Images -->
-                <template #backgrounds>
-                  <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                </template>
-
-                <!-- Tab Contents -->
-                <template #default="{ activeTab }">
-                  <!-- Sitemap -->
-                  <div v-if="activeTab === 1">
-                    <CardTilt @click="isModalOpen = true" class="cursor-pointer">
-                      <img 
-                        src="https://i.imgur.com/E3rF3z9.png"
-                        alt="SiteMap"
-                        class="object-cover w-full rounded-xl"
-                      >
-                    </CardTilt>
-                  </div>
-                  <div v-if="activeTab === 2">
-                    <List 
-                    :items="[
-                        { title: $t('project1.challenge.item1'), content: $t('project1.challenge.item1-1') },
-                        { title: $t('project1.challenge.item2'), content: $t('project1.challenge.item2-1') },
-                        { title: $t('project1.challenge.item3'), content: $t('project1.challenge.item3-1') },
-                        { title: $t('project1.challenge.item4'), content: $t('project1.challenge.item4-1') },
-                        { title: $t('project1.challenge.item5'), content: $t('project1.challenge.item5-1') },
-                        { title: $t('project1.challenge.item6'), content: $t('project1.challenge.item6-1') }
-                      ]"
-                    />
-                  </div>
-                </template>
-              </TabCard>
+              <CardTilt @click="isModalOpen = true" class="cursor-pointer">
+                <img 
+                  src="https://i.imgur.com/E3rF3z9.png"
+                  alt="SiteMap"
+                  class="object-cover w-full rounded-xl"
+                >
+              </CardTilt>
             </template>
           </Section3>
           <!-- 設計原則 -->
@@ -270,10 +256,10 @@
               <List 
                 customClass="px-6 py-5 bg-B3 rounded-2xl xl:rounded-3xl dark:bg-transparent dark:border dark:border-white"
                 :items="[
-                    { title: $t('project1.principle.item1'), content: $t('project1.principle.item1-1') },
-                    { title: $t('project1.principle.item2'), content: $t('project1.principle.item2-1') },
-                    { title: $t('project1.principle.item3'), content: $t('project1.principle.item3-1') },
-                    { title: $t('project1.principle.item4'), content: $t('project1.principle.item4-1') }
+                    { title: $t('project4.principle.item1'), content: $t('project4.principle.item1-1') },
+                    { title: $t('project4.principle.item2'), content: $t('project4.principle.item2-1') },
+                    { title: $t('project4.principle.item3'), content: $t('project4.principle.item3-1') },
+                    { title: $t('project4.principle.item4'), content: $t('project4.principle.item4-1') }
                   ]"
                 />
             </template>
@@ -292,27 +278,22 @@
             <template #content-1>
               <div class="font-normal">
                 <CardTilt>
-                  <a 
-                  target="_blank"
-                  href="https://main--6758f1bddc4388960f8ac32f.chromatic.com/">
-                    <img 
-                      src="https://i.imgur.com/6pMAdyR.png"
+                  <img 
+                      src="https://i.imgur.com/11XFA6v.png"
                       alt="Banner"
                       class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
                     >
-                  </a>
                 </CardTilt>
                 <p 
-                v-html="$t('project1.system.item1')"
+                v-html="$t('project3.system.item1')"
                 class="text-justify"
                 >
                 </p>
                 <br>
                 <ListNum :items="[
-                  {title: $t('project1.system.item2'), description:  $t('project1.system.item2-1')},
-                  {title: $t('project1.system.item3'), description:  $t('project1.system.item3-1')},
-                  {title: $t('project1.system.item4'), description:  $t('project1.system.item4-1')},
-                  {title: $t('project1.system.item5'), description:  $t('project1.system.item5-1')}
+                  {title: $t('project3.system.item2'), description:  $t('project3.system.item2-1')},
+                  {title: $t('project3.system.item3'), description:  $t('project3.system.item3-1')},
+                  {title: $t('project3.system.item4'), description:  $t('project3.system.item4-1')}
                   ]" />
               </div>
             </template>  
@@ -324,7 +305,7 @@
                   :customClass="[bg-transparent, p-0]"
                   :scrollableClass="'overflow-x-auto whitespace-nowrap'"
                   :buttonClass="'w-1/2'"
-                  :buttons="['project1.mockup.tab.item1', 'project1.mockup.tab.item2', 'project1.mockup.tab.item3', 'project1.mockup.tab.item4', 'project1.mockup.tab.item5', 'project1.mockup.tab.item6', 'project1.mockup.tab.item7', 'project1.mockup.tab.item8', 'project1.mockup.tab.item9']">
+                  :buttons="['project4.mockup.tab.item1', 'project4.mockup.tab.item2', 'project4.mockup.tab.item3', 'project4.mockup.tab.item4', 'project4.mockup.tab.item5', 'project4.mockup.tab.item6', 'project4.mockup.tab.item7', 'project4.mockup.tab.item8', 'project4.mockup.tab.item9']">
                     <!-- Tab Contents -->
                     <template #default="{ activeTab }">
                       <div v-if="activeTab === 1" class="xl:px-12 lg:px-48">
@@ -603,8 +584,8 @@
                       </div>
                       <div v-if="activeTab === 12">
                         <ImageCompare
-                          beforeImage="https://images.unsplash.com/photo-1731141028975-3eb6b91cef4c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                          afterImage="https://images.unsplash.com/photo-1731141295615-d09e4496c489?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D"
+                          beforeImage="https://i.imgur.com/vWX2Gzc.png"
+                          afterImage="https://i.imgur.com/lKonYyM.png"
                           :height="'h-96'"
                         />
                       </div>
@@ -645,12 +626,12 @@
           >
             <template #content-1>
               <ImageCompare
-                beforeImage="https://i.imgur.com/dIkF1Ih.png"
-                afterImage="https://i.imgur.com/Y3iIZsT.png"
+                beforeImage="https://i.imgur.com/lKonYyM.png"
+                afterImage="https://i.imgur.com/vWX2Gzc.png"
                 heightClass="md:h-96 h-64"
                 class="mb-8"
-                beforeText="EN"
-                afterText="ZH"
+                beforeText="Dark"
+                afterText="Light"
               />
             <p v-html="$t('project1.handoff.item1')" class="font-normal"></p>
             </template>
@@ -663,7 +644,7 @@
             <template #content-1>
               <CardTilt>
                     <img 
-                    src="https://i.imgur.com/U8VNbFs.jpeg"
+                    src="https://i.imgur.com/xcDKo8B.jpeg"
                     class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
                   >
                 </CardTilt>

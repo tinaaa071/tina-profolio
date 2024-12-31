@@ -78,7 +78,7 @@
           :desc="$t('project4.core.desc')"
           :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3'), $t('projectTag.item7')]"
           linkTo="/work/project4"
-          backgroundImage="https://images.unsplash.com/photo-1688297969982-2d46e66ba2f2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          backgroundImage="https://i.imgur.com/saj60S3.png"
         />
       </TabTransition>
     </div>

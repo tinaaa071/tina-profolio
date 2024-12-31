@@ -71,43 +71,19 @@
     "process": {
         "item1": "Open-source API Data",
         "item1-1": "I utilized an open-source café data API, connected the API to the frontend, and set up a list to display data such as name, address, and ratings.",
+        "item1-2": "The database did not provide photos of coffee shops. To meet the visual presentation requirements, I integrated the <strong>Unspalsh</strong> API to generate images randomly.",
         "item2": "E-commerce Database",
         "item2-1": "I used <strong>Firebase</strong> to create account management and a product database."
     },
-    "challenge": {
-        "item1": "Diversity and consistency of data sources",
-        "item1-1": "The data formats of medical institutions may differ, requiring consideration of structural inconsistencies during integration.",
-        "item2": "Diversity of credential verification",
-        "item2-1": "Standards for medical practitioner credentials vary across countries, making the verification process complex.",
-        "item3": "Design adaptability",
-        "item3-1": "Different languages may impact interface design (e.g., excessive text causing layout congestion).",
-        "item4": "Complexity of data handling",
-        "item4-1": "Group registrations involve managing data for multiple participants, making the structure more complex.",
-        "item5": "Time-consuming review process",
-        "item5-1": "A high proportion of manual reviews may prevent timely completion.",
-        "item6": "Availability of real-time services",
-        "item6-1": "During periods of high demand, there may be insufficient staff to handle consultations."
-    },
     "principle": { 
-        "item1": "Clear and Intuitive Interface",
-        "item1-1": "Provide a clear navigation bar to help users quickly find the needed content. Offer explicit step-by-step guidance for the registration process, such as a progress bar display.",
-        "item2": "Target Audience Oriented",
-        "item2-1": "Categorize courses by professional fields (e.g., Nursing, Surgery, Internal Medicine) and indicate the specialization and suitable participants for each course.",
-        "item3": "Easy-to-Complete Registration Process",
-        "item3-1": "Break the form into steps to avoid lengthy filling processes.",
-        "item4": "Enhanced Trustworthiness",
-        "item4-1": "Choose a color scheme that conveys stability and a medical vibe (e.g., blue, white) while avoiding overly flashy designs."
-    },
-    "system": { 
-        "item1": "In this project, we adopted <strong>Storybook</strong> to build and manage the design system, enabling a consistent and efficient component development process. The design system includes commonly used UI components such as buttons, forms, cards, and navigation bars. It is organized modularly for reusability and scalability. Our design system has the following features:",
-        "item2": "Documented Components",
-        "item2-1": "With Storybook, we can write clear documentation for each component, including property descriptions, usage examples, and interactive demonstrations.",
-        "item3": "Consistent Design Guidelines",
-        "item3-1": "The design system provides unified style guides and design specifications, ensuring a consistent appearance for components across different pages and modules.",
-        "item4": "Visual Testing",
-        "item4-1": "Developers can preview the appearance and behavior of components in real-time and perform visual testing and design validation through plugins.",
-        "item5": "Cross-Team Collaboration",
-        "item5-1": "Designers and developers can use Storybook's visual interface to discuss components, improving communication efficiency between design and development."
+        "item1": "Simple and Intuitive Interface",
+        "item1-1": "I displayed the café's information on the homepage, allowing users to intuitively view the details upon entering the website.",
+        "item2": "Consistency",
+        "item2-1": "I designed a consistent style for various cards, making the page look neat and clean while ensuring uniformity when integrating with the database.",
+        "item3": "Hidden Design",
+        "item3-1": "Detailed information is tucked into a side drawer component, revealed only when clicked, to keep the layout from becoming cluttered.",
+        "item4": "Warm Style",
+        "item4-1": "The website uses a warm and comfortable color palette (such as beige and dark gray) to convey a relaxing café ambiance."
     },
     "mockup": { 
         "tab": {
