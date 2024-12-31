@@ -295,7 +295,7 @@
                     { title: $t('project2.principle.item2'), content: $t('project2.principle.item2-1') },
                     { title: $t('project2.principle.item3'), content: $t('project2.principle.item3-1') },
                     { title: $t('project2.principle.item4'), content: $t('project2.principle.item4-1') },
-                    { title: $t('project2.principle.item4'), content: $t('project2.principle.item4-1') }
+                    { title: $t('project2.principle.item5'), content: $t('project2.principle.item5-1') }
                   ]"
                 />
             </template>
