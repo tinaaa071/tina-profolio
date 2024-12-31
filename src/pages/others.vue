@@ -71,17 +71,17 @@
         modals: [
         {
             id: 1,
-            title: "Post 1",
-            category: this.$t('other.item1'),
+            title: "Cat Typing",
+            category: this.$t('other.item4'),
+            lottiePath: "https://lottie.host/9ff43bd5-4052-4f5d-a3df-563e5fb89681/QWbSsou0iJ.json"
             // image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            lottiePath: "/aaa.json"
+            // lottiePath: "/aaa.json"
           },
-        {
+          {
             id: 2,
-            title: "Post 1",
-            category: this.$t('other.item2'),
-            // image: "https://images.unsplash.com/photo-1725489892948-9ace0d73f9ad?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            lottiePath: "https://lottie.host/3ea80e9c-705e-44c7-9c5e-a8e8018951bc/26n6zjfUFF.json"
+            title: "Magnet",
+            category: this.$t('other.item4'),
+            lottiePath: "https://lottie.host/c74a5323-70cd-49bb-bf4f-330c0f16018a/NZyeJAfs6d.json"
           },
         {
             id: 3,
@@ -91,31 +91,18 @@
           },
         {
             id: 4,
-            title: "Cat Typing",
-            category: this.$t('other.item4'),
-            // image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            lottiePath: "https://lottie.host/9ff43bd5-4052-4f5d-a3df-563e5fb89681/QWbSsou0iJ.json"
-          },
-        {
-            id: 5,
-            title: "Magnet",
-            category: this.$t('other.item4'),
-            lottiePath: "https://lottie.host/c74a5323-70cd-49bb-bf4f-330c0f16018a/NZyeJAfs6d.json"
-          },
-        {
-            id: 6,
             title: "Watch This",
             category: this.$t('other.item4'),
             lottiePath: "https://lottie.host/8b4dae31-4a4a-4996-bd37-c3a86ae7006a/pTng0tWY0t.json"
           },
         {
-            id: 7,
+            id: 5,
             title: "Shape",
             category: this.$t('other.item4'),
             lottiePath: "https://lottie.host/919405a9-98e0-467c-8e62-196bc1f84c11/7o6pesu7Q4.json"
           },
         {
-            id: 8,
+            id: 6,
             title: "Square",
             category: this.$t('other.item4'),
             lottiePath: "https://lottie.host/136b3517-5777-475f-a328-01cc7737d2b5/fgd0wFcaRp.json"
