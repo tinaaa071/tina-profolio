@@ -141,7 +141,7 @@
             <p>
               這次開發 Shape Mask 的經歷讓我深刻體會到，設計師懂一點程式開發很有幫助。不僅能解決自己的工作痛點，還能幫助其他人提升效率。雖然開發的過程經歷了非常多的挫折、遇到了無數個 bug，但這次經驗也啟發我去探索更多跨界技能的可能性，並激勵我持續挑戰自我。
             </p>
-            <Video videoSrc="https://www.youtube.com/embed/_6jO-zrU5Do?autoplay=1&mute=1&loop=1" />
+            <Video videoSrc="https://www.youtube.com/embed/Zkwhln33uHw?autoplay=1&mute=1&loop=1" />
           </div>
           <Dot />
           <div class="flex flex-col gap-4" id="section6">
@@ -238,35 +238,35 @@ export default {
       posts: [
         {
           id: 1,
-          link: '/',
-          title: "Post 1",
-          category: this.$t('blog.item3'),
-          image: "https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          date: "2024．09．02",
-        },
-        {
-          id: 2,
-          link: '/about',
-          title: "Post 2",
+          link: '/blog/post/2',
+          title: "UI/UX 設計師如何培養美感？提升設計視野的實用指南",
           category: this.$t('blog.item2'),
-          image: "https://images.unsplash.com/photo-1628768534895-ff9185e7edbc?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          date: new Date().toLocaleDateString(),
+          image: "https://cdn-images-1.medium.com/max/1600/1*Qjgp1iIbw1IY2ww1AxfbPg.png",
+          date: "2024．09．10",
         },
         {
           id: 2,
-          link: '/post/1',
-          title: "Post 2",
+          link: '/blog/post/7',
+          title: "從零開始成為 UI/UX 設計師：自學路徑指南",
           category: this.$t('blog.item3'),
-          image: "https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          date: new Date().toLocaleDateString(),
+          image: "https://cdn-images-1.medium.com/max/1600/1*yJi3pvZRfffeHToNDhtSmQ.png",
+          date: "2024．10．20",
         },
         {
-          id: 2,
-          link: '/post/1',
-          title: "Post 2",
-          category: this.$t('blog.item4'),
-          image: "https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          date: new Date().toLocaleDateString(),
+          id: 3,
+          link: '/blog/post/14',
+          title: "Bento Grid UI：靈感來自便當盒的介面設計風格",
+          category: this.$t('blog.item2'),
+          image: "https://cdn-images-1.medium.com/max/1600/1*XmqGmjWlFW0ZdY8xyTCGqA.png",
+          date: "2024．11．08",
+        },
+        {
+          id: 4,
+          link: '/blog/post/15',
+          title: "《設計心理學》 - 理解人類行為與設計的橋樑",
+          category: this.$t('blog.item5'),
+          image: "https://cdn-images-1.medium.com/max/1600/1*l9LTo-VAunwN9UZeeoca4Q.png",
+          date: "2024．11．12",
         }
       ],
     };
