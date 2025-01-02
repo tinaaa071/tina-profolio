@@ -138,19 +138,19 @@
         }
     },
     "handoff": { 
-        "item1": "In <strong>Figma</strong>, I demonstrated dark mode styles using the <strong>Variable</strong> feature, allowing toggling through a control panel to view the results of different color presentations. Additionally, I showcased various breakpoints for responsive web design (RWD) and how the designs appear on different devices to ensure a great user experience across all screen sizes.<br><br>During the design review and delivery phase, I used <strong>Storybook</strong> as a platform for visual guidelines and component showcases. This helped the development team reference specific design standards during implementation."
+        "item1": "In <strong>Figma</strong>, I demonstrated dark mode styles using the <strong>Variable</strong> feature, allowing toggling through a control panel to view the results of different color presentations. Additionally, I showcased various breakpoints for responsive web design (RWD) and how the designs appear on different devices to ensure a great user experience across all screen sizes."
     },
     "feedback": { 
-        "item1": "Project Timeline Management",
-        "item1-1": "The timeline for this project was extremely tight, and its structure was highly complex. Despite the lack of clear requirements from the client, we still had to deliver results according to the predetermined schedule. To achieve this, I learned to make quick decisions and set priorities, focusing resources on the most critical features. Additionally, I developed a design system to support rapid iterations. This experience enhanced my project management and execution skills in high-pressure environments.",
-        "item2": "Solutions for Unclear Requirements",
-        "item2-1": "Faced with the challenge of unclear goals from the client, and under time pressure, I adopted a proactive research approach. Based on the client’s outlined direction, I gathered extensive information on mature market products and referenced similar frameworks for initial planning, then optimized the design through discussions with the client.",
-        "item3": "Design of Innovative Features",
-        "item3-1": "The project involved many innovative features rarely seen in the market. To ensure usability, I adjusted the design by referencing similar market functionalities, minimizing user learning curves. At the same time, I crafted innovative solutions tailored to the client’s specific context and project goals.",
-        "item4": "Frontend and Backend System Design",
-        "item4-1": "In designing the frontend and backend systems, it was essential to balance ease of use for frontend users with data access efficiency in the backend. I worked closely with the PM and engineering teams, engaging in multiple discussions and adjustments to develop a solution that met both needs, ensuring the system design was effective and aligned with requirements.",
-        "item5": "Team Communication",
-        "item5-1": "This project involved multiple stakeholders, including internal developers, the client, government authorities, end-users, and external teams. Each group had unique requirements and constraints. I consolidated feedback from all parties and made design decisions that balanced the interests of each, ensuring the project progressed smoothly."
+        "item1": "System Design",
+        "item1-1": "In this project, I completed the integration of the frontend, backend, and database, focusing on data retrieval and presentation. During the design phase, I made multiple adjustments to the user interface based on system requirements to ensure a balance between user experience and functionality.",
+        "item2": "Database API Integration",
+        "item2-1": "I practiced integrating third-party database APIs, learning how to efficiently retrieve data and display it on the frontend interface. Additionally, I optimized API request handling to enhance system performance.",
+        "item3": "Backend Database Setup",
+        "item3-1": "Using Firebase, I built a product database and a member management system with security restrictions for member passwords. For data operations, any updates made on the frontend (e.g., product inventory or member information) were synchronized in real-time with the database to ensure data consistency.",
+        "item4": "Registration & Login Features",
+        "item4-1": "While developing the registration feature, I designed a process where new members' data is immediately created in the database upon registration. Moreover, I ensured that updates to user information (such as passwords) were synchronized with the database, enhancing system integrity.",
+        "item5": "Shopping Cart & Order Features",
+        "item5-1": "The shopping cart functionality was one of the most challenging parts of this project. I implemented features for adjusting quantities and removing items from the cart, utilizing Vue Store for state management to maintain data consistency and ensure a smooth shopping cart and order processing experience."
     }
     
 }

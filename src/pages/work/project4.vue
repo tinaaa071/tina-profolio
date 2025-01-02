@@ -634,11 +634,11 @@
                 <List 
                 customClass="px-6 py-5 bg-B3 rounded-2xl xl:rounded-3xl dark:bg-transparent dark:border dark:border-white"
                 :items="[
-                    { title: $t('project1.feedback.item1'), content: $t('project1.feedback.item1-1') },
-                    { title: $t('project1.feedback.item2'), content: $t('project1.feedback.item2-1') },
-                    { title: $t('project1.feedback.item3'), content: $t('project1.feedback.item3-1') },
-                    { title: $t('project1.feedback.item4'), content: $t('project1.feedback.item4-1') },
-                    { title: $t('project1.feedback.item5'), content: $t('project1.feedback.item5-1') }
+                    { title: $t('project4.feedback.item1'), content: $t('project4.feedback.item1-1') },
+                    { title: $t('project4.feedback.item2'), content: $t('project4.feedback.item2-1') },
+                    { title: $t('project4.feedback.item3'), content: $t('project4.feedback.item3-1') },
+                    { title: $t('project4.feedback.item4'), content: $t('project4.feedback.item4-1') },
+                    { title: $t('project4.feedback.item5'), content: $t('project4.feedback.item5-1') }
                   ]"
                 />
             </template>
