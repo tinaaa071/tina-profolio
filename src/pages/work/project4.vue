@@ -267,7 +267,7 @@
           <!-- Banner -->
           <Parallax 
             class="xl:h-[500px] h-80"
-            backgroundImage="https://i.imgur.com/2CZvWYx.png"
+            backgroundImage="https://i.imgur.com/wgj2oQY.png"
             />
           <!-- 設計產出 -->
           <Section3
@@ -305,141 +305,199 @@
                   :customClass="[bg-transparent, p-0]"
                   :scrollableClass="'overflow-x-auto whitespace-nowrap'"
                   :buttonClass="'w-1/2'"
-                  :buttons="['project4.mockup.tab.item1', 'project4.mockup.tab.item2', 'project4.mockup.tab.item3', 'project4.mockup.tab.item4', 'project4.mockup.tab.item5', 'project4.mockup.tab.item6', 'project4.mockup.tab.item7', 'project4.mockup.tab.item8', 'project4.mockup.tab.item9']">
+                  :buttons="['project4.mockup.tab.item1', 'project4.mockup.tab.item2', 'project4.mockup.tab.item3', 'project4.mockup.tab.item4', 'project4.mockup.tab.item5', 'project4.mockup.tab.item6', 'project4.mockup.tab.item7', 'project4.mockup.tab.item8']">
                     <!-- Tab Contents -->
                     <template #default="{ activeTab }">
                       <div v-if="activeTab === 1" class="xl:px-12 lg:px-48">
-                        <div class="relative">
+                        <div class="relative mb-8">
                           <img 
-                          src="https://i.imgur.com/uxyQ8VJ.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
-                          >
-                          <div class="hidden absolute -right-56 top-1/4 lg:block">
-                            <HoverIconButton 
-                            class=""
-                            icon="💡"
-                            :title="$t('project1.mockup.info.item1')"
-                            :text="$t('project1.mockup.info.item1-1')"
-                            />
-                          </div>
-                          <div class="hidden absolute -right-56 top-1/2 lg:block">
-                            <HoverIconButton 
-                            class=""
-                            icon="💡"
-                            :title="$t('project1.mockup.info.item2')"
-                            :text="$t('project1.mockup.info.item2-1')"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div v-if="activeTab === 2" class="xl:px-12 lg:px-48">
-                        <div class="relative">
-                          <img 
-                          src="https://i.imgur.com/Nx8AIJO.png"
+                          src="https://i.imgur.com/HDsblsg.png"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item3')"
-                            :text="$t('project1.mockup.info.item3-1')"
+                            :title="$t('project4.mockup.info.item1')"
+                            :text="$t('project4.mockup.info.item1-1')"
                             />
                           </div>
-                          <div class="hidden absolute top-[20%] -right-56 lg:block">
+                        </div>
+                        <div class="relative">
+                          <img 
+                          src="https://i.imgur.com/zRkk4Lh.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item4')"
-                            :text="$t('project1.mockup.info.item4-1')"
+                            :title="$t('project4.mockup.info.item2')"
+                            :text="$t('project4.mockup.info.item2-1')"
                             />
                           </div>
-                          <div class="hidden absolute -right-56 top-1/2 lg:block">
+                        </div>
+                      </div>
+                      <div v-if="activeTab === 2" class="xl:px-12 lg:px-48">
+                        <div class="relative mb-8">
+                          <img 
+                          src="https://i.imgur.com/7h45Lmq.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item5')"
-                            :text="$t('project1.mockup.info.item5-1')"
+                            :title="$t('project4.mockup.info.item3')"
+                            :text="$t('project4.mockup.info.item3-1')"
                             />
                           </div>
-                          <div class="hidden absolute top-[70%] -right-56 lg:block">
+                        </div>
+                        <div class="relative">
+                          <img 
+                          src="https://i.imgur.com/jpT9idj.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item6')"
-                            :text="$t('project1.mockup.info.item6-1')"
-                            />
-                          </div>
-                          <div class="hidden absolute top-[80%] -right-56 lg:block">
-                            <HoverIconButton 
-                            class=""
-                            icon="💡"
-                            :title="$t('project1.mockup.info.item7')"
-                            :text="$t('project1.mockup.info.item7-1')"
+                            :title="$t('project4.mockup.info.item4')"
+                            :text="$t('project4.mockup.info.item4-1')"
                             />
                           </div>
                         </div>
                       </div>
                       <div v-if="activeTab === 3" class="xl:px-12 lg:px-48">
-                        <div class="relative">
+                        <div class="relative mb-8">
                           <img 
-                          src="https://i.imgur.com/0riUTFr.png"
+                          src="https://i.imgur.com/sih7OBx.png"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
-                          <div class="hidden absolute -right-56 top-1/3 lg:block">
+                          <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item8')"
-                            :text="$t('project1.mockup.info.item8-1')"
+                            :title="$t('project4.mockup.info.item5')"
+                            :text="$t('project4.mockup.info.item5-1')"
+                            />
+                          </div>
+                        </div>
+                        <div class="relative">
+                          <img 
+                          src="https://i.imgur.com/viArLD5.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[10%] -right-56 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project4.mockup.info.item6')"
+                            :text="$t('project4.mockup.info.item6-1')"
                             />
                           </div>
                         </div>
                       </div>
                       <div v-if="activeTab === 4" class="xl:px-12 lg:px-48">
-                        <div class="relative">
+                        <div class="relative mb-8">
                           <img 
-                          src="https://i.imgur.com/gc0Hdez.png"
+                          src="https://i.imgur.com/uRRJTEQ.png"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
-                          <div class="hidden absolute top-[12%] -left-56 lg:block">
-                            <HoverIconButton 
-                            customClass="right-0 origin-bottom-right rounded-br"
-                            icon="💡"
-                            :title="$t('project1.mockup.info.item9')"
-                            :text="$t('project1.mockup.info.item9-1')"
-                            />
-                          </div>
-                          <div class="hidden absolute -right-56 top-1/4 lg:block">
+                          <div class="hidden absolute top-[30%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item10')"
-                            :text="$t('project1.mockup.info.item10-1')"
+                            :title="$t('project4.mockup.info.item8')"
+                            :text="$t('project4.mockup.info.item8-1')"
+                            />
+                          </div>
+                          <div class="hidden absolute -left-56 top-[12%] lg:block">
+                            <HoverIconButton 
+                            customClass="right-0 origin-bottom-right rounded-br"
+                            icon="💡"
+                            :title="$t('project4.mockup.info.item7')"
+                            :text="$t('project4.mockup.info.item7-1')"
+                            />
+                          </div>
+                        </div>
+                        <div class="relative mb-8">
+                          <img 
+                          src="https://i.imgur.com/BYyfiGG.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[40%] -right-56 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project4.mockup.info.item9')"
+                            :text="$t('project4.mockup.info.item9-1')"
+                            />
+                          </div>
+                        </div>
+                        <div class="relative">
+                          <img 
+                          src="https://i.imgur.com/5gStBtR.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[30%] -right-56 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project4.mockup.info.item10')"
+                            :text="$t('project4.mockup.info.item10-1')"
                             />
                           </div>
                         </div>
                       </div>
                       <div v-if="activeTab === 5" class="xl:px-12 lg:px-48">
-                        <div class="relative">
+                        <div class="relative mb-8">
                           <img 
-                          src="https://i.imgur.com/0FHQJ7D.png"
+                          src="https://i.imgur.com/myYfwoQ.png"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
-                          <div class="hidden absolute top-[5%] -right-56 lg:block">
+                          <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item11')"
-                            :text="$t('project1.mockup.info.item11-1')"
+                            :title="$t('project4.mockup.info.item11')"
+                            :text="$t('project4.mockup.info.item11-1')"
                             />
                           </div>
-                          <div class="hidden absolute top-[10%] -left-56 lg:block">
+                        </div>
+                        <div class="relative mb-8">
+                          <img 
+                          src="https://i.imgur.com/1HblQik.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[20%] -right-56 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project4.mockup.info.item13')"
+                            :text="$t('project4.mockup.info.item13-1')"
+                            />
+                          </div>
+                          <div class="hidden absolute -left-56 top-[20%] lg:block">
                             <HoverIconButton 
                             customClass="right-0 origin-bottom-right rounded-br"
                             icon="💡"
-                            :title="$t('project1.mockup.info.item12')"
-                            :text="$t('project1.mockup.info.item12-1')"
+                            :title="$t('project4.mockup.info.item12')"
+                            :text="$t('project4.mockup.info.item12-1')"
+                            />
+                          </div>
+                        </div>
+                        <div class="relative">
+                          <img 
+                          src="https://i.imgur.com/PKOLIKb.png"
+                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          >
+                          <div class="hidden absolute top-[30%] -right-56 lg:block">
+                            <HoverIconButton 
+                            class=""
+                            icon="💡"
+                            :title="$t('project4.mockup.info.item14')"
+                            :text="$t('project4.mockup.info.item14-1')"
                             />
                           </div>
                         </div>
@@ -447,37 +505,37 @@
                       <div v-if="activeTab === 6" class="xl:px-12 lg:px-48">
                         <div class="relative mb-8">
                           <img 
-                          src="https://i.imgur.com/4lT873l.png"
+                          src="https://i.imgur.com/cVRGPXk.png"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
-                          <div class="hidden absolute top-[10%] -right-56 lg:block">
+                          <div class="hidden absolute top-[20%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item13')"
-                            :text="$t('project1.mockup.info.item13-1')"
+                            :title="$t('project4.mockup.info.item16')"
+                            :text="$t('project4.mockup.info.item16-1')"
                             />
                           </div>
-                          <div class="hidden absolute -left-56 top-[40%] lg:block">
+                          <div class="hidden absolute -left-56 top-[20%] lg:block">
                             <HoverIconButton 
                             customClass="right-0 origin-bottom-right rounded-br"
                             icon="💡"
-                            :title="$t('project1.mockup.info.item14')"
-                            :text="$t('project1.mockup.info.item14-1')"
+                            :title="$t('project4.mockup.info.item15')"
+                            :text="$t('project4.mockup.info.item15-1')"
                             />
                           </div>
                         </div>
-                        <div class="relative">
+                        <div class="relative mb-">
                           <img 
-                          src="https://i.imgur.com/58QRnM4.png"
+                          src="https://i.imgur.com/BRdfuW6.png"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
-                          <div class="hidden absolute top-[10%] -right-56 lg:block">
+                          <div class="hidden absolute top-[20%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item15')"
-                            :text="$t('project1.mockup.info.item15-1')"
+                            :title="$t('project4.mockup.info.item17')"
+                            :text="$t('project4.mockup.info.item17-1')"
                             />
                           </div>
                         </div>
@@ -485,109 +543,34 @@
                       <div v-if="activeTab === 7" class="xl:px-12 lg:px-48">
                         <div class="relative">
                           <img 
-                          src="https://i.imgur.com/CMoGLpZ.png"
+                          src="https://i.imgur.com/WDuEud0.png"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item16')"
-                            :text="$t('project1.mockup.info.item16-1')"
-                            />
-                          </div>
-                          <div class="hidden absolute top-[20%] -left-56 lg:block">
-                            <HoverIconButton 
-                            customClass="right-0 origin-bottom-right rounded-br"
-                            icon="💡"
-                            :title="$t('project1.mockup.info.item17')"
-                            :text="$t('project1.mockup.info.item17-1')"
+                            :title="$t('project4.mockup.info.item18')"
+                            :text="$t('project4.mockup.info.item18-1')"
                             />
                           </div>
                         </div>
                       </div>
                       <div v-if="activeTab === 8" class="xl:px-12 lg:px-48">
-                        <div class="relative mb-8">
-                          <img 
-                          src="https://i.imgur.com/dwTOBeF.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
-                          >
-                          <div class="hidden absolute top-[10%] -right-56 lg:block">
-                            <HoverIconButton 
-                            class=""
-                            icon="💡"
-                            :title="$t('project1.mockup.info.item18')"
-                            :text="$t('project1.mockup.info.item18-1')"
-                            />
-                          </div>
-                          <div class="hidden absolute top-[30%] -right-56 lg:block">
-                            <HoverIconButton 
-                            class=""
-                            icon="💡"
-                            :title="$t('project1.mockup.info.item19')"
-                            :text="$t('project1.mockup.info.item19-1')"
-                            />
-                          </div>
-                        </div>
                         <div class="relative">
                           <img 
-                          src="https://i.imgur.com/601998J.png"
+                          src="https://i.imgur.com/HUy6fXN.png"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
-                          <div class="hidden absolute top-[10%] -right-56 lg:block">
+                          <div class="hidden absolute top-[20%] -right-56 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
-                            :title="$t('project1.mockup.info.item20')"
-                            :text="$t('project1.mockup.info.item20-1')"
-                            />
-                          </div>
-                          <div class="hidden absolute -right-56 top-1/2 lg:block">
-                            <HoverIconButton 
-                            class=""
-                            icon="💡"
-                            :title="$t('project1.mockup.info.item21')"
-                            :text="$t('project1.mockup.info.item21-1')"
+                            :title="$t('project4.mockup.info.item19')"
+                            :text="$t('project4.mockup.info.item19-1')"
                             />
                           </div>
                         </div>
-                      </div>
-                      <div v-if="activeTab === 9" class="xl:px-12 lg:px-48">
-                        <div class="relative mb-8">
-                          <img 
-                          src="https://i.imgur.com/N5gqmnY.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
-                          >
-                          <div class="hidden absolute top-[30%] -right-56 lg:block">
-                            <HoverIconButton 
-                            class=""
-                            icon="💡"
-                            :title="$t('project1.mockup.info.item22')"
-                            :text="$t('project1.mockup.info.item22-1')"
-                            />
-                          </div>
-                        </div>
-                        <div class="relative">
-                          <img 
-                          src="https://i.imgur.com/2KNev1D.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
-                          >
-                          <div class="hidden absolute -right-56 top-1/2 lg:block">
-                            <HoverIconButton 
-                            class=""
-                            icon="💡"
-                            :title="$t('project1.mockup.info.item23')"
-                            :text="$t('project1.mockup.info.item23-1')"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div v-if="activeTab === 12">
-                        <ImageCompare
-                          beforeImage="https://i.imgur.com/vWX2Gzc.png"
-                          afterImage="https://i.imgur.com/lKonYyM.png"
-                          :height="'h-96'"
-                        />
                       </div>
                     </template>
                 </TabCard>
