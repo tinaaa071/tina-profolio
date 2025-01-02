@@ -78,6 +78,14 @@ export default {
           date: '2024．11．20',
           link: '/work/project4',
         },
+        {
+          id: 5, // Ensure unique ID
+          title: this.$t('project5.core.title'),
+          category: [this.$t('tag.item2'), this.$t('tag.item4'), this.$t('tag.item6')],
+          image: 'https://i.imgur.com/saj60S3.png',
+          date: '2024．11．20',
+          link: '/work/project5',
+        },
         // {
         //   id: 5, // Ensure unique ID
         //   title: 'Post 5',

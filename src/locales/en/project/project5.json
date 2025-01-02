@@ -1,0 +1,204 @@
+{
+    "core":{
+        "title": "Healthcare Academy (Front-End)",
+        "desc": "Taiwan International Medical Education"
+    },
+    "info":{
+        "item1": "Joint Commission of Taiwan",
+        "item2": "UI / UX Designer",
+        "item3": "UI Design, UX Research, Design System, Prototype"
+    },
+    "demand": {
+        "item1": "Web Design",
+        "item2": "Registration Review System",
+        "item3": "Course Page",
+        "item4": "Course Enrollment & Review System",
+        "item5": "Member Center",
+        "item6": "Online Chat Consultation"
+    },
+    "team":{
+        "item1": "UI / UX Designer",
+        "item2": "Front-end Developer",
+        "item3": "Back-end Developer",
+        "item4": "Project Manager",
+        "item5": "System Analysis"
+    },
+    "brief":{
+        "item1": "The MOHW has commissioned the Joint Commission of Taiwan to establish the Overseas Medical Personnel Training Platform. This platform is designed to provide a comprehensive overview of Taiwan's medical and health training courses and achievements for foreign medical professionals. It also offers more complete training information and application services through the platform.",
+       "item2": "Integrating Existing Resources and Achievements",
+        "item2-1": "The platform will consolidate various medical and healthcare training programs offered by Taiwan for overseas healthcare personnel. These programs cover a wide range of topics, including clinical skills, professional techniques, and healthcare management.",
+        "item3": "Providing Information and Application Services",
+        "item3-1": "The platform will offer comprehensive course search, application guidance, and trainee management features. This will enable overseas healthcare professionals to quickly identify suitable training programs and apply for participation with ease.",
+        "item4": "Enhancing International Medical Collaboration",
+        "item4-1": "Taiwan aims to establish closer collaborations with other countries, facilitating the exchange of knowledge and technology while further enhancing its global reputation in healthcare."
+    },
+    "briefCard":{
+        "item1": "Summarize various medical and healthcare training courses offered in our country, provide online registration for overseas medical personnel, and facilitate the qualification application review process through our Ministry of Health and Welfare.",
+        "item2": "In this project, I worked closely with the PM, SA, and four engineers. I was responsible for the entire UX and UI design process and deliverables, from defining the problem to delivering the final visual design to the engineers.",
+        "item3": "This project has a large and complex structure, encompassing features such as a backend system, multilingual switching, and online chat. Additionally, the course registration and review functionalities have more restrictions compared to other industries.",
+        "item4": "We complete each goal in stages to ensure the overall website and its features operate smoothly, and we improve various functions based on feedback from healthcare institution users."
+    },
+    "background":{
+        "item1": "Medical services worldwide are increasingly emphasizing international cooperation, especially in areas such as cross-border medical aid and healthcare infrastructure development. The professional competence of healthcare personnel has become a crucial foundation for advancing collaboration. The professional training provided by the platform will help enhance the overall quality of healthcare personnel globally."
+    },
+    "goal": {
+        "item1": "Integrate course resources from national medical institutions",
+        "item2": "Provide multi-language switch for the website",
+        "item3": "Categorize courses into clinical courses, non-clinical courses, demonstration courses, and other filters",
+        "item4": "Provide individual and group registration functions for courses",
+        "item5": "Allow participants to view the registration review results",
+        "item6": "Allowing students to consult online with the course provider"
+    },
+    "problem": {
+        "item1": "The client was unable to provide clear requirements",
+        "item2": "The project architecture was extensive",
+        "item3": "The development timeline was tight"
+    },
+    "sa": { 
+        "item1": "Understand the MOHW's review standards for medical course registrations", 
+        "item2": "Collect and categorize courses from various medical training providers to establish a unified classification", 
+        "item3": "Understand the operational habits of medical personnel through interviews and surveys", 
+        "item4": "Understand the needs of course providers regarding course information presentation", 
+        "item5": "Refer to the operational models of existing course registration systems" 
+    },
+    "ta": { 
+        "item1": "Students in overseas medical-related disciplines", 
+        "item1-1": "Learners in related fields interested in overseas medical education.", 
+        "item2": "Medical personnel in overseas medical institutions", 
+        "item2-1": "Personnel employed in overseas medical institutions who have a need for further training."
+    },
+    "research": {
+        "item1": "How to integrate the resources of medical institutions across Taiwan?",
+        "item2": "How to verify the qualifications of registered participants?",
+        "item3": "How to provide multilingual website functionality for overseas medical professionals?",
+        "item4": "How to establish a course registration system, including individual and group registrations?",
+        "item5": "How to make the course registration system work with a review function?",
+        "item6": "How to provide an online consultation feature?"
+    },
+    "hypo": { 
+        "item1": "Connect with existing APIs of medical institutions",
+        "item1-1": "Design connections with the APIs of medical institutions to provide contact information and resource features of healthcare facilities across the country.",
+        "item2": "Design a document upload and automatic verification system",
+        "item2-1": "Support trainees in uploading professional certificates and implement a real-name verification mechanism.",
+        "item3": "Establish a multilingual framework",
+        "item3-1": "Use a language switcher and support major international languages.",
+        "item4": "Create a dual registration mode with dynamic forms",
+        "item4-1": "Automatically adjust fields based on user selection (individual or group).",
+        "item5": "Develop a registration status tracking feature",
+        "item5-1": "Display registration progress (pending review, approved, rejected, etc.).",
+        "item6": "Design a real-time chat feature",
+        "item6-1": "Allow users to inquire with customer service representatives online."
+    },
+    "challenge": {
+        "item1": "Diversity and consistency of data sources",
+        "item1-1": "The data formats of medical institutions may differ, requiring consideration of structural inconsistencies during integration.",
+        "item2": "Diversity of credential verification",
+        "item2-1": "Standards for medical practitioner credentials vary across countries, making the verification process complex.",
+        "item3": "Design adaptability",
+        "item3-1": "Different languages may impact interface design (e.g., excessive text causing layout congestion).",
+        "item4": "Complexity of data handling",
+        "item4-1": "Group registrations involve managing data for multiple participants, making the structure more complex.",
+        "item5": "Time-consuming review process",
+        "item5-1": "A high proportion of manual reviews may prevent timely completion.",
+        "item6": "Availability of real-time services",
+        "item6-1": "During periods of high demand, there may be insufficient staff to handle consultations."
+    },
+    "principle": { 
+        "item1": "Clear and Intuitive Interface",
+        "item1-1": "Provide a clear navigation bar to help users quickly find the needed content. Offer explicit step-by-step guidance for the registration process, such as a progress bar display.",
+        "item2": "Target Audience Oriented",
+        "item2-1": "Categorize courses by professional fields (e.g., Nursing, Surgery, Internal Medicine) and indicate the specialization and suitable participants for each course.",
+        "item3": "Easy-to-Complete Registration Process",
+        "item3-1": "Break the form into steps to avoid lengthy filling processes.",
+        "item4": "Enhanced Trustworthiness",
+        "item4-1": "Choose a color scheme that conveys stability and a medical vibe (e.g., blue, white) while avoiding overly flashy designs."
+    },
+    "system": { 
+        "item1": "In this project, we adopted <strong>Storybook</strong> to build and manage the design system, enabling a consistent and efficient component development process. The design system includes commonly used UI components such as buttons, forms, cards, and navigation bars. It is organized modularly for reusability and scalability. Our design system has the following features:",
+        "item2": "Documented Components",
+        "item2-1": "With Storybook, we can write clear documentation for each component, including property descriptions, usage examples, and interactive demonstrations.",
+        "item3": "Consistent Design Guidelines",
+        "item3-1": "The design system provides unified style guides and design specifications, ensuring a consistent appearance for components across different pages and modules.",
+        "item4": "Visual Testing",
+        "item4-1": "Developers can preview the appearance and behavior of components in real-time and perform visual testing and design validation through plugins.",
+        "item5": "Cross-Team Collaboration",
+        "item5-1": "Designers and developers can use Storybook's visual interface to discuss components, improving communication efficiency between design and development."
+    },
+    "mockup": { 
+        "tab": {
+            "item1": "Registration",
+            "item2": "Home",
+            "item3": "Search",
+            "item4": "Course Categories",
+            "item5": "Course Detail",
+            "item6": "Course Enrollment",
+            "item7": "Training Institute",
+            "item8": "Apply Review Progress",
+            "item9": "Online Consultation"
+        },
+        "info": {
+            "item1": "Segmented Control",
+            "item1-1": "Use dynamic switching to toggle between different forms, catering to different user registrations while maintaining a unified design and reducing additional development efforts.",
+            "item2": "Real-time Validation",
+            "item2-1": "Integrate API data to enable real-time validation, reducing manual review time.",
+            "item3": "Search Function",
+            "item3-1": "Place the search function in the Hero section of the homepage, allowing visitors to search for courses or providers instantly, enhancing convenience.",
+            "item4": "Latest News Section",
+            "item4-1": "Showcase the latest three news updates on the website.",
+            "item5": "Popular Course Categories",
+            "item5-1": "Categorize courses by type to help users quickly find suitable categories.",
+            "item6": "Student Reviews",
+            "item6-1": "Display the latest course reviews from students to provide visitors with feedback on the courses.",
+            "item7": "Introduction to Taiwan's Features",
+            "item7-1": "Since most visitors are international students, provide information about Taiwan (transportation, cuisine, attractions, etc.) to help them quickly understand the country.",
+            "item8": "Modal popup",
+            "item8-1": "With the use of popup design, users can check information at any time on the screen. We also provide popular tags and recommended courses for reference.",
+            "item9": "Collapse Button", 
+            "item9-1": "Click the Filter button on the left to collapse the filter, making it easier for users to browse.", 
+            "item10": "Course Card", 
+            "item10-1": "Courses are designed in card format, with key information displayed, allowing users to easily view required items in real time.",
+            "item11": "Fixed Card", 
+            "item11-1": "Fix the course information card on the right side, allowing users to click and register for the course anytime while browsing the information on the left.", 
+            "item12": "Segmented Control", 
+            "item12-1": "Users can instantly switch between information for easy and quick content search.",
+            "item13": "Progress Bar", 
+            "item13-1": "Displays the registration stage with a progress bar, dividing the steps to avoid a lengthy filling process.", 
+            "item14": "Group Registration Section", 
+            "item14-1": "Use the 'Add New' button to add members, and a file upload button is also provided to batch add members.",
+            "item15": "Drawer Component", 
+            "item15-1": "After clicking the 'Add New' button, the form will slide out from the right side, saving space on the page.",
+            "item16": "Course Unit Card", 
+            "item16-1": "Provides contact information and consultation button.", 
+            "item17": "Segment Control", 
+            "item17-1": "Users can instantly switch between information to browse the unit's introduction, courses, and transportation details.",
+            "item18": "Segment Control",
+            "item18-1": "Allows toggling to view courses with different registration statuses.",
+            "item19": "Registered Course Card",
+            "item19-1": "Presented in a card format, displaying various review statuses and action buttons.",
+            "item20": "Registration Details", 
+            "item20-1": "Click the registration course card to view the details.", 
+            "item21": "Registration Form", 
+            "item21-1": "This is a group registration demonstration, where you can check the registration review status of each member.",
+            "item22": "Chat Window", 
+            "item22-1": "Click the consultation button in the lower-right corner to expand the chat window. The units that have conducted the conversation will be listed for easy viewing.",
+            "item23": "Real-time Chat", 
+            "item23-1": "The chat window allows real-time communication with the course units and supports file uploads."
+        }
+    },
+    "handoff": { 
+        "item1": "In <strong>Figma</strong>, I utilized the <strong>Variable</strong> feature to demonstrate multilingual switching, allowing the development team to clearly understand the variations in text length and interface layout across different languages. Additionally, I showcased RWD (Responsive Web Design) screens at various breakpoints and the visual effects on different devices, ensuring an optimal user experience across all screen sizes.<br><br>During the design review and handoff phase, I used <strong>Storybook</strong> as a platform for visual guidelines and component demonstrations, assisting the development team in referencing concrete design standards during implementation."
+    },
+    "feedback": { 
+        "item1": "Project Timeline Management",
+        "item1-1": "The timeline for this project was extremely tight, and its structure was highly complex. Despite the lack of clear requirements from the client, we still had to deliver results according to the predetermined schedule. To achieve this, I learned to make quick decisions and set priorities, focusing resources on the most critical features. Additionally, I developed a design system to support rapid iterations. This experience enhanced my project management and execution skills in high-pressure environments.",
+        "item2": "Solutions for Unclear Requirements",
+        "item2-1": "Faced with the challenge of unclear goals from the client, and under time pressure, I adopted a proactive research approach. Based on the client’s outlined direction, I gathered extensive information on mature market products and referenced similar frameworks for initial planning, then optimized the design through discussions with the client.",
+        "item3": "Design of Innovative Features",
+        "item3-1": "The project involved many innovative features rarely seen in the market. To ensure usability, I adjusted the design by referencing similar market functionalities, minimizing user learning curves. At the same time, I crafted innovative solutions tailored to the client’s specific context and project goals.",
+        "item4": "Frontend and Backend System Design",
+        "item4-1": "In designing the frontend and backend systems, it was essential to balance ease of use for frontend users with data access efficiency in the backend. I worked closely with the PM and engineering teams, engaging in multiple discussions and adjustments to develop a solution that met both needs, ensuring the system design was effective and aligned with requirements.",
+        "item5": "Team Communication",
+        "item5-1": "This project involved multiple stakeholders, including internal developers, the client, government authorities, end-users, and external teams. Each group had unique requirements and constraints. I consolidated feedback from all parties and made design decisions that balanced the interests of each, ensuring the project progressed smoothly."
+    }
+    
+}

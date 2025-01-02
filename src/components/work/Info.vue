@@ -16,7 +16,7 @@
         <!-- Tag + BTN -->
         <div class="flex justify-between items-center">
           <!-- Tag -->
-          <div class="flex gap-2 sm:gap-3">
+          <div class="flex flex-wrap gap-2 sm:gap-3">
             <Tag :tag="tag" class="bg-white" />
           </div>
           <!-- BTN -->
