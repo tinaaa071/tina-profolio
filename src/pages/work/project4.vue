@@ -335,7 +335,7 @@
                       <div v-if="activeTab === 2" class="xl:px-12 lg:px-48">
                         <div class="relative">
                           <img 
-                          src="https://i.imgur.com/yrC4Va5.png"
+                          src="https://i.imgur.com/Nx8AIJO.png"
                           class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
@@ -633,7 +633,7 @@
                 beforeText="Dark"
                 afterText="Light"
               />
-            <p v-html="$t('project1.handoff.item1')" class="font-normal"></p>
+            <p v-html="$t('project4.handoff.item1')" class="font-normal"></p>
             </template>
           </Section3>
           <!-- 反饋與學習 -->

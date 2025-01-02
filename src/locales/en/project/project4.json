@@ -147,7 +147,7 @@
         }
     },
     "handoff": { 
-        "item1": "In <strong>Figma</strong>, I utilized the <strong>Variable</strong> feature to demonstrate multilingual switching, allowing the development team to clearly understand the variations in text length and interface layout across different languages. Additionally, I showcased RWD (Responsive Web Design) screens at various breakpoints and the visual effects on different devices, ensuring an optimal user experience across all screen sizes.<br><br>During the design review and handoff phase, I used <strong>Storybook</strong> as a platform for visual guidelines and component demonstrations, assisting the development team in referencing concrete design standards during implementation."
+        "item1": "In <strong>Figma</strong>, I demonstrated dark mode styles using the <strong>Variable</strong> feature, allowing toggling through a control panel to view the results of different color presentations. Additionally, I showcased various breakpoints for responsive web design (RWD) and how the designs appear on different devices to ensure a great user experience across all screen sizes.<br><br>During the design review and delivery phase, I used <strong>Storybook</strong> as a platform for visual guidelines and component showcases. This helped the development team reference specific design standards during implementation."
     },
     "feedback": { 
         "item1": "Project Timeline Management",

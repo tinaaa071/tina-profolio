@@ -20,7 +20,7 @@
         <div class="px-4 py-3 rounded-2xl border border-stone-200 bg-white/30">
           <span class="flex gap-2 items-center mb-3">
             <Fa6RegularFaceFrown />
-            {{ $t('work.persona.item2') }}
+            {{ $t('work.title.item8-3') }}
           </span>
           <!-- u2 -->
           <ul class="leading-loose list-disc list-inside">
