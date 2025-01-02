@@ -16,7 +16,7 @@
         :info2="[$t('project4.team.item1'), $t('project4.team.item2')]" 
         :info3="$t('project4.info.item3')"
         :info4="$t('project4.info.item1')"
-        :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3'), $t('projectTag.item7')]" 
+        :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3'), $t('projectTag.item5'), $t('projectTag.item7')]" 
         :iconsVisible="[true, true, true, true, true, false, false, false, false, true]"
         :linkTo="'https://cafe2-ecru.vercel.app/'"
         :linkType="'a'"
