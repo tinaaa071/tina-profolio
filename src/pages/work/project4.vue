@@ -195,12 +195,12 @@
                 <!-- Tab Contents -->
                 <template #default="{ activeTab }">
                   <div v-if="activeTab === 1">
-                    <div>
-                      <p v-html="$t('project4.process.item1-1')" class="mb-8 font-normal"></p>
+                    <div class="space-y-6 sm:space-y-8">
+                      <p v-html="$t('project4.process.item1-1')" class="font-normal"></p>
                       <CardTilt>
                         <img 
                         src="https://i.imgur.com/yxlAvMM.png"
-                        class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
+                        class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
                         >
                       </CardTilt>
                       <div
@@ -212,7 +212,7 @@
                         </p>
                         <p 
                         v-html="$t('project4.process.item1-2')"
-                        class="text-sm line-clamp-2">
+                        class="text-sm">
                         </p>
                       </div>
                     </div>
@@ -266,7 +266,7 @@
           </Section3>
           <!-- Banner -->
           <Parallax 
-            class="xl:h-[500px] h-80"
+            class="md:h-[500px] h-64"
             backgroundImage="https://i.imgur.com/wgj2oQY.png"
             />
           <!-- 設計產出 -->

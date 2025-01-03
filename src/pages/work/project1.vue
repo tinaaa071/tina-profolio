@@ -316,7 +316,7 @@
           </Section3>
           <!-- Banner -->
           <Parallax 
-            class="xl:h-[500px] h-80"
+            class="md:h-[500px] h-64"
             backgroundImage="https://i.imgur.com/2CZvWYx.png"
             />
           <!-- 設計產出 -->
