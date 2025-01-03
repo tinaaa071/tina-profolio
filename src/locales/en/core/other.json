@@ -3,5 +3,12 @@
     "item2": "🥯\u00A0\u00A0Illustration",
     "item3": "🧇\u00A0\u00A0Graphic Design",
     "item4": "🥨\u00A0\u00A0Lottie",
-    "item5": "🌕\u00A0\u00A03D-Modeling"
+    "item5": "🌕\u00A0\u00A03D-Modeling",
+    "title":{
+        "item1": "Cat Typing",
+        "item2": "Magnet",
+        "item3": "Watch This",
+        "item4": "Shape",
+        "item5": "Square"
+    }
 }

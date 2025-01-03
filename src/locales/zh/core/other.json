@@ -3,5 +3,12 @@
     "item2": "🥯\u00A0\u00A0插畫設計",
     "item3": "🧇\u00A0\u00A0平面設計",
     "item4": "🥨\u00A0\u00A0Lottie 動畫",
-    "item5": "🌕\u00A0\u00A03D 建模"
+    "item5": "🌕\u00A0\u00A03D 建模",
+    "title":{
+        "item1": "Cat Typing",
+        "item2": "Magnet",
+        "item3": "Watch This",
+        "item4": "Shape",
+        "item5": "Square"
+    }
 }

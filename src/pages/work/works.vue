@@ -48,65 +48,65 @@ export default {
       posts: [
         {
           id: 1,
-          title: this.$t('project1.core.title'),
-          category: [this.$t('tag.item2'), this.$t('tag.item3')],
+          titleKey: 'project1.core.title',
+          categoryKeys: ['tag.item2', 'tag.item3'],
           image: 'https://i.imgur.com/8cDMtnX.png',
           date: '2023．10．02',
           link: '/work/project1',
         },
         {
           id: 2,
-          title: this.$t('project2.core.title'),
-          category: [this.$t('tag.item2'), this.$t('tag.item3')],
+          titleKey: 'project2.core.title',
+          categoryKeys: ['tag.item2', 'tag.item3'],
           image: 'https://i.imgur.com/CrxmhKx.png',
           date: '2023．10．02',
           link: '/work/project2',
         },
         {
-          id: 3, // Ensure unique ID
-          title: this.$t('project3.core.title'),
-          category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item6')],
+          id: 3,
+          titleKey: 'project3.core.title',
+          categoryKeys: ['tag.item2', 'tag.item3', 'tag.item6'],
           image: 'https://i.imgur.com/VyAFrb6.png',
           date: '2024．06．30',
           link: '/work/project3',
         },
         {
-          id: 4, // Ensure unique ID
-          title: this.$t('project4.core.title'),
-          category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item5'), this.$t('tag.item7')],
+          id: 4,
+          titleKey: 'project4.core.title',
+          categoryKeys: ['tag.item2', 'tag.item3', 'tag.item5', 'tag.item7'],
           image: 'https://i.imgur.com/saj60S3.png',
           date: '2024．11．20',
           link: '/work/project4',
         },
         {
-          id: 5, // Ensure unique ID
-          title: this.$t('project5.core.title'),
-          category: [this.$t('tag.item2'), this.$t('tag.item4'), this.$t('tag.item6')],
+          id: 5,
+          titleKey: 'project5.core.title',
+          categoryKeys: ['tag.item2', 'tag.item4', 'tag.item6'],
           image: 'https://i.imgur.com/EBTQHuz.png',
           date: '2024．11．20',
           link: '/work/project5',
         },
-        // {
-        //   id: 5, // Ensure unique ID
-        //   title: 'Post 5',
-        //   category: this.$t('tag.item2'),
-        //   image: 'https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        //   date: new Date().toLocaleDateString(),
-        //   link: '/work/project1',
-        // },
       ],
       currentPage: 1,
       itemsPerPage: 12,
-      currentCategory: this.$t('tag.item1'), // Set the default current category
+      currentCategoryKey: 'tag.item1', // 預設類別的 key
     };
   },
   computed: {
+    translatedPosts() {
+      return this.posts.map((post) => ({
+        ...post,
+        title: this.$t(post.titleKey),
+        category: post.categoryKeys.map((key) => this.$t(key)),
+      }));
+    },
     filteredPosts() {
-      if (this.currentCategory === this.$t('tag.item1')) {
-        return this.posts;
+      const currentCategory = this.$t(this.currentCategoryKey);
+      if (currentCategory === this.$t('tag.item1')) {
+        return this.translatedPosts;
       }
-      return this.posts.filter((post) => 
-        post.category.includes(this.currentCategory) // 檢查是否包含當前類別
+      return this.translatedPosts.filter((post) =>
+        post.category.includes(currentCategory)
       );
     },
     paginatedPosts() {
@@ -119,9 +119,9 @@ export default {
     handlePageChange(page) {
       this.currentPage = page;
     },
-    filterByCategory(category) {
-      this.currentCategory = category;
-      this.currentPage = 1; // Reset to the first page when changing category
+    filterByCategory(categoryKey) {
+      this.currentCategoryKey = categoryKey;
+      this.currentPage = 1; // 切換分類時回到第一頁
     },
   },
 };

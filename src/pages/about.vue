@@ -304,11 +304,25 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+
 export default {
   data() {
     return {
-      section1: [
+      currentModalId: ref(null), // 控制 Modal 開關
+    };
+  },
+  methods: {
+    openModal(modalId) {
+      this.currentModalId = modalId;
+    },
+    closeModal() {
+      this.currentModalId = null;
+    },
+  },
+  computed: {
+    section1() {
+      return [
         {
           title: this.$t('about.work.exp1.title'),
           info: this.$t('about.work.exp1.info'),
@@ -319,35 +333,52 @@ export default {
           sections: [
             {
               listTitle: this.$t('about.work.exp1.L1.title'),
-              listItems: [this.$t('about.work.exp1.L1.1'), this.$t('about.work.exp1.L1.2'), this.$t('about.work.exp1.L1.3'), this.$t('about.work.exp1.L1.4'), this.$t('about.work.exp1.L1.5'), this.$t('about.work.exp1.L1.6'), this.$t('about.work.exp1.L1.7')],
+              listItems: [
+                this.$t('about.work.exp1.L1.1'),
+                this.$t('about.work.exp1.L1.2'),
+                this.$t('about.work.exp1.L1.3'),
+                this.$t('about.work.exp1.L1.4'),
+                this.$t('about.work.exp1.L1.5'),
+                this.$t('about.work.exp1.L1.6'),
+                this.$t('about.work.exp1.L1.7'),
+              ],
             },
             {
               listTitle: this.$t('about.work.exp1.L2.title'),
-              listItems: [this.$t('about.work.exp1.L2.1'), this.$t('about.work.exp1.L2.2'), this.$t('about.work.exp1.L2.3'), this.$t('about.work.exp1.L2.4'), this.$t('about.work.exp1.L2.5'), this.$t('about.work.exp1.L2.6')],
-            }
+              listItems: [
+                this.$t('about.work.exp1.L2.1'),
+                this.$t('about.work.exp1.L2.2'),
+                this.$t('about.work.exp1.L2.3'),
+                this.$t('about.work.exp1.L2.4'),
+                this.$t('about.work.exp1.L2.5'),
+                this.$t('about.work.exp1.L2.6'),
+              ],
+            },
           ],
           items: [
-            { 
-              id: 1, 
+            {
+              id: 1,
               imgSrc: 'https://i.imgur.com/TMgRmfr.png',
               linkTo: 'https://medium.com/@tina.uiux',
               showModalBtn: false,
-              showLinkBtn: true
+              showLinkBtn: true,
             },
-            { 
-              id: 2, 
-              imgSrc: 'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png', 
+            {
+              id: 2,
+              imgSrc: 'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png',
               linkTo: 'https://www.figma.com/community/plugin/1420953914431407843/shape-mask',
               showModalBtn: false,
-              showLinkBtn: true
-            }
+              showLinkBtn: true,
+            },
           ],
           showModalBtn: false,
-          showLinkBtn: true
+          showLinkBtn: true,
         },
-        // Add more section objects as needed
-      ],
-      section2: [
+        // 可加入更多資料
+      ];
+    },
+    section2() {
+      return [
         {
           title: this.$t('about.work.exp2.title'),
           info: this.$t('about.work.exp2.info'),
@@ -358,35 +389,51 @@ export default {
           sections: [
             {
               listTitle: this.$t('about.work.exp2.L1.title'),
-              listItems: [this.$t('about.work.exp2.L1.1'), this.$t('about.work.exp2.L1.2'), this.$t('about.work.exp2.L1.3'), this.$t('about.work.exp2.L1.4'), this.$t('about.work.exp2.L1.5'), this.$t('about.work.exp2.L1.6'), this.$t('about.work.exp2.L1.7'), this.$t('about.work.exp2.L1.8')],
+              listItems: [
+                this.$t('about.work.exp2.L1.1'),
+                this.$t('about.work.exp2.L1.2'),
+                this.$t('about.work.exp2.L1.3'),
+                this.$t('about.work.exp2.L1.4'),
+                this.$t('about.work.exp2.L1.5'),
+                this.$t('about.work.exp2.L1.6'),
+                this.$t('about.work.exp2.L1.7'),
+                this.$t('about.work.exp2.L1.8'),
+              ],
             },
             {
               listTitle: this.$t('about.work.exp2.L2.title'),
-              listItems: [this.$t('about.work.exp2.L2.1'), this.$t('about.work.exp2.L2.2'), this.$t('about.work.exp2.L2.3'), this.$t('about.work.exp2.L2.4'), this.$t('about.work.exp2.L2.5'), this.$t('about.work.exp2.L2.6')],
-            }
+              listItems: [
+                this.$t('about.work.exp2.L2.1'),
+                this.$t('about.work.exp2.L2.2'),
+                this.$t('about.work.exp2.L2.3'),
+                this.$t('about.work.exp2.L2.4'),
+                this.$t('about.work.exp2.L2.5'),
+                this.$t('about.work.exp2.L2.6'),
+              ],
+            },
           ],
           items: [
-            { 
-              id: 1, 
+            {
+              id: 1,
               imgSrc: 'https://tina-chen.netlify.app/Images/CareFit/attachment1.png',
-              // linkTo: 'https://tailwindcss.com/docs/transition-duration',
               showModalBtn: false,
-              showLinkBtn: false
+              showLinkBtn: false,
             },
-            { 
-              id: 2, 
-              imgSrc: 'https://tina-chen.netlify.app/Images/CareFit/attachment2.png', 
-              // linkTo: 'https://tailwindcss.com/docs/transition-duration',
+            {
+              id: 2,
+              imgSrc: 'https://tina-chen.netlify.app/Images/CareFit/attachment2.png',
               showModalBtn: false,
-              showLinkBtn: false
-            }
+              showLinkBtn: false,
+            },
           ],
           showModalBtn: false,
-          showLinkBtn: true
+          showLinkBtn: true,
         },
-        // Add more section objects as needed
-      ],
-      section3: [
+        // 可加入更多資料
+      ];
+    },
+    section3() {
+      return [
         {
           title: this.$t('about.work.exp3.title'),
           info: this.$t('about.work.exp3.info'),
@@ -397,44 +444,49 @@ export default {
           sections: [
             {
               listTitle: this.$t('about.work.exp3.L1.title'),
-              listItems: [this.$t('about.work.exp3.L1.1'), this.$t('about.work.exp3.L1.2'), this.$t('about.work.exp3.L1.3'), this.$t('about.work.exp3.L1.4'), this.$t('about.work.exp3.L1.5'), this.$t('about.work.exp3.L1.6'), this.$t('about.work.exp3.L1.7')],
+              listItems: [
+                this.$t('about.work.exp3.L1.1'),
+                this.$t('about.work.exp3.L1.2'),
+                this.$t('about.work.exp3.L1.3'),
+                this.$t('about.work.exp3.L1.4'),
+                this.$t('about.work.exp3.L1.5'),
+                this.$t('about.work.exp3.L1.6'),
+                this.$t('about.work.exp3.L1.7')
+              ],
             },
             {
               listTitle: this.$t('about.work.exp3.L2.title'),
-              listItems: [this.$t('about.work.exp3.L2.1'), this.$t('about.work.exp3.L2.2'), this.$t('about.work.exp3.L2.3'), this.$t('about.work.exp3.L2.4'), this.$t('about.work.exp3.L2.5'), this.$t('about.work.exp3.L2.6')],
-            }
+              listItems: [
+                this.$t('about.work.exp3.L2.1'),
+                this.$t('about.work.exp3.L2.2'),
+                this.$t('about.work.exp3.L2.3'),
+                this.$t('about.work.exp3.L2.4'),
+                this.$t('about.work.exp3.L2.5'),
+                this.$t('about.work.exp3.L2.6'),
+              ],
+            },
           ],
           items: [
-            { 
-              id: 1, 
-              imgSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-              linkTo: 'https://tailwindcss.com/docs/transition-duration',
-              showModalBtn: true,
-              showLinkBtn: false
-            },
-            { 
-              id: 2, 
-              imgSrc: 'https://images.unsplash.com/photo-1628766416710-61d6f15f32b9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
-              linkTo: 'https://tailwindcss.com/docs/transition-duration',
+            {
+              id: 1,
+              imgSrc: 'https://tina-chen.netlify.app/Images/CareFit/attachment1.png',
               showModalBtn: false,
-              showLinkBtn: true
-            }
+              showLinkBtn: false,
+            },
+            {
+              id: 2,
+              imgSrc: 'https://tina-chen.netlify.app/Images/CareFit/attachment2.png',
+              showModalBtn: false,
+              showLinkBtn: false,
+            },
           ],
           showModalBtn: false,
-          showLinkBtn: true
+          showLinkBtn: true,
         },
-        // Add more section objects as needed
-      ],
-      currentModalId: ref(null)
-    };
-  },
-  methods: {
-    openModal(modalId) {
-      this.currentModalId = modalId;
+        // 可加入更多資料
+      ];
     },
-    closeModal() {
-      this.currentModalId = null;
-    }
-  }
+    
+  },
 };
 </script>
