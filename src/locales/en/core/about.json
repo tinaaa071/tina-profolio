@@ -41,18 +41,12 @@
     },
     "certificate":{
         "T1": "Self-Learning",
-        "S1": "TUniversity",
-        "S2": "TUniversity",
-        "S3": "TUniversity",
-        "S4": "TUniversity",
-        "S5": "TUniversity",
-        "S6": "TUniversity",
+        "S1": "Google UX Design Certificate",
+        "S2": "Google Cloud AI Study Jam 2024",
+        "S3": "Unblock 獨角獸設計師養成計劃",
         "L1": "Native Speaker",
         "L2": "Native Speaker",
-        "L3": "Native Speaker",
-        "L4": "Native Speaker",
-        "L5": "Native Speaker",
-        "L6": "Native Speaker"
+        "L3": "Native Speaker"
     },
     "tool":{
         "T1": "Tools",

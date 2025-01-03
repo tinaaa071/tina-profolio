@@ -134,7 +134,7 @@
         <LearnCard
         v-for="(card, index) in [
         { title: $t('about.certificate.S1'), info: $t('about.certificate.L1'), cardSrc: 'https://tina-chen.netlify.app/Images/CareFit/certification1.jpg' },
-        { title: $t('about.certificate.S2'), info: $t('about.certificate.L2'), cardSrc: 'https://tina-chen.netlify.app/Images/CareFit/certification2.png' },
+        { title: $t('about.certificate.S2'), info: $t('about.certificate.L2'), cardSrc: 'https://images.credly.com/size/680x680/images/86a3283f-3e35-494f-82da-3fb3e89ba223/image.png' },
         { title: $t('about.certificate.S3'), info: $t('about.certificate.L3'), cardSrc: 'https://tina-chen.netlify.app/Images/CareFit/competition.png' }
         // Add more cards as needed
       ]"
