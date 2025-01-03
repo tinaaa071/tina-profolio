@@ -46,7 +46,7 @@ export default {
   computed: {
     posts() {
       return [
-        {
+      {
           id: 1,
           title: this.$t('post1.core.title'),
           category: this.$t('blog.item2'),
@@ -181,21 +181,15 @@ export default {
         },
       ];
     },
-    currentPage() {
-      return parseInt(this.$route.query.page) || 1;
-    },
-    itemsPerPage() {
-      return 12;
-    },
     currentCategory() {
-      return this.$route.query.category || this.$t('blog.item1');
+      return this.$t('blog.item1'); // 返回當前語系的分類
     },
     filteredPosts() {
       let posts = this.currentCategory === this.$t('blog.item1')
         ? this.posts
         : this.posts.filter((post) => post.category === this.currentCategory);
 
-      // Sort posts by date from newest to oldest
+      // 排序 posts 依日期由新到舊
       return posts.sort((a, b) => new Date(b.date.replace(/．/g, '-')) - new Date(a.date.replace(/．/g, '-')));
     },
     paginatedPosts() {
@@ -204,13 +198,53 @@ export default {
       return this.filteredPosts.slice(start, end);
     },
   },
+  data() {
+    return {
+      currentPage: 1,
+      itemsPerPage: 12,
+      currentCategory: this.$t('blog.item1'), // 初始設定分類
+    };
+  },
   methods: {
     handlePageChange(page) {
-      this.$router.push({ path: this.$route.path, query: { ...this.$route.query, page } });
+      this.currentPage = page;
+      this.updateRoute(); // 每次頁碼變化時，更新路由查詢參數
+    },
+    updateRoute() {
+      this.$router.push({
+        path: this.$route.path,
+        query: { ...this.$route.query, page: this.currentPage }, // 將 currentPage 放入查詢參數
+      });
     },
     filterByCategory(category) {
-      this.$router.push({ path: this.$route.path, query: { ...this.$route.query, category, page: 1 } });
+      this.currentCategory = category;
+      this.currentPage = 1; // 更改分類時重設頁碼為 1
+      this.updateRoute(); // 更新路由
     },
+  },
+  watch: {
+    '$route.query.page': {
+      immediate: true,
+      handler(newPage) {
+        this.currentPage = newPage ? parseInt(newPage) : 1; // 如果查詢參數有 page，則使用該值，否則默認為 1
+      },
+    },
+    '$route.query.category': {
+      immediate: true,
+      handler(newCategory) {
+        if (newCategory) {
+          this.currentCategory = newCategory;
+        } else {
+          this.currentCategory = this.$t('blog.item1');
+        }
+      },
+    },
+    '$i18n.locale': {
+      handler() {
+        // 當語言切換時保持篩選器的分類
+        this.currentCategory = this.$route.query.category || this.$t('blog.item1');
+      }
+    }
   },
 };
 </script>

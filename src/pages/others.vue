@@ -70,8 +70,8 @@ export default {
     return {
       currentPage: 1,
       itemsPerPage: 12,
-      currentCategory: null, // 預設為空
-      currentModalId: null, // 追蹤目前開啟的 modal
+      currentCategory: this.$t('other.item1'),
+      currentModalId: null // Track the current open modal ID
     };
   },
   computed: {
@@ -110,22 +110,33 @@ export default {
         {
           id: 6,
           title: this.$t('other.title.item5'),
-          category: this.$t('other.item4'),
           lottiePath: "https://lottie.host/136b3517-5777-475f-a328-01cc7737d2b5/fgd0wFcaRp.json"
-        },
+        }
       ];
     },
     filteredPosts() {
-      if (!this.currentCategory || this.currentCategory === this.$t('other.item1')) {
+      if (this.currentCategory === this.$t('other.item1')) {
         return this.modals;
       }
-      return this.modals.filter((post) => post.category === this.currentCategory);
+      return this.modals.filter(
+        (post) => post.category === this.currentCategory
+      );
     },
     paginatedPosts() {
       const start = (this.currentPage - 1) * this.itemsPerPage;
       const end = start + this.itemsPerPage;
       return this.filteredPosts.slice(start, end);
-    },
+    }
+  },
+  watch: {
+    // Watch for language change to reset the category and page
+    $i18n: {
+      handler() {
+        this.currentCategory = this.$t('other.item1');
+        this.currentPage = 1; // Reset to the first page when language changes
+      },
+      deep: true
+    }
   },
   methods: {
     handlePageChange(page) {
@@ -133,7 +144,7 @@ export default {
     },
     filterByCategory(category) {
       this.currentCategory = category;
-      this.currentPage = 1; // 切換分類時重置到第一頁
+      this.currentPage = 1; // Reset to the first page when changing category
     },
     openModal(modalId) {
       this.currentModalId = modalId;
@@ -141,6 +152,9 @@ export default {
     closeModal() {
       this.currentModalId = null;
     },
-  },
+    getModalById(id) {
+      return this.modals.find(modal => modal.id === id);
+    }
+  }
 };
 </script>
