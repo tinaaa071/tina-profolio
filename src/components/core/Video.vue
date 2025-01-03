@@ -1,13 +1,14 @@
 <template>
   <div class="relative">
     <div v-if="isVideoUrl(videoSrc)">
-      <!-- 使用 <video> 顯示影片，並加入 loop 和 muted 屬性 -->
+      <!-- 使用 <video> 顯示影片，加入 playsinline, autoplay, loop 和 muted -->
       <video 
         :src="videoSrc" 
         autoplay 
-        controls
+        playsinline
         loop
         muted
+        controls
         class="w-full"
         :class="videoClass"
       ></video>
