@@ -22,7 +22,7 @@
       </a>
       <!-- Image -->
       <img
-        class="object-cover w-full h-full rounded-lg transition-all duration-300 ease-in-out md:rounded-2xl group-hover:brightness-75"
+        class="object-cover w-full h-full rounded-lg border transition-all duration-300 ease-in-out md:rounded-2xl group-hover:brightness-75 border-B2"
         :src="imgSrc"
         alt=""
       />

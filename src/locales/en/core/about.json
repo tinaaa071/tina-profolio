@@ -66,77 +66,76 @@
     "work":{
         "T1": "Working Experience",
         "exp1": {
-            "title": "諾亞克科技股份有限公司",
-            "info": "UI/UX 設計師",
-            "desc": "TCA 主要承辦科技相關展覽及相關大型專案，如 Computex 展、智慧城市展以及行動支付產業推廣，協助推廣台灣的科技產業至國際舞台。",
+            "title": "UARK Technology Co., Ltd.",
+            "info": "UI/UX Designer",
+            "desc": "UARK Technology Co., Ltd. focuses on developing information systems for medical, long-term care, and health industries, integrating with peripheral hardware applications.",
             "L1": {
-                "title": "負責項目",
-                "1": "行動支付產業研究調查",
-                "2": "評估專案發展可行性",
-                "3": "輔導業者推廣經濟部行動支付政策",
-                "4": "協助業者與公部門合作，推廣全台行動支付之普及",
-                "5": "政府專案計畫書撰寫彙整",
-                "6": "業者溝通輔導",
-                "7": "與資服業者共同規劃產品專案（相關業者：松菸、一卡通、街口支付、Line pay…）",
-                "8": "《行動支付多元應用加值服務 / 在地推廣計畫》"
+                "title": "Responsibilities",
+                "1": "Led UI design and user experience optimization for multiple products, gaining recognition from the team and users, and improving project success rates.",
+                "2": "Collaborated with PMs and development teams, leading the entire design process from requirement interviews to delivering design files.",
+                "3": "Built a Design System using Storybook to ensure design consistency and enhance collaboration with the development team.",
+                "4": "Worked with cross-departmental teams to improve processes and user experience, reducing operational time.",
+                "5": "Handled web page layout and interactive effects design, collaborating with the engineering team using Vue and integrating with Firebase databases.",
+                "6": "Wrote a Medium column on UI/UX topics.",
+                "7": "Developed a Figma Plugin and was invited by the Adobe team to assist in development."
             },
             "L2": {
-                "title": "技能",
-                "1": "需求分析",
-                "2": "專案排程與管理",
-                "3": "跨部門溝通",
-                "4": "商家＆合作廠商溝通輔導",
-                "5": "專案計畫書撰寫",
-                "6": "商業媒合會議"
+                "title": "Projects",
+                "1": "Overseas Healthcare Personnel Training Platform (Frontend)",
+                "2": "Overseas Healthcare Personnel Training Platform (Backend)",
+                "3": "Chiayi City Urban Backup Integration Platform",
+                "4": "Taichung City Long-term Care Instant Messaging System",
+                "5": "Spring Pharmacy E-commerce Website",
+                "6": "Figma Plugin - Shape Mask"
             }
         },
         "exp2": {
             "title": "TCA",
-            "info": "專案經理 PM",
-            "desc": "TCA 主要承辦科技相關展覽及相關大型專案，如 Computex 展、智慧城市展以及行動支付產業推廣，協助推廣台灣的科技產業至國際舞台。",
+            "info": "Project Manager (PM)",
+            "desc": "TCA specializes in organizing tech-related exhibitions and large-scale projects, such as Computex, Smart City Expo, and mobile payment industry promotion, helping to bring Taiwan's tech industry to the international stage.",
             "L1": {
-                "title": "負責項目",
-                "1": "行動支付產業研究調查",
-                "2": "評估專案發展可行性",
-                "3": "輔導業者推廣經濟部行動支付政策",
-                "4": "協助業者與公部門合作，推廣全台行動支付之普及",
-                "5": "政府專案計畫書撰寫彙整",
-                "6": "業者溝通輔導",
-                "7": "與資服業者共同規劃產品專案（相關業者：松菸、一卡通、街口支付、Line pay…）",
-                "8": "《行動支付多元應用加值服務 / 在地推廣計畫》"
+                "title": "Responsibilities",
+                "1": "Conducted research and surveys on the mobile payment industry.",
+                "2": "Assessed project development feasibility.",
+                "3": "Guided businesses in promoting the Ministry of Economic Affairs' mobile payment policies.",
+                "4": "Facilitated collaboration between businesses and public sectors to promote the adoption of mobile payments across Taiwan.",
+                "5": "Compiled and wrote government project proposals.",
+                "6": "Communicated and provided guidance to businesses.",
+                "7": "Co-planned product projects with IT service providers (collaborators include Songyan, EasyCard, JKOPay, Line Pay, etc.).",
+                "8": "Mobile Payment Value-added Services/Local Promotion Project."
             },
             "L2": {
-                "title": "技能",
-                "1": "需求分析",
-                "2": "專案排程與管理",
-                "3": "跨部門溝通",
-                "4": "商家＆合作廠商溝通輔導",
-                "5": "專案計畫書撰寫",
-                "6": "商業媒合會議"
+                "title": "Skills",
+                "1": "Requirement Analysis",
+                "2": "Project Scheduling and Management",
+                "3": "Cross-department Communication",
+                "4": "Merchant and Partner Guidance",
+                "5": "Proposal Writing",
+                "6": "Business Matching Meetings"
             }
         },
         "exp3": {
-            "title": "財團法人中華經濟研究院",
-            "info": "研究員",
-            "desc": "財團法人中華經濟研究院是由政府撥款及工商界捐助，以財團法人方式成立之研究機構，從事國內、國際及特定地區經濟之研究，並以其研究成果提供政府做決策之參考。",
+            "title": "Chung-Hua Institution for Economic Research (CIER)",
+            "info": "Researcher",
+            "desc": "CIER is a government-supported and industry-funded institution conducting research on domestic, international, and regional economies, providing findings to inform government policy decisions.",
             "L1": {
-                "title": "負責項目",
-                "1": "與工研院研究團隊合作",
-                "2": "研究電動車及車用電子市場",
-                "3": "研究車用電子於台灣之商機發展",
-                "4": "相關文獻搜集分析",
-                "5": "撰寫研究分析報告與 PPT",
-                "6": "專案研究規劃",
-                "7": "《電動化趨勢下車用電子現況與商機報告》"
+                "title": "Responsibilities",
+                "1": "Collaborated with research teams from ITRI.",
+                "2": "Studied the electric vehicle and automotive electronics markets.",
+                "3": "Researched business opportunities for automotive electronics in Taiwan.",
+                "4": "Collected and analyzed relevant literature.",
+                "5": "Prepared research analysis reports and presentations.",
+                "6": "Planned research projects.",
+                "7": "Electric Vehicle Trends and Business Opportunities for Automotive Electronics Report."
             },
             "L2": {
-                "title": "技能",
-                "1": "專案研究規劃",
-                "2": "市場調查",
-                "3": "國內外文獻蒐集",
-                "4": "資料分析",
-                "5": "商業架構",
-                "6": "研究報告書撰寫"
+                "title": "Skills",
+                "1": "Research Project Planning",
+                "2": "Market Research",
+                "3": "Domestic and International Literature Review",
+                "4": "Data Analysis",
+                "5": "Business Framework Development",
+                "6": "Research Report Writing"
             }
         }
     }

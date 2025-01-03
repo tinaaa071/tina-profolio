@@ -319,7 +319,7 @@ export default {
           sections: [
             {
               listTitle: this.$t('about.work.exp1.L1.title'),
-              listItems: [this.$t('about.work.exp1.L1.1'), this.$t('about.work.exp1.L1.2'), this.$t('about.work.exp1.L1.3'), this.$t('about.work.exp1.L1.4'), this.$t('about.work.exp1.L1.5'), this.$t('about.work.exp1.L1.6'), this.$t('about.work.exp1.L1.7'), this.$t('about.work.exp1.L1.8')],
+              listItems: [this.$t('about.work.exp1.L1.1'), this.$t('about.work.exp1.L1.2'), this.$t('about.work.exp1.L1.3'), this.$t('about.work.exp1.L1.4'), this.$t('about.work.exp1.L1.5'), this.$t('about.work.exp1.L1.6'), this.$t('about.work.exp1.L1.7')],
             },
             {
               listTitle: this.$t('about.work.exp1.L2.title'),
@@ -329,10 +329,10 @@ export default {
           items: [
             { 
               id: 1, 
-              imgSrc: 'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png',
-              // linkTo: 'https://tailwindcss.com/docs/transition-duration',
+              imgSrc: 'https://i.imgur.com/TMgRmfr.png',
+              linkTo: 'https://medium.com/@tina.uiux',
               showModalBtn: false,
-              showLinkBtn: false
+              showLinkBtn: true
             },
             { 
               id: 2, 
