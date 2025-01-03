@@ -309,7 +309,7 @@
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/sG8Dx6A.mp4"
-                        class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[36px] sm:rounded-3xl overflow-hidden mx-auto"
+                        class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[28px] sm:rounded-3xl overflow-hidden mx-auto"
                         videoClass="aspect-[23/49]"
                       />
                       
@@ -338,7 +338,7 @@
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/9mQJLEP.mp4"
-                        class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[36px] sm:rounded-3xl overflow-hidden mx-auto"
+                        class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[28px] sm:rounded-3xl overflow-hidden mx-auto"
                         videoClass="aspect-[23/49]"
                       />
                       
@@ -367,7 +367,7 @@
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/SAgKNwP.mp4"
-                        class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[36px] sm:rounded-3xl overflow-hidden mx-auto"
+                        class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[28px] sm:rounded-3xl overflow-hidden mx-auto"
                         videoClass="aspect-[23/49]"
                       />
                       
@@ -396,7 +396,7 @@
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/2I7qO0x.mp4"
-                        class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[36px] sm:rounded-3xl overflow-hidden mx-auto"
+                        class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[28px] sm:rounded-3xl overflow-hidden mx-auto"
                         videoClass="aspect-[23/49]"
                       />
                       
@@ -425,7 +425,7 @@
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/2O8DlTl.mp4"
-                        class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[36px] sm:rounded-3xl overflow-hidden mx-auto"
+                        class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[28px] sm:rounded-3xl overflow-hidden mx-auto"
                         videoClass="aspect-[23/49]"
                       />
                       
