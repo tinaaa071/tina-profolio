@@ -110,6 +110,7 @@ export default {
         {
           id: 6,
           title: this.$t('other.title.item5'),
+          category: this.$t('other.item4'),
           lottiePath: "https://lottie.host/136b3517-5777-475f-a328-01cc7737d2b5/fgd0wFcaRp.json"
         }
       ];

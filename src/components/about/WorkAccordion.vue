@@ -41,8 +41,8 @@
         <div v-show="isOpen" class="p-6 space-y-6 bg-white dark:bg-transparent">
         <!-- Inner -->
         <div class="flex flex-col gap-6 sm:flex-row">
-          <div v-for="(section, index) in sections" :key="index" class="grow">
-            <p class="mb-2 text-stone-800 dark:text-white">
+          <div v-for="(section, index) in sections" :key="index" class="flex flex-col gap-2 grow">
+            <p class="text-stone-800 dark:text-white">
               {{ section.listTitle }}
             </p>
             <ul class="font-normal list-disc list-inside text-stone-500 dark:text-stone-400">
@@ -123,6 +123,10 @@
       },
     items: {
       type: Array,
+      required: true,
+    },
+    achievement: {
+      type: String,
       required: true,
     }
   },
