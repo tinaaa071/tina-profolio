@@ -75,6 +75,9 @@
         "item2": "E-commerce Database",
         "item2-1": "I used <strong>Firebase</strong> to create account management and a product database."
     },
+    "flow": { 
+        "item1": "<strong>Review Group Registration Process:</strong><br>You can click to view participant information on the learner information page and perform review actions directly on the table."
+    },
     "principle": { 
         "item1": "Simple and Intuitive Interface",
         "item1-1": "I displayed the café's information on the homepage, allowing users to intuitively view the details upon entering the website.",

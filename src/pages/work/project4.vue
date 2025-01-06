@@ -238,14 +238,41 @@
             :title="$t('work.title.item9')"
           >
             <template #content-1>
-              <CardTilt @click="isModalOpen = true" class="cursor-pointer">
-                <img 
-                  src="https://i.imgur.com/E3rF3z9.png"
-                  alt="SiteMap"
-                  class="object-cover w-full rounded-xl"
-                >
-              </CardTilt>
+              <TabCard :buttons="['work.title.item9-2', 'work.title.item9-3']">
+                <!-- Background Images -->
+                <template #backgrounds>
+                  <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                  <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                </template>
+
+                <!-- Tab Contents -->
+                <template #default="{ activeTab }">
+                  <!-- Sitemap -->
+                  <div v-if="activeTab === 1">
+                    <CardTilt @click="openModal('sitemap')" class="cursor-pointer">
+                      <img 
+                        src="https://i.imgur.com/FwKEq3D.png"
+                        alt="SiteMap"
+                        class="object-cover w-full rounded-xl"
+                      >
+                    </CardTilt>
+                  </div>
+                  <!-- User Flow -->
+                  <div v-if="activeTab === 2">
+                    <div class="space-y-6 sm:space-y-8">
+                      <p v-html="$t('project4.flow.item1')" class="font-normal"></p>
+                      <CardTilt @click="openModal('userFlow')" class="cursor-pointer">
+                        <img 
+                        src="https://i.imgur.com/tyk3gT0.png"
+                        class="object-contain w-full rounded-2xl xl:rounded-3xl"
+                        >
+                      </CardTilt>
+                    </div>
+                  </div>
+                </template>
+              </TabCard>
             </template>
+            
           </Section3>
           <!-- 設計原則 -->
           <Section3
@@ -659,10 +686,17 @@
     </div>
 
     <Modal :show="isModalOpen" @close="isModalOpen = false">
-      <div class="w-full lg:aspect-video rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
+      <div v-if="currentModal === 'sitemap'" class="w-full lg:aspect-video rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
         <img
           class="object-cover object-center w-full"
-          src="https://i.imgur.com/E3rF3z9.png"
+          src="https://i.imgur.com/FwKEq3D.png"
+          alt="Modal Image"
+        />
+      </div>
+      <div v-if="currentModal === 'userFlow'" class="w-full  rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
+        <img
+          class="object-cover object-center w-full"
+          src="https://i.imgur.com/tyk3gT0.png"
           alt="Modal Image"
         />
       </div>
@@ -679,7 +713,14 @@
   },
   setup() {
     const isModalOpen = ref(false);
-    return { isModalOpen };
+    const currentModal = ref('');
+
+    const openModal = (modalType) => {
+      currentModal.value = modalType;
+      isModalOpen.value = true;
+    };
+
+    return { isModalOpen, openModal, currentModal };
   },
   data() {
     return {

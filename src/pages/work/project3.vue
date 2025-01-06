@@ -199,7 +199,7 @@
             <template #content-1>
               <CardTilt @click="isModalOpen = true" class="cursor-pointer">
                 <img 
-                  src="https://i.imgur.com/E3rF3z9.png"
+                  src="https://i.imgur.com/bridoX3.png"
                   alt="SiteMap"
                   class="object-cover w-full rounded-xl"
                 >

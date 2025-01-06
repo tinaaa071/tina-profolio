@@ -103,6 +103,9 @@
         "item6": "Availability of real-time services",
         "item6-1": "During periods of high demand, there may be insufficient staff to handle consultations."
     },
+    "flow": { 
+        "item1": "<strong>Course Registration Process:</strong><br>After the user clicks to register, they can select the number of participants on the confirmation page. Clicking next will dynamically display either the 'Individual Registration Page' or the 'Group Registration Page'."
+    },
     "principle": { 
         "item1": "Clear and Intuitive Interface",
         "item1-1": "Provide a clear navigation bar to help users quickly find the needed content. Offer explicit step-by-step guidance for the registration process, such as a progress bar display.",

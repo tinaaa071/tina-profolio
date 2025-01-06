@@ -92,6 +92,9 @@
         "item2": "Technical Implementation Challenges",
         "item2-1": "Efficient, real-time preview features or drag-and-drop components require advanced frontend development skills, which may incur additional development costs and time, posing challenges for small teams or resource-limited companies."
     },
+    "flow": { 
+        "item1": "<strong>Review Group Registration Process:</strong><br>You can click to view participant information on the learner information page and perform review actions directly on the table."
+    },
     "principle": { 
         "item1": "Simple and intuitive interface",
         "item1-1": "The navigation bar ensures that each functional area is clearly defined.",

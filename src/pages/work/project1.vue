@@ -273,7 +273,7 @@
                 <template #default="{ activeTab }">
                   <!-- Sitemap -->
                   <div v-if="activeTab === 1">
-                    <CardTilt @click="isModalOpen = true" class="cursor-pointer">
+                    <CardTilt @click="openModal('sitemap')" class="cursor-pointer">
                       <img 
                         src="https://i.imgur.com/E3rF3z9.png"
                         alt="SiteMap"
@@ -281,17 +281,17 @@
                       >
                     </CardTilt>
                   </div>
+                  <!-- User Flow -->
                   <div v-if="activeTab === 2">
-                    <List 
-                    :items="[
-                        { title: $t('project1.challenge.item1'), content: $t('project1.challenge.item1-1') },
-                        { title: $t('project1.challenge.item2'), content: $t('project1.challenge.item2-1') },
-                        { title: $t('project1.challenge.item3'), content: $t('project1.challenge.item3-1') },
-                        { title: $t('project1.challenge.item4'), content: $t('project1.challenge.item4-1') },
-                        { title: $t('project1.challenge.item5'), content: $t('project1.challenge.item5-1') },
-                        { title: $t('project1.challenge.item6'), content: $t('project1.challenge.item6-1') }
-                      ]"
-                    />
+                    <div class="space-y-6 sm:space-y-8">
+                      <p v-html="$t('project1.flow.item1')" class="font-normal"></p>
+                      <CardTilt @click="openModal('userFlow')" class="cursor-pointer">
+                        <img 
+                        src="https://i.imgur.com/LE9SIgX.png"
+                        class="object-contain w-full rounded-2xl xl:rounded-3xl"
+                        >
+                      </CardTilt>
+                    </div>
                   </div>
                 </template>
               </TabCard>
@@ -731,10 +731,17 @@
     </div>
 
     <Modal :show="isModalOpen" @close="isModalOpen = false">
-      <div class="w-full lg:aspect-video rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
+      <div v-if="currentModal === 'sitemap'" class="w-full lg:aspect-video rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
         <img
           class="object-cover object-center w-full"
           src="https://i.imgur.com/E3rF3z9.png"
+          alt="Modal Image"
+        />
+      </div>
+      <div v-if="currentModal === 'userFlow'" class="w-full  rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
+        <img
+          class="object-cover object-center w-full"
+          src="https://i.imgur.com/LE9SIgX.png"
           alt="Modal Image"
         />
       </div>
@@ -751,7 +758,14 @@
   },
   setup() {
     const isModalOpen = ref(false);
-    return { isModalOpen };
+    const currentModal = ref('');
+
+    const openModal = (modalType) => {
+      currentModal.value = modalType;
+      isModalOpen.value = true;
+    };
+
+    return { isModalOpen, openModal, currentModal };
   },
   data() {
     return {
