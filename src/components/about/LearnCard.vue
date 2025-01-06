@@ -20,7 +20,7 @@
     </p> -->
     </div>
     <!-- Img -->
-    <div class="mt-0 h-full transition-all duration-300 ease-in-out group-hover:mt-20">
+    <div class="mt-0 h-full transition-all duration-300 ease-in-out group-hover:mt-16">
       <img 
       class="object-cover w-full h-full"
       :src="cardSrc" 

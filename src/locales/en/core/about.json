@@ -84,6 +84,27 @@
             }
         },
         "exp2": {
+            "title": "JING WEI Communications Co., Ltd.",
+            "info": "UI/UX Designer",
+            "desc": "JING WEI Communications Co., Ltd. contract project department, responsible for customized web and app development.<br>※ Reason for leaving: Department was dissolved due to business termination.",
+            "L1": {
+                "title": "Responsibilities",
+                "1": "Implemented web layout based on designs using HTML, SCSS, Bootstrap, Tailwind, and jQuery for rapid development.",
+                "2": "Established a project SCSS style library for unified adjustments and modifications.",
+                "3": "Designed Design Systems and Components using Figma Library to maintain product consistency.",
+                "4": "Used Git for remote updates and version control.",
+                "5": "Delivered design mockups and communicated with engineers regarding technical feasibility.",
+                "6": "Collaborated with business, planning, and development teams to execute projects.",
+                "7": "Handled web development, design, and revisions.",
+                "8": "Planned and managed project timelines and costs."
+            },
+            "L2": {
+                "title": "Projects",
+                "1": "Fengpei International Online Store",
+                "2": "Moment Villa"
+            }
+        },
+        "exp3": {
             "title": "TCA",
             "info": "Project Manager (PM)",
             "desc": "TCA specializes in organizing tech-related exhibitions and large-scale projects, such as Computex, Smart City Expo, and mobile payment industry promotion, helping to bring Taiwan's tech industry to the international stage.",
@@ -108,7 +129,7 @@
                 "6": "Business Matching Meetings"
             }
         },
-        "exp3": {
+        "exp4": {
             "title": "Chung-Hua Institution for Economic Research (CIER)",
             "info": "Researcher",
             "desc": "CIER is a government-supported and industry-funded institution conducting research on domestic, international, and regional economies, providing findings to inform government policy decisions.",

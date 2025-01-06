@@ -269,7 +269,7 @@
       :showLogo="section.showLogo"
       :logoSrc="section.logoSrc"
       :sections="section.sections"
-      :showAtt="true"
+      :showAtt="false"
       :items="section.items"
       :showModalBtn="section.showModalBtn"
       :showLinkBtn="section.showLinkBtn"
@@ -277,6 +277,22 @@
       <!-- Work 3 -->
       <WorkAccordion
       v-for="(section, index) in section3"
+      :key="index"
+      :title="section.title"
+      :info="section.info"
+      :time="section.time"
+      :desc="section.desc"
+      :showLogo="section.showLogo"
+      :logoSrc="section.logoSrc"
+      :sections="section.sections"
+      :showAtt="false"
+      :items="section.items"
+      :showModalBtn="section.showModalBtn"
+      :showLinkBtn="section.showLinkBtn"
+      />
+      <!-- Work 4 -->
+      <WorkAccordion
+      v-for="(section, index) in section4"
       :key="index"
       :title="section.title"
       :info="section.info"
@@ -382,10 +398,10 @@ export default {
         {
           title: this.$t('about.work.exp2.title'),
           info: this.$t('about.work.exp2.info'),
-          time: '2021.06 - 2022.02',
+          time: '2022.10 - 2023.03',
           desc: this.$t('about.work.exp2.desc'),
           showLogo: true,
-          logoSrc: 'https://tina-chen.netlify.app/Images/CareFit/company1.jpeg',
+          logoSrc: 'https://media.cakeresume.com/image/upload/s--8XCkXfyg--/c_pad,fl_png8,h_400,w_400/v1711896073/r6akdaguveqg0uhxbl1h.png',
           sections: [
             {
               listTitle: this.$t('about.work.exp2.L1.title'),
@@ -405,10 +421,63 @@ export default {
               listItems: [
                 this.$t('about.work.exp2.L2.1'),
                 this.$t('about.work.exp2.L2.2'),
-                this.$t('about.work.exp2.L2.3'),
-                this.$t('about.work.exp2.L2.4'),
-                this.$t('about.work.exp2.L2.5'),
-                this.$t('about.work.exp2.L2.6'),
+              ],
+            },
+          ],
+          items: [
+            {
+              id: 1,
+              imgSrc: 'https://i.imgur.com/TMgRmfr.png',
+              linkTo: 'https://medium.com/@tina.uiux',
+              showModalBtn: false,
+              showLinkBtn: true,
+            },
+            {
+              id: 2,
+              imgSrc: 'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png',
+              linkTo: 'https://www.figma.com/community/plugin/1420953914431407843/shape-mask',
+              showModalBtn: false,
+              showLinkBtn: true,
+            },
+          ],
+          showModalBtn: false,
+          showLinkBtn: true,
+        },
+        // 可加入更多資料
+      ];
+    },
+    section3() {
+      return [
+        {
+          title: this.$t('about.work.exp3.title'),
+          info: this.$t('about.work.exp3.info'),
+          time: '2021.06 - 2022.02',
+          desc: this.$t('about.work.exp3.desc'),
+          showLogo: true,
+          logoSrc: 'https://tina-chen.netlify.app/Images/CareFit/company1.jpeg',
+          sections: [
+            {
+              listTitle: this.$t('about.work.exp3.L1.title'),
+              listItems: [
+                this.$t('about.work.exp3.L1.1'),
+                this.$t('about.work.exp3.L1.2'),
+                this.$t('about.work.exp3.L1.3'),
+                this.$t('about.work.exp3.L1.4'),
+                this.$t('about.work.exp3.L1.5'),
+                this.$t('about.work.exp3.L1.6'),
+                this.$t('about.work.exp3.L1.7'),
+                this.$t('about.work.exp3.L1.8'),
+              ],
+            },
+            {
+              listTitle: this.$t('about.work.exp3.L2.title'),
+              listItems: [
+                this.$t('about.work.exp3.L2.1'),
+                this.$t('about.work.exp3.L2.2'),
+                this.$t('about.work.exp3.L2.3'),
+                this.$t('about.work.exp3.L2.4'),
+                this.$t('about.work.exp3.L2.5'),
+                this.$t('about.work.exp3.L2.6'),
               ],
             },
           ],
@@ -432,37 +501,37 @@ export default {
         // 可加入更多資料
       ];
     },
-    section3() {
+    section4() {
       return [
         {
-          title: this.$t('about.work.exp3.title'),
-          info: this.$t('about.work.exp3.info'),
+          title: this.$t('about.work.exp4.title'),
+          info: this.$t('about.work.exp4.info'),
           time: '2021.02 - 2021.06',
-          desc: this.$t('about.work.exp3.desc'),
+          desc: this.$t('about.work.exp4.desc'),
           showLogo: true,
           logoSrc: 'https://tina-chen.netlify.app/Images/CareFit/company2.jpeg',
           sections: [
             {
-              listTitle: this.$t('about.work.exp3.L1.title'),
+              listTitle: this.$t('about.work.exp4.L1.title'),
               listItems: [
-                this.$t('about.work.exp3.L1.1'),
-                this.$t('about.work.exp3.L1.2'),
-                this.$t('about.work.exp3.L1.3'),
-                this.$t('about.work.exp3.L1.4'),
-                this.$t('about.work.exp3.L1.5'),
-                this.$t('about.work.exp3.L1.6'),
-                this.$t('about.work.exp3.L1.7')
+                this.$t('about.work.exp4.L1.1'),
+                this.$t('about.work.exp4.L1.2'),
+                this.$t('about.work.exp4.L1.3'),
+                this.$t('about.work.exp4.L1.4'),
+                this.$t('about.work.exp4.L1.5'),
+                this.$t('about.work.exp4.L1.6'),
+                this.$t('about.work.exp4.L1.7')
               ],
             },
             {
-              listTitle: this.$t('about.work.exp3.L2.title'),
+              listTitle: this.$t('about.work.exp4.L2.title'),
               listItems: [
-                this.$t('about.work.exp3.L2.1'),
-                this.$t('about.work.exp3.L2.2'),
-                this.$t('about.work.exp3.L2.3'),
-                this.$t('about.work.exp3.L2.4'),
-                this.$t('about.work.exp3.L2.5'),
-                this.$t('about.work.exp3.L2.6'),
+                this.$t('about.work.exp4.L2.1'),
+                this.$t('about.work.exp4.L2.2'),
+                this.$t('about.work.exp4.L2.3'),
+                this.$t('about.work.exp4.L2.4'),
+                this.$t('about.work.exp4.L2.5'),
+                this.$t('about.work.exp4.L2.6'),
               ],
             },
           ],

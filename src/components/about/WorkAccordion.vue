@@ -28,8 +28,7 @@
                 {{ info }} <span class="px-1">|</span> {{ time }}
             </p>
             <!-- Desc -->
-            <p class="text-sm font-normal">
-                {{ desc }}
+            <p v-html="desc" class="text-sm font-normal">
             </p>
           </div>
         </div>

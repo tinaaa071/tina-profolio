@@ -186,13 +186,13 @@ export default {
 
     return { isModalOpen, windowWidth };
   },
-  data() {
-    return {
-      posts: [
+  computed: {
+    posts() {
+      return [
         {
           id: 1,
           link: '/blog/post/1',
-          title: "介面設計原則：打造用戶友好體驗的基石",
+          title: this.$t('post1.core.title'),
           category: this.$t('blog.item2'),
           image: "https://cdn-images-1.medium.com/max/1600/1*LSgS3r0VigNdsXHxAx9kqg.png",
           date: "2024．09．02",
@@ -200,7 +200,7 @@ export default {
         {
           id: 2,
           link: '/blog/post/7',
-          title: "從零開始成為 UI/UX 設計師：自學路徑指南",
+          title: this.$t('post7.core.title'),
           category: this.$t('blog.item3'),
           image: "https://cdn-images-1.medium.com/max/1600/1*yJi3pvZRfffeHToNDhtSmQ.png",
           date: "2024．10．20",
@@ -208,7 +208,7 @@ export default {
         {
           id: 3,
           link: '/blog/post/14',
-          title: "Bento Grid UI：靈感來自便當盒的介面設計風格",
+          title: this.$t('post14.core.title'),
           category: this.$t('blog.item2'),
           image: "https://cdn-images-1.medium.com/max/1600/1*XmqGmjWlFW0ZdY8xyTCGqA.png",
           date: "2024．11．08",
@@ -216,15 +216,13 @@ export default {
         {
           id: 4,
           link: '/blog/post/15',
-          title: "《設計心理學》 - 理解人類行為與設計的橋樑",
+          title: this.$t('post15.core.title'),
           category: this.$t('blog.item5'),
           image: "https://cdn-images-1.medium.com/max/1600/1*l9LTo-VAunwN9UZeeoca4Q.png",
           date: "2024．11．12",
         }
-      ],
-    };
-  },
-  computed: {
+      ];
+    },
     displayedPosts() {
       // lg 尺寸顯示三筆資料，其餘尺寸顯示四筆資料
       return this.windowWidth >= 1024 ? this.posts.slice(0, 3) : this.posts.slice(0, 4);
@@ -232,3 +230,4 @@ export default {
   }
 };
 </script>
+
