@@ -188,8 +188,8 @@
               <TabCard :buttons="['project4.process.item1', 'project4.process.item2']">
                 <!-- Background Images -->
                 <template #backgrounds>
-                  <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                  <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                  <img src="https://images.unsplash.com/photo-1617471346061-5d329ab9c574?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                 </template>
 
                 <!-- Tab Contents -->
@@ -200,11 +200,11 @@
                       <CardTilt>
                         <img 
                         src="https://i.imgur.com/yxlAvMM.png"
-                        class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                        class="object-cover w-full rounded-xl aspect-video"
                         >
                       </CardTilt>
                       <div
-                      class="flex flex-col gap-2 p-2 text-orange-500 rounded-2xl border border-orange-500 transition-colors sm:p-3 group bg-orange-300/20 hover:bg-orange-300/30"
+                      class="flex flex-col gap-2 p-2 text-orange-500 rounded-xl border border-orange-500 transition-colors sm:p-3 group bg-orange-300/20 hover:bg-orange-300/30"
                       >
                         <p class="flex gap-2 items-center font-semibold">
                           <Fa6SolidCircleExclamation />
@@ -223,7 +223,7 @@
                       <CardTilt>
                         <img 
                         src="https://i.imgur.com/E2y3X5X.png"
-                        class="object-cover w-full rounded-2xl xl:rounded-3xl aspect-video"
+                        class="object-cover w-full rounded-xl aspect-video"
                         >
                       </CardTilt>
                     </div>
@@ -263,8 +263,8 @@
                       <p v-html="$t('project4.flow.item1')" class="font-normal"></p>
                       <CardTilt @click="openModal('userFlow')" class="cursor-pointer">
                         <img 
-                        src="https://i.imgur.com/tyk3gT0.png"
-                        class="object-contain w-full rounded-2xl xl:rounded-3xl"
+                        src="https://i.imgur.com/qmfns4K.png"
+                        class="object-contain w-full rounded-xl"
                         >
                       </CardTilt>
                     </div>
@@ -696,7 +696,7 @@
       <div v-if="currentModal === 'userFlow'" class="w-full  rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
         <img
           class="object-cover object-center w-full"
-          src="https://i.imgur.com/tyk3gT0.png"
+          src="https://i.imgur.com/qmfns4K.png"
           alt="Modal Image"
         />
       </div>

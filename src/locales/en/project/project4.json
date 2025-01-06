@@ -76,7 +76,7 @@
         "item2-1": "I used <strong>Firebase</strong> to create account management and a product database."
     },
     "flow": { 
-        "item1": "<strong>Review Group Registration Process:</strong><br>You can click to view participant information on the learner information page and perform review actions directly on the table."
+        "item1": "<strong>Shopping Cart Checkout Process:</strong><br>After adding items to the shopping cart, you can adjust the quantity in the cart component. Clicking checkout will direct you to the checkout page to fill in the order information. Once the checkout is submitted, the order is completed."
     },
     "principle": { 
         "item1": "Simple and Intuitive Interface",
