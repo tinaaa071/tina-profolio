@@ -86,30 +86,30 @@ export default {
         {
           id: 2,
           title: this.$t('other.title.item2'),
+          category: this.$t('other.item5'),
+          image: "https://i.imgur.com/ZO6dkwj.png",
+        },
+        {
+          id: 3,
+          title: this.$t('other.title.item3'),
           category: this.$t('other.item4'),
           lottiePath: "https://lottie.host/c74a5323-70cd-49bb-bf4f-330c0f16018a/NZyeJAfs6d.json"
         },
         {
-          id: 3,
-          title: "Post 1",
-          category: this.$t('other.item3'),
-          image: "https://images.unsplash.com/photo-1725628736546-6b334a2002d7?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
           id: 4,
-          title: this.$t('other.title.item3'),
+          title: this.$t('other.title.item4'),
           category: this.$t('other.item4'),
           lottiePath: "https://lottie.host/8b4dae31-4a4a-4996-bd37-c3a86ae7006a/pTng0tWY0t.json"
         },
         {
           id: 5,
-          title: this.$t('other.title.item4'),
+          title: this.$t('other.title.item5'),
           category: this.$t('other.item4'),
           lottiePath: "https://lottie.host/919405a9-98e0-467c-8e62-196bc1f84c11/7o6pesu7Q4.json"
         },
         {
           id: 6,
-          title: this.$t('other.title.item5'),
+          title: this.$t('other.title.item6'),
           category: this.$t('other.item4'),
           lottiePath: "https://lottie.host/136b3517-5777-475f-a328-01cc7737d2b5/fgd0wFcaRp.json"
         }

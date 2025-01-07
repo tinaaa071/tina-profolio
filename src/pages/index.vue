@@ -37,7 +37,7 @@
                 <ArrowButton @click="isModalOpen = true" :disabled="isLinkDisabled" />
               </div>
               <div class="z-0 w-full h-full bg-center bg-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
-              style="background-image: url(https://i.imgur.com/otwjHqG.png)">
+              style="background-image: url(https://i.imgur.com/gCveLP0.png)">
               </div>
             </div>
           </div>

@@ -11,5 +11,5 @@
 </template>
 
 <script setup>
-const splineUrl = 'https://my.spline.design/forestphysicscopy-57a16d8cc89586bfc4a9c9bae05dbafd/'; 
+const splineUrl = 'https://my.spline.design/forestphysicscopycopy-2ba27a184a076911619f0ea1d8cfa268/'; 
 </script>
