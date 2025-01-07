@@ -98,18 +98,30 @@ export default {
         {
           id: 4,
           title: this.$t('other.title.item4'),
-          category: this.$t('other.item4'),
-          lottiePath: "https://lottie.host/8b4dae31-4a4a-4996-bd37-c3a86ae7006a/pTng0tWY0t.json"
+          category: this.$t('other.item5'),
+          image: "https://i.imgur.com/jBWXZKk.gif"
         },
         {
           id: 5,
           title: this.$t('other.title.item5'),
           category: this.$t('other.item4'),
-          lottiePath: "https://lottie.host/919405a9-98e0-467c-8e62-196bc1f84c11/7o6pesu7Q4.json"
+          lottiePath: "https://lottie.host/8b4dae31-4a4a-4996-bd37-c3a86ae7006a/pTng0tWY0t.json"
         },
         {
           id: 6,
           title: this.$t('other.title.item6'),
+          category: this.$t('other.item5'),
+          image: "https://i.imgur.com/gCveLP0.png"
+        },
+        {
+          id: 7,
+          title: this.$t('other.title.item7'),
+          category: this.$t('other.item4'),
+          lottiePath: "https://lottie.host/067cfec3-b217-4af3-9823-f95456d4b1ea/vsZUO4kQNz.json"
+        },
+        {
+          id: 8,
+          title: this.$t('other.title.item8'),
           category: this.$t('other.item4'),
           lottiePath: "https://lottie.host/136b3517-5777-475f-a328-01cc7737d2b5/fgd0wFcaRp.json"
         }
