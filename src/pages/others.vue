@@ -91,7 +91,7 @@ export default {
           id: 2,
           title: this.$t('other.title.item2'),
           category: this.$t('other.item5'),
-          image: "https://i.imgur.com/JMU4C7W.png"
+          image: "https://i.imgur.com/uJM4WFd.png"
         },
         {
           id: 3,
