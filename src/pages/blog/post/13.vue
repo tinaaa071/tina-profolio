@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*hbzy5hAo2iubtbZ5u8gHNg.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item5'),
-          date: '2024．11．05',
+          date: '2024．10．26',
           title: '《底層邏輯》 - 看清這個世界的底牌',
           desc: '破解世界運行密碼，構建自己的成功法則',
           brief: '這本書的作者，將我們的思維結構拆解成一個個簡單且可操作的層次，幫助讀者深入理解自己的思維過程，以及如何更有邏輯地面對生活中的種種挑戰。',

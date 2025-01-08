@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*XmqGmjWlFW0ZdY8xyTCGqA.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item2'),
-          date: '2024．11．10',
+          date: '2024．11．08',
           title: 'Bento Grid UI：靈感來自便當盒的介面設計風格',
           desc: '靈感來自便當，創造視覺與功能的完美平衡',
           brief: '為什麼 Bento Grid 成為設計師的新寵？這篇文章帶你深入了解這種介面設計風格，如何結合簡潔性與功能性，打造視覺與使用體驗的雙重盛宴。',

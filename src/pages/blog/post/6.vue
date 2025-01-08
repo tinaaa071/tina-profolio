@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*Y8yyZ7mfWqM9DkBiEMyJQg.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item4'),
-          date: '2024．10．16',
+          date: '2024．09．02',
           title: '打造精美的 UI 設計：必備資源與工具',
           desc: '設計精美介面，必備資源讓創意無限延伸！',
           brief: '一個好的 UI 不僅能吸引使用者，更能提升使用者體驗（UX）。作為設計師，掌握豐富的設計資源是創造成功作品的關鍵',

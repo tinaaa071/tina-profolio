@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*GxGNHeVOgVS_SFqGdY3TfQ.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item2'),
-          date: '2024．09．17',
+          date: '2024．12．26',
           title: '使用 Storybook 構建你的設計系統',
           desc: 'Storybook：讓你的設計系統輕鬆維護與共享',
           brief: '在 UI/UX 設計工作中，構建一個準確而健固的設計系統，是確保用戶體驗的重要一環。',

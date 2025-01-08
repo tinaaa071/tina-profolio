@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/0*nGEzJ1WU_0eop9iQ.gif',
           credit: 'Credit: lottiefiles',
           category: $t('blog.item2'),
-          date: '2024．11．02',
+          date: '2024．09．30',
           title: 'Lottie 動畫：打造更輕量、更高效的互動體驗',
           desc: '打造高效互動體驗，Lottie 是你的最佳選擇！',
           brief: '在現今數位時代，動畫不僅是一種視覺效果，更是一種有效的溝通工具。無論是行動應用程式、網站，還是行銷活動，動畫都能提升用戶體驗。然而，傳統的動畫製作和導入方式常常伴隨著效能瓶頸與檔案過大的問題。這時候，Lottie 成為了解決方案。',

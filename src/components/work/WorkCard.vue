@@ -8,7 +8,7 @@
       <div class="space-y-3 text-lg font-extrabold lg:space-y-5 xs:text-2xl text-stone-400 dark:text-stone-400">
         <!-- Project Buttons -->
         <button
-          v-for="tab in [1, 2, 3, 4]"
+          v-for="tab in [1, 2, 3, 4, 5]"
           :key="tab"
           type="button"
           class="inline-flex w-full leading-normal text-left transition-colors duration-300 ease-in-out"
@@ -39,7 +39,7 @@
           :desc="$t('project1.core.desc')"
           :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3')]"
           linkTo="/work/project1"
-          backgroundImage="https://i.imgur.com/8cDMtnX.png"
+          backgroundImage="https://i.imgur.com/I9WoGsH.png"
         />
         <!-- Project 2 -->
         <WorkDetail
@@ -52,7 +52,7 @@
           :desc="$t('project2.core.desc')"
           :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3')]"
           linkTo="/work/project2"
-          backgroundImage="https://i.imgur.com/CrxmhKx.png"
+          backgroundImage="https://i.imgur.com/mVThtnS.png"
         />
         <!-- Project 3 -->
         <WorkDetail
@@ -65,7 +65,7 @@
           :desc="$t('project3.core.desc')"
           :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3'), $t('projectTag.item6')]"
           linkTo="/work/project3"
-          backgroundImage="https://i.imgur.com/VyAFrb6.png"
+          backgroundImage="https://i.imgur.com/KYGZdtx.png"
         />
         <!-- Project 4 -->
         <WorkDetail
@@ -78,7 +78,20 @@
           :desc="$t('project4.core.desc')"
           :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3'), $t('projectTag.item5'), $t('projectTag.item7')]"
           linkTo="/work/project4"
-          backgroundImage="https://i.imgur.com/saj60S3.png"
+          backgroundImage="https://i.imgur.com/NcNbePH.png"
+        />
+        <!-- Project 5 -->
+        <WorkDetail
+          v-if="activeTab === 5"
+          :key="5"
+          :activeTab="activeTab"
+          @selectTab="selectTab"
+          year="2023"
+          :title="$t('project5.core.title')"
+          :desc="$t('project5.core.desc')"
+          :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item4'), $t('projectTag.item6')]"
+          linkTo="/work/project5"
+          backgroundImage="https://i.imgur.com/Xpsuh1Z.png"
         />
       </TabTransition>
     </div>

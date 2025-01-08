@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*e2YufV1qOiEC3uTYnhQl2Q.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item4'),
-          date: '2024．11．02',
+          date: '2024．09．20',
           title: '14 個歐美插圖精選網站推薦',
           desc: '精挑細選！設計師必備的 14 個歐美插圖網站推薦！',
           brief: '從極簡主義的扁平化設計，到充滿手繪質感的插畫風格。今天將介紹 14 個精選的歐美插圖素材網站，幫助你輕鬆找到理想素材。'

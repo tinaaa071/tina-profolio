@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*BoWK4m1ibJWviZh6U5rb4Q.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item5'),
-          date: '2024．10．28',
+          date: '2024．09．12',
           title: '《Not Knowing》 - 擁抱未知，成就更廣闊的世界',
           desc: '未知並非恐懼，而是探索與成長的起點',
           brief: '《Not Knowing: The Art of Turning Uncertainty into Possibility》這本書的兩位作者 Steven DSouza 和 Diana Renner 深刻剖析了「不確定性」這一看似負面的狀態，並提出了一種反直覺的觀點：接受並擁抱未知，不僅是面對現代複雜世界的關鍵能力，更是個人成長與創造力的催化劑。',

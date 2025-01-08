@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*ckOnmeIa3T-ASRMF1oGolg.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item2'),
-          date: '2024．09．17',
+          date: '2024．08．17',
           title: '如何為你的 UI 設計選擇完美的配色方案？',
           desc: '選對配色，讓你的設計從視覺中脫穎而出！',
           brief: '在 UI 設計中，配色方案是影響使用者體驗的關鍵因素之一。<br>一個好的配色方案不僅能提升美觀性，還能幫助使用者更直觀地理解產品資訊。',

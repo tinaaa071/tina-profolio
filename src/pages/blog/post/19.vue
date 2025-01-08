@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item3'),
-          date: '2024．09．17',
+          date: '2025．01．18',
           title: '身為 UI/UX 設計師開發的第一個 Figma Plugin - Shape Mask',
           desc: '設計師為自己打造，Shape Mask 解決遮罩設計的每個細節困擾！',
           brief: '身為一名設計師，我經常思考一個問題：我們是否能用更好的方法解決日常設計中的繁瑣工作？<br>這個念頭促使我從工具的使用者，轉變為工具的創造者，並開發出屬於自己的 Figma Plugin - Shape Mask。',

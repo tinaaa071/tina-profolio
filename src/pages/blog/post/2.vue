@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*Qjgp1iIbw1IY2ww1AxfbPg.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item2'),
-          date: '2024．09．10',
+          date: '2024．08．10',
           title: 'UI/UX 設計師如何培養美感？提升設計視野的實用指南',
           desc: '從平凡到驚豔，UI/UX 設計師的美感修煉之路！',
           brief: '美感，是 UI/UX 設計師不可或缺的能力之一。<br>雖然美感的養成似乎是天生的，但實際上透過後天的學習和練習，同樣可以大幅提升設計敏感度，讓作品更具吸引力與功能性。',

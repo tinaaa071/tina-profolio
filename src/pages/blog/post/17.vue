@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*FXqQSo8i5KrmhKGlImNUbA.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item4'),
-          date: '2024．09．24',
+          date: '2024．12．15',
           title: '12 款必備 Figma Plugins 推薦，提升設計效率的秘密武器',
           desc: '設計更輕鬆！12 款 Figma 插件讓你事半功倍！',
           brief: '作為設計師，我們每天都在與設計工具打交道，而 Figma 的強大與靈活性使其成為眾多設計師的首選。然而，真正讓 Figma 如虎添翼的，正是那些功能強大的插件（Plugins）。',

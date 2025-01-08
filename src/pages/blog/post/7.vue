@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*yJi3pvZRfffeHToNDhtSmQ.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item3'),
-          date: '2024．10．20',
+          date: '2024．09．08',
           title: '從零開始成為 UI/UX 設計師：自學路徑指南',
           desc: '零基礎也能成設計高手，探索 UI/UX 的學習秘訣！',
           brief: '隨著數位產品需求的增加，UI/UX 設計師成為了一個炙手可熱的職業。不過，對於那些沒有相關背景的人來說，如何自學成為一名合格的設計師是一個常見的問題。',

@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*LSgS3r0VigNdsXHxAx9kqg.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item2'),
-          date: '2024．09．02',
+          date: '2024．08．02',
           title: '介面設計原則：打造用戶友好體驗的基石',
           desc: '設計以用戶為中心，創造流暢且愉悅的數位體驗！',
           brief: '介面設計不僅僅是讓一個產品「看起來漂亮」，更是影響用戶體驗和產品成功的關鍵因素。',

@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*FPPJYMZZ48qci9vCEW7n1A.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item4'),
-          date: '2024．11．02',
+          date: '2024．10．14',
           title: '16 個日系插圖精選網站推薦',
           desc: '日系插圖精選，讓你的創作更出色！',
           brief: '日系風格以其簡約、柔和與高辨識度的特色，深受設計師和創作者喜愛。今天將介紹 16 個精選的日系插圖素材網站，幫助你輕鬆找到理想素材。'

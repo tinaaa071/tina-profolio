@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*l9LTo-VAunwN9UZeeoca4Q.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item5'),
-          date: '2024．11．05',
+          date: '2024．11．17',
           title: '《設計心理學》 - 理解人類行為與設計的橋樑',
           desc: '人性與設計的交匯點，創造更好的世界',
           brief: '在現今充滿設計的世界裡，無論是產品、服務還是應用程式，設計都與我們的生活息息相關。如何設計出符合人類需求、習慣與心理的產品？',

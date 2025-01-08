@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*hx609LG91bVhVTfCBCf_bA.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item4'),
-          date: '2024．09．24',
+          date: '2024．08．24',
           title: '5 個 UI 配色網站資源：提升設計質感的必備工具',
           desc: '快速提升設計質感！必收藏的 5 個 UI 配色資源',
           brief: '在設計網頁或移動應用程式的過程中，選擇合適的顏色組合不僅能增強視覺效果，還能提升用戶體驗。'

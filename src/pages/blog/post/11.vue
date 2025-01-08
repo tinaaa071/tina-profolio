@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/0*YBzjF3NbL3ATmRch.png',
           credit: 'Credit: lottiefiles',
           category: $t('blog.item2'),
-          date: '2024．11．03',
+          date: '2024．10．08',
           title: 'LottieFiles：讓動畫設計與開發無縫接軌的革命性工具',
           desc: '從設計到程式，一鍵搞定，LottieFiles 為動畫賦能！',
           brief: 'LottieFiles 作為一個專注於動畫的解決方案，為設計師與開發者之間搭建了一座高效的橋樑。',

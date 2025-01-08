@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*OT0pTyXTOhQ2tuQzuqSwwg.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item3'),
-          date: '2024．09．10',
+          date: '2024．11．29',
           title: 'UI/UX Designer 也要會寫程式嗎？',
           desc: '設計師是否需要程式技能？了解基礎，為創意加分！',
           brief: '在設計領域，特別是 UI/UX 設計中，是否需要掌握程式設計技能一直是一個熱門話題。有人認為設計師應該專注於設計本身，而有人則認為學會寫程式能夠提升設計的價值與效率。那麼，UI/UX 設計師到底需不需要會寫程式？',

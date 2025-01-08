@@ -8,7 +8,7 @@
           banner: 'https://cdn-images-1.medium.com/max/1600/1*kAq2lKvc-rZtuvjAFVOq_A.png',
           credit: 'Design by Tina Chen',
           category: $t('blog.item5'),
-          date: '2024．10．05',
+          date: '2024．08．28',
           title: '《原子習慣》 - 微小習慣如何帶來巨大改變',
           desc: '微小習慣，改寫人生，每天 1% 的進步創造巨大改變！',
           brief: '你是否曾為了改變某個壞習慣下定決心，卻在幾天後放棄？或者努力建立一個新習慣，卻無法持之以恆？這些困惑，我曾經深有同感，直到我讀了 James Clear 的《原子習慣》。這本書提出了一個簡單卻深刻的理念：改變不需要壯觀的開端，只需要從微不足道的小行動開始。',
