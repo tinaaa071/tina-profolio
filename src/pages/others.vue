@@ -43,18 +43,22 @@
         @close="closeModal"
         :modal="getModalById(currentModalId)"
       >
-      <div v-if="getModalById(currentModalId)?.lottiePath">
+      <div v-if="getModalById(currentModalId)?.lottiePath"
+      class="w-full lg:aspect-video rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden"
+      >
         <!-- Lottie Animation -->
         <Lottie
-        class="w-full aspect-video rounded-3xl h-[500px] object-cover object-center"
+          class="object-cover object-center w-full h-full rounded-3xl aspect-video"
           :path="getModalById(currentModalId)?.lottiePath"
           
         />
       </div>
-      <div v-else>
+      <div v-else
+      class="w-full lg:aspect-video rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden"
+      >
         <!-- Image -->
         <img
-          class="w-full aspect-video rounded-3xl h-[500px] object-cover object-center"
+          class="object-cover object-center w-full"
           :src="getModalById(currentModalId)?.image"
           alt="Modal Image"
         />
@@ -87,7 +91,7 @@ export default {
           id: 2,
           title: this.$t('other.title.item2'),
           category: this.$t('other.item5'),
-          image: "https://i.imgur.com/ZO6dkwj.png",
+          image: "https://i.imgur.com/JMU4C7W.png"
         },
         {
           id: 3,
@@ -104,24 +108,30 @@ export default {
         {
           id: 5,
           title: this.$t('other.title.item5'),
-          category: this.$t('other.item4'),
-          lottiePath: "https://lottie.host/8b4dae31-4a4a-4996-bd37-c3a86ae7006a/pTng0tWY0t.json"
-        },
-        {
-          id: 6,
-          title: this.$t('other.title.item6'),
           category: this.$t('other.item5'),
           image: "https://i.imgur.com/gCveLP0.png"
         },
         {
+          id: 6,
+          title: this.$t('other.title.item6'),
+          category: this.$t('other.item4'),
+          lottiePath: "https://lottie.host/8b4dae31-4a4a-4996-bd37-c3a86ae7006a/pTng0tWY0t.json"
+        },
+        {
           id: 7,
           title: this.$t('other.title.item7'),
-          category: this.$t('other.item4'),
-          lottiePath: "https://lottie.host/067cfec3-b217-4af3-9823-f95456d4b1ea/vsZUO4kQNz.json"
+          category: this.$t('other.item5'),
+          image: "https://i.imgur.com/ZO6dkwj.png",
         },
         {
           id: 8,
           title: this.$t('other.title.item8'),
+          category: this.$t('other.item4'),
+          lottiePath: "https://lottie.host/067cfec3-b217-4af3-9823-f95456d4b1ea/vsZUO4kQNz.json"
+        },
+        {
+          id: 9,
+          title: this.$t('other.title.item9'),
           category: this.$t('other.item4'),
           lottiePath: "https://lottie.host/136b3517-5777-475f-a328-01cc7737d2b5/fgd0wFcaRp.json"
         }
