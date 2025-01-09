@@ -285,7 +285,7 @@
       :showLogo="section.showLogo"
       :logoSrc="section.logoSrc"
       :sections="section.sections"
-      :showAtt="false"
+      :showAtt="true"
       :items="section.items"
       :showModalBtn="section.showModalBtn"
       :showLinkBtn="section.showLinkBtn"
