@@ -656,9 +656,9 @@
                     <div class="flex relative justify-center items-center w-full h-full">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
-                        videoSrc="https://www.youtube.com/embed/_6jO-zrU5Do?autoplay=1&mute=1&loop=1"
+                        videoSrc="https://i.imgur.com/Cf6jLev.mp4"
                         class="top-1 sm:top-2 w-[77%] sm:w-[64%] xl:w-[77%] object-contain"
-                        videoClass="aspect-[8/5]"
+                        videoClass="aspect-[8/5] bg-black rounded-xl"
                       />
                       
                       <!-- 圖片A，寬度90%，保持比例縮放 -->
