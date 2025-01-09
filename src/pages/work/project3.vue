@@ -20,7 +20,7 @@
         :iconsVisible="[true, false, false, true, true, true, true, false, false]"
         :linkTo="'/'"
         :icon="icon" 
-        
+        :showBTN="false"
         />
         <!-- Main Content -->
         <div>

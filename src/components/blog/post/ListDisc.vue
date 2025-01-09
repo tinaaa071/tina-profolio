@@ -16,10 +16,10 @@
       </template>
       <span 
       v-html="item.description"
-      :class="!item.title ? '' : 'ml-5 block'"
+      :class="!item.title ? '' : 'ml-3 md:ml-5 block'"
       >
       </span>
-      <div class="ml-5">
+      <div class="ml-3 md:ml-5">
         <slot :name="'slot-' + index"></slot>
       </div>
     </li>

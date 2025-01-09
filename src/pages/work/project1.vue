@@ -738,7 +738,7 @@
           alt="Modal Image"
         />
       </div>
-      <div v-if="currentModal === 'userFlow'" class="w-full  rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
+      <div v-if="currentModal === 'userFlow'" class="w-full rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
         <img
           class="object-cover object-center w-full"
           src="https://i.imgur.com/LE9SIgX.png"

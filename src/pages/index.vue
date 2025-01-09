@@ -98,7 +98,7 @@
                     Shape Mask
                   </p>
                 </div>
-                <RouterLink to="/blog/post/18" class="overflow-hidden relative w-full h-full bg-white rounded-2xl border border-white/20 sm:rounded-3xl">
+                <RouterLink to="/blog/post/19" class="overflow-hidden relative w-full h-full bg-white rounded-2xl border border-white/20 sm:rounded-3xl">
                   <img src="/plugin-banner.png" alt="" class="object-cover inset-0 w-full h-full transition-all duration-300 lg:absolute hover:scale-105">
                 </RouterLink>
               </div>

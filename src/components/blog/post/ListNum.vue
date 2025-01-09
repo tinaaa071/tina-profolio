@@ -20,10 +20,10 @@
       <!-- 這裡確保無論換行與否，description 保持一致的縮排 -->
       <span 
       v-html="item.description"
-      :class="!item.title ? '' : 'ml-5 block'"
+      :class="!item.title ? '' : 'ml-3 md:ml-5 block'"
       >
       </span>
-      <div class="ml-5">
+      <div class="ml-3 md:ml-5">
         <slot :name="'slot-' + index"></slot>
       </div>
     </li>

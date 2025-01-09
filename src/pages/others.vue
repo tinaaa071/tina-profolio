@@ -48,7 +48,7 @@
       >
         <!-- Lottie Animation -->
         <Lottie
-          class="object-cover object-center w-full h-full rounded-3xl aspect-video"
+          class="object-cover object-center w-full"
           :path="getModalById(currentModalId)?.lottiePath"
           
         />
@@ -121,7 +121,7 @@ export default {
           id: 7,
           title: this.$t('other.title.item7'),
           category: this.$t('other.item5'),
-          image: "https://i.imgur.com/ZO6dkwj.png",
+          image: "https://i.imgur.com/8xxYwJF.png",
         },
         {
           id: 8,
