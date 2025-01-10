@@ -50,6 +50,7 @@ export default {
         this.$t('tag.item2'),
         this.$t('tag.item3'),
         this.$t('tag.item4'),
+        this.$t('tag.item8'),
         this.$t('tag.item5'),
         this.$t('tag.item6'),
         this.$t('tag.item7'),
@@ -69,7 +70,7 @@ export default {
         {
           id: 2,
           title: this.$t('project2.core.title'),
-          category: [this.$t('tag.item2'), this.$t('tag.item3')],
+          category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item8')],
           image: 'https://i.imgur.com/CrxmhKx.png',
           date: '2023．10．02',
           link: '/work/project2',

@@ -50,7 +50,7 @@
           year="2024"
           :title="$t('project2.core.title')"
           :desc="$t('project2.core.desc')"
-          :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3')]"
+          :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item3'), $t('projectTag.item8')]"
           linkTo="/work/project2"
           backgroundImage="https://i.imgur.com/mVThtnS.png"
         />
