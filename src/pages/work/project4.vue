@@ -188,7 +188,7 @@
               <TabCard :buttons="['project4.process.item1', 'project4.process.item2']">
                 <!-- Background Images -->
                 <template #backgrounds>
-                  <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                  <img src="https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                   <img src="https://images.unsplash.com/photo-1617471346061-5d329ab9c574?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                 </template>
 
@@ -611,9 +611,9 @@
                     <div class="flex relative justify-center items-center w-full h-full">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
-                        videoSrc="https://www.youtube.com/embed/_6jO-zrU5Do?autoplay=1&mute=1&loop=1"
+                        videoSrc="https://www.youtube.com/embed/uoZ-FD4nUk4?autoplay=1&mute=1&loop=1"
                         class="top-1 sm:top-2 w-[77%] sm:w-[64%] xl:w-[77%] object-contain"
-                        videoClass="aspect-[8/5]"
+                        videoClass="aspect-[8/5] bg-black rounded"
                       />
                       
                       <!-- 圖片A，寬度90%，保持比例縮放 -->

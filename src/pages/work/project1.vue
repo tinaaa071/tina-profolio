@@ -658,7 +658,7 @@
                       <Video
                         videoSrc="https://i.imgur.com/Cf6jLev.mp4"
                         class="top-1 sm:top-2 w-[77%] sm:w-[64%] xl:w-[77%] object-contain"
-                        videoClass="aspect-[8/5] bg-black rounded-xl"
+                        videoClass="aspect-[8/5] bg-black rounded"
                       />
                       
                       <!-- 圖片A，寬度90%，保持比例縮放 -->
