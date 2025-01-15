@@ -375,15 +375,15 @@ export default {
           items: [
             {
               id: 1,
-              imgSrc: 'https://i.imgur.com/TMgRmfr.png',
-              linkTo: 'https://medium.com/@tina.uiux',
+              imgSrc: 'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png',
+              linkTo: 'https://www.figma.com/community/plugin/1420953914431407843/shape-mask',
               showModalBtn: false,
               showLinkBtn: true,
             },
             {
               id: 2,
-              imgSrc: 'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png',
-              linkTo: 'https://www.figma.com/community/plugin/1420953914431407843/shape-mask',
+              imgSrc: 'https://i.imgur.com/TMgRmfr.png',
+              linkTo: 'https://medium.com/@tina.uiux',
               showModalBtn: false,
               showLinkBtn: true,
             },
