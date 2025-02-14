@@ -134,7 +134,19 @@ export default {
           title: this.$t('other.title.item9'),
           category: this.$t('other.item4'),
           lottiePath: "https://lottie.host/136b3517-5777-475f-a328-01cc7737d2b5/fgd0wFcaRp.json"
-        }
+        },
+        {
+          id: 10,
+          title: this.$t('other.title.item10'),
+          category: this.$t('other.item2'),
+          image: "https://i.imgur.com/UQoxMxm.jpeg",
+        },
+        {
+          id: 11,
+          title: this.$t('other.title.item11'),
+          category: this.$t('other.item3'),
+          image: "https://i.imgur.com/37DojZC.jpeg",
+        },
       ];
     },
     filteredPosts() {
