@@ -9,8 +9,8 @@
           <div class="inline-flex flex-col col-span-4 gap-6 justify-between p-5 bg-white rounded-2xl xs:gap-10 sm:p-8 sm:col-span-2 sm:rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
             <div class="flex gap-6 items-center text-xl font-bold xs:text-2xl sm:text-3xl lg:text-4xl">
               <!-- 照片 -->
-              <div class="hidden w-32 h-32 bg-center bg-cover rounded-full xl:block"
-              style="background-image: url(https://images.unsplash.com/photo-1723920515274-ace3503adad6?q=80&w=2826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+              <div class="hidden w-32 h-32 bg-amber-100 bg-center bg-cover rounded-full xl:block">
+                <img src="https://i.imgur.com/4Y7JhID.png" alt="" class="object-cover object-center w-full">
               </div>
               <div>
                 <p class="mb-2 leading-tight sm:leading-normal text-balance">

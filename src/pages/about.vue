@@ -12,7 +12,9 @@
                 <div class="absolute -left-4 -top-12 z-10 w-52">
                   <ChatBubble />
                 </div>
-                <CardTilt class="shadow bg-center bg-cover  w-full rounded-[64px] h-full bg-[url('https://images.unsplash.com/photo-1628768534904-cf74bc8b897d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]" />
+                <CardTilt class="shadow-xs  w-full rounded-[64px] h-full bg-amber-100 items-center flex"  >
+                  <img src="https://i.imgur.com/4Y7JhID.png" alt="" class="object-cover object-center w-full">
+                </CardTilt>
               </div>
               <!-- Content -->
                <div class="w-full md:w-2/3">
