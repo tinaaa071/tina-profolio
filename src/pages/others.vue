@@ -147,6 +147,12 @@ export default {
           category: this.$t('other.item3'),
           image: "https://i.imgur.com/37DojZC.jpeg",
         },
+        {
+          id: 12,
+          title: this.$t('other.title.item12'),
+          category: this.$t('other.item2'),
+          image: "https://i.imgur.com/6hFQyoF.png",
+        },
       ];
     },
     filteredPosts() {
