@@ -287,7 +287,7 @@
                       <p v-html="$t('project1.flow.item1')" class="font-normal"></p>
                       <CardTilt @click="openModal('userFlow')" class="cursor-pointer">
                         <img 
-                        src="https://i.imgur.com/LE9SIgX.png"
+                        src="https://i.imgur.com/RiAO6LO.png"
                         class="object-contain w-full rounded-xl"
                         >
                       </CardTilt>
