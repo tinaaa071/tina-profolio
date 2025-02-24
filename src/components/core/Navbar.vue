@@ -60,7 +60,8 @@
                 <!-- Resume -->
                 <li>
                   <DefaultButton 
-                   :to="'/'"
+                   :isExternal="true"
+                   :linkTo="'https://drive.google.com/file/d/1hF-7DTst3hVZQ1EPWc3Bd9Qo_GsqH2B6/view?usp=sharing'"
                    :showRightIcon="true"
                    :icon="icon"
                    :text="$t('nav.item6')"

@@ -9,8 +9,8 @@
           <div class="inline-flex flex-col col-span-4 gap-6 justify-between p-5 bg-white rounded-2xl xs:gap-10 sm:p-8 sm:col-span-2 sm:rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
             <div class="flex gap-6 items-center text-xl font-bold xs:text-2xl sm:text-3xl lg:text-4xl">
               <!-- 照片 -->
-              <div class="hidden w-32 h-32 bg-amber-100 bg-center bg-cover rounded-full xl:block">
-                <img src="https://i.imgur.com/4Y7JhID.png" alt="" class="object-cover object-center w-full">
+              <div class="hidden overflow-hidden w-32 h-32 bg-amber-100 bg-center bg-cover rounded-full xl:block">
+                <img src="https://i.imgur.com/XiOOKB4.jpeg" alt="" class="object-cover object-center w-full">
               </div>
               <div>
                 <p class="mb-2 leading-tight sm:leading-normal text-balance">
@@ -42,10 +42,10 @@
             </div>
           </div>
           <!-- 第三格 -->
-          <a href="https://www.linkedin.com/in/chen-tina/" target="_blank" class="hidden overflow-hidden row-span-2 rounded-2xl sm:rounded-3xl lg:block">
+          <a href="https://drive.google.com/file/d/1hF-7DTst3hVZQ1EPWc3Bd9Qo_GsqH2B6/view?usp=sharing" target="_blank" class="hidden overflow-hidden row-span-2 rounded-2xl sm:rounded-3xl lg:block">
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10">
-                <ArrowButton link-to="https://www.linkedin.com/in/chen-tina/" />
+                <ArrowButton link-to="https://drive.google.com/file/d/1hF-7DTst3hVZQ1EPWc3Bd9Qo_GsqH2B6/view?usp=sharing" />
               </div>
               <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
                 style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;">
