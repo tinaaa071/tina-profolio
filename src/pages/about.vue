@@ -8,7 +8,7 @@
       <div class="mx-auto w-10/12 bg-white cursor-default dark:bg-stone-900 dark:text-white text-stone-800">
             <div class="flex flex-col gap-6 items-center w-full md:gap-10 md:flex-row">
               <!-- Img -->
-              <div class="relative w-1/2 md:w-1/3 lg:w-1/4">
+              <div class="relative w-3/4 xs:w-1/2 md:w-1/3 lg:w-1/4">
                 <div class="absolute -left-4 -top-12 z-10 w-52">
                   <ChatBubble />
                 </div>
