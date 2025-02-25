@@ -61,7 +61,7 @@
                 <li>
                   <DefaultButton 
                    :isExternal="true"
-                   :linkTo="'https://drive.google.com/file/d/1hF-7DTst3hVZQ1EPWc3Bd9Qo_GsqH2B6/view?usp=sharing'"
+                   :linkTo="'https://drive.google.com/file/d/1mdYSrsp-mTUDNvluXgR6szHTIeu3CVkD/view?usp=sharing'"
                    :showRightIcon="true"
                    :icon="icon"
                    :text="$t('nav.item6')"
@@ -96,13 +96,13 @@
             <li class="flex gap-2">
               <!-- Resume -->
               <DefaultButton 
-                   :to="'/'"
-                   :showLeftIcon="false"
-                   :showRightIcon="true"
-                   :icon="icon"
-                   :text="$t('nav.item6')"
-                   class="w-full border-white bg-stone-50 dark:border-stone-900 text-stone-800 hover:bg-B3/80 dark:hover:bg-stone-800/50 dark:hover:text-white"
-                  />
+                :isExternal="true"
+                :linkTo="'https://drive.google.com/file/d/1mdYSrsp-mTUDNvluXgR6szHTIeu3CVkD/view?usp=sharing'"
+                :showRightIcon="true"
+                :icon="icon"
+                :text="$t('nav.item6')"
+                class="w-full border-white bg-stone-50 dark:border-stone-900 text-stone-800 hover:bg-B3/80 dark:hover:bg-stone-800/50 dark:hover:text-white"
+              />
               <!-- Language -->
               <LanguageSwitcher class="border-2 border-stone-50" />
               <!-- Dark Toggle -->
@@ -135,7 +135,15 @@ export default {
     const showMenu = ref(false);
     const isVisible = ref(true);
     const lastScrollY = ref(window.scrollY);
-    const toggleMenu = () => showMenu.value = !showMenu.value;
+    const toggleMenu = () => {
+      showMenu.value = !showMenu.value;
+
+      if (showMenu.value) {
+        document.body.style.overflow = "hidden"; // 禁止滾動
+      } else {
+        document.body.style.overflow = ""; // 恢復滾動
+      }
+    };
     // const lottieAnimationData = logoDark;
 
     // Update main menu items based on your pages structure
