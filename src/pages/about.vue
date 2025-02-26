@@ -13,7 +13,7 @@
                   <ChatBubble />
                 </div>
                 <CardTilt class="flex items-center w-full h-full shadow-xs aspect-square"  >
-                  <img src="https://i.imgur.com/XiOOKB4.jpeg" alt="" class="object-cover object-center overflow-hidden w-full h-full rounded-[64px]">
+                  <img src="https://i.imgur.com/aBGSFku.jpeg" alt="" class="object-cover object-center overflow-hidden w-full h-full rounded-[64px]">
                 </CardTilt>
               </div>
               <!-- Content -->

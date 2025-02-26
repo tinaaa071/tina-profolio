@@ -10,7 +10,7 @@
             <div class="flex gap-6 items-center text-xl font-bold xs:text-2xl sm:text-3xl lg:text-4xl">
               <!-- 照片 -->
               <div class="hidden overflow-hidden w-32 h-32 bg-amber-100 bg-center bg-cover rounded-full xl:block">
-                <img src="https://i.imgur.com/XiOOKB4.jpeg" alt="" class="object-cover object-center w-full">
+                <img src="https://i.imgur.com/aBGSFku.jpeg" alt="" class="object-cover object-center w-full">
               </div>
               <div>
                 <p class="mb-2 leading-tight sm:leading-normal text-balance">

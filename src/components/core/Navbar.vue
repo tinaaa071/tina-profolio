@@ -116,7 +116,7 @@
 </template>
 
 <script>
-import { computed, ref, onMounted, onBeforeUnmount } from "vue";
+import { computed, ref, onMounted, onBeforeUnmount, watch } from "vue";
 import { useRoute } from 'vue-router';
 import MingcuteArrowDownCircleFill from '~icons/mingcute/arrow-down-circle-fill';
 // import logoDark from '@/assets/logo-w.json';
@@ -135,15 +135,18 @@ export default {
     const showMenu = ref(false);
     const isVisible = ref(true);
     const lastScrollY = ref(window.scrollY);
-    const toggleMenu = () => {
-      showMenu.value = !showMenu.value;
+    watch(showMenu, (newVal) => {
+      document.body.style.overflow = newVal ? "hidden" : "";
+    });
 
-      if (showMenu.value) {
-        document.body.style.overflow = "hidden"; // 禁止滾動
-      } else {
-        document.body.style.overflow = ""; // 恢復滾動
-      }
-    };
+    // 監聽路由變化，關閉 Menu
+    watch(route, () => (showMenu.value = false));
+
+    // 組件卸載時確保恢復滾動
+    onBeforeUnmount(() => (document.body.style.overflow = ""));
+
+    // 切換菜單
+    const toggleMenu = () => (showMenu.value = !showMenu.value);
     // const lottieAnimationData = logoDark;
 
     // Update main menu items based on your pages structure

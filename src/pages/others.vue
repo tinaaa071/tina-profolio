@@ -48,7 +48,7 @@
       >
         <!-- Lottie Animation -->
         <Lottie
-          class="object-cover object-center w-full"
+          class="object-cover object-center w-full h-full"
           :path="getModalById(currentModalId)?.lottiePath"
           
         />
