@@ -12,7 +12,7 @@
         />
         <!-- Right -->
         <div class="xl:col-span-7 xs:col-span-5">
-          <p class="mb-6 font-normal" v-html="content">
+          <p class="mb-6 font-normal text-justify" v-html="content">
           </p>
           <CardTilt v-if="bannerSrc">
             <img 

@@ -85,7 +85,7 @@
           >
             <template #content-1>
               <div>
-                <p class="mb-6 font-normal">
+                <p class="mb-6 font-normal text-justify">
                   {{ $t('project3.background.item1') }}
                 </p>
                 <Parallax
@@ -479,10 +479,10 @@
     </div>
 
     <Modal :show="isModalOpen" @close="isModalOpen = false">
-      <div class="w-full lg:aspect-video rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
+      <div class="w-full  rounded-3xl max-h-[500px] object-cover object-center overflow-y-scroll overflow-hidden">
         <img
           class="object-cover object-center w-full"
-          src="https://i.imgur.com/E3rF3z9.png"
+          src="https://i.imgur.com/bridoX3.png"
           alt="Modal Image"
         />
       </div>

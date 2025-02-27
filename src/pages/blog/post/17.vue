@@ -192,7 +192,7 @@
               :showNote="true"
               note="📌&nbsp;&nbsp;延伸閱讀：開發 Shape Mask Plugin 的過程"
               :isExternal="false"
-              :link="'/blog/post/18'" 
+              :link="'/blog/post/19'" 
               :title="'身為 UI/UX 設計師開發的第一個 Figma Plugin - Shape Mask'" 
               :content="'設計師為自己打造，Shape Mask 解決遮罩設計的每個細節困擾！'" 
               :image="'https://cdn-images-1.medium.com/max/1600/1*VUK2az0HJHzilzN0Rpgv0A.png'" 

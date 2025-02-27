@@ -87,7 +87,7 @@
           >
             <template #content-1>
               <div>
-                <p class="mb-6 font-normal">
+                <p class="mb-6 font-normal text-justify">
                   {{ $t('project2.background.item1') }}
                 </p>
                   <!-- <CreditImg 

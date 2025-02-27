@@ -84,7 +84,7 @@
           >
             <template #content-1>
               <div>
-                <p class="mb-6 font-normal">
+                <p class="mb-6 font-normal text-justify">
                   {{ $t('project5.background.item1') }}
                 </p>
                 <CardTilt>

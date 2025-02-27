@@ -4,14 +4,14 @@
       <div
         v-for="(card, index) in cards"
         :key="index"
-        class="flex flex-row gap-4 p-4 w-full rounded-lg border border-white items-top"
+        class="flex flex-col gap-4 p-4 w-full rounded-lg border border-white xs:flex-row items-top"
       >
         <img
           :src="card.avatarSrc"
           alt="Avatar"
-          class="object-cover mb-2 w-16 rounded-2xl aspect-square"
+          class="object-cover self-center mb-2 w-16 rounded-2xl aspect-square"
         />
-        <div>
+        <div class="text-center xs:text-left">
             <p class="mb-2 font-semibold">
                 {{ card.title }}
             </p>
