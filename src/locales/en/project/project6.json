@@ -1,0 +1,133 @@
+{
+    "core":{
+        "title": "Spring Pharmacy E-commerce Website",
+        "desc": "Provide customers with a convenient shopping experience"
+    },
+    "info":{
+        "item1": "Spring Pharmacy",
+        "item2": "UI / UX Designer",
+        "item3": "UI Design, UX Research, Design System"
+    },
+    "demand": {
+        "item1": "Web Visual Design",
+        "item2": "Shopping Process Design",
+        "item3": "Return Process Design",
+        "item4": "Member Center"
+    },
+    "team":{
+        "item1": "UI / UX Designer",
+        "item2": "Front-end Developer",
+        "item3": "Back-end Developer",
+        "item4": "Project Manager",
+        "item5": "System Analyst"
+    },
+    "brief": {
+        "item1": "Spring Pharmacy commissioned us to redesign their online e-commerce website, providing consumers with online shopping functionality.",
+        "item2": "Design aligned with company image",
+        "item2-1": "Website design tailored to match the corporate identity.",
+        "item3": "Diverse product range",
+        "item3-1": "Hierarchical categories showcasing a wide variety of products.",
+        "item4": "Convenient shopping process",
+        "item4-1": "Providing users with a seamless shopping experience."
+    },
+    "briefCard": {
+        "item1": "Redesigned the e-commerce platform to align with the company's current brand image and designed the shopping and checkout functionality.",  
+        "item2": "In this project, I closely collaborated with the PM and two engineers. I was responsible for the entire UX and UI design process and deliverables, defining the visual system, screen layouts, and functional workflows.",  
+        "item3": "The company offers a wide range of products and aimed to reference existing e-commerce platforms like MOMO Shopping to provide users with a rich shopping experience.",  
+        "item4": "We designed a shopping platform that aligns with the corporate identity, providing users with a convenient shopping experience."  
+    },
+    "background": {
+        "item1": "With the expansion of Spring Pharmacy's business, develop the Spring Pharmacy online shopping platform to meet consumers' shopping needs."
+    },
+    "goal": {
+        "item1": "Redesign the website interface",  
+        "item2": "Provide a diverse product category structure",  
+        "item3": "Product page display",  
+        "item4": "Seamless shopping experience",  
+        "item5": "Member center"  
+    },
+    "problem": {
+        "item1": "The company wants to make adjustments based on the original design",
+        "item2": "The functional process cannot be easily modified",
+        "item3": "The product classification is complex",
+        "item4": "The return mechanism is complicated"
+    },
+    "sa": { 
+        "item1": "Refer to the company's existing design identity",
+        "item2": "Analyze the existing shopping process",
+        "item3": "Refer to the features of shopping platforms on the market"
+    },
+    "ta": { 
+        "item1": "Consumers of Spring Pharmacy",
+        "item1-1": "Consumers who expect to shop on the company's online platform"
+    },
+    "principle": {
+        "item1": "Clear and Intuitive Interface",
+        "item1-1": "Provide a clear navigation bar to help users quickly find the content they need.",
+        "item2": "Well-Defined Product Categories",
+        "item2-1": "A hierarchical structure offers detailed and comprehensive product classifications.",
+        "item3": "Simple and Understandable Shopping Cart and Checkout Process",
+        "item3-1": "Avoid excessive steps and ensure users can easily modify quantities or remove items.",
+        "item4": "Payment Security",
+        "item4-1": "Support multiple payment methods to provide a convenient shopping experience."
+    },
+    "system": { 
+        "item1": "In this project, we adopted <strong>Figma</strong> to build and manage the design system, enabling a consistent and efficient component development process. The design system includes commonly used UI components such as buttons, forms, cards, and navigation bars. It is organized modularly for reusability and scalability. Our design system has the following features:",
+        "item2": "Consistent Design Specifications", 
+        "item2-1": "Design systems provide unified style guides and design specifications to ensure consistency in the appearance of components across different pages and modules.", 
+        "item3": "Presentation in Different Sizes", 
+        "item3-1": "Developers can compare the style of components displayed at various sizes.", 
+        "item4": "Component State Presentation", 
+        "item4-1": "Developers can compare the style of components displayed in different states."
+    },
+    "mockup": { 
+        "tab": {
+            "item1": "Registration Page",
+            "item2": "Home Page",
+            "item3": "Product Page",
+            "item4": "Category Search Page",
+            "item5": "Shopping Cart",
+            "item6": "Member Center"
+        },
+        "info": {
+            "item1": "Registration Form",
+            "item1-1": "Displays required fields and relevant prompts.",
+            "item2": "Hierarchical Categories",
+            "item2-1": "Hierarchical menu for product classification.",
+            "item3": "Promotion Section",
+            "item3-1": "Provides promotional activities for different types of products.",
+            "item4": "Product Options",
+            "item4-1": "Offers product options and functions such as adding to the cart.",
+            "item5": "Toggle Button",
+            "item5-1": "Prevents excessive page content length.",
+            "item6": "Subcategory Menu",
+            "item6-1": "Provides hierarchical product classification.",
+            "item7": "Filter Function",
+            "item7-1": "Offers various filtering criteria.",
+            "item8": "Fixed Card",
+            "item8-1": "Allows users to check amounts and proceed to the next step.",
+            "item9": "Shopping Cart List",
+            "item9-1": "Displays products in the shopping cart in a list format.",
+            "item10": "Order Information Section",
+            "item10-1": "Fills in recipient and order details.",
+            "item11": "Payment Methods Section",
+            "item11-1": "Allows selection of different payment methods.",
+            "item12": "Member Center Sidebar",
+            "item12-1": "Enables switching between different functional pages.",
+            "item13": "Order Card",
+            "item13-1": "Clicking the button expands the product overview.",
+            "item14": "Order Details Page",
+            "item14-1": "Clicking the card reveals detailed information."
+        }
+    },
+    "handoff": { 
+        "item1": "In <strong>Figma</strong>, I demonstrated various breakpoints for RWD screens and the visual effects on different devices to ensure the design provides a good experience across different screen sizes."
+    },
+    "feedback": {
+        "item1": "Hierarchical Classification",
+        "item1-1": "In this project, the product classification was meticulously planned, with multiple hierarchical structures. I referred to well-established shopping websites to learn how to maintain a clear structure when dealing with a vast number of product categories.",
+        "item2": "Shopping Function Planning",
+        "item2-1": "The shopping functionality in this project was relatively complex, as products included various promotions and free gifts. Additionally, the return mechanism needed to be considered during the shopping process. I designed the shopping flow in a step-by-step manner, providing users with clear navigation and presenting relevant information consistently. This challenged my ability to structure and display a large amount of information effectively."  
+    }
+    
+}

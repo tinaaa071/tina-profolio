@@ -99,6 +99,14 @@ export default {
           date: '2023．11．20',
           link: '/work/project5',
         },
+        {
+          id: 6,
+          title: this.$t('project6.core.title'),
+          category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item6')],
+          image: 'https://i.imgur.com/f5fWpCU.png',
+          date: '2023．05．30',
+          link: '/work/project6',
+        },
       ];
     },
     // Filter posts based on the selected category
