@@ -87,7 +87,8 @@
             "item3": "Product Page",
             "item4": "Category Search Page",
             "item5": "Shopping Cart",
-            "item6": "Member Center"
+            "item6": "Member Center",
+            "item7": "Order Return"
         },
         "info": {
             "item1": "Registration Form",
@@ -117,7 +118,13 @@
             "item13": "Order Card",
             "item13-1": "Clicking the button expands the product overview.",
             "item14": "Order Details Page",
-            "item14-1": "Clicking the card reveals detailed information."
+            "item14-1": "Clicking the card reveals detailed information.",
+            "item15": "Return Options",
+            "item15-1": "Choose between a full return or a partial return.",
+            "item16": "Return Item List",
+            "item16-1": "Select the items to be returned.",
+            "item17": "Confirmation Modal",
+            "item17-1": "Confirm the items for this return once again."
         }
     },
     "handoff": { 
