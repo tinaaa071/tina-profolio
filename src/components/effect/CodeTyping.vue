@@ -1,5 +1,5 @@
 <template>
-    <pre ref="codeContainer" class="w-full h-32 whitespace-pre-wrap rounded-2xl sm:h-full aspect-square sm:rounded-3xl" style="margin: 0"><code ref="code" class="block overflow-hidden language-javascript" :style="{ fontSize: fontSize }">{{ displayedText }}</code></pre>
+    <pre ref="codeContainer" class="w-full h-32 whitespace-pre-wrap rounded-2xl sm:h-60 lg:h-full lg:aspect-square sm:rounded-3xl" style="margin: 0"><code ref="code" class="block overflow-hidden language-javascript" :style="{ fontSize: fontSize }">{{ displayedText }}</code></pre>
   </template>
   
   <script>
