@@ -16,12 +16,12 @@
     >
       <div class="flex relative flex-row justify-between items-center px-4 py-2.5 w-full md:py-3.5 xl:text-stone-900 sm:flex-row dark:xl:text-white">
         <!-- Logo -->
-        <div class="flex justify-between items-center w-full">
+        <div class="flex items-center justify-between w-full">
           <div class="inline-flex items-center space-x-3.5 group">
             
             <RouterLink to="/" class="">
               <!-- Your SVG Logo -->
-              <div :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="flex gap-3 items-center group">
+              <div :class="showMenu ? 'text-white dark:text-stone-900' : 'text-stone-900 dark:text-white'" class="flex items-center gap-3 group">
                 <div class="flex items-center transition-colors duration-300 md:block group-hover:text-stone-400">
                   <!-- <Lottie 
                     path="https://lottie.host/3ea80e9c-705e-44c7-9c5e-a8e8018951bc/26n6zjfUFF.json" 
@@ -45,10 +45,10 @@
         </div>
 
         <!-- Web Menu -->
-        <div class="flex gap-10 justify-center items-center">
+        <div class="flex items-center justify-center gap-10">
           <div class="hidden lg:block">
             <div class="whitespace-nowrap sm:flex sm:flex-row sm:justify-between">
-              <ul class="flex flex-col gap-2 items-center text-sm font-semibold sm:flex-row">
+              <ul class="flex flex-col items-center gap-2 text-sm font-semibold sm:flex-row">
                 <!-- Menu -->
                 <li v-for="item in menuItems" :key="item.to">
                   <RouterLink :to="item.to" 
@@ -97,7 +97,7 @@
               <!-- Resume -->
               <DefaultButton 
                 :isExternal="true"
-                :linkTo="'https://drive.google.com/file/d/1mdYSrsp-mTUDNvluXgR6szHTIeu3CVkD/view?usp=sharing'"
+                :linkTo="'https://drive.google.com/file/d/1ccc1AzUNShjbRu25aXmAy07CFoVgWLXV/view?usp=sharing'"
                 :showRightIcon="true"
                 :icon="icon"
                 :text="$t('nav.item6')"
