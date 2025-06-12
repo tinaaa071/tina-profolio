@@ -5,11 +5,11 @@
     <BackToTop class="z-20" />
     <!-- Profile 區塊 -->
      <div class="pt-40 pb-8 mx-auto md:pb-16 md:px-10 xl:px-28 md:pt-44">
-      <div class="mx-auto w-10/12 bg-white cursor-default dark:bg-stone-900 dark:text-white text-stone-800">
-            <div class="flex flex-col gap-6 items-center w-full md:gap-10 md:flex-row">
+      <div class="w-10/12 mx-auto bg-white cursor-default dark:bg-stone-900 dark:text-white text-stone-800">
+            <div class="flex flex-col items-center w-full gap-6 md:gap-10 md:flex-row">
               <!-- Img -->
               <div class="relative w-3/4 xs:w-1/2 md:w-1/3 lg:w-1/4">
-                <div class="absolute -left-4 -top-12 z-10 w-52">
+                <div class="absolute z-10 -left-4 -top-12 w-52">
                   <ChatBubble />
                 </div>
                 <CardTilt class="flex items-center w-full h-full shadow-xs aspect-square"  >
@@ -35,7 +35,7 @@
     >
       <div class="flex flex-col">
       <!-- List Items -->
-      <div class="flex overflow-hidden flex-col rounded-2xl divide-y sm:rounded-3xl dark:border dark:border-white">
+      <div class="flex flex-col overflow-hidden divide-y rounded-2xl sm:rounded-3xl dark:border dark:border-white">
         <!-- List Items -->
         <div
           v-for="(item, index) in [
@@ -86,7 +86,7 @@
             { title: 'about.language.S2', content: 'about.language.L2' }
           ]"
           :key="index"
-          class="flex gap-6 px-6 py-5 w-full font-semibold rounded-2xl border shadow sm:rounded-3xl border-B4"
+          class="flex w-full gap-6 px-6 py-5 font-semibold border shadow rounded-2xl sm:rounded-3xl border-B4"
         >
           <div>
             <!-- Title -->
@@ -108,7 +108,7 @@
     <div class="grid grid-cols-1 gap-4 xs:gap-6 xs:grid-cols-2">
         <!-- List Items -->
         <div
-          class="flex gap-6 px-6 py-5 w-full font-semibold rounded-2xl border shadow sm:rounded-3xl border-B4"
+          class="flex w-full gap-6 px-6 py-5 font-semibold border shadow rounded-2xl sm:rounded-3xl border-B4"
         >
           <div>
             <!-- Title -->
@@ -162,7 +162,8 @@
             <Icon
                 v-for="(image, index) in [
                   { url: 'https://i.imgur.com/7pnxjJF.png', tooltip: 'Figma' },
-                  { url: 'https://i.imgur.com/2YcIFwQ.png', tooltip: 'Sketch' }
+                  { url: 'https://i.imgur.com/2YcIFwQ.png', tooltip: 'Sketch' },
+                  { url: 'https://logos-world.net/wp-content/uploads/2021/02/Google-Analytics-Logo.png', tooltip: 'GA' }
                 ]"
                 :key="index"
                 :imageUrl="image.url"
