@@ -97,7 +97,7 @@
               <!-- Resume -->
               <DefaultButton 
                 :isExternal="true"
-                :linkTo="'https://drive.google.com/file/d/1ccc1AzUNShjbRu25aXmAy07CFoVgWLXV/view?usp=sharing'"
+                :linkTo="'https://drive.google.com/file/d/1j4dJSKY_2yoZNSpXyM-v8HdY7LKUlIgr/view?usp=sharing'"
                 :showRightIcon="true"
                 :icon="icon"
                 :text="$t('nav.item6')"
