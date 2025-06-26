@@ -1,5 +1,5 @@
 <template>
-    <RouterLink :to="linkTo" >
+    <RouterLink :to="linkTo" :id="id" >
       <!-- img -->
       <div class="group">
         <div
@@ -10,7 +10,7 @@
       >
       <div
           v-if="showTag"
-          class="flex absolute right-4 bottom-4 z-10 flex-wrap gap-2"
+          class="absolute z-10 flex flex-wrap gap-2 right-4 bottom-4"
         >
           <!-- 判斷 category 是陣列還是單一值 -->
           <template v-if="Array.isArray(post.category)">
@@ -55,6 +55,10 @@
     name: "PostItem",
     props: {
       linkTo: {
+        type: String,
+        required: true,
+      },  
+      id: {
         type: String,
         required: true,
       },  

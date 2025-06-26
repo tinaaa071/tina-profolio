@@ -3,7 +3,7 @@
     <Navbar />
     <ProgressBar />
     <BackToTop class="z-20" />
-    <div class="pt-24 pb-6 mx-auto min-h-screen sm:pt-28 md:pt-32">
+    <div class="min-h-screen pt-24 pb-6 mx-auto sm:pt-28 md:pt-32">
       <Tabs
         :currentCategory="currentCategory"
         :categories="categories"
@@ -60,7 +60,7 @@ export default {
     posts() {
       return [
         {
-          id: 1,
+          id: 'project1',
           title: this.$t('project1.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3')],
           image: 'https://i.imgur.com/8cDMtnX.png',
@@ -68,7 +68,7 @@ export default {
           link: '/work/project1',
         },
         {
-          id: 2,
+          id: 'project2',
           title: this.$t('project2.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item8')],
           image: 'https://i.imgur.com/CrxmhKx.png',
@@ -76,7 +76,7 @@ export default {
           link: '/work/project2',
         },
         {
-          id: 3,
+          id: 'project3',
           title: this.$t('project3.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item6')],
           image: 'https://i.imgur.com/VyAFrb6.png',
@@ -84,7 +84,7 @@ export default {
           link: '/work/project3',
         },
         {
-          id: 4,
+          id: 'project4',
           title: this.$t('project4.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item5'), this.$t('tag.item7')],
           image: 'https://i.imgur.com/saj60S3.png',
@@ -92,7 +92,7 @@ export default {
           link: '/work/project4',
         },
         {
-          id: 5,
+          id: 'project5',
           title: this.$t('project5.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item4'), this.$t('tag.item6')],
           image: 'https://i.imgur.com/POmXkiu.png',
@@ -100,7 +100,7 @@ export default {
           link: '/work/project5',
         },
         {
-          id: 6,
+          id: 'project6',
           title: this.$t('project6.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item6')],
           image: 'https://i.imgur.com/f5fWpCU.png',

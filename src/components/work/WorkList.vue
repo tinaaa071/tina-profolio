@@ -7,6 +7,7 @@
       :showTag="false"
       :showDate="false"
       :linkTo="post.link"
+      :id="post.id"
       />
     </div>
   </template>
