@@ -51,7 +51,9 @@
               <ul class="flex flex-col items-center gap-2 text-sm font-semibold sm:flex-row">
                 <!-- Menu -->
                 <li v-for="item in menuItems" :key="item.to">
-                  <RouterLink :to="item.to" 
+                  <RouterLink 
+                    :to="item.to" 
+                    :id="item.id"
                     class="flex items-center px-4 py-2.5 whitespace-nowrap transition-colors duration-200 sm:px-5"
                     :class="isActive(item.to) ? 'text-stone-900 dark:text-white' : 'text-stone-400 hover:text-stone-900 dark:hover:text-white'">
                     {{ $t(item.text) }}
@@ -86,7 +88,9 @@
           <ul class="flex flex-col gap-2 text-sm font-semibold">
             <!-- Menu -->
             <li v-for="item in menuItems" :key="item.to">
-              <RouterLink :to="item.to" 
+              <RouterLink 
+                :to="item.to" 
+                :id="item.id"
                 class="flex items-center px-2 py-2.5 whitespace-nowrap transition-colors duration-200"
                 :class="isActive(item.to) ? 'text-white dark:text-stone-900' : 'text-stone-500 hover:text-white dark:hover:text-stone-900'">
                 {{ $t(item.text) }}
@@ -151,11 +155,11 @@ export default {
 
     // Update main menu items based on your pages structure
     const menuItems = [
-      { to: '/', text: 'nav.item1' },             // Home page
-      { to: '/work/works', text: 'nav.item2' },             // work page
-      { to: '/blog/blog', text: 'nav.item3' },         // Blog listing page
-      { to: '/others', text: 'nav.item4' },       // Others page
-      { to: '/about', text: 'nav.item5' },        // About page
+      { to: '/', text: 'nav.item1', id: 'home' },             
+      { to: '/work/works', text: 'nav.item2', id: 'works' },  
+      { to: '/blog/blog', text: 'nav.item3', id: 'blog' },    
+      { to: '/others', text: 'nav.item4', id: 'others' },         
+      { to: '/about', text: 'nav.item5', id: 'about' },           
     ];
 
     // Check if a menu item should be active based on the current route
