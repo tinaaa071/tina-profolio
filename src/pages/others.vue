@@ -3,7 +3,7 @@
       <Navbar />
       <ProgressBar />
       <BackToTop class="z-20" />
-      <div class="pt-24 pb-6 mx-auto min-h-screen sm:pt-28 md:pt-32">
+      <div class="min-h-screen pt-24 pb-6 mx-auto sm:pt-28 md:pt-32">
         <Tabs
           :currentCategory="currentCategory"
           :categories="[
@@ -139,7 +139,7 @@ export default {
           id: 10,
           title: this.$t('other.title.item10'),
           category: this.$t('other.item2'),
-          image: "https://i.imgur.com/UQoxMxm.jpeg",
+          image: "https://i.meee.com.tw/aiNdYox.jpg",
         },
         {
           id: 11,
