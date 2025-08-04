@@ -1,6 +1,6 @@
 <template>
   <div 
-  class="overflow-hidden relative w-full h-44 font-semibold rounded-2xl border shadow sm:rounded-3xl aspect-video group border-B4 text-stone-800 dark:border-white dark:text-white"
+  class="relative w-full overflow-hidden font-semibold border shadow h-44 rounded-2xl sm:rounded-3xl aspect-video group border-B4 text-stone-800 dark:border-white dark:text-white"
   >
     <!-- Title -->
     <!-- <div class="absolute backdrop-blur-md bg-stone-900/10">
@@ -11,7 +11,7 @@
       </div>
     </div> -->
     <!-- Hidden 區塊 -->
-    <div class="absolute -top-32 p-4 w-full bg-white transition-all duration-300 ease-in-out dark:bg-stone-900 group-hover:top-0">
+    <div class="absolute w-full p-4 transition-all duration-300 ease-in-out bg-white shadow-md -top-32 dark:bg-stone-900 group-hover:top-0">
     <p class="mb-1">
         {{ title }}
     </p>
@@ -20,7 +20,7 @@
     </p> -->
     </div>
     <!-- Img -->
-    <div class="mt-0 h-full transition-all duration-300 ease-in-out group-hover:mt-16">
+    <div class="h-full mt-0 transition-all duration-300 ease-in-out group-hover:mt-16">
       <img 
       class="object-cover w-full h-full"
       :src="cardSrc" 

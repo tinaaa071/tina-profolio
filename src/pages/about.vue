@@ -69,7 +69,7 @@
     >
       <div class="flex flex-wrap gap-2 sm:gap-3">
         <Tag
-        :tag="[$t('about.skill.S1'), $t('about.skill.S2'), $t('about.skill.S3'), $t('about.skill.S4'), $t('about.skill.S5'), $t('about.skill.S6'), $t('about.skill.S7'), $t('about.skill.S8'), $t('about.skill.S9'), $t('about.skill.S10')]" 
+        :tag="[$t('about.skill.S1'), $t('about.skill.S2'), $t('about.skill.S3'), $t('about.skill.S4'), $t('about.skill.S5'), $t('about.skill.S6'), $t('about.skill.S7'), $t('about.skill.S8'), $t('about.skill.S9'), $t('about.skill.S10'), $t('about.skill.S11')]" 
         class="bg-B4"
         />
       </div>
@@ -138,7 +138,9 @@
         { title: $t('about.certificate.S1'), info: $t('about.certificate.L1'), cardSrc: 'https://tina-chen.netlify.app/Images/CareFit/certification1.jpg' },
         { title: $t('about.certificate.S2'), info: $t('about.certificate.L2'), cardSrc: 'https://images.credly.com/size/680x680/images/86a3283f-3e35-494f-82da-3fb3e89ba223/image.png' },
         { title: $t('about.certificate.S3'), info: $t('about.certificate.L3'), cardSrc: 'https://i.imgur.com/F9scbI7.png' },
-        { title: $t('about.certificate.S4'), info: $t('about.certificate.L4'), cardSrc: 'https://tina-chen.netlify.app/Images/CareFit/competition.png' }
+        { title: $t('about.certificate.S4'), info: $t('about.certificate.L4'), cardSrc: 'https://i.meee.com.tw/tD70DVW.jpg' },
+        { title: $t('about.certificate.S5'), info: $t('about.certificate.L5'), cardSrc: 'https://i.meee.com.tw/6kEoK3D.jpg' },
+        { title: $t('about.certificate.S6'), info: $t('about.certificate.L5'), cardSrc: 'https://tina-chen.netlify.app/Images/CareFit/competition.png' },
         // Add more cards as needed
       ]"
       :key="index"

@@ -24,7 +24,8 @@
         "S7": "Frontend Development (Vue)",
         "S8": "Product Strategy",
         "S9": "Team Communication",
-        "S10": "Project Management"
+        "S10": "Project Management",
+        "S11": "Data Analysis"
     },
     "language":{
         "T1": "I speak",
@@ -44,7 +45,9 @@
         "S1": "Google UX Design Certificate",
         "S2": "Google Cloud AI Study Jam 2024",
         "S3": "UX 三刀流 - 使用者體驗設計課程",
-        "S4": "Unblock 獨角獸設計師養成計劃",
+        "S4": "AI/UX人工智慧輔助產品體驗設計",
+        "S5": "XREX Academy 區塊鏈與加密貨幣基礎",
+        "S6": "Unblock 獨角獸設計師養成計劃",
         "L1": "Native Speaker",
         "L2": "Native Speaker",
         "L3": "Native Speaker",
