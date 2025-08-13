@@ -1,7 +1,7 @@
 <template>
     <div class="grid grid-cols-1 gap-8 mb-8 lg:mb-16 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xs:gap-x-6 xs:gap-y-10 lg:gap-x-10 lg:gap-y-16">
       <PostCard 
-      v-for="post in posts" 
+      v-for="post in orderedPosts" 
       :key="post.id" 
       :post="post" 
       :showTag="false"
@@ -21,6 +21,11 @@
         default: () => [], // Set a default value to avoid undefined errors
       },
     },
+    computed: {
+    orderedPosts() {
+      return [...this.posts].sort((a, b) => a.order - b.order)
+    }
+  }
   };
   </script>
   

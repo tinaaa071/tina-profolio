@@ -61,6 +61,7 @@ export default {
       return [
         {
           id: 'project1',
+          order: 1,
           title: this.$t('project1.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3')],
           image: 'https://i.imgur.com/8cDMtnX.png',
@@ -69,6 +70,7 @@ export default {
         },
         {
           id: 'project2',
+          order: 2,
           title: this.$t('project2.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item8')],
           image: 'https://i.imgur.com/CrxmhKx.png',
@@ -77,6 +79,7 @@ export default {
         },
         {
           id: 'project3',
+          order: 3,
           title: this.$t('project3.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item6')],
           image: 'https://i.imgur.com/VyAFrb6.png',
@@ -85,6 +88,7 @@ export default {
         },
         {
           id: 'project4',
+          order: 4,
           title: this.$t('project4.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item5'), this.$t('tag.item7')],
           image: 'https://i.imgur.com/saj60S3.png',
@@ -93,6 +97,7 @@ export default {
         },
         {
           id: 'project5',
+          order: 5,
           title: this.$t('project5.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item4'), this.$t('tag.item6')],
           image: 'https://i.imgur.com/POmXkiu.png',
@@ -101,11 +106,21 @@ export default {
         },
         {
           id: 'project6',
+          order: 6,
           title: this.$t('project6.core.title'),
           category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item6')],
           image: 'https://i.imgur.com/f5fWpCU.png',
           date: '2023．05．30',
           link: '/work/project6',
+        },
+        {
+          id: 'project7',
+          order: 7,
+          title: this.$t('project7.core.title'),
+          category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item6')],
+          image: 'https://i.meee.com.tw/p6cMgGB.png',
+          date: '2025．08．13',
+          link: '/work/project7',
         },
       ];
     },

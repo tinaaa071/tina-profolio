@@ -1,0 +1,185 @@
+{
+    "core":{
+        "title": "neoCare Assistant",
+        "desc": "A convenient data management tool for organizations"
+    },
+    "info":{
+        "item1": "Partner institutions",
+        "item2": "UI / UX Designer",
+        "item3": "UI Design, UX Research, Design System, Prototype"
+    },
+    "demand": {
+        "item1": "App UI Design",
+        "item2": "Bluetooth Device Connection",
+        "item3": "Measurement Data Entry",
+        "item4": "Measurement Record Management",
+        "item5": "Other Feature Expansion Planning"
+    },
+    "team":{
+        "item1": "UI / UX Designer",
+        "item2": "Front-end Developer",
+        "item3": "Back-end Developer",
+        "item4": "Project Manager",
+        "item5": "System Analyst",
+        "item6": "iOS App Developer"
+    },
+    "brief": {
+        "item1": "This product is an app management tool designed for service organizations, enabling easy connection to devices for adding new data and real-time management of resident information.",
+        "item2": "Add Data via Device Connection",
+        "item2-1": "Enable Bluetooth to connect devices and select resident profiles to add new data.",
+        "item3": "Data Management",
+        "item3-1": "View resident data in real-time with options to add, edit, or delete records.",
+        "item4": "Future Expansion Plans",
+        "item4-1": "Design the app architecture to accommodate future feature development and expansion."
+    },
+    "briefCard": {
+        "item1": "Paired with the web-based SaaS system, it provides resident data management features to facilitate easy management for organizations.",
+        "item2": "In this project, I closely collaborated with the PM and engineers. I was responsible for the entire UX and UI design process and deliverables, from defining the problem to delivering the final visual design to the engineers.",
+        "item3": "The project’s functional planning and architecture are currently vague and require room for future feature development.",
+        "item4": "We complete the functionalities in phases to ensure partner organizations can use the system, gather user feedback for continuous improvement, and plan for further feature integrations in the future."
+    },
+    "background": {
+        "item1": "Our company plans to develop this app management tool, paired with a web-based SaaS system, to provide organizations with convenient data management capabilities, facilitating easy management of resident information."
+    },
+    "goal": {
+        "item1": "Comprehensive UI Design Guidelines",
+        "item2": "Integration with Web-based SaaS System for Resident Data Management",
+        "item3": "Enable Organizations to Manage Resident Data via the App",
+        "item4": "App Connects to Bluetooth Devices to Add Data"
+    },
+    "problem": {
+        "item1": "Current feature planning is unclear",
+        "item2": "Must allow room for future feature development",
+        "item3": "Maintain consistent brand UI style"
+    },
+    "sa": { 
+        "item1": "Maintain the company's product visual style",
+        "item2": "Understand the requirements for Bluetooth device connectivity",
+        "item3": "Understand the requirements for resident data management",
+        "item4": "Plan for future feature expansions"
+    },
+    "ta": { 
+        "item1": "Partner Clients",
+        "item1-1": "Supported by the web-based SaaS system, providing supplementary features."
+    },
+    "research": {
+        "item1": "How to connect Bluetooth devices?",
+        "item2": "How to integrate with the web-based SaaS system?",
+        "item3": "How to provide convenient feature operations?",
+        "item4": "How to allow room for future feature development?"
+    },
+    "hypo": { 
+        "item1": "Provide a clear functional interface",
+        "item1-1": "Considering this is a data management tool with numerous forms and operations, we maintain a simple interface design.",
+        "item2": "Clear information presentation",
+        "item2-1": "We keep all page forms consistent in style to enhance usability and reduce development costs.",
+        "item3": "Comply with design standards",
+        "item3-1": "We follow iOS design guidelines and use native UI components for development."
+    },
+    "challenge": { 
+        "item1": "Layout Planning",
+        "item1-1": "To accommodate future feature expansions, the overall functional architecture and hierarchy need to be carefully considered.",
+        "item2": "Interface for Different Device Versions",
+        "item2-1": "The product includes both mobile and tablet versions, requiring UI/UX considerations for different devices.",
+        "item3": "Feature Operation",
+        "item3-1": "The product involves managing and operating various data forms, necessitating smooth interface presentation and usability."
+    },
+    "principle": { 
+        "item1": "Brand Style",
+        "item1-1": "Maintain our company’s brand style by using consistent color schemes.",
+        "item2": "Consistency",
+        "item2-1": "Develop following iOS design guidelines to ensure component consistency.",
+        "item3": "Ease of Use",
+        "item3-1": "Considering the product involves extensive data and form operations, we maintain a uniform presentation to ensure smooth functionality."
+    },
+    "system": { 
+        "item1": "In this project, I used <strong>Figma</strong> to establish and manage the design system, enabling a consistent and efficient component development process. The design system covers commonly used UI components, including buttons, forms, cards, and more."
+    },
+    "mockup": { 
+        "tab": {
+            "item1": "Registration",
+            "item2": "Home",
+            "item3": "Search",
+            "item4": "Course Categories",
+            "item5": "Course Detail",
+            "item6": "Course Enrollment",
+            "item7": "Training Institute",
+            "item8": "Apply Review Progress",
+            "item9": "Online Consultation"
+        },
+        "info": {
+            "item1": "Segmented Control",
+            "item1-1": "Use dynamic switching to toggle between different forms, catering to different user registrations while maintaining a unified design and reducing additional development efforts.",
+            "item2": "Real-time Validation",
+            "item2-1": "Integrate API data to enable real-time validation, reducing manual review time.",
+            "item3": "Search Function",
+            "item3-1": "Place the search function in the Hero section of the homepage, allowing visitors to search for courses or providers instantly, enhancing convenience.",
+            "item4": "Latest News Section",
+            "item4-1": "Showcase the latest three news updates on the website.",
+            "item5": "Popular Course Categories",
+            "item5-1": "Categorize courses by type to help users quickly find suitable categories.",
+            "item6": "Student Reviews",
+            "item6-1": "Display the latest course reviews from students to provide visitors with feedback on the courses.",
+            "item7": "Introduction to Taiwan's Features",
+            "item7-1": "Since most visitors are international students, provide information about Taiwan (transportation, cuisine, attractions, etc.) to help them quickly understand the country.",
+            "item8": "Modal popup",
+            "item8-1": "With the use of popup design, users can check information at any time on the screen. We also provide popular tags and recommended courses for reference.",
+            "item9": "Collapse Button", 
+            "item9-1": "Click the Filter button on the left to collapse the filter, making it easier for users to browse.", 
+            "item10": "Course Card", 
+            "item10-1": "Courses are designed in card format, with key information displayed, allowing users to easily view required items in real time.",
+            "item11": "Fixed Card", 
+            "item11-1": "Fix the course information card on the right side, allowing users to click and register for the course anytime while browsing the information on the left.", 
+            "item12": "Segmented Control", 
+            "item12-1": "Users can instantly switch between information for easy and quick content search.",
+            "item13": "Progress Bar", 
+            "item13-1": "Displays the registration stage with a progress bar, dividing the steps to avoid a lengthy filling process.", 
+            "item14": "Group Registration Section", 
+            "item14-1": "Use the 'Add New' button to add members, and a file upload button is also provided to batch add members.",
+            "item15": "Drawer Component", 
+            "item15-1": "After clicking the 'Add New' button, the form will slide out from the right side, saving space on the page.",
+            "item16": "Course Unit Card", 
+            "item16-1": "Provides contact information and consultation button.", 
+            "item17": "Segment Control", 
+            "item17-1": "Users can instantly switch between information to browse the unit's introduction, courses, and transportation details.",
+            "item18": "Segment Control",
+            "item18-1": "Allows toggling to view courses with different registration statuses.",
+            "item19": "Registered Course Card",
+            "item19-1": "Presented in a card format, displaying various review statuses and action buttons.",
+            "item20": "Registration Details", 
+            "item20-1": "Click the registration course card to view the details.", 
+            "item21": "Registration Form", 
+            "item21-1": "This is a group registration demonstration, where you can check the registration review status of each member.",
+            "item22": "Chat Window", 
+            "item22-1": "Click the consultation button in the lower-right corner to expand the chat window. The units that have conducted the conversation will be listed for easy viewing.",
+            "item23": "Real-time Chat", 
+            "item23-1": "The chat window allows real-time communication with the course units and supports file uploads."
+        }
+    },
+    "prototype": { 
+        "item1": "Login Function",
+        "item1-1": "After selecting the unit’s API source, users can enter their account information. Once logged in, they can switch between functions via the bottom navigation bar.",
+        "item2": "Add Data",
+        "item2-1": "After selecting a resident, data is populated which can be edited in the fields before choosing to upload or delete the entry.",
+        "item3": "Measurement Record Management",
+        "item3-1": "Manage all added data records with filtering options available, as well as upload and delete functionalities.",
+        "item4": "Bluetooth Device Connection",
+        "item4-1": "By clicking Bluetooth pairing, users can select and manage Bluetooth devices."
+    },
+    "handoff": { 
+        "item1": "In <strong>Figma</strong>, I designed interfaces for different devices and provided screen annotations so the development team can understand the UI presentation across devices.",
+        "item2-1": "Mobile",
+        "item2-2": "Tablet"
+    },
+    "feedback": {
+        "item1": "Design Adaptation for Different Devices",
+        "item1-1": "This project includes both mobile and tablet versions. Each interface requires tailored design planning while maintaining consistency. I spent considerable time recreating the old version as a foundation to design the expanded features for this project, ensuring the design remains consistent.",
+        "item2": "Compliance with iOS Guidelines",
+        "item2-1": "As this app is intended for release on the App Store, it must comply with iOS standards. Considering both development and future maintenance, I primarily used native iOS UI components with modifications.",
+        "item3": "Presentation and Operation of Complex Data",
+        "item3-1": "This product involves extensive data management and table displays, combined with various operational features. I maintained a consistent design to reduce the learning curve for users and positioned secondary functions where they do not interfere with core operations.",
+        "item4": "Considering Various Scenarios",
+        "item4-1": "Since many functional requirements for this product remain unclear and will be planned later, I needed to pre-plan the overall structure and hierarchy to avoid impacting future development. I considered whether the design could remain consistent without major modifications, even when adding more complex features."
+    }
+    
+}
