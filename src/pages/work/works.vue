@@ -117,7 +117,7 @@ export default {
           id: 'project7',
           order: 7,
           title: this.$t('project7.core.title'),
-          category: [this.$t('tag.item2'), this.$t('tag.item3'), this.$t('tag.item6')],
+          category: [this.$t('tag.item2'), this.$t('tag.item4')],
           image: 'https://i.meee.com.tw/p6cMgGB.png',
           date: '2025．08．13',
           link: '/work/project7',
