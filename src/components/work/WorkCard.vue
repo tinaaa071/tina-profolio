@@ -1,5 +1,5 @@
 <template>
-  <div class="grid overflow-hidden grid-cols-1 rounded-2xl cursor-default lg:grid-cols-2 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent dark:border dark:border-white">
+  <div class="grid grid-cols-1 overflow-hidden cursor-default rounded-2xl lg:grid-cols-2 text-stone-900 dark:text-white sm:rounded-3xl h-fit dark:bg-transparent dark:border dark:border-white">
     <!-- Left Section -->
     <div class="p-5 bg-white sm:p-8 dark:bg-transparent">
       <p class="tracking-[.25em] lg:mb-10 mb-4 xs:mb-6 text-xs xs:text-base xl:text-lg font-bold ">
@@ -8,7 +8,7 @@
       <div class="space-y-3 text-lg font-extrabold lg:space-y-5 xs:text-2xl text-stone-400 dark:text-stone-400">
         <!-- Project Buttons -->
         <button
-          v-for="tab in [1, 2, 3, 4, 5]"
+          v-for="(tab, index) in [1, 2, 3, 7, 4]"
           :key="tab"
           type="button"
           class="inline-flex w-full leading-normal text-left transition-colors duration-300 ease-in-out"
@@ -18,7 +18,9 @@
           }"
           @click="selectTab(tab)"
         >
-          <p class="whitespace-nowrap">{{ `0${tab} -` }}&nbsp;</p>
+          <p class="whitespace-nowrap">
+            {{ `0${[1, 2, 3, 4, 5][index]} -` }}&nbsp;
+          </p>
           {{ $t(`project${tab}.core.title`) }}
         </button>
       </div>
@@ -69,6 +71,19 @@
         />
         <!-- Project 4 -->
         <WorkDetail
+          v-if="activeTab === 7"
+          :key="7"
+          :activeTab="activeTab"
+          @selectTab="selectTab"
+          year="2025"
+          :title="$t('project7.core.title')"
+          :desc="$t('project7.core.desc')"
+          :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item4')]"
+          linkTo="/work/project7"
+          backgroundImage="https://i.meee.com.tw/1xBOq9t.png"
+        />
+        <!-- Project 5 -->
+        <WorkDetail
           v-if="activeTab === 4"
           :key="4"
           :activeTab="activeTab"
@@ -80,19 +95,18 @@
           linkTo="/work/project4"
           backgroundImage="https://i.imgur.com/NcNbePH.png"
         />
-        <!-- Project 5 -->
-        <WorkDetail
-          v-if="activeTab === 5"
-          :key="5"
+        <!-- <WorkDetail
+          v-if="activeTab === 7"
+          :key="7"
           :activeTab="activeTab"
           @selectTab="selectTab"
           year="2023"
-          :title="$t('project5.core.title')"
-          :desc="$t('project5.core.desc')"
+          :title="$t('project7.core.title')"
+          :desc="$t('project7.core.desc')"
           :tag="[$t('projectTag.item1'), $t('projectTag.item2'), $t('projectTag.item4'), $t('projectTag.item6')]"
-          linkTo="/work/project5"
+          linkTo="/work/project7"
           backgroundImage="https://i.imgur.com/Xpsuh1Z.png"
-        />
+        /> -->
       </TabTransition>
     </div>
   </div>

@@ -305,7 +305,7 @@
                     <div class="relative flex items-center justify-end ">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
-                        videoSrc="https://player.vimeo.com/video/1109539241?autoplay=1&loop=1&muted=1&controls=0&background=1"
+                        videoSrc="https://raw.githubusercontent.com/tinaaa071/video/main/video1.mp4"
                         class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[24px] sm:rounded-3xl overflow-hidden mx-auto"
                         videoClass="aspect-[23.5/48]"
                       />
@@ -326,7 +326,7 @@
                     <div class="relative flex items-center justify-end">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
-                        videoSrc="https://player.vimeo.com/video/1109573431?autoplay=1&loop=1&muted=1&controls=0&background=1"
+                        videoSrc="https://raw.githubusercontent.com/tinaaa071/video/main/video2.mp4"
                         class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[24px] sm:rounded-3xl overflow-hidden mx-auto"
                         videoClass="aspect-[23.5/48]"
                       />
@@ -347,7 +347,7 @@
                     <div class="relative flex items-center justify-end">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
-                        videoSrc="https://player.vimeo.com/video/1109560361?autoplay=1&loop=1&muted=1&controls=0&background=1"
+                        videoSrc="https://raw.githubusercontent.com/tinaaa071/video/main/video3.mp4"
                         class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[24px] sm:rounded-3xl overflow-hidden mx-auto"
                         videoClass="aspect-[23.5/48]"
                       />
@@ -368,7 +368,7 @@
                     <div class="relative flex items-center justify-end">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
-                        videoSrc="https://player.vimeo.com/video/1109563019?autoplay=1&loop=1&muted=1&controls=0&background=1"
+                        videoSrc="https://raw.githubusercontent.com/tinaaa071/video/main/video4.mp4"
                         class="top-0 sm:top-1 w-[48%] sm:w-[76%] xl:w-[96%] object-contain rounded-[24px] sm:rounded-3xl overflow-hidden mx-auto"
                         videoClass="aspect-[23.5/48]"
                       />

@@ -376,6 +376,7 @@ export default {
                 this.$t('about.work.exp1.L2.5'),
                 this.$t('about.work.exp1.L2.6'),
                 this.$t('about.work.exp1.L2.7'),
+                this.$t('about.work.exp1.L2.8'),
               ],
             },
           ],

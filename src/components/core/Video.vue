@@ -8,7 +8,6 @@
         playsinline
         loop
         muted
-        controls
         class="w-full"
         :class="videoClass"
       ></video>
