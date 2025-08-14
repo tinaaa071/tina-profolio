@@ -317,7 +317,7 @@
           <!-- Banner -->
           <Parallax 
             class="md:h-[500px] h-64"
-            backgroundImage="https://i.imgur.com/2CZvWYx.png"
+            backgroundImage="https://raw.githubusercontent.com/tinaaa071/video/main/project1.png"
             />
           <!-- 設計產出 -->
           <Section3
@@ -334,7 +334,7 @@
                     <img 
                       src="https://i.imgur.com/6pMAdyR.png"
                       alt="Banner"
-                      class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
+                      class="object-cover w-full mb-8 rounded-2xl xl:rounded-3xl aspect-video"
                     >
                   </a>
                 </CardTilt>
@@ -367,9 +367,9 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/uxyQ8VJ.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
-                          <div class="hidden absolute -right-56 top-1/4 lg:block">
+                          <div class="absolute hidden -right-56 top-1/4 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
@@ -377,7 +377,7 @@
                             :text="$t('project1.mockup.info.item1-1')"
                             />
                           </div>
-                          <div class="hidden absolute -right-56 top-1/2 lg:block">
+                          <div class="absolute hidden -right-56 top-1/2 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
@@ -391,7 +391,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/yrC4Va5.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -409,7 +409,7 @@
                             :text="$t('project1.mockup.info.item4-1')"
                             />
                           </div>
-                          <div class="hidden absolute -right-56 top-1/2 lg:block">
+                          <div class="absolute hidden -right-56 top-1/2 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
@@ -439,9 +439,9 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/0riUTFr.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
-                          <div class="hidden absolute -right-56 top-1/3 lg:block">
+                          <div class="absolute hidden -right-56 top-1/3 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
@@ -455,7 +455,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/gc0Hdez.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[12%] -left-56 lg:block">
                             <HoverIconButton 
@@ -465,7 +465,7 @@
                             :text="$t('project1.mockup.info.item9-1')"
                             />
                           </div>
-                          <div class="hidden absolute -right-56 top-1/4 lg:block">
+                          <div class="absolute hidden -right-56 top-1/4 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
@@ -479,7 +479,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/0FHQJ7D.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[5%] -right-56 lg:block">
                             <HoverIconButton 
@@ -503,7 +503,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/4lT873l.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -525,7 +525,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/58QRnM4.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -541,7 +541,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/CMoGLpZ.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -565,7 +565,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/dwTOBeF.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -587,7 +587,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/601998J.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -597,7 +597,7 @@
                             :text="$t('project1.mockup.info.item20-1')"
                             />
                           </div>
-                          <div class="hidden absolute -right-56 top-1/2 lg:block">
+                          <div class="absolute hidden -right-56 top-1/2 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
@@ -611,7 +611,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/N5gqmnY.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[30%] -right-56 lg:block">
                             <HoverIconButton 
@@ -625,9 +625,9 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/2KNev1D.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
-                          <div class="hidden absolute -right-56 top-1/2 lg:block">
+                          <div class="absolute hidden -right-56 top-1/2 lg:block">
                             <HoverIconButton 
                             class=""
                             icon="💡"
@@ -653,7 +653,7 @@
               <div class="bg-B3 dark:bg-stone-600">
                 <div class="p-6 border-none xl:px-56 md:px-10 md:py-8">
                   <div class="pb-6 xs:pb-12 lg:pb-16">
-                    <div class="flex relative justify-center items-center w-full h-full">
+                    <div class="relative flex items-center justify-center w-full h-full">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/Cf6jLev.mp4"
@@ -700,7 +700,7 @@
               <CardTilt>
                     <img 
                     src="https://i.imgur.com/U8VNbFs.jpeg"
-                    class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
+                    class="object-cover w-full mb-8 rounded-2xl xl:rounded-3xl aspect-video"
                   >
                 </CardTilt>
                 <List 

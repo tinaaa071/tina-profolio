@@ -204,9 +204,9 @@
                         >
                       </CardTilt>
                       <div
-                      class="flex flex-col gap-2 p-2 text-orange-500 rounded-xl border border-orange-500 transition-colors sm:p-3 group bg-orange-300/20 hover:bg-orange-300/30"
+                      class="flex flex-col gap-2 p-2 text-orange-500 transition-colors border border-orange-500 rounded-xl sm:p-3 group bg-orange-300/20 hover:bg-orange-300/30"
                       >
-                        <p class="flex gap-2 items-center font-semibold">
+                        <p class="flex items-center gap-2 font-semibold">
                           <Fa6SolidCircleExclamation />
                           {{ $t('work.title.item8-3') }}
                         </p>
@@ -294,7 +294,7 @@
           <!-- Banner -->
           <Parallax 
             class="md:h-[500px] h-64"
-            backgroundImage="https://i.imgur.com/wgj2oQY.png"
+            backgroundImage="https://raw.githubusercontent.com/tinaaa071/video/main/project4.png"
             />
           <!-- 設計產出 -->
           <Section3
@@ -308,7 +308,7 @@
                   <img 
                       src="https://i.imgur.com/11XFA6v.png"
                       alt="Banner"
-                      class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
+                      class="object-cover w-full mb-8 rounded-2xl xl:rounded-3xl aspect-video"
                     >
                 </CardTilt>
                 <p 
@@ -339,7 +339,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/HDsblsg.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -353,7 +353,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/zRkk4Lh.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -369,7 +369,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/7h45Lmq.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -383,7 +383,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/jpT9idj.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -399,7 +399,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/sih7OBx.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -413,7 +413,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/viArLD5.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -429,7 +429,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/uRRJTEQ.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[30%] -right-56 lg:block">
                             <HoverIconButton 
@@ -451,7 +451,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/BYyfiGG.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[40%] -right-56 lg:block">
                             <HoverIconButton 
@@ -465,7 +465,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/5gStBtR.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[30%] -right-56 lg:block">
                             <HoverIconButton 
@@ -481,7 +481,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/myYfwoQ.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -495,7 +495,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/1HblQik.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[20%] -right-56 lg:block">
                             <HoverIconButton 
@@ -517,7 +517,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/PKOLIKb.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[30%] -right-56 lg:block">
                             <HoverIconButton 
@@ -533,7 +533,7 @@
                         <div class="relative mb-8">
                           <img 
                           src="https://i.imgur.com/cVRGPXk.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[20%] -right-56 lg:block">
                             <HoverIconButton 
@@ -555,7 +555,7 @@
                         <div class="relative mb-">
                           <img 
                           src="https://i.imgur.com/BRdfuW6.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[20%] -right-56 lg:block">
                             <HoverIconButton 
@@ -571,7 +571,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/WDuEud0.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[10%] -right-56 lg:block">
                             <HoverIconButton 
@@ -587,7 +587,7 @@
                         <div class="relative">
                           <img 
                           src="https://i.imgur.com/HUy6fXN.png"
-                          class="object-cover mx-auto w-full rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
+                          class="object-cover w-full mx-auto rounded-2xl xs:w-5/6 lg:w-full xl:rounded-3xl"
                           >
                           <div class="hidden absolute top-[20%] -right-56 lg:block">
                             <HoverIconButton 
@@ -608,7 +608,7 @@
               <div class="bg-B3 dark:bg-stone-600">
                 <div class="p-6 border-none xl:px-56 md:px-10 md:py-8">
                   <div class="pb-6 xs:pb-12 lg:pb-16">
-                    <div class="flex relative justify-center items-center w-full h-full">
+                    <div class="relative flex items-center justify-center w-full h-full">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://www.youtube.com/embed/uoZ-FD4nUk4?autoplay=1&mute=1&loop=1"
@@ -655,7 +655,7 @@
               <CardTilt>
                     <img 
                     src="https://i.imgur.com/xcDKo8B.jpeg"
-                    class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
+                    class="object-cover w-full mb-8 rounded-2xl xl:rounded-3xl aspect-video"
                   >
                 </CardTilt>
                 <List 

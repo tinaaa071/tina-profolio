@@ -262,7 +262,7 @@
           <!-- Banner -->
           <Parallax 
             class="md:h-[500px] h-64"
-            backgroundImage="https://i.meee.com.tw/jwJnOWg.png"
+            backgroundImage="https://raw.githubusercontent.com/tinaaa071/video/main/project7.png"
             />
           <!-- 設計產出 -->
           <Section3
@@ -385,8 +385,8 @@
           >
             <template #content-1>
               <ImageCompare
-                beforeImage="https://i.meee.com.tw/8xgTEmP.png"
-                afterImage="https://i.meee.com.tw/jwJnOWg.png"
+                beforeImage="https://raw.githubusercontent.com/tinaaa071/video/main/project7-2.png"
+                afterImage="https://raw.githubusercontent.com/tinaaa071/video/main/project7.png"
                 heightClass="md:h-96 h-64"
                 class="mb-8"
                 :beforeText="$t('project7.handoff.item2-2')"

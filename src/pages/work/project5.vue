@@ -265,7 +265,7 @@
           <!-- Banner -->
           <Parallax 
             class="md:h-[500px] h-64"
-            backgroundImage="https://i.imgur.com/rjx5Fca.png"
+            backgroundImage="https://raw.githubusercontent.com/tinaaa071/video/main/project5.png"
             />
           <!-- 設計產出 -->
           <Section3
@@ -279,7 +279,7 @@
                   <img 
                       src="https://i.imgur.com/1xNwgZi.png"
                       alt="Banner"
-                      class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
+                      class="object-cover w-full mb-8 rounded-2xl xl:rounded-3xl aspect-video"
                     >
                 </CardTilt>
                 <p 
@@ -294,7 +294,7 @@
               <div class="bg-B3 dark:bg-stone-600">
                 <div class="p-6 space-y-16 border-none xl:px-56 md:px-10 md:py-8">
                   <!-- P1 -->
-                  <div class="grid grid-cols-1 gap-6 justify-between items-start sm:gap-8 lg:gap-16 sm:grid-cols-4 sm:flex-row">
+                  <div class="grid items-start justify-between grid-cols-1 gap-6 sm:gap-8 lg:gap-16 sm:grid-cols-4 sm:flex-row">
                     <!-- Content -->
                     <div class="sm:col-span-3">
                       <p class="mb-2 text-base font-semibold">
@@ -305,7 +305,7 @@
                       </p>
                     </div>
                     <!-- Video -->
-                    <div class="flex relative justify-end items-center">
+                    <div class="relative flex items-center justify-end">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/sG8Dx6A.mp4"
@@ -323,7 +323,7 @@
                     </div>
                   </div>
                   <!-- P2 -->
-                  <div class="grid grid-cols-1 gap-6 justify-between items-start sm:gap-8 lg:gap-16 sm:grid-cols-4 sm:flex-row">
+                  <div class="grid items-start justify-between grid-cols-1 gap-6 sm:gap-8 lg:gap-16 sm:grid-cols-4 sm:flex-row">
                     <!-- Content -->
                     <div class="sm:col-span-3">
                       <p class="mb-2 text-base font-semibold">
@@ -334,7 +334,7 @@
                       </p>
                     </div>
                     <!-- Video -->
-                    <div class="flex relative justify-end items-center">
+                    <div class="relative flex items-center justify-end">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/9mQJLEP.mp4"
@@ -352,7 +352,7 @@
                     </div>
                   </div>
                   <!-- P3 -->
-                  <div class="grid grid-cols-1 gap-6 justify-between items-start sm:gap-8 lg:gap-16 sm:grid-cols-4 sm:flex-row">
+                  <div class="grid items-start justify-between grid-cols-1 gap-6 sm:gap-8 lg:gap-16 sm:grid-cols-4 sm:flex-row">
                     <!-- Content -->
                     <div class="sm:col-span-3">
                       <p class="mb-2 text-base font-semibold">
@@ -363,7 +363,7 @@
                       </p>
                     </div>
                     <!-- Video -->
-                    <div class="flex relative justify-end items-center">
+                    <div class="relative flex items-center justify-end">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/SAgKNwP.mp4"
@@ -381,7 +381,7 @@
                     </div>
                   </div>
                   <!-- P4 -->
-                  <div class="grid grid-cols-1 gap-6 justify-between items-start sm:gap-8 lg:gap-16 sm:grid-cols-4 sm:flex-row">
+                  <div class="grid items-start justify-between grid-cols-1 gap-6 sm:gap-8 lg:gap-16 sm:grid-cols-4 sm:flex-row">
                     <!-- Content -->
                     <div class="sm:col-span-3">
                       <p class="mb-2 text-base font-semibold">
@@ -392,7 +392,7 @@
                       </p>
                     </div>
                     <!-- Video -->
-                    <div class="flex relative justify-end items-center">
+                    <div class="relative flex items-center justify-end">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/2I7qO0x.mp4"
@@ -410,7 +410,7 @@
                     </div>
                   </div>
                   <!-- P5 -->
-                  <div class="grid grid-cols-1 gap-6 justify-between items-start sm:gap-8 lg:gap-16 sm:grid-cols-4 sm:flex-row">
+                  <div class="grid items-start justify-between grid-cols-1 gap-6 sm:gap-8 lg:gap-16 sm:grid-cols-4 sm:flex-row">
                     <!-- Content -->
                     <div class="sm:col-span-3">
                       <p class="mb-2 text-base font-semibold">
@@ -421,7 +421,7 @@
                       </p>
                     </div>
                     <!-- Video -->
-                    <div class="flex relative justify-end items-center">
+                    <div class="relative flex items-center justify-end">
                       <!-- 影片B，寬度90%，保持比例縮放 -->
                       <Video
                         videoSrc="https://i.imgur.com/2O8DlTl.mp4"
@@ -468,7 +468,7 @@
               <CardTilt>
                     <img 
                     src="https://i.imgur.com/0AOKRdk.png"
-                    class="object-cover mb-8 w-full rounded-2xl xl:rounded-3xl aspect-video"
+                    class="object-cover w-full mb-8 rounded-2xl xl:rounded-3xl aspect-video"
                   >
                 </CardTilt>
                 <List 
