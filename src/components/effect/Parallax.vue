@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative w-full"
+    class="relative w-full bg-cover"
     :class="[
       customClass,
       { 
@@ -13,7 +13,7 @@
       backgroundPosition: isMobile ? 'center' : `center ${offsetY}px`, // 只在桌機版顯示視差效果
     }"
   >
-    <div class="flex absolute inset-0 justify-center items-center text-2xl">
+    <div class="absolute inset-0 flex items-center justify-center text-2xl">
       <slot>{{ text }}</slot>
     </div>
   </div>
