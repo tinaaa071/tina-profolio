@@ -4,12 +4,12 @@
     <template #content>
       <div class="space-y-3 sm:space-y-4">
         <!-- Hero 區塊 -->
-        <div class="grid grid-cols-4 grid-flow-row-dense gap-3 cursor-default sm:gap-4">
+        <div class="grid grid-flow-row-dense grid-cols-4 gap-3 cursor-default sm:gap-4">
           <!-- 第一格 -->
-          <div class="inline-flex flex-col col-span-4 gap-6 justify-between p-5 bg-white rounded-2xl xs:gap-10 sm:p-8 sm:col-span-2 sm:rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
-            <div class="flex gap-6 items-center text-xl font-bold xs:text-2xl sm:text-3xl lg:text-4xl">
+          <div class="inline-flex flex-col justify-between col-span-4 gap-6 p-5 bg-white rounded-2xl xs:gap-10 sm:p-8 sm:col-span-2 sm:rounded-3xl dark:bg-transparent dark:border dark:border-stone-50 text-stone-900 dark:text-white">
+            <div class="flex items-center gap-6 text-xl font-bold xs:text-2xl sm:text-3xl lg:text-4xl">
               <!-- 照片 -->
-              <div class="hidden overflow-hidden w-32 h-32 bg-amber-100 bg-center bg-cover rounded-full xl:block">
+              <div class="hidden w-32 h-32 overflow-hidden bg-center bg-cover rounded-full bg-amber-100 xl:block">
                 <img src="https://i.imgur.com/aBGSFku.jpeg" alt="" class="object-cover object-center w-full">
               </div>
               <div>
@@ -29,23 +29,23 @@
             </div>
           </div>
           <!-- 第二格 -->
-          <div class="overflow-hidden col-span-2 rounded-2xl cursor-pointer sm:rounded-3xl lg:col-span-1"
+          <div class="col-span-2 overflow-hidden cursor-pointer rounded-2xl sm:rounded-3xl lg:col-span-1"
           @click="isModalOpen = true"
           >
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10">
                 <ArrowButton @click="isModalOpen = true" :disabled="isLinkDisabled" />
               </div>
-              <div class="z-0 w-full h-full bg-center bg-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+              <div class="z-0 w-full h-full transition-transform duration-500 ease-in-out transform bg-center bg-cover hover:scale-110"
               style="background-image: url(https://i.imgur.com/gCveLP0.png)">
               </div>
             </div>
           </div>
           <!-- 第三格 -->
-          <a href="https://drive.google.com/file/d/1mdYSrsp-mTUDNvluXgR6szHTIeu3CVkD/view?usp=sharing" target="_blank" class="hidden overflow-hidden row-span-2 rounded-2xl sm:rounded-3xl lg:block">
+          <a href="https://drive.google.com/file/d/1j4dJSKY_2yoZNSpXyM-v8HdY7LKUlIgr/view?usp=sharing" target="_blank" class="hidden row-span-2 overflow-hidden rounded-2xl sm:rounded-3xl lg:block">
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10">
-                <ArrowButton link-to="https://drive.google.com/file/d/1mdYSrsp-mTUDNvluXgR6szHTIeu3CVkD/view?usp=sharing" />
+                <ArrowButton link-to="https://drive.google.com/file/d/1j4dJSKY_2yoZNSpXyM-v8HdY7LKUlIgr/view?usp=sharing" />
               </div>
               <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
                 style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;">
@@ -61,7 +61,7 @@
           </div>
           <!-- 第五格 -->
           <a href="https://www.linkedin.com/in/chen-tina/" target="_blank" class="hidden lg:block">
-            <div class="inline-flex justify-center items-center w-full h-full bg-blue-200 rounded-2xl transition-colors duration-200 ease-in-out aspect-square sm:rounded-3xl hover:bg-blue-200/75 group">
+            <div class="inline-flex items-center justify-center w-full h-full transition-colors duration-200 ease-in-out bg-blue-200 rounded-2xl aspect-square sm:rounded-3xl hover:bg-blue-200/75 group">
               <entypo-social-linkedin class="text-6xl text-white transition-all duration-200 ease-in-out dark:text-stone-900 group-hover:text-7xl"></entypo-social-linkedin>
             </div>
           </a>
@@ -89,7 +89,7 @@
           <div class="grid overflow-hidden grid-cols-1 gap-2.5 cursor-default lg:grid-cols-2 text-stone-900 dark:text-white h-fit sm:gap-4">
             <!-- Plugin 區塊 -->
             <SlideIn direction="left">
-              <div class="flex flex-col p-5 h-full bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
+              <div class="flex flex-col h-full p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
                 <div class="flex justify-between mb-4 lg:mb-10 xs:mb-6">
                   <p class="tracking-[.25em] text-xs xs:text-base xl:text-lg font-bold ">
                     {{ $t('work.core.item3') }}
@@ -98,8 +98,8 @@
                     Shape Mask
                   </p>
                 </div>
-                <RouterLink to="/blog/post/19" class="overflow-hidden relative w-full h-full bg-white rounded-2xl border border-white/20 sm:rounded-3xl">
-                  <img src="/plugin-banner.png" alt="" class="object-cover inset-0 w-full h-full transition-all duration-300 lg:absolute hover:scale-105">
+                <RouterLink to="/blog/post/19" class="relative w-full h-full overflow-hidden bg-white border rounded-2xl border-white/20 sm:rounded-3xl">
+                  <img src="/plugin-banner.png" alt="" class="inset-0 object-cover w-full h-full transition-all duration-300 lg:absolute hover:scale-105">
                 </RouterLink>
               </div>
             </SlideIn> 
@@ -107,7 +107,7 @@
             <!-- Blog 區塊 -->
             <SlideIn direction="right">
               <div class="p-5 bg-white rounded-2xl sm:p-8 dark:bg-transparent sm:rounded-3xl dark:border dark:border-white">
-                <div class="flex justify-between items-start mb-4 lg:mb-10 xs:mb-6">
+                <div class="flex items-start justify-between mb-4 lg:mb-10 xs:mb-6">
                   <p class="tracking-[.25em]  text-xs xs:text-base xl:text-lg font-bold ">
                     {{ $t('work.core.item4') }}
                   </p>
@@ -121,7 +121,7 @@
                   :textClass="'text-black dark:text-white'"
                   :hoverTextClass="'dark:group-hover:text-stone-900 group-hover:text-white'"
                   :bgClass="'bg-stone-900 dark:bg-white'"
-                  class="transform origin-top-right scale-75 sm:scale-100"
+                  class="origin-top-right transform scale-75 sm:scale-100"
                   />
                 </div>
                 <div class="space-y-3 text-sm font-extrabold lg:space-y-5 xs:text-2xl">
@@ -130,7 +130,7 @@
                     v-for="(date, index) in ['2024.06.12', '2024.06.12', '2024.06.12', '2024.06.12']"
                     :key="date"
                     :to="`/blog/post/${index + 1}`"
-                    class="inline-flex gap-6 w-full leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white text-stone-400"
+                    class="inline-flex w-full gap-6 leading-normal text-left transition-colors duration-300 ease-in-out focus:text-stone-900 hover:text-stone-900 dark:focus:text-white dark:hover:text-white text-stone-400"
                   >
                     <time class="whitespace-nowrap">
                       {{ `${date}` }}
