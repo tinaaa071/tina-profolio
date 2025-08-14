@@ -5,7 +5,7 @@
       <BackToTop class="z-20" />
       <!-- Banner -->
       <Banner 
-        bannerSrc="https://i.meee.com.tw/wwnk2JK.png"
+        bannerSrc="https://raw.githubusercontent.com/tinaaa071/video/main/project7-b.png"
       />
       <!-- Content -->
       <div class="absolute left-0 sm:top-[480px] top-[400px] w-full leading-relaxed">
@@ -274,7 +274,7 @@
               <div class="font-normal">
                 <CardTilt>
                   <img 
-                      src="https://i.meee.com.tw/uazNTNB.png"
+                      src="https://i.meee.com.tw/WDlwnbi.png"
                       alt="Banner"
                       class="object-cover w-full mb-8 rounded-2xl xl:rounded-3xl aspect-video"
                     >
@@ -403,7 +403,7 @@
             <template #content-1>
               <CardTilt>
                     <img 
-                    src="https://i.meee.com.tw/wwnk2JK.png"
+                    src="https://raw.githubusercontent.com/tinaaa071/video/main/project7-b.png"
                     class="object-cover w-full mb-8 rounded-2xl xl:rounded-3xl aspect-video"
                   >
                 </CardTilt>
