@@ -42,10 +42,10 @@
             </div>
           </div>
           <!-- 第三格 -->
-          <a href="https://drive.google.com/file/d/1j4dJSKY_2yoZNSpXyM-v8HdY7LKUlIgr/view?usp=sharing" target="_blank" class="hidden row-span-2 overflow-hidden rounded-2xl sm:rounded-3xl lg:block">
+          <a href="https://drive.google.com/file/d/1l5QFsr-8X2ZnpJ68n3n5NiyBsqs_B0KI/view?usp=sharing" target="_blank" class="hidden row-span-2 overflow-hidden rounded-2xl sm:rounded-3xl lg:block">
             <div class="relative w-full h-full">
               <div class="absolute bottom-0 z-10">
-                <ArrowButton link-to="https://drive.google.com/file/d/1j4dJSKY_2yoZNSpXyM-v8HdY7LKUlIgr/view?usp=sharing" />
+                <ArrowButton link-to="https://drive.google.com/file/d/1l5QFsr-8X2ZnpJ68n3n5NiyBsqs_B0KI/view?usp=sharing" />
               </div>
               <p class="absolute w-fit h-fit inset-0 z-10 flex items-center justify-center text-6xl font-bold tracking-[.4em] text-white text-outline mx-auto my-auto"
                 style="writing-mode: vertical-lr; -webkit-writing-mode: vertical-lr;">
