@@ -674,9 +674,195 @@
               </div>
             </template>
           </Section3>
-          <!-- 設計交付 -->
+          <!-- 數據分析 -->
           <Section3
             id="section12"
+            :title="$t('work.title.item17')"
+          >
+            <template #content-1>
+              <div class="space-y-8">
+                <p v-html="$t('project1.data.item1')" class="font-normal"></p>
+                <!-- 漏斗一 -->
+                <div class="space-y-3">
+                  <p v-html="$t('project1.data.funnel1')" class="font-semibold"></p>
+                  <p v-html="$t('project1.data.funnel1-1')" class="font-normal"></p>
+                  <div class="overflow-hidden border border-gray-200 rounded-2xl">
+                    <table class="w-full text-sm text-gray-900 bg-white">
+                    <thead class="text-center bg-gray-100">
+                      <tr>
+                        <th class="px-4 py-2 text-center">{{ $t('project1.data.th-1') }}</th>
+                        <th class="px-4 py-2 text-center">{{ $t('project1.data.th-2') }}</th>
+                        <th class="px-4 py-2 text-center">{{ $t('project1.data.th-3') }}</th>
+                        <th class="px-4 py-2 text-center">{{ $t('project1.data.th-4') }}</th>
+                        <th class="px-4 py-2 text-center">{{ $t('project1.data.th-5') }}</th>
+                        <th class="px-4 py-2 text-center">{{ $t('project1.data.th-6') }}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-center">
+                        <td class="px-4 py-2">{{ $t('project1.data.tb-1') }}</td>
+                        <td class="px-4 py-2"><code class="dark:bg-gray-100">view_signup_page</code></td>
+                        <td class="px-4 py-2">124</td>
+                        <td class="px-4 py-2">124</td>
+                        <td class="px-4 py-2">-</td>
+                        <td class="px-4 py-2">100%</td>
+                      </tr>
+                      <tr class="text-center bg-gray-50">
+                        <td class="px-4 py-2">{{ $t('project1.data.tb-2') }}</td>
+                        <td class="px-4 py-2"><code class="dark:bg-gray-100">input_email</code></td>
+                        <td class="px-4 py-2">124</td>
+                        <td class="px-4 py-2">115</td>
+                        <td class="px-4 py-2">9</td>
+                        <td class="px-4 py-2">92.7%</td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="px-4 py-2">{{ $t('project1.data.tb-3') }}</td>
+                        <td class="px-4 py-2"><code class="dark:bg-gray-100">send_verification_code</code></td>
+                        <td class="px-4 py-2">115</td>
+                        <td class="px-4 py-2">110</td>
+                        <td class="px-4 py-2">5</td>
+                        <td class="px-4 py-2">88.7%</td>
+                      </tr>
+                      <tr class="text-center bg-red-100">
+                        <td class="px-4 py-2">{{ $t('project1.data.tb-4') }}</td>
+                        <td class="px-4 py-2"><code class="dark:bg-gray-100">complete_form_fields</code></td>
+                        <td class="px-4 py-2">110</td>
+                        <td class="px-4 py-2">100</td>
+                        <td class="px-4 py-2 text-red-500">10</td>
+                        <td class="px-4 py-2">80.6%</td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="px-4 py-2">{{ $t('project1.data.tb-5') }}</td>
+                        <td class="px-4 py-2"><code class="dark:bg-gray-100">agree_terms</code></td>
+                        <td class="px-4 py-2">100</td>
+                        <td class="px-4 py-2">98</td>
+                        <td class="px-4 py-2">2</td>
+                        <td class="px-4 py-2">79.0%</td>
+                      </tr>
+                      <tr class="text-center bg-gray-50">
+                        <td class="px-4 py-2">{{ $t('project1.data.tb-6') }}</td>
+                        <td class="px-4 py-2"><code class="dark:bg-gray-100">click_signup</code></td>
+                        <td class="px-4 py-2">98</td>
+                        <td class="px-4 py-2">96</td>
+                        <td class="px-4 py-2">2</td>
+                        <td class="px-4 py-2">77.4%</td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="px-4 py-2">{{ $t('project1.data.tb-7') }}</td>
+                        <td class="px-4 py-2"><code class="dark:bg-gray-100">signup_success</code></td>
+                        <td class="px-4 py-2">96</td>
+                        <td class="px-4 py-2">94</td>
+                        <td class="px-4 py-2">2</td>
+                        <td class="px-4 py-2">76.0%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                </div>
+                <hr class="bg-stone-900">
+                <!-- 漏斗二 -->
+                <div class="space-y-3">
+                  <p v-html="$t('project1.data.funnel2')" class="font-semibold"></p>
+                  <p v-html="$t('project1.data.funnel2-1')" class="font-normal"></p>
+                  <ToggleTable class="h-fit" />
+                </div>
+                <hr class="bg-stone-900">
+                <!-- 漏斗三 -->
+                <div class="space-y-3">
+                  <p v-html="$t('project1.data.funnel3')" class="font-semibold"></p>
+                  <p v-html="$t('project1.data.funnel3-1')" class="font-normal"></p>
+                  <div>
+                    <div class="flex gap-6">
+                      <div class="text-sm">
+                        <span class="inline-flex w-3 h-3 mr-1 bg-green-200 rounded-full"></span>
+                        {{ $t('project1.data.draft-1') }}
+                      </div>
+                      <div class="text-sm">
+                        <span class="inline-flex w-3 h-3 mr-1 bg-red-200 rounded-full"></span>
+                        {{ $t('project1.data.draft-2') }}
+                      </div>
+                    </div>
+                    <div class="w-full mx-auto mt-4 overflow-hidden border border-gray-200 rounded-2xl">
+                      <table class="w-full text-sm text-gray-900 bg-white">
+                        <thead class="text-center bg-gray-100">
+                          <tr>
+                            <th class="px-4 py-2 text-center">{{ $t('project1.data.th-10') }}</th>
+                            <th class="px-4 py-2 text-center bg-green-200">{{ $t('project1.data.th-3') }}</th>
+                            <th class="px-4 py-2 text-center bg-green-200">{{ $t('project1.data.th-4') }}</th>
+                            <th class="px-4 py-2 text-center bg-green-200">{{ $t('project1.data.th-7') }}</th>
+                            <th class="px-4 py-2 text-center bg-green-200">{{ $t('project1.data.th-11') }}</th>
+                            <th class="px-4 py-2 text-center bg-green-200">{{ $t('project1.data.th-12') }}</th>
+                            <th class="px-4 py-2 text-center bg-red-200">{{ $t('project1.data.th-3') }}</th>
+                            <th class="px-4 py-2 text-center bg-red-200">{{ $t('project1.data.th-4') }}</th>
+                            <th class="px-4 py-2 text-center bg-red-200">{{ $t('project1.data.th-7') }}</th>
+                            <th class="px-4 py-2 text-center bg-red-200">{{ $t('project1.data.th-11') }}</th>
+                            <th class="px-4 py-2 text-center bg-red-200">{{ $t('project1.data.th-12') }}</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="text-center">
+                            <td class="px-4 py-2">{{ $t('project1.data.tb-8') }}</td>
+                            <td class="px-4 py-2 bg-green-50">72</td>
+                            <td class="px-4 py-2 bg-green-50">72</td>
+                            <td class="px-4 py-2 bg-green-50">-</td>
+                            <td class="px-4 py-2 bg-green-50">-</td>
+                            <td class="px-4 py-2 bg-green-50">-</td>
+                            <td class="px-4 py-2 bg-red-50">72</td>
+                            <td class="px-4 py-2 bg-red-50">72</td>
+                            <td class="px-4 py-2 bg-red-50">-</td>
+                            <td class="px-4 py-2 bg-red-50">-</td>
+                            <td class="px-4 py-2 bg-red-50">-</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="px-4 py-2">{{ $t('project1.data.tb-9') }}</td>
+                            <td class="px-4 py-2 bg-green-50">55</td>
+                            <td class="px-4 py-2 bg-green-50">38</td>
+                            <td class="px-4 py-2 bg-green-50">17</td>
+                            <td class="px-4 py-2 bg-green-50">10</td>
+                            <td class="px-4 py-2 bg-green-50">23.6%</td>
+                            <td class="px-4 py-2 bg-red-50">65</td>
+                            <td class="px-4 py-2 bg-red-50">58</td>
+                            <td class="px-4 py-2 bg-red-50">7</td>
+                            <td class="px-4 py-2 bg-red-50">-</td>
+                            <td class="px-4 py-2 bg-red-50">9.7%</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="px-4 py-2">{{ $t('project1.data.tb-10') }}</td>
+                            <td class="px-4 py-2 bg-green-50">48</td>
+                            <td class="px-4 py-2 bg-green-50">41</td>
+                            <td class="px-4 py-2 bg-green-50">7</td>
+                            <td class="px-4 py-2 bg-green-50">17</td>
+                            <td class="px-4 py-2 bg-green-50">12.7%</td>
+                            <td class="px-4 py-2 bg-red-50">55</td>
+                            <td class="px-4 py-2 bg-red-50">45</td>
+                            <td class="px-4 py-2 bg-red-50">10</td>
+                            <td class="px-4 py-2 bg-red-50">-</td>
+                            <td class="px-4 py-2 bg-red-50">15.4%</td>
+                          </tr>
+                          <tr class="text-center">
+                            <td class="px-4 py-2">{{ $t('project1.data.tb-11') }}</td>
+                            <td class="px-4 py-2 bg-green-50">65</td>
+                            <td class="px-4 py-2 bg-green-50">65<br>(90.2%)</td>
+                            <td class="px-4 py-2 bg-green-50">-</td>
+                            <td class="px-4 py-2 bg-green-50">-</td>
+                            <td class="px-4 py-2 bg-green-50">-</td>
+                            <td class="px-4 py-2 bg-red-50">45</td>
+                            <td class="px-4 py-2 bg-red-50">45<br>(62.5%)</td>
+                            <td class="px-4 py-2 bg-red-50">-</td>
+                            <td class="px-4 py-2 bg-red-50">-</td>
+                            <td class="px-4 py-2 bg-red-50">-</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </Section3>
+          <!-- 設計交付 -->
+          <Section3
+            id="section13"
             :title="$t('work.title.item12')"
           >
             <template #content-1>
@@ -781,7 +967,8 @@
         { id: 'section8', name: 'work.title.item9' },
         { id: 'section9', name: 'work.title.item10' },
         { id: 'section11', name: 'work.title.item11' },
-        { id: 'section12', name: 'work.title.item12' },
+        { id: 'section12', name: 'work.title.item17' },
+        { id: 'section13', name: 'work.title.item12' },
         { id: 'section14', name: 'work.title.item14' },
       ],
     };
