@@ -701,7 +701,7 @@
                     <tbody>
                       <tr class="text-center">
                         <td class="px-4 py-2">{{ $t('project1.data.tb-1') }}</td>
-                        <td class="px-4 py-2"><code class="dark:bg-gray-100">view_signup_page</code></td>
+                        <td class="px-4 py-2"><code class="bg-gray-100">view_signup_page</code></td>
                         <td class="px-4 py-2">124</td>
                         <td class="px-4 py-2">124</td>
                         <td class="px-4 py-2">-</td>
@@ -709,7 +709,7 @@
                       </tr>
                       <tr class="text-center bg-gray-50">
                         <td class="px-4 py-2">{{ $t('project1.data.tb-2') }}</td>
-                        <td class="px-4 py-2"><code class="dark:bg-gray-100">input_email</code></td>
+                        <td class="px-4 py-2"><code class="bg-gray-100">input_email</code></td>
                         <td class="px-4 py-2">124</td>
                         <td class="px-4 py-2">115</td>
                         <td class="px-4 py-2">9</td>
@@ -717,7 +717,7 @@
                       </tr>
                       <tr class="text-center">
                         <td class="px-4 py-2">{{ $t('project1.data.tb-3') }}</td>
-                        <td class="px-4 py-2"><code class="dark:bg-gray-100">send_verification_code</code></td>
+                        <td class="px-4 py-2"><code class="bg-gray-100">send_verification_code</code></td>
                         <td class="px-4 py-2">115</td>
                         <td class="px-4 py-2">110</td>
                         <td class="px-4 py-2">5</td>
@@ -725,7 +725,7 @@
                       </tr>
                       <tr class="text-center bg-red-100">
                         <td class="px-4 py-2">{{ $t('project1.data.tb-4') }}</td>
-                        <td class="px-4 py-2"><code class="dark:bg-gray-100">complete_form_fields</code></td>
+                        <td class="px-4 py-2"><code class="bg-gray-100">complete_form_fields</code></td>
                         <td class="px-4 py-2">110</td>
                         <td class="px-4 py-2">100</td>
                         <td class="px-4 py-2 text-red-500">10</td>
@@ -733,7 +733,7 @@
                       </tr>
                       <tr class="text-center">
                         <td class="px-4 py-2">{{ $t('project1.data.tb-5') }}</td>
-                        <td class="px-4 py-2"><code class="dark:bg-gray-100">agree_terms</code></td>
+                        <td class="px-4 py-2"><code class="bg-gray-100">agree_terms</code></td>
                         <td class="px-4 py-2">100</td>
                         <td class="px-4 py-2">98</td>
                         <td class="px-4 py-2">2</td>
@@ -741,7 +741,7 @@
                       </tr>
                       <tr class="text-center bg-gray-50">
                         <td class="px-4 py-2">{{ $t('project1.data.tb-6') }}</td>
-                        <td class="px-4 py-2"><code class="dark:bg-gray-100">click_signup</code></td>
+                        <td class="px-4 py-2"><code class="bg-gray-100">click_signup</code></td>
                         <td class="px-4 py-2">98</td>
                         <td class="px-4 py-2">96</td>
                         <td class="px-4 py-2">2</td>
@@ -749,7 +749,7 @@
                       </tr>
                       <tr class="text-center">
                         <td class="px-4 py-2">{{ $t('project1.data.tb-7') }}</td>
-                        <td class="px-4 py-2"><code class="dark:bg-gray-100">signup_success</code></td>
+                        <td class="px-4 py-2"><code class="bg-gray-100">signup_success</code></td>
                         <td class="px-4 py-2">96</td>
                         <td class="px-4 py-2">94</td>
                         <td class="px-4 py-2">2</td>
