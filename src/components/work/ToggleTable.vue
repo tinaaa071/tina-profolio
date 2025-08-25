@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col gap-4">
-        <button @click="toggleTable" class="p-2 text-sm border-2 rounded-lg w-fit dark:text-white border-stone-500 dark:border-B3 h-fit whitespace-nowrap text-stone-500">
+        <button @click="toggleTable" class="p-2 text-xs transition-all duration-200 border-2 rounded-lg w-fit dark:text-white border-stone-500 dark:border-stone-100 h-fit whitespace-nowrap text-stone-500 hover:bg-stone-100 dark:hover:bg-stone-700">
         {{ showFirstTable ? $t('project1.data.btn-2') : $t('project1.data.btn-1') }}
         </button>
   
