@@ -686,7 +686,7 @@
                 <div class="space-y-3">
                   <p v-html="$t('project1.data.funnel1')" class="font-semibold"></p>
                   <p v-html="$t('project1.data.funnel1-1')" class="font-normal"></p>
-                  <div class="overflow-hidden border border-gray-200 rounded-2xl">
+                  <div class="overflow-hidden overflow-x-scroll border border-gray-200 rounded-2xl">
                     <table class="w-full text-sm text-gray-900 bg-white">
                     <thead class="text-center bg-gray-100">
                       <tr>
@@ -782,7 +782,7 @@
                         {{ $t('project1.data.draft-2') }}
                       </div>
                     </div>
-                    <div class="w-full mx-auto mt-4 overflow-hidden border border-gray-200 rounded-2xl">
+                    <div class="w-full mx-auto mt-4 overflow-hidden overflow-x-scroll border border-gray-200 rounded-2xl">
                       <table class="w-full text-sm text-gray-900 bg-white">
                         <thead class="text-center bg-gray-100">
                           <tr>

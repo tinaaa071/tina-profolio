@@ -4,7 +4,7 @@
         {{ showFirstTable ? $t('project1.data.btn-2') : $t('project1.data.btn-1') }}
         </button>
   
-   <div v-if="showFirstTable" class="w-full mx-auto overflow-hidden border border-gray-200 rounded-2xl">
+   <div v-if="showFirstTable" class="w-full mx-auto overflow-hidden overflow-x-scroll border border-gray-200 rounded-2xl">
     <table class="w-full text-sm text-gray-900 bg-white">
     <thead class="text-center bg-gray-100">
         <tr>
@@ -75,7 +75,7 @@
     </tbody>
     </table>
   </div>
-  <div v-else class="w-full mx-auto overflow-hidden border border-gray-200 rounded-2xl">
+  <div v-else class="w-full mx-auto overflow-hidden overflow-x-scroll border border-gray-200 rounded-2xl">
     <table class="w-full text-sm text-gray-900 bg-white">
       <thead class="text-center bg-gray-100">
         <tr>
